@@ -1,0 +1,1432 @@
+[
+  {
+    "id": "01-01",
+    "lecture": 1,
+    "lecturer": "Andreas Fischer",
+    "topic": "Text Recognition",
+    "type": "single",
+    "question": "According to the lecturer, which task is considered the most difficult and resource-intensive in the text recognition workflow?",
+    "options": {
+      "A": "Transcription Alignment",
+      "B": "Keyword Spotting",
+      "C": "Full Transcription",
+      "D": "Layout Analysis"
+    },
+    "correct": [
+      "C"
+    ],
+    "explanation": "The transcript ranks the tasks by difficulty, stating, 'the transcription alignment can be done with probably the least resources. That's the easiest task and the full transcription is the hardest task and this should only be attempted if there is a lot of material ready for the machine to learn from.'"
+  },
+  {
+    "id": "01-02",
+    "lecture": 1,
+    "lecturer": "Andreas Fischer",
+    "topic": "Text Recognition",
+    "type": "single",
+    "question": "What is the primary difference between classical machine learning and deep learning approaches to text recognition as explained in the lecture?",
+    "options": {
+      "A": "Deep learning requires significantly less training data than classical methods.",
+      "B": "Classical machine learning is generally more accurate for recognizing historical handwriting.",
+      "C": "Deep learning models automatically learn the feature extraction process, while in classical methods it is done manually.",
+      "D": "Classical machine learning can only be applied to printed text, while deep learning is for handwriting."
+    },
+    "correct": [
+      "C"
+    ],
+    "explanation": "The lecturer explains that in classical ML, a human decides on features, whereas in deep learning, 'this pre-processing and feature extraction part is learned as well.' The transcript also notes deep learning requires *more* data and yields *better* results."
+  },
+  {
+    "id": "01-03",
+    "lecture": 1,
+    "lecturer": "Andreas Fischer",
+    "topic": "Text Recognition",
+    "type": "single",
+    "question": "How does the lecturer describe the current state of automatic handwriting recognition?",
+    "options": {
+      "A": "As a mostly solved problem, with commercial tools producing error-free results.",
+      "B": "As 'more unsolved than solved,' with typical word error rates reaching 20%.",
+      "C": "As being impossible to automate because of the segmentation-recognition paradox.",
+      "D": "As partially solved and on par with the accuracy for modern printed text."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The transcript explicitly states: 'overall I would say this domain of handwriting recognition is more unsolved than solved. There are... word error rates that go easily to 20%. So from five recognized words one will be wrong.'"
+  },
+  {
+    "id": "01-04",
+    "lecture": 1,
+    "lecturer": "Andreas Fischer",
+    "topic": "Text Recognition",
+    "type": "multi",
+    "question": "Which of the following are identified in the lecture as significant challenges that make handwriting recognition particularly difficult?",
+    "options": {
+      "A": "The high variability of individual character shapes between different writers.",
+      "B": "The 'segmentation-recognition paradox' where connected characters are hard to separate.",
+      "C": "The complete absence of commercial software for processing handwritten documents.",
+      "D": "Page layouts that are often more complex and less predictable than in printed books."
+    },
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "The lecture mentions handwriting is 'very individual' (A), the segmentation-recognition paradox (B), and that 'the layout on these pages is more challenging' (D). Option C is incorrect as the lecturer explicitly mentions commercial tools like Transkribus and Google Vision."
+  },
+  {
+    "id": "01-05",
+    "lecture": 1,
+    "lecturer": "Andreas Fischer",
+    "topic": "Text Recognition",
+    "type": "multi",
+    "question": "According to the lecture, what are the essential components of a high-quality 'ground truth' dataset for training a text recognition system?",
+    "options": {
+      "A": "Geometric data defining the exact location of each text line on the page.",
+      "B": "A transcription that expands all abbreviations to make the text more readable for humans.",
+      "C": "A transcription that is accurate at the character level, corresponding precisely to what is visible in the image.",
+      "D": "Detailed metadata about the document's author, date, and institutional context."
+    },
+    "correct": [
+      "A",
+      "C"
+    ],
+    "explanation": "The lecture specifies that ground truth requires two parts: layout information ('where are the text lines on the scanned page image...around each text line you would put this kind of polygon') (A), and a character-level accurate transcription (C). It explicitly advises against expanding abbreviations for training, making B incorrect."
+  },
+  {
+    "id": "01-06",
+    "lecture": 1,
+    "lecturer": "Andreas Fischer",
+    "topic": "Text Recognition",
+    "type": "multi",
+    "question": "What are the primary goals of applying automatic text recognition to cultural heritage documents, as described in the lecture?",
+    "options": {
+      "A": "To create perfect, error-free digital editions that can be published without human correction.",
+      "B": "To enable users to perform keyword searches directly within the content of digitized documents.",
+      "C": "To preserve written cultural heritage and make it more accessible in an electronic format.",
+      "D": "To replace the need for physical libraries by digitizing all their holdings."
+    },
+    "correct": [
+      "B",
+      "C"
+    ],
+    "explanation": "The lecture states the 'overarching goal is to preserve our written cultural heritage in a way that we can access old manuscripts...conveniently in an electronic form' (C). It also specifies that this allows users to 'search by keywords and find pages, documents of interest' (B). It explicitly states that error rates 'prohibit the publication of clean electronic editions' (making A incorrect) and discusses enhancing, not replacing, libraries."
+  },
+  {
+    "id": "02-01",
+    "lecture": 2,
+    "lecturer": "Bianca Prietl",
+    "topic": "Understanding Digitization",
+    "type": "single",
+    "question": "According to Professor Prietl, what is the primary implication of viewing gender and technology as 'co-constructed'?",
+    "options": {
+      "A": "It implies that both gender and technology are not fixed or predetermined, but are social constructs that could be different.",
+      "B": "It suggests that technology deterministically shapes gender roles in a patriarchal direction.",
+      "C": "It proves that gender is an essential biological reality that influences technological design.",
+      "D": "It focuses exclusively on how feminist politics can change the internet, ignoring the design of physical artifacts."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The transcript states that a constructivist perspective rejects 'any essentialist or naturalist thinking' and that from this stance, it follows that 'the form they are taking could be different,' for both gender and technology."
+  },
+  {
+    "id": "02-02",
+    "lecture": 2,
+    "lecturer": "Bianca Prietl",
+    "topic": "Understanding Digitization",
+    "type": "single",
+    "question": "What does the lecture identify as the main problem with the 'I-methodology' prevalent among technology designers?",
+    "options": {
+      "A": "It relies too heavily on expensive and time-consuming user research before starting development.",
+      "B": "It leads to technologies that primarily reflect the perspectives and needs of a small, homogeneous group of creators.",
+      "C": "It prioritizes the needs of marginalized users over the general population, making products less profitable.",
+      "D": "It results in technologies that are intentionally complex and difficult for the average person to use."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The lecture explains that designers using the 'I-methodology' 'imagine themselves as ideal users,' which is problematic because they constitute a 'small and homogeneous group of people,' thus excluding the perspectives of others."
+  },
+  {
+    "id": "02-03",
+    "lecture": 2,
+    "lecturer": "Bianca Prietl",
+    "topic": "Understanding Digitization",
+    "type": "single",
+    "question": "How does Professor Prietl characterize the role of social media in contemporary gender politics?",
+    "options": {
+      "A": "As an exclusively positive space that has freed people from their bodily gender identities.",
+      "B": "As a completely negative environment dominated by anti-feminist hate speech and sexual violence.",
+      "C": "As an ambivalent arena that both perpetuates patriarchal norms and offers a platform for feminist empowerment.",
+      "D": "As an irrelevant platform that has no real-world impact on gender-related laws or regulations."
+    },
+    "correct": [
+      "C"
+    ],
+    "explanation": "The transcript explicitly states that assessments of social media's role are 'very ambivalent, nearly twofolded,' mentioning both the negative aspects like hate speech and the empowering potential of movements like #MeToo."
+  },
+  {
+    "id": "02-04",
+    "lecture": 2,
+    "lecturer": "Bianca Prietl",
+    "topic": "Understanding Digitization",
+    "type": "multi",
+    "question": "According to the lecture's explanation of a constructivist perspective, which of the following ideas are rejected? (Select all that apply)",
+    "options": {
+      "A": "The idea that gender and technology are the cumulative effects of social practices.",
+      "B": "The techno-deterministic narrative that technological development happens in and of itself.",
+      "C": "The essentialist view that gender is a natural or given attribute.",
+      "D": "The notion that gender norms can be inscribed into the design of technical artifacts."
+    },
+    "correct": [
+      "B",
+      "C"
+    ],
+    "explanation": "The transcript explicitly states that a constructivist perspective 'rejects any essentialist or naturalist thinking' (C) and also rejects 'techno-deterministic narratives' (B). It affirms that gender and technology are social constructs (A) and that norms are inscribed in artifacts (D)."
+  },
+  {
+    "id": "02-05",
+    "lecture": 2,
+    "lecturer": "Bianca Prietl",
+    "topic": "Understanding Digitization",
+    "type": "multi",
+    "question": "Which of the following are used in the lecture as examples of how gendered perspectives or norms are inscribed into technical artifacts? (Select all that apply)",
+    "options": {
+      "A": "Digital voice assistants that mirror stereotypes of female assistants.",
+      "B": "Airport security scanners programmed with binary gender body norms.",
+      "C": "Navigation apps that fail to calculate routes accessible to people with strollers or wheelchairs.",
+      "D": "Software engineering tools that are primarily used by men in the global north."
+    },
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "The lecture provides several specific examples: digital assistants like Alexa/Siri (A), airport scanners that enforce a gender binary (B), and navigation apps like Google Maps that don't account for users with strollers or wheelchairs (C)."
+  },
+  {
+    "id": "02-06",
+    "lecture": 2,
+    "lecturer": "Bianca Prietl",
+    "topic": "Understanding Digitization",
+    "type": "multi",
+    "question": "The lecture highlights forms of labor essential to the digital economy that are often unseen or unappreciated. Which of the following concepts or examples does it mention in this context? (Select all that apply)",
+    "options": {
+      "A": "The 'digital housewife,' referring to the unpaid work users perform on social media that creates value for companies.",
+      "B": "The highly visible and well-paid work of AI scholars and data scientists in 'big tech.'",
+      "C": "The 'click work' of content moderators and dataminers, often performed by a poorly paid workforce in the Global South.",
+      "D": "'Participatory design,' a method where users are compensated to co-create technologies from the start."
+    },
+    "correct": [
+      "A",
+      "C"
+    ],
+    "explanation": "The lecture specifically discusses two forms of often-ignored labor: the 'click work' of content moderators in the Global South (C) and the 'digital housewife' concept, describing the unpaid value-creating labor of social media users (A). The work of 'big tech' is mentioned as a contrast, and participatory design is mentioned as a solution."
+  },
+  {
+    "id": "03-01",
+    "lecture": 3,
+    "lecturer": "Cerstin Mahlow",
+    "topic": "Digital Linguistics",
+    "type": "single",
+    "question": "According to the lecturer, what is the most accurate definition of Digital Linguistics?",
+    "options": {
+      "A": "The study of language as it is used in digital spaces like social media and forums.",
+      "B": "The formal and computational modeling of language data.",
+      "C": "A modern synonym for computational linguistics, focused on human-machine communication.",
+      "D": "The application of digital tools to digitized spoken or written data."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The lecturer explicitly concludes her definition by stating: 'digital linguistics in my understanding is the formal and thus computational modeling of language data either spoken or written'. The other options represent alternative views she discusses but ultimately sets aside in favor of her own definition."
+  },
+  {
+    "id": "03-02",
+    "lecture": 3,
+    "lecturer": "Cerstin Mahlow",
+    "topic": "Digital Linguistics",
+    "type": "single",
+    "question": "In the context of linguistic modeling of the writing process, what is a 'transforming sequence'?",
+    "options": {
+      "A": "A series of keystrokes produced without any pauses, also known as a burst.",
+      "B": "The difference, such as an insertion or deletion, between two consecutive versions of a sentence.",
+      "C": "A standardized, human-readable format for representing edits, such as the s-notation.",
+      "D": "The chronological list of all versions a sentence goes through during the writing process."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The transcript defines the transforming sequence as 'the diff between two versions of a sentence or of a text', using the insertion of 'without interruption' as a specific example of the difference that separates one version from the next."
+  },
+  {
+    "id": "03-03",
+    "lecture": 3,
+    "lecturer": "Cerstin Mahlow",
+    "topic": "Digital Linguistics",
+    "type": "multi",
+    "question": "According to the lecture, which of the following are considered sources of data used in writing research to understand how writers produce text? (Select all that apply)",
+    "options": {
+      "A": "Keystroke logs from a computer keyboard.",
+      "B": "Eye-tracking data showing where a writer is looking.",
+      "C": "Final published versions of texts without any drafts.",
+      "D": "Think-aloud protocols where writers verbalize their thoughts."
+    },
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "The lecturer lists several data sources, including 'process data, so the logging data' (keystroke logging), 'eye tracking data', and notes that the early Flower and Hayes model was developed using 'think aloud protocols'. The final text alone is insufficient for process research, as the lecturer notes researchers use 'several drafts, versions of a text'."
+  },
+  {
+    "id": "03-04",
+    "lecture": 3,
+    "lecturer": "Cerstin Mahlow",
+    "topic": "Digital Linguistics",
+    "type": "multi",
+    "question": "Based on the lecturer's presentation, which of the following statements accurately reflect her views on writing research and technology? (Select all that apply)",
+    "options": {
+      "A": "The s-notation is a useful method for showing edits but is not very reader-friendly for chronological analysis.",
+      "B": "The writing model by Flower and Hayes (1981) is the most current and comprehensive model available today.",
+      "C": "Research into writing technology declined after Microsoft Word became the market standard but is now experiencing a resurgence.",
+      "D": "Writing is better understood as a recursive, spiral process rather than a simple linear sequence."
+    },
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "The lecturer states s-notation 'is not really that reader friendly' for chronological reconstruction (A), that writing technology research stopped with MS Word's dominance but is now 'growing again' (C), and praises the Parang and Willi model for showing writing as a 'spiral and a moving process' rather than 'boxes and errors' (D). She identifies Hayes' 2012 model as the 'most current version', not the 1981 Flower and Hayes model, making B incorrect."
+  },
+  {
+    "id": "04-01",
+    "lecture": 4,
+    "lecturer": "Elena Chestnova",
+    "topic": "Digital Editing",
+    "type": "single",
+    "question": "According to the lecturer, what is the most radical change the digital medium has brought to the concept of a 'critical edition'?",
+    "options": {
+      "A": "It allows for the inclusion of scholarly commentary, which was impossible in print.",
+      "B": "It removes the necessity of selecting a single 'base manuscript' as the authoritative version.",
+      "C": "It replaces the scholarly work of textual criticism with automated tools like Handwritten Text Recognition (HTR).",
+      "D": "It has made older print paradigms, such as the 'diplomatic edition', completely obsolete."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The transcript states: 'The only category that has probably been changed radically by the advent of the digital is the idea of the critical edition. Because within the digital context, we do not have to... work with the base manuscript... we can present readers with much more fluid versions of edited texts, which do not privilege a particular copy or a particular version.'"
+  },
+  {
+    "id": "04-02",
+    "lecture": 4,
+    "lecturer": "Elena Chestnova",
+    "topic": "Digital Editing",
+    "type": "single",
+    "question": "The lecturer discusses the 'overlap problem' as a key challenge in digital editing. What fundamental limitation of XML causes this problem?",
+    "options": {
+      "A": "XML cannot use attributes to describe textual features like underlining or strikethroughs.",
+      "B": "XML is unable to represent the text and the markup within the same file.",
+      "C": "XML is strictly hierarchical, meaning elements must be fully nested and cannot overlap.",
+      "D": "XML is an outdated format that is incompatible with the TEI standard."
+    },
+    "correct": [
+      "C"
+    ],
+    "explanation": "The transcript explains: 'XML has some fundamental limitations so the biggest of these limitations is the fact that it is strictly hierarchical so that means that elements have to be always completely nested within other elements you cannot have elements overlapping.'"
+  },
+  {
+    "id": "04-03",
+    "lecture": 4,
+    "lecturer": "Elena Chestnova",
+    "topic": "Digital Editing",
+    "type": "multi",
+    "question": "The lecturer describes editing as a process of 'creating a theory about the text'. Which of the following are presented as potential aims of an edition that would inform such a theory? (Select all that apply)",
+    "options": {
+      "A": "To understand the history of a text's transmission and reception over time.",
+      "B": "To create a perfect, uninterpreted digital copy of an original source.",
+      "C": "To establish an authoritative version of a text by analyzing its variants.",
+      "D": "To make fragile or difficult-to-read primary sources more accessible for research."
+    },
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "The transcript lists several aims, including understanding 'the history of its transmission... [and] its reception' (A), engaging in 'textual criticism... concerned with identification of textual variants and with establishment of one authoritative version of the text' (C), and making 'sources... more accessible to users... for example, when we speak of sources that are extremely fragile in the original, or sources that are very difficult to read' (D). Option B is incorrect as the lecturer states editing is 'always a process of creating something new' and not just recording."
+  },
+  {
+    "id": "04-04",
+    "lecture": 4,
+    "lecturer": "Elena Chestnova",
+    "topic": "Digital Editing",
+    "type": "multi",
+    "question": "According to the lecturer, what are the potential advantages of the experimental 'Text as Graph' approach to representing textual data? (Select all that apply)",
+    "options": {
+      "A": "It offers a method for resolving the 'overlap problem' found in hierarchical markup like XML.",
+      "B": "It is currently the most common and convenient de facto standard for implementing TEI.",
+      "C": "It provides an extensible structure, making it easy to add new layers of information like linked data.",
+      "D": "It simplifies the integration of textual data with other research methods like historical network analysis."
+    },
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "The transcript notes that 'Text as a Graph' was proposed to 'resolv[e] the overlap problem' (A), has the advantage of 'extensibility' allowing for 'adding layers of information' like 'linked data' (C), and 'makes it possible to combine text data with historical network research' (D). Option B is incorrect; the lecturer states that XML, not Text as Graph, is the most common way to implement TEI, and that Text as Graph is 'fairly experimental'."
+  },
+  {
+    "id": "05-01",
+    "lecture": 5,
+    "lecturer": "Gerhard Lauer",
+    "topic": "Digital Books",
+    "type": "single",
+    "question": "According to the lecture, what is the most time-consuming phase in a typical digital book studies research project?",
+    "options": {
+      "A": "Pre-processing, which includes acquiring, cleaning, and structuring data.",
+      "B": "Analysis, which involves running computational models and statistical tests.",
+      "C": "Post-processing, which includes publishing the article, data, and tools openly.",
+      "D": "Formulating the initial research hypothesis within a theoretical framework."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The transcript explicitly states: '80% of your time is invested in this pre-processing. Because if you have bad data, your results will be flawed.'"
+  },
+  {
+    "id": "05-02",
+    "lecture": 5,
+    "lecturer": "Gerhard Lauer",
+    "topic": "Digital Books",
+    "type": "single",
+    "question": "The lecture identifies two main historical traditions that formed the foundation of the field of book studies. What are they?",
+    "options": {
+      "A": "The study of clandestine printing and the history of typography.",
+      "B": "The philological interest in book history and the bibliographic tradition of organizing data.",
+      "C": "The economic history of the book trade and the sociology of texts.",
+      "D": "The history of early printing (incunabula) and the study of children's literature."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The lecturer states: 'So we have two parts. One is the history interest, the philology. And the other tradition is the bibliographic tradition. So organizing data about books. These are the reasons why a field like book studies popped up.'"
+  },
+  {
+    "id": "05-03",
+    "lecture": 5,
+    "lecturer": "Gerhard Lauer",
+    "topic": "Digital Books",
+    "type": "single",
+    "question": "What key practice in the post-processing phase distinguishes digital book studies from traditional, non-computational book studies, according to the lecturer?",
+    "options": {
+      "A": "Publishing findings exclusively in the most prestigious, paywalled academic journals.",
+      "B": "Creating interactive visualizations that entirely replace the need for a written article.",
+      "C": "Publishing the underlying data (corpus) and analysis scripts (tools) alongside the research article.",
+      "D": "Focusing solely on the written interpretation of results without revealing the methods used."
+    },
+    "correct": [
+      "C"
+    ],
+    "explanation": "The transcript makes this distinction clear: 'in non computational data, book studies, you normally do not publish your corpus and you do not publish the way you come to your results. But in digital book studies, you do exactly this, always your results together with the corpus and the tools.'"
+  },
+  {
+    "id": "05-04",
+    "lecture": 5,
+    "lecturer": "Gerhard Lauer",
+    "topic": "Digital Books",
+    "type": "multi",
+    "question": "The lecturer mentions several types of data sources that can be used for digital book studies. Which of the following are examples cited in the transcript?",
+    "options": {
+      "A": "Real-time sales and reading data from modern platforms like Tolino and Wattpad.",
+      "B": "Transcribed personal diaries and letters of 18th-century readers.",
+      "C": "Large-scale bibliographic catalogs such as 'Early English Books Online'.",
+      "D": "Historical book trade journals like the 19th-century 'Börsenblatt'."
+    },
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "The lecture mentions: A) 'on platforms like Tolino or Watpat... we have billions of data about reading habits'; C) 'think about also in the English-speaking world, early English books online'; and D) 'publications by the book trade journals and papers of the book industry, like The Bersenblatt'. Personal diaries were not mentioned as a data source."
+  },
+  {
+    "id": "05-05",
+    "lecture": 5,
+    "lecturer": "Gerhard Lauer",
+    "topic": "Digital Books",
+    "type": "multi",
+    "question": "Based on the lecture, which of the following statements accurately describe the academic field of book studies?",
+    "options": {
+      "A": "It is a uniformly large and well-established discipline across all academic traditions.",
+      "B": "Its methods have a natural affinity with computational approaches due to its history of using catalogs and structured data.",
+      "C": "It is defined as the social and cultural history of communication specifically through the medium of print.",
+      "D": "The field is primarily concerned with the literary analysis of the content of canonical books."
+    },
+    "correct": [
+      "B",
+      "C"
+    ],
+    "explanation": "The lecture states: B) 'computational methods are not far away for somebody working in the field of book studies, because numbers, metadata, catalog data, indices, etc., are very close... to the book studies tradition.'; and C) 'it's the social and cultural history of communication but specifically communication by print.' It explicitly notes that the field's size varies by region (A is wrong) and its scope is broader than just literary analysis (D is wrong)."
+  },
+  {
+    "id": "05-06",
+    "lecture": 5,
+    "lecturer": "Gerhard Lauer",
+    "topic": "Digital Books",
+    "type": "multi",
+    "question": "The lecture highlights several challenges that researchers face when conducting computational book studies. Which of the following challenges were mentioned?",
+    "options": {
+      "A": "The problem of 'garbage in, garbage out,' where poor quality data leads to flawed conclusions.",
+      "B": "Difficulties with Optical Character Recognition (OCR) on historical texts with varied or non-standard fonts.",
+      "C": "The ethical and legal barriers to scraping data from modern commercial reading platforms.",
+      "D": "Biases within large datasets like Wikipedia, such as machine-translated articles and inconsistent data structures."
+    },
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "The lecture mentions: A) the direct quote 'garbage in, garbage out'; B) the difficulty of OCR for 'Black Letters' or pages with 'changing typography'; and D) 'we find many biases in the worldwide Wikipedia... for example, translation by bots... the structure of these articles... is differently used in different languages.' Ethical barriers (C) were not discussed as a challenge."
+  },
+  {
+    "id": "06-01",
+    "lecture": 6,
+    "lecturer": "Lukas Rosenthaler",
+    "topic": "Linked Open Data",
+    "type": "single",
+    "question": "According to the lecturer, what is the primary reason relational databases are often a poor fit for Digital Humanities projects?",
+    "options": {
+      "A": "They are too new and lack established standards for data management.",
+      "B": "They lack a dedicated query language, making data retrieval difficult.",
+      "C": "Their rigid, table-based structure is ill-suited for the complex, networked, and often unstructured nature of humanities data.",
+      "D": "They are unable to enforce data integrity through mechanisms like foreign keys."
+    },
+    "correct": [
+      "C"
+    ],
+    "explanation": "The lecturer explicitly states that the 'very strict scheme that relational databases impose is not very suitable' for the 'highly networked information' and 'largely unstructured information' common in Digital Humanities."
+  },
+  {
+    "id": "06-02",
+    "lecture": 6,
+    "lecturer": "Lukas Rosenthaler",
+    "topic": "Linked Open Data",
+    "type": "single",
+    "question": "What does the lecturer identify as the key advantage of using an ontology with an RDF database?",
+    "options": {
+      "A": "It enables the database to make logical inferences and work with implicit or incomplete information.",
+      "B": "It provides the only method for naming resources with globally unique URIs.",
+      "C": "It simplifies the database structure by eliminating the need for properties (predicates).",
+      "D": "It enforces a rigid data model that prevents any ambiguity, similar to a relational database schema."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The lecturer explains that an ontology allows for 'reasoning,' which enables the database 'to make conclusions about the nature of things and dealing with implicit information.' This is described as a 'very very strong feature.'"
+  },
+  {
+    "id": "06-03",
+    "lecture": 6,
+    "lecturer": "Lukas Rosenthaler",
+    "topic": "Linked Open Data",
+    "type": "multi",
+    "question": "Based on the lecture, which of the following are significant advantages of using the Turtle notation for serializing RDF data in a Digital Humanities context? (Select 2 or 3)",
+    "options": {
+      "A": "It is designed to be easily readable by both machines and humans.",
+      "B": "It is the only industry-accepted standard for serializing RDF.",
+      "C": "It helps ensure the long-term accessibility and usability of the data.",
+      "D": "It can only be created and edited using specialized graphical database software."
+    },
+    "correct": [
+      "A",
+      "C"
+    ],
+    "explanation": "The lecturer emphasizes that Turtle is both 'machine readable' and 'readable for us humans.' He connects this directly to the concept of 'longevity,' which is crucial for DH projects that can last for decades. He also notes it is the 'most common' standard, not the only one."
+  },
+  {
+    "id": "06-04",
+    "lecture": 6,
+    "lecturer": "Lukas Rosenthaler",
+    "topic": "Linked Open Data",
+    "type": "multi",
+    "question": "According to the lecturer's explanation of graph databases, which of the following are fundamental components used to structure the data? (Select 2 or 3)",
+    "options": {
+      "A": "Resources, which act as nodes representing real-world or ideal objects.",
+      "B": "Tables, which organize data into rows and columns with foreign keys.",
+      "C": "Properties, which act as labeled edges connecting resources to values or other resources.",
+      "D": "Literals, which are string values that a property can point to."
+    },
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "The lecturer defines the graph model as consisting of nodes called 'resources,' which are linked by edges called 'properties.' These properties can point to either other resources or to 'literal values' like strings. Tables are explicitly identified as a feature of relational databases, which are contrasted with graph databases."
+  },
+  {
+    "id": "07-01",
+    "lecture": 7,
+    "lecturer": "Michael Piotrowski",
+    "topic": "Digital Humanities Methods",
+    "type": "single",
+    "question": "According to the lecturer, what is the primary reason that Digital Humanities has failed to develop its own epistemology?",
+    "options": {
+      "A": "It has pragmatically borrowed methods from other disciplines without sufficient theoretical reflection on their implications for knowledge production.",
+      "B": "Traditional humanities scholars have actively resisted the formalization of their methods, preventing any epistemological progress.",
+      "C": "It has focused too heavily on developing unique, complex theories at the expense of applying practical, computational tools.",
+      "D": "The computational methods it uses are fundamentally and unresolvably incompatible with the qualitative nature of humanistic inquiry."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The lecturer opens by stating that DH 'has largely contented itself with borrowing methods from other fields... rarely accompanied by theoretical reflection,' which is the central reason for its lack of a distinct epistemology."
+  },
+  {
+    "id": "07-02",
+    "lecture": 7,
+    "lecturer": "Michael Piotrowski",
+    "topic": "Digital Humanities Methods",
+    "type": "single",
+    "question": "The lecturer argues that machine-readable corpora have a significant, often overlooked epistemological impact. How does he characterize this impact using Gaston Bachelard's concept?",
+    "options": {
+      "A": "Corpora are 'abundant properties' that add new, artificial data not present in the original sources.",
+      "B": "Corpora are 'phenomenotechnical devices,' meaning they are constructed objects that both model and produce the phenomenon being studied.",
+      "C": "Corpora are a form of 'decoupage des phénomènes,' providing an objective way to cut up and classify human facts without bias.",
+      "D": "Corpora represent 'lived meanings,' allowing a direct, unmediated transition from subjective impression to objective data."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The lecturer explicitly states, 'Corporal are then methodologically speaking phenomenotechnical devices... A corpus produces the phenomenon to be studied,' directly referencing Bachelard's notion that instruments (like corpora) are materialized theories that shape what can be observed."
+  },
+  {
+    "id": "07-03",
+    "lecture": 7,
+    "lecturer": "Michael Piotrowski",
+    "topic": "Digital Humanities Methods",
+    "type": "multi",
+    "question": "Based on the lecture, which of the following statements accurately describe the lecturer's understanding of formalization in the humanities? (Select 2 or 3)",
+    "options": {
+      "A": "Formalization's main challenge is to invent new structures, described by Granger as an 'original mathematics' that is not necessarily based on numbers.",
+      "B": "Formalization is fundamentally about making the implicit models that humanists already use explicit and thus open to scrutiny.",
+      "C": "Formalization should be seen primarily as a transition from unstructured knowledge to structured knowledge, rather than simple quantification.",
+      "D": "Formalization is only truly scientific when it successfully reduces humanistic phenomena to calculations and statistical measures."
+    },
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "The lecturer argues against equating formalization with quantification (making D incorrect). He cites Granger's view of formalization as a transition to structure (C) and the invention of new 'original mathematics' (A). He also presents Gardin's approach and Epstein's quote to support the idea of making implicit scholarly models explicit (B)."
+  },
+  {
+    "id": "07-04",
+    "lecture": 7,
+    "lecturer": "Michael Piotrowski",
+    "topic": "Digital Humanities Methods",
+    "type": "multi",
+    "question": "The lecturer presents a specific view of 'models' and 'modeling' in the humanities. Which of the following points are part of his argument? (Select 2 or 3)",
+    "options": {
+      "A": "Models are necessarily reductive, capturing only those attributes of the original phenomenon deemed relevant for a particular purpose.",
+      "B": "Even traditional historians who explicitly reject the notion of models inevitably use implicit models when they select and structure their sources.",
+      "C": "The main goal of a truly scientific model in the humanities is to create a perfect, one-to-one replica of the historical original.",
+      "D": "In the humanities, researchers 'play' with models to gain insights, as they cannot directly 'experiment' with the original phenomena (e.g., historical events)."
+    },
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "The lecturer cites Stachowiak on the 'reductive aspect' of models (A). He references Gorin Leff to argue that historians use 'implicit models' (B). He describes the 'modeling trial' in the humanities as 'playing' with a model rather than 'experimenting' on the original (D). He argues against the possibility of a perfect replica by quoting 'the map is not the territory,' making C incorrect."
+  },
+  {
+    "id": "08-01",
+    "lecture": 8,
+    "lecturer": "Noah Bubenhofer",
+    "topic": "Corpus Linguistics",
+    "type": "single",
+    "question": "According to the lecturer, what is the fundamental principle that allows corpus linguists to infer a word's meaning from a collocation profile?",
+    "options": {
+      "A": "The meaning of a word is derived from the typical contexts in which it is used.",
+      "B": "The grammatical correctness of a word is determined by the words that frequently appear alongside it.",
+      "C": "The historical origin of a word can be traced by analyzing its most common collocates over time.",
+      "D": "A word's overall frequency in a corpus is the most reliable indicator of its primary meaning."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The transcript states: 'If I know how the word is normally used, then I can derive its meaning from that. This is the basic idea of contextualism and distributionalism.' Collocation profiles show this typical usage."
+  },
+  {
+    "id": "08-02",
+    "lecture": 8,
+    "lecturer": "Noah Bubenhofer",
+    "topic": "Corpus Linguistics",
+    "type": "single",
+    "question": "How does the lecturer characterize the relationship between the empirical approach of corpus linguistics and the rationalist approach?",
+    "options": {
+      "A": "Corpus linguistics is an empirical method that has completely replaced the outdated rationalist approach.",
+      "B": "The rationalist approach of logical inference is the primary method, with corpus data used only for verification.",
+      "C": "Corpus linguistics is an empirical method based on observation, which is distinct from the logical inference of rationalism, though researchers often move between both.",
+      "D": "Both corpus linguistics and rationalism are empirical methods, but they use different types of data."
+    },
+    "correct": [
+      "C"
+    ],
+    "explanation": "The transcript states: 'Clearly, corpus linguistics is an empirical method. Thus unlike rationalism it is concerned with finding insights through observation... Of course one often moves back and forth between these two levels.'"
+  },
+  {
+    "id": "08-03",
+    "lecture": 8,
+    "lecturer": "Noah Bubenhofer",
+    "topic": "Corpus Linguistics",
+    "type": "multi",
+    "question": "Based on the definition from Lemnitzer and Zinsmeister cited in the lecture, what are the key components of a modern digital corpus?",
+    "options": {
+      "A": "The primary data, which consists of a collection of written or spoken utterances.",
+      "B": "Metadata that describes the primary data, such as author, source, and date.",
+      "C": "Linguistic annotations, such as part-of-speech tags or the base form of a word.",
+      "D": "A software interface for performing analysis, such as calculating collocations."
+    },
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "The transcript explicitly lists three components from the definition: 'the data itself', 'metadata describing this data', and 'linguistic annotations associated with this data'. An analysis interface is a tool used on a corpus, not part of the corpus definition itself."
+  },
+  {
+    "id": "08-04",
+    "lecture": 8,
+    "lecturer": "Noah Bubenhofer",
+    "topic": "Corpus Linguistics",
+    "type": "multi",
+    "question": "Which of the following statements about different types of corpora are supported by the lecture transcript?",
+    "options": {
+      "A": "Parallel corpora contain texts aligned in multiple languages and are useful for training machine translation systems.",
+      "B": "Spoken language corpora can be analyzed directly in their audio format without the need for textual conversion.",
+      "C": "Corpus pragmatics focuses on how patterns on the linguistic surface can be seen as traces of social action and discourse.",
+      "D": "Classic text corpora are valuable because they preserve all original non-textual features like images and typography."
+    },
+    "correct": [
+      "A",
+      "C"
+    ],
+    "explanation": "The transcript states that parallel corpora are multilingual and 'interesting data to train machine translation systems' (A is correct). It also defines corpus pragmatics as seeing 'traces of linguistic action in patterns on the linguistic surface' (C is correct). The transcript says spoken corpora *require* transcription (B is incorrect) and that classic text corpora 'usually really only contains the text... no images, no typographic features etc.' (D is incorrect)."
+  },
+  {
+    "id": "10-01",
+    "lecture": 10,
+    "lecturer": "Ramona Roller",
+    "topic": "Network Analysis",
+    "type": "single",
+    "question": "According to the lecture, why is a network considered a 'representation' or 'model' of reality, rather than reality itself?",
+    "options": {
+      "A": "It simplifies reality by focusing on connections while treating individuals as 'black boxes', omitting their internal states and the content of their interactions.",
+      "B": "It can only represent static, long-lived relationships like friendships, not dynamic, short-lived interactions like sending a message.",
+      "C": "It is primarily a visualization tool and lacks the mathematical formality needed to explain complex systems.",
+      "D": "It captures the actions of every individual in a system, making it too detailed to be considered a simplification."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The transcript explicitly states that networks simplify reality and treat nodes as 'black boxes,' hiding rich details like 'emotions, beliefs, desires'. It also clarifies that networks can represent both long-lived relationships and short-lived interactions."
+  },
+  {
+    "id": "10-02",
+    "lecture": 10,
+    "lecturer": "Ramona Roller",
+    "topic": "Network Analysis",
+    "type": "single",
+    "question": "What is the key conclusion drawn from the comparison of calculating betweenness centrality for a communication network versus a marriage network?",
+    "options": {
+      "A": "Betweenness centrality is a meaningless measure for any network that is undirected and binary.",
+      "B": "A topological network measure can always be computed, but its interpretation is context-dependent and not always meaningful.",
+      "C": "Communication networks are the only type of system where centrality measures have a straightforward interpretation.",
+      "D": "The researcher must rely on the computer to determine if a centrality measure is appropriate for a given network."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The lecturer explains that while betweenness can be calculated for the marriage network, it's hard to interpret because no quantity 'flows along the edges'. The summary slide reinforces this: 'topological network measures can always be computed, but they cannot always be interpreted'."
+  },
+  {
+    "id": "10-03",
+    "lecture": 10,
+    "lecturer": "Ramona Roller",
+    "topic": "Network Analysis",
+    "type": "single",
+    "question": "Which of the following best describes a defining characteristic of a 'complex system' as defined in the lecture?",
+    "options": {
+      "A": "It is controlled by a central authority or 'chief' that dictates the behavior of all individual entities.",
+      "B": "Global, emergent behavior arises from local, nonlinear interactions among heterogeneous entities.",
+      "C": "The term 'complex' is used to mean the system is complicated and exceptionally difficult to understand.",
+      "D": "The global behavior of the system is simply the linear sum of all its individual components' actions."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The transcript defines a complex system as having local, nonlinear interactions, no global authority, and giving rise to 'global behavior that is more than the sum of all local components,' also called emergence. The lecturer explicitly states that 'Complex does not mean complicated or difficult to understand'."
+  },
+  {
+    "id": "10-04",
+    "lecture": 10,
+    "lecturer": "Ramona Roller",
+    "topic": "Network Analysis",
+    "type": "multi",
+    "question": "The lecture outlined three main ways to study the topology of a network. Which of the following were included in this discussion? (Select all that apply)",
+    "options": {
+      "A": "Topological network measures, such as centralities, to describe the position and importance of nodes.",
+      "B": "Network motives, such as reciprocity and triadic closure, to capture small-scale interaction patterns.",
+      "C": "Community detection, such as modularity maximization, to find groups of densely connected nodes.",
+      "D": "Data formatting using CSV files to define source and target nodes for analysis software."
+    },
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "The lecturer explicitly introduces three examples for studying network topology: 'The first example are topological network measures. Then we will have a look at motives and then at communities.' Data formatting was discussed in a later section on practical resources, not as a method of topological analysis."
+  },
+  {
+    "id": "10-05",
+    "lecture": 10,
+    "lecturer": "Ramona Roller",
+    "topic": "Network Analysis",
+    "type": "multi",
+    "question": "Based on the lecture, which of the following statements accurately describe specific centrality measures? (Select all that apply)",
+    "options": {
+      "A": "Eigenvector centrality is high for a node that is connected to many other nodes which are, in turn, highly connected themselves.",
+      "B": "Betweenness centrality quantifies a node's role as a mediator by measuring how often it lies on the shortest paths between other nodes.",
+      "C": "Closeness centrality is defined simply as the total number of direct neighbors a node has.",
+      "D": "Different centrality measures (betweenness, closeness, eigenvector) consistently identify the same nodes as most important in any given network."
+    },
+    "correct": [
+      "A",
+      "B"
+    ],
+    "explanation": "The lecture defines eigenvector centrality as being 'connected to popular other nodes' and betweenness as the 'number of shortest paths between all node pairs that traverse' a node. Closeness is about accessibility/distance to all nodes, not just direct neighbors (which is degree). The lecture explicitly shows a visualization where the 'same node differs in size across different centralities,' demonstrating they don't give the same results."
+  },
+  {
+    "id": "10-06",
+    "lecture": 10,
+    "lecturer": "Ramona Roller",
+    "topic": "Network Analysis",
+    "type": "multi",
+    "question": "The lecture highlighted three Digital Humanities case studies. Which of the following are accurate findings or conclusions from those examples? (Select all that apply)",
+    "options": {
+      "A": "Letters sent by Protestant reformers had a statistically significant positive effect on a territory's likelihood of adopting Protestantism.",
+      "B": "Personal visits by reformers to different territories were found to be more influential than their letter correspondence.",
+      "C": "In the Game of Thrones character network, computational analysis confirmed the subjective view that Jon Snow is a central character.",
+      "D": "Analysis of network motives suggested that medieval forts in the Himalaya could have plausibly functioned as a visual signaling system."
+    },
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "The lecture states that every letter increased the chance of adoption by 0.7%, and that 'letters versus personal visits, letters win,' making B incorrect. It confirmed Jon Snow's importance and concluded that for the forts, 'visual signaling is a possible function of this network'."
+  },
+  {
+    "id": "11-01",
+    "lecture": 11,
+    "lecturer": "Rico Sennrich",
+    "topic": "Natural Language Processing",
+    "type": "single",
+    "question": "According to the lecture, what was a primary limitation of the fragmentation-based statistical approach to machine translation that neural models managed to overcome?",
+    "options": {
+      "A": "It relied entirely on manually written linguistic rules, making it inflexible.",
+      "B": "It was unable to model long-distance grammatical dependencies between words in a sentence.",
+      "C": "It could not be trained on large datasets due to computational constraints in the 1990s.",
+      "D": "It required rare words to be split into character sequences, which was computationally expensive."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The transcript illustrates this limitation with the example 'The dog in the pet store barks', explaining that fragmentation approaches look at local fragments and cannot enforce agreement between 'dog' and 'barks'."
+  },
+  {
+    "id": "11-02",
+    "lecture": 11,
+    "lecturer": "Rico Sennrich",
+    "topic": "Natural Language Processing",
+    "type": "single",
+    "question": "What was the most effective training strategy for the handwritten text recognition model used in the Bullinger Digital project?",
+    "options": {
+      "A": "Training a model from scratch using only the 3,000 lines of transcribed Bullinger letters.",
+      "B": "Using a pre-trained general model and continuing to train it on the specific Bullinger letters.",
+      "C": "Applying a large language model like GPT directly to the scanned images without any further training.",
+      "D": "Creating synthetic training data by asking a model to generate new letters in Bullinger's handwriting."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The lecturer explicitly states that starting with a general model and then fine-tuning it on Bullinger's data yielded a lower character error rate (2.7%) than training a model only on the Bullinger data (3.3%)."
+  },
+  {
+    "id": "11-03",
+    "lecture": 11,
+    "lecturer": "Rico Sennrich",
+    "topic": "Natural Language Processing",
+    "type": "single",
+    "question": "What is the core principle behind how modern neural language models work, as described in the lecture?",
+    "options": {
+      "A": "They count the frequencies of short text fragments (n-grams) to calculate the probability of a sentence.",
+      "B": "They memorize all sentences seen during training to find the closest match for a new input.",
+      "C": "They learn continuous numerical representations of text to make the task of predicting the next word easier.",
+      "D": "They use a large, predefined set of grammatical rules to parse and generate sentences."
+    },
+    "correct": [
+      "C"
+    ],
+    "explanation": "The lecture explains that the basic idea of neural models is to 'learn some continuous numerical representations of words or sentences' to facilitate the prediction of the next word, contrasting this with older fragmentation and rule-based methods."
+  },
+  {
+    "id": "11-04",
+    "lecture": 11,
+    "lecturer": "Rico Sennrich",
+    "topic": "Natural Language Processing",
+    "type": "multi",
+    "question": "The Bullinger Digital project faced a shortage of Latin-to-German training data for its machine translation system. Which of the following strategies were used to address this issue?",
+    "options": {
+      "A": "Collecting existing Latin-German translations from different historical time periods.",
+      "B": "Using data from a related language pair, such as Italian-to-German translations.",
+      "C": "Automatically generating synthetic Latin source texts by translating German letters into Latin.",
+      "D": "Manually translating thousands of new Latin documents into German specifically for this project."
+    },
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "The transcript mentions collecting translations from different time periods, using Italian-German data, and creating synthetic data via back-translation. It does not mention undertaking a large-scale manual translation effort."
+  },
+  {
+    "id": "11-05",
+    "lecture": 11,
+    "lecturer": "Rico Sennrich",
+    "topic": "Natural Language Processing",
+    "type": "multi",
+    "question": "At the end of the lecture, several warnings and limitations of large language models are discussed. Which of the following problems were mentioned?",
+    "options": {
+      "A": "They can produce fluent-sounding but factually incorrect information.",
+      "B": "Their performance is significantly worse for low-resource languages compared to English.",
+      "C": "They can reproduce and even amplify social biases found in their training data.",
+      "D": "They require users to learn complex programming languages to engineer effective prompts."
+    },
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "The lecturer warns that neural models can produce text that looks good but is wrong, that they work best on high-resource languages, and that they inherit social biases. Prompt engineering was described as phrasing a task in natural language, not programming."
+  },
+  {
+    "id": "11-06",
+    "lecture": 11,
+    "lecturer": "Rico Sennrich",
+    "topic": "Natural Language Processing",
+    "type": "multi",
+    "question": "The lecture describes an evolution from rule-based to statistical to neural methods in NLP. Which of the following are characteristics attributed to the pre-neural (i.e., rule-based or statistical) approaches?",
+    "options": {
+      "A": "A major challenge was creating rules to correctly determine a word's meaning in a specific context.",
+      "B": "The output could be ungrammatical because individually plausible text fragments were combined poorly.",
+      "C": "They used 'subwords' as the basic processing unit to handle rare and newly created words.",
+      "D": "They learned continuous, multi-dimensional numerical representations for each word in the vocabulary."
+    },
+    "correct": [
+      "A",
+      "B"
+    ],
+    "explanation": "The lecture states that rule-based systems struggled with semantic ambiguity (A) and that statistical fragmentation could produce ungrammatical text (B). Subwords (C) and continuous numerical representations (D) are characteristics of the modern neural approach."
+  },
+  {
+    "id": "12-01",
+    "lecture": 12,
+    "lecturer": "Toma Savic",
+    "topic": "Digitization",
+    "type": "single",
+    "question": "According to the lecturer, what is the primary misconception of the 'positivist ontology' regarding data?",
+    "options": {
+      "A": "It posits that data is simply 'given' and exists independently, waiting to be collected.",
+      "B": "It incorrectly defines data as a continuous flow rather than as discrete samples.",
+      "C": "It prioritizes data collected through observation over data obtained through measurement.",
+      "D": "It argues that all data must be organized into tabular datasets to be useful."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The transcript explicitly states: 'The positivist ontology posits that data exists independent of an interpretive frame waiting to be collected by a human, but this is untrue... Contrary to its Latin name in singular datum, data is never simply given but produced in complex processes.'"
+  },
+  {
+    "id": "12-02",
+    "lecture": 12,
+    "lecturer": "Toma Savic",
+    "topic": "Digitization",
+    "type": "single",
+    "question": "The lecture uses the example of Thales measuring the Great Pyramid to illustrate which key concept about measurement?",
+    "options": {
+      "A": "That direct physical access is a prerequisite for accurate scientific measurement.",
+      "B": "That a comparative method can establish a relationship between unrelated magnitudes through a medium.",
+      "C": "That legal definitions of measurement are insufficient for understanding historical practices.",
+      "D": "That equations can only work by equating quantities of the same type and material."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The transcript explains that Thales, despite having no physical access, 'rendered the pyramid comparable to the stick using the medium of the shadow,' thus illustrating a 'comparative method [that] implies an articulation of proportional comparison of unrelated magnitudes.'"
+  },
+  {
+    "id": "12-03",
+    "lecture": 12,
+    "lecturer": "Toma Savic",
+    "topic": "Digitization",
+    "type": "multi",
+    "question": "According to the lecture, which of the following are critical problems associated with data classification and the structure of databases?",
+    "options": {
+      "A": "The process of classification can cause socially constructed categories to appear natural or inherently rational.",
+      "B": "Databases can reinforce historical biases, such as a colonial perspective, from the source material.",
+      "C": "The best practice in digital humanities is to avoid classification entirely to maintain data's raw state.",
+      "D": "Digital databases often promote a single, hierarchical logic of the world as the only way of knowing."
+    },
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "The transcript notes that classification becomes 'naturalized' and assumes 'rationality' for socially constructed relationships (A), can translate a 'colonial blind spots' (B), and represents knowledge according to a 'single or logic of the world' (D). It explicitly rejects avoiding organization, stating 'The point is not that data should never be organized' (C)."
+  },
+  {
+    "id": "12-04",
+    "lecture": 12,
+    "lecturer": "Toma Savic",
+    "topic": "Digitization",
+    "type": "multi",
+    "question": "The lecturer advocates for an approach called 'data materialism.' Which of the following are components of this approach as described in the lecture?",
+    "options": {
+      "A": "A philosophical shift away from 'data idealism' by recognizing that data is produced, not simply given.",
+      "B": "A belief that digital tools are neutral and that critical concerns should be addressed separately from technical work.",
+      "C": "A critical examination of who has access to data and the technologies used to collect and analyze it.",
+      "D": "Adopting a 'techno-optimism' about how technology can solve problems of inequality."
+    },
+    "correct": [
+      "A",
+      "C"
+    ],
+    "explanation": "The lecturer frames data materialism as a way 'to refuse a data idealism' and emphasizes that data is produced (A). A major section of the lecture is devoted to problematizing 'access to data as well as technology' (C). The lecture argues against the separation of technical and critical work (B) and critiques 'techno-optimism' (D)."
+  },
+  {
+    "id": "13-01",
+    "lecture": 13,
+    "lecturer": "Klaus Münnich",
+    "topic": "Digital Musicology",
+    "type": "single",
+    "question": "According to the lecture, what is a key distinction between the digital representation of music in a symbolic format like MEI and the representation of text in a format like TEI?",
+    "options": {
+      "A": "The encoding in MEI is an essential part of creating the musical text itself, whereas TEI markup primarily describes an existing text.",
+      "B": "MEI is an XML-based format, while TEI is based on older technologies like ASCII.",
+      "C": "Musical encoding formats like MEI are primarily focused on visual layout, while TEI focuses on semantics.",
+      "D": "Text encoding is a standardized process with one main format (TEI), while music encoding has hundreds of competing formats with no standard."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The lecturer explains that if you remove the markup from a TEI document, you are left with a legible text. However, removing the markup from an MEI file results in a 'blank sheet' because the encoding *is* the musical text, not just additional information about it."
+  },
+  {
+    "id": "13-02",
+    "lecture": 13,
+    "lecturer": "Klaus Münnich",
+    "topic": "Digital Musicology",
+    "type": "single",
+    "question": "The lecturer identifies a 'key issue' in digital musicology as the tension between two main processing approaches. Which of the following best describes this tension?",
+    "options": {
+      "A": "The conflict between commercial software focused on profit and open-source tools developed for academic research.",
+      "B": "The challenge of reconciling audio processing, which analyzes raw sound waves, with symbolic processing, which analyzes notational representations.",
+      "C": "The difficulty in balancing the need for high-quality data storage with the ecological impact of large datasets.",
+      "D": "The debate between using established, older encoding formats like MIDI and adopting newer, more semantically rich formats like MEI."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The transcript explicitly states, 'the tension between audio and symbolic processing of music. This tension can be considered a key issue in traditional and digital musicology.' It then defines audio processing (analyzing raw sound) and symbolic processing (analyzing notation)."
+  },
+  {
+    "id": "13-03",
+    "lecture": 13,
+    "lecturer": "Klaus Münnich",
+    "topic": "Digital Musicology",
+    "type": "multi",
+    "question": "According to the lecture, which of the following are typical applications or characteristics of the field of Music Information Retrieval (MIR)?",
+    "options": {
+      "A": "Developing music recommendation systems for streaming services like Spotify.",
+      "B": "Creating definitive, scholarly digital editions of composers' complete works.",
+      "C": "Using tools like the Sonic Visualizer to analyze features of audio recordings.",
+      "D": "Using machine learning and AI to help users find and explore large music collections."
+    },
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "The transcript identifies MIR with applications like 'music classification and recommendation systems, think of Spotify,' 'search and discovery systems,' and mentions the Sonic Visualizer as a common tool for 'visualization, analysis, and annotation of audio recordings.' Creating scholarly editions is described as a separate research area (Digital Music Editions)."
+  },
+  {
+    "id": "13-04",
+    "lecture": 13,
+    "lecturer": "Klaus Münnich",
+    "topic": "Digital Musicology",
+    "type": "multi",
+    "question": "The lecturer argues that musical content and data are different from other humanities materials like text or images. Which of the following reasons are used in the transcript to support this argument?",
+    "options": {
+      "A": "Multiple copies of a musical piece can have equivalent status, emphasizing reproducibility over the uniqueness of a single instance.",
+      "B": "Music data requires significantly more digital storage space than high-resolution images or large text corpora.",
+      "C": "The encoding of symbolic music is the content itself, not just descriptive markup added to pre-existing content.",
+      "D": "Music is a temporal art form, making it impossible to represent or analyze using static computational methods."
+    },
+    "correct": [
+      "A",
+      "C"
+    ],
+    "explanation": "The transcript explicitly makes two key points: first, that music is not 'bound to the uniqueness of instances' and that 'reproducibility and reinterpretation are important characteristics'; second, that for symbolic music, 'the musical text itself is first created by the encoding,' unlike text where markup is added to an existing text."
+  },
+  {
+    "id": "14-01",
+    "lecture": 14,
+    "lecturer": "Tobias Hodel",
+    "topic": "Early Modern History",
+    "type": "single",
+    "question": "According to the lecture, why is Patrick Saale's 'documentary approach' to text particularly important for machine learning applications on historical manuscripts?",
+    "options": {
+      "A": "Because machine learning models for text recognition must start with an image of the physical document.",
+      "B": "Because it defines text as a simple string of characters, which is how computers store data.",
+      "C": "Because it prioritizes the author's original intention, which machines are now able to understand.",
+      "D": "Because digital scholarly editions have made physical documents obsolete for computational analysis."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The transcript states, 'For our approach it's really important to think about text as a document, because if we want to use a machine to deal with handwritten documents or even with printed documents, it needs to rely on an image. And the image can only focus on the document itself.'"
+  },
+  {
+    "id": "14-02",
+    "lecture": 14,
+    "lecturer": "Tobias Hodel",
+    "topic": "Early Modern History",
+    "type": "single",
+    "question": "What is a key difference in the creation process between the Königsfeld Ebi and the Bernese Tower Books corpora as described in the lecture?",
+    "options": {
+      "A": "The Königsfeld corpus was transcribed entirely by machine, while the Tower Books were transcribed by hand.",
+      "B": "The Königsfeld corpus was created by experts over four years, while the Tower Books project utilizes a student-led approach in courses.",
+      "C": "The Tower Books corpus is much smaller, with only 1,000 pages compared to Königsfeld's 300,000.",
+      "D": "The Königsfeld corpus contains interrogation protocols, while the Tower Books are a scholarly edition of charters."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The lecture explains that the Königsfeld edition was 'entirely handmade. So basically experts working on these documents' and took 'about four years'. In contrast, for the Tower Books, 'we took a student-led approach. So basically we regularly offer courses where people work on the whole workflow.'"
+  },
+  {
+    "id": "14-03",
+    "lecture": 14,
+    "lecturer": "Tobias Hodel",
+    "topic": "Early Modern History",
+    "type": "single",
+    "question": "What was the most significant finding when the Named Entity Recognition (NER) tagger was applied to the automatically transcribed (and imperfect) Tower Books documents?",
+    "options": {
+      "A": "The tagger's performance dropped to nearly zero, proving that perfect transcription is required for NER.",
+      "B": "The process successfully linked all identified entities to the Wikidata database automatically.",
+      "C": "The tagger could successfully identify entities like person names even when the text recognition contained character errors.",
+      "D": "The automatically transcribed text had a Character Error Rate (CER) of only 2.5%, making it nearly perfect."
+    },
+    "correct": [
+      "C"
+    ],
+    "explanation": "The lecturer concludes: 'the tagger is possible, thanks to the language model, to tag correctly the instances... Now we can claim that we don't need perfect transcriptions in order to process this information further.' This shows that NER can work on imperfect HTR output."
+  },
+  {
+    "id": "14-04",
+    "lecture": 14,
+    "lecturer": "Tobias Hodel",
+    "topic": "Early Modern History",
+    "type": "multi",
+    "question": "According to the lecture, which factors were shown to influence the Character Error Rate (CER) in Handwritten Text Recognition? (Select all that apply)",
+    "options": {
+      "A": "The programming language used to build the recognition engine.",
+      "B": "The number of different scribes (hands) included in the training data.",
+      "C": "The regularity and skill of the original scribe's handwriting.",
+      "D": "The total amount of training data (e.g., number of words) used."
+    },
+    "correct": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "The lecture provides examples showing CER is affected by: including multiple hands (B), the writer being 'quite regular' or a 'highly skilled and trained scribe' (C), and the size of the training dataset, comparing results from 5,000, 50,000, and 150,000 words (D). The programming language was not mentioned as a factor."
+  },
+  {
+    "id": "14-05",
+    "lecture": 14,
+    "lecturer": "Tobias Hodel",
+    "topic": "Early Modern History",
+    "type": "multi",
+    "question": "Based on the lecture, what are the key roles and characteristics of language models in the described workflow for processing historical documents? (Select all that apply)",
+    "options": {
+      "A": "A more domain-specific language model can be more important for NER performance than the size of the tagger's training data.",
+      "B": "Their primary function is to perform entity linking with external databases like Wikidata.",
+      "C": "They are a crucial component for both Handwritten Text Recognition (HTR) and Named Entity Recognition (NER).",
+      "D": "They can represent words as vectors, allowing context-dependent meanings of the same word (like 'Stadt') to be distinguished."
+    },
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "The lecture states that the comparable NER results between corpora showed 'it's not really about the training of the tagger, but rather the language model behind' (A). The workflow shows they are needed for HTR and NER (C). The 'Stadt' example demonstrates how they can distinguish homonyms through vector clustering based on context (D). Entity linking is described as a separate, subsequent step."
+  },
+  {
+    "id": "14-06",
+    "lecture": 14,
+    "lecturer": "Tobias Hodel",
+    "topic": "Early Modern History",
+    "type": "multi",
+    "question": "Which of the following are presented in the lecture as direct consequences or challenges of applying machine learning to historical research? (Select all that apply)",
+    "options": {
+      "A": "It allows for the creation of perfect, error-free scholarly editions with the press of a button.",
+      "B": "It requires humanities scholars to develop at least a basic understanding of machine learning methods.",
+      "C": "Machine learning models can learn and reproduce biases that are present in their training corpora.",
+      "D": "It raises new questions regarding copyright and authorship for the generated data and models."
+    },
+    "correct": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "The lecturer explicitly states that the next generation of scholars 'will need to have a basic understanding of machine learning' (B), that models will 'learn these biases and represent these biases' from the corpus (C), and that it will 'result in new questions with regards to copyright and authorship' (D). The idea of 'press of a button' perfection is explicitly refuted."
+  },
+  {
+    "id": "15-01",
+    "lecture": 15,
+    "lecturer": "Tobias Wildi",
+    "topic": "Archives",
+    "type": "single",
+    "question": "What is the primary distinction the lecturer makes between the collections of libraries and archives?",
+    "options": {
+      "A": "Libraries contain multiple copies of published works, while archival collections are typically unique.",
+      "B": "Libraries focus on preserving digital materials, whereas archives primarily handle paper-based records.",
+      "C": "Archives are publicly funded institutions, while libraries are usually private.",
+      "D": "Libraries organize materials by subject, while archives organize everything chronologically."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The transcript states: 'Archive collections are usually unique, that's where we have a difference to libraries. In libraries you have books which have been printed many times...'"
+  },
+  {
+    "id": "15-02",
+    "lecture": 15,
+    "lecturer": "Tobias Wildi",
+    "topic": "Archives",
+    "type": "single",
+    "question": "According to the lecture, what is the approximate percentage of records produced by public administration that is ultimately selected for long-term preservation in an archive?",
+    "options": {
+      "A": "Roughly 50%, as most administrative records are considered historically valuable.",
+      "B": "Only 3-5%, because archives would be overwhelmed if they tried to keep a higher percentage.",
+      "C": "About 10-15%, which has increased significantly since the advent of digital records.",
+      "D": "Over 75%, due to legal mandates requiring comprehensive government transparency."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The transcript states: '...only 3 to 5% of the records and data produced in the public administration will be preserved in an archive... The archives would be completely overwhelmed if they would try to keep a much higher percentage...'"
+  },
+  {
+    "id": "15-03",
+    "lecture": 15,
+    "lecturer": "Tobias Wildi",
+    "topic": "Archives",
+    "type": "multi",
+    "question": "Which of the following are identified in the lecture as the two main principles for structuring archival collections?",
+    "options": {
+      "A": "The principle of provenance, which keeps records from different origins separate.",
+      "B": "The principle of accessibility, which requires all materials to be available online.",
+      "C": "The principle of original order, which preserves the arrangement in which records were created or used.",
+      "D": "The principle of subject classification, which groups records by topic for easier research."
+    },
+    "correct": [
+      "A",
+      "C"
+    ],
+    "explanation": "The lecturer introduces 'The first important principle is called the principle of provenance' and then 'This second principle we call the original order.' The lecture explicitly states that archives do not mix content along subjects, making D incorrect."
+  },
+  {
+    "id": "15-04",
+    "lecture": 15,
+    "lecturer": "Tobias Wildi",
+    "topic": "Archives",
+    "type": "multi",
+    "question": "Which of the following statements accurately describe the metadata standards used in archives, according to the lecture?",
+    "options": {
+      "A": "ISAD(G) is the most commonly used standard for describing the content of archives in a hierarchical way.",
+      "B": "ISR(CPF) and ISDF are widely used alongside ISAD(G) to describe agents and functions, respectively.",
+      "C": "Archives are currently transitioning away from ISAD(G) and other older standards towards new ones.",
+      "D": "The main purpose of ISAD(G) is to structure data for machine-to-machine access via APIs."
+    },
+    "correct": [
+      "A",
+      "C"
+    ],
+    "explanation": "The transcript states that ISAD(G) is the current standard for description and is structured hierarchically. It also mentions that 'Most of the archives today they only use ISAG and rarely ISRCPF or ISDF,' making B incorrect. The lecturer also notes that the current situation 'is about to change to new standards,' confirming C."
+  },
+  {
+    "id": "16-01",
+    "lecture": 16,
+    "lecturer": "Julien Chiquet",
+    "topic": "Digital Photography",
+    "type": "single",
+    "question": "What is the lecturer's main argument regarding the relationship between digital photo manipulation and historical photographic practices?",
+    "options": {
+      "A": "Digital manipulation is largely a continuation of techniques and desires that have existed since photography's origins.",
+      "B": "The rise of digital photography marked a radical break, introducing the concept of image manipulation for the first time.",
+      "C": "Historical manipulation was purely for artistic purposes, while modern manipulation is primarily for deception.",
+      "D": "Digital tools have made manipulation easier, but the fundamental impulse to alter images has significantly weakened."
+    },
+    "correct": [
+      "A"
+    ],
+    "explanation": "The lecturer explicitly states, 'it would be a mistake to assume that this impulse began with the rise of digital photography... the desire and determination to modify camera images are as old as photography itself,' emphasizing continuity over a radical break."
+  },
+  {
+    "id": "16-02",
+    "lecture": 16,
+    "lecturer": "Julien Chiquet",
+    "topic": "Digital Photography",
+    "type": "single",
+    "question": "According to the lecture, what was the primary goal of John Heartfield's photomontages?",
+    "options": {
+      "A": "To create politically persuasive fake news that appeared completely real in order to deceive the public.",
+      "B": "To make the audience critically aware of media manipulation and encourage a more reflective consumption of images.",
+      "C": "To perfectly document historical events for the 'Arbeiter Illustrierten Zeitschrift' using montage techniques.",
+      "D": "To demonstrate the artistic superiority of photomontage over traditional news photography."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The lecture explains that Heartfield's work aimed to 'fuel media reflection' and turn readers into 'semi experts of the photographic reproduction' by fighting the 'unreflective handling of mass media content,' rather than to simply deceive them."
+  },
+  {
+    "id": "16-03",
+    "lecture": 16,
+    "lecturer": "Julien Chiquet",
+    "topic": "Digital Photography",
+    "type": "multi",
+    "question": "Based on the lecture, what are some of the major cultural effects of the shift to digital photography? (Select all that apply)",
+    "options": {
+      "A": "A widespread loss of faith in the photograph as a trustworthy representation of reality.",
+      "B": "The complete elimination of film-based photography and chemical darkrooms from all contexts.",
+      "C": "A significant increase in the accessibility of image alteration tools for the general public.",
+      "D": "A change in the primary mode of viewing photographs from physical prints to digital screens."
+    },
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "explanation": "The transcript mentions a 'loss of faith in photography,' that digital technology has made alteration 'more accessible to many more people,' and that instead of 'glossy prints, we start at the glowing screens.' It does not claim that film has been 'completely eliminated,' only that it has been largely replaced."
+  },
+  {
+    "id": "16-04",
+    "lecture": 16,
+    "lecturer": "Julien Chiquet",
+    "topic": "Digital Photography",
+    "type": "multi",
+    "question": "The lecture connects Walter Benjamin's theories to John Heartfield's work. Which of the following concepts from the lecture accurately describe this connection? (Select all that apply)",
+    "options": {
+      "A": "Benjamin's idea of the 'loss of aura,' which explains why Heartfield's mass-produced montages were seen as less artistic.",
+      "B": "The democratic potential of image reproducibility, which allows artists like Heartfield to participate in mass media discourse.",
+      "C": "The belief that audiences learn effectively through shocking or entertaining experiences rather than direct instruction.",
+      "D": "An argument that all forms of photographic manipulation, including Heartfield's, should be legally restricted to preserve truth."
+    },
+    "correct": [
+      "B",
+      "C"
+    ],
+    "explanation": "The lecture highlights Benjamin's focus on the 'democratic possibility' of reproducibility, exemplified by Heartfield's work in a mass-media magazine. It also directly links Benjamin's idea that the masses 'can absorb knowledge only with the little shock' to Heartfield's method of making the audience 'smarter' without directly 'instructing' them."
+  },
+  {
+    "id": "17-01",
+    "lecture": 17,
+    "lecturer": "Yannick Rochat",
+    "topic": "Game Studies",
+    "type": "single",
+    "question": "According to the lecturer, what is the most productive contemporary approach to defining what a 'game' is?",
+    "options": {
+      "A": "To rely on the typologies of early 20th-century theorists like Huizinga and Caillois who studied play.",
+      "B": "To accept a broad, socially constructed definition where a game is what people identify as a game.",
+      "C": "To create a succinct, technical definition based on a game's core mechanics and interactive elements.",
+      "D": "To analyze the source code and hardware, as the true definition of a game lies in its technical implementation."
+    },
+    "correct": [
+      "B"
+    ],
+    "explanation": "The lecturer dismisses the definitional debates of the early 2000s as 'a bit outdated' and quotes Robert Zuback's resistance to a succinct definition. He then states, 'I find it very interesting to take the definition from people in social sciences, especially. A game is what people say is a game.'"
+  },
+  {
+    "id": "17-02",
+    "lecture": 17,
+    "lecturer": "Yannick Rochat",
+    "topic": "Game Studies",
+    "type": "single",
+    "question": "The lecturer draws a direct parallel between the academic fields of Game Studies and Digital Humanities. What is the key similarity he highlights?",
+    "options": {
+      "A": "Both fields originated in Scandinavian countries and North America.",
+      "B": "Both fields are primarily concerned with the preservation and archiving of digital heritage.",
+      "C": "Both fields are highly interdisciplinary, drawing on a diverse range of methods from other disciplines.",
+      "D": "Both fields heavily utilize game engines like Unity and Unreal for conducting and presenting research."
+    },
+    "correct": [
+      "C"
+    ],
+    "explanation": "The transcript states: '...there is a similar trajectory for game studies as digital humanities. It starts with the objects that we study is so diverse that we can borrow from so many different fields, from so many methods when you want to study a video game.'"
+  },
+  {
+    "id": "17-03",
+    "lecture": 17,
+    "lecturer": "Yannick Rochat",
+    "topic": "Game Studies",
+    "type": "multi",
+    "question": "Which of the following are presented in the lecture as specific examples of game studies research being conducted at Swiss institutions? (Select 2 or 3)",
+    "options": {
+      "A": "A project at the University of Fribourg focused on understanding the rules and mechanics of games from ancient times.",
+      "B": "A laboratory at the University of Lausanne investigating the impact of playing video games on the human brain.",
+      "C": "Research at the University of Basel that uses e-sports performance data to develop new human-computer interaction theories.",
+      "D": "A large-scale, recently funded project to study the history of Swiss-produced video games in the 20th century."
+    },
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "The lecturer mentions: (A) Professor Veronique Dasen's ERC project at Fribourg to 'study games in the ancient times'; (B) the Bavaria Lab at the University of Lausanne, which tries 'to understand the impact on the brain of playing video games'; and (D) a 'big grant' accorded to 'study video games in Switzerland in the 20th century'. The specific focus mentioned for Basel was psychology and HCI, not e-sports data."
+  },
+  {
+    "id": "17-04",
+    "lecture": 17,
+    "lecturer": "Yannick Rochat",
+    "topic": "Game Studies",
+    "type": "multi",
+    "question": "The lecture describes several scholarly approaches to video games that look beyond the player's immediate gameplay experience. Which of the following approaches were mentioned? (Select 2 or 3)",
+    "options": {
+      "A": "Analyzing a game's source code as a historical document to understand its production context.",
+      "B": "Studying how factual history is negotiated against gameplay mechanics in historical games.",
+      "C": "Using game engines to create simulations that predict the commercial success of future games.",
+      "D": "Investigating a game's hardware platform to understand its industrial and technical constraints."
+    },
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "The transcript describes: (A) studying source code 'as a historical document or as a literary work' (critical code studies); (B) the study of 'the representations of history in video games' and the 'equilibrium' between facts and gameplay; and (D) 'platform studies,' which 'invite researchers to think about the hardware like a computer or video game console' and its 'industrial constraints'."
+  }
+]

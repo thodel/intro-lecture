@@ -85,6 +85,15 @@
   .type-single { background: #1368ce44; color: #60a5fa; }
   .type-multi  { background: #7c3aed44; color: #c084fc; }
 
+  .q-lecturer {
+    text-align: center; margin-bottom: 8px;
+    font-size: 13px; font-weight: 800; letter-spacing: 0.03em;
+  }
+  .q-lecturer span {
+    display: inline-block; padding: 4px 14px;
+    background: rgba(99,102,241,0.25); border: 1px solid rgba(99,102,241,0.45);
+    border-radius: 20px; color: #c4b5fd;
+  }
   .q-text {
     background: white; color: #1a1035; border-radius: 14px;
     padding: 18px 20px; font-size: clamp(15px,3.5vw,19px); font-weight: 700;
@@ -221,6 +230,7 @@
   </div>
 
   <div class="q-meta" id="qMeta"></div>
+  <div class="q-lecturer" id="qLecturer"></div>
   <div class="q-text" id="qText"></div>
   <div class="answers" id="answers"></div>
   <div class="multi-confirm" id="multiConfirm" style="display:none">
@@ -343,6 +353,7 @@ function loadQuestion() {
      <span class="q-type-badge ${isMulti?'type-multi':'type-single'}">
        ${isMulti ? 'Multi-select' : 'Single answer'}
      </span>`;
+  document.getElementById('qLecturer').innerHTML = `<span>📚 ${q.lecturer} — ${q.topic}</span>`;
   document.getElementById('qText').textContent = q.question;
   document.getElementById('feedback').style.visibility = 'hidden';
   document.getElementById('feedback').textContent = '';

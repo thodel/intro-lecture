@@ -1,0 +1,191 @@
+Welcome to my introduction to corpus linguistics, with which I would like to give you a small
+insight into this field.
+My aim is to introduce the basic ideas and basic concepts.
+You can then of course explore the topic further, depending on your interests.
+There are very many research questions that ultimately have something to do with language
+or language use, not only linguistics, also in related disciplines.
+Of course, this is due to the fact that we in society negotiate our values, attitudes
+and points of view linguistically.
+Therefore, you can read a lot about society from language use.
+Here are examples of such questions.
+What new expressions has the corona pandemic produced and what do they mean?
+What does solidarity mean?
+How do texts from politically left-wing and right-wing parties differ?
+Is language changing with social media?
+How?
+Is the genitive in German dying out?
+Does language use reflect an outdated understanding of gender?
+How does Swiss standard German differ from German in Germany or Austria?
+How many Englishes are there?
+If you want to explore such questions, we can, for example, sit down in a nice armchair
+and think about them.
+This is what has been done in linguistics for a long time.
+What is the meaning of this word?
+Is this sentence grammatically correct?
+But we don't want to do that.
+We are corpus linguists, so we take an empirical approach.
+We look at actual language use.
+To do that, we use corpora, very large collections of texts that represent language use.
+This is, of course, an exaggerated juxtaposition of armchair linguistics and corpus linguistics.
+We are always a bit of both.
+So what do corpora offer us?
+We can, for example, search for a word here for solidarity.
+Then we get a concordance, so we see in which context the expression occurs and how often.
+However, we do not want to read tens of thousands of records, but rather get an overview of
+the typical contexts.
+This is what so-called collocation profiles offer us.
+Collocations are a statistical measure used to calculate which other words typically occur
+to the header with the source word.
+Words that occur more frequently together with the source word than we would expect in
+relation to the general frequency of the word are conspicuous.
+Or in other words, we see what the typical contexts are and thus get a summary of the
+concordances.
+From this, we can infer the meaning of the word.
+If I know how the word is normally used, then I can derive its meaning from that.
+This is the basic idea of contextualism and distributionalism.
+Of course, it is also interesting to see how often the word is used at all and how it is
+distributed over time, for example.
+We see here that solidarity has an important expression in these corpus in the 1970s and
+80s.
+You may not yet be convinced that corpus linguistics is a great method.
+Therefore, let's ask a big language model, a so-called artificial intelligence.
+Here I ask chatGPT.
+Why should students of linguistics learn corpus linguistics?
+Corpus linguistics provides students of linguistics with a valuable tool for analyzing real-life
+language use, which can enhance their understanding of language structure, function, and usage,
+etc.
+That sounds very convincing, doesn't it?
+We can also ask for advice in French about the solidarity theme.
+Why does such a language model work so well in the first place?
+And how does it work?
+There we are now at the core of what the corpus linguistics idea is all about.
+The question is, after all, what language actually is?
+One possible answer is to say that language consists of a lexicon and grammatical rules.
+No, language is a collection of patterns of language use, regularities, and norms of use.
+This is what an AI model takes advantage of.
+It learns very well what are typical patterns of language use without needing to know anything
+about grammar.
+We could say that an AI is a kind of a stochastic parrot that has picked up many patterns and
+can parrot them in ever-new combinations.
+And that's the idea when we do corpus linguistics, want to identify and interpret the typical
+patterns in language use.
+There's also another interesting theoretical background.
+I like to talk about corpus pragmatics for the kind of corpus linguistics that interests
+me.
+Pragmatics is, after all, an important basic assumption of linguistics which can be grounded
+in Austin and Sears Speech Act theory.
+Speaking is not simply describing something or conveying information, but is acting.
+This idea has prevailed in many disciplines to this day and has also inspired the so-called
+linguistic turn.
+Corpus pragmatics builds on this and sees traces of linguistic action in patterns on
+the linguistic surface.
+Thus it becomes clear that social action, social discourses become visible on the linguistic
+surface.
+Now it's interesting that quantitative methods are strong in identifying linguistic patterns.
+This is what corpus linguistics can do.
+The identified patterns can now be interpreted in different ways.
+They are expressions of grammar, linguistic variation, etc.
+But they are also related to social and cultural phenomena.
+They are symptoms of this phenomena and at the same time they constitute them.
+We can see this in the example of greetings.
+In spoken language we find many linguistic patterns of greetings used the same or similar
+formulas again and again.
+This is due to the fact that greetings play an important social role in interaction.
+So corpus pragmatics is about finding clues about how society and culture works and how
+it changes by analyzing language use.
+Clearly, corpus linguistics is an empirical method.
+Thus unlike rationalism it is concerned with finding insights through observation.
+Whereas rationalism finds insights through logical inference.
+Of course one often moves back and forth between these two levels.
+There are many different empirical methods.
+These include observation, experiment, questionnaires and just the analysis of primary data as we
+do in corpus linguistics.
+Now we have already talked a lot about corpora but we have not yet defined more precisely
+what a corpus is.
+Here is a definition by Lemnitzer and Zinsmeister.
+Corpus is a collection of written or spoken utterances.
+The data of the corpus is typically digitized, that means stored on a computer and machine
+readable.
+The components of the corpus, the texts consist of the data itself and possible metadata describing
+this data and from linguistic annotations associated with this data.
+The definition makes clear that of course corpora existed before the invention of the
+computer but digitization has drastically changed the ways in which corpora can be analyzed.
+Metadata is any data that describes a text in more detail, for example author, source,
+date etc.
+By linguistic annotations we mean for example part of speech, to each word is added, usually
+automatically the corresponding part of speech.
+Often the base form, the infinitive is also added, the syntactic function or similar information.
+So what is corpus linguistics?
+Here again a definition by Lemnitzer and Zinsmeister.
+Corpus linguistics refers to the description of utterances, natural languages of its elements
+and structures and theory building based on it.
+Based on analysis of authentic texts collected in corpora.
+So it is about authentic texts, in other words texts that have not been created especially
+for the analysis but that have been created for other reasons.
+And what we use afterwards to analyze them with corpus linguistic methods.
+You are probably wondering how or rare to get corpora.
+Fortunately there are already a great many prepared corpora that you can use.
+Here are a few hints.
+First you have to realize that there are different types of corpora.
+The classic text corpora usually really only contains the text of the original data, no
+images, no typographic features etc.
+And they are based on written texts.
+But there are also spoken language corpora or multimodal corpora where that requires transcription
+to put the spoken language into a text form.
+In addition there are many multilingual corpora also called parallel corpora.
+In these for example each text is available in English and French.
+The texts are also often aligned that means there are references that make it clear which
+sentence corresponds to which sentence in the other language.
+Sometimes there is even word alignment.
+This is interesting data to train machine translation systems.
+In addition there are very many text collections and archives that are not actual linguistic
+corpora but that can be used to create corpora themselves.
+Now here I have a few pointers to directories that list corpora.
+New corpora being added all the time so it is useful to consult such repositories.
+I also refer to my online introduction to corpus linguistics where you will find not
+only references to mainly German language corpora but also tutorials on corpus analysis.
+In addition I would like to refer to Swiss docs at Leary.
+This is a huge database of all major Swiss media.
+The data can be used for academic purposes and corpus analysis.
+So far we have only scratched the surface.
+There is still much to delve into.
+If you want to explore corpus linguistics further you can look into forms of annotation.
+There are now powerful tools that automatically annotate part of speech and syntax, do morphological
+analysis or add semantic annotation.
+In addition you have to deal with analysis options.
+Very briefly I have already shown how useful collocation analysis are but also the distribution
+of a phenomenon over the data is interesting.
+Thus temporal expressions can be analysed or the different usage in different newspapers,
+institutions etc. can be studied.
+Moreover, as a further development of collocation analysis, distributional semantics has become
+very important today.
+With methods similar to those used by an AI, semantic spaces can be computed.
+Thus it is possible to investigate how a particular social discourse shapes a very specific semantic
+space.
+Finally, I would like to show you an example how you might approach corpus analysis.
+Let's assume that you have a research question about solidarity.
+What is understood by solidarity in society?
+Has this changed over the past decades?
+Then you need to first sharpen this research question.
+Are you starting from the concept of solidarity, which can also be expressed quite differently,
+or from the term the word solidarity?
+What data do you want to use that will represent society?
+Then you might consider that by calculating collocation profiles you can analyse the semantics
+of the expressions under study.
+And you might consider looking at historical change by looking at the change in collocation
+profiles and also looking at the change in frequencies of use.
+So you can now define the exact research setting depending on specific hypothesis that you
+have.
+For example, you decide on Swiss media obtained from the Swiss Stocks at Leary archive and
+for the period from 1990 to 2020.
+The corpus queries then consist of a collection of expressions of the concept solidarity.
+You found these expressions by doing corpus analysis beforehand to find out how solidarity
+is verbalised, or you have additionally consulted dictionaries.
+Then you do the analysis and calculate, for example, per decade collocation profiles.
+You can then interpret this by categorising the collocators and describing the changes.
+Of course there are many ways to do corpus analysis and it is certainly good to ask how
+other researchers have proceeded.
+That brings me to the end of this little excursion into corpus linguistics.
+Here are a few more pointers to introductions to corpus linguistics that will be useful
+for further study.
+Have fun with corpus linguistics.

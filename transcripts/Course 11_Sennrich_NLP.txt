@@ -1,0 +1,435 @@
+Hello and welcome to this lecture in the series Introductions to Digital Humanities.
+Today I will talk about natural language processing.
+Let me first say a few words about myself.
+My name is Riko Sennig.
+I'm at the University of Zurich and my main area of research is natural language processing.
+During my PhD I worked mainly on machine translation, but I did that on historical text.
+That's also one link of mine to digital humanities.
+I worked on making the algorithms for machine translation of data preparation more robust
+for historical text, which were also noisy due to the digitization process.
+I spent 90 years at the University of Edinburgh, a bit more virtually, continuing working on
+machine translation.
+I have this illustration here for my work there showing that I focused on working on
+language representations, for example, syntactic representations, but also word representations.
+Since 2019 I've been back in Zurich, working on natural language processing with many students
+on various aspects, still some machine translation, but also working with new modalities like
+speech or visual signals, but also with historical texts, which come in many languages.
+What I want to do today is talk about how natural language processing can be useful for
+digital humanities.
+I will talk about one technique, language modeling, which can actually, in some varieties
+of it, be very flexible used for many tasks.
+For example, if you want to digitize historical documents, you might want to use optical character
+recognition to do this automatically.
+You might want to apply some transformation to your text to make it more accessible or
+searchable or do some downstream processing.
+You might want to normalize your text or translate it.
+Or you might want to annotate it to some linguistic analysis, so identify named entities and linking
+them or identify the sentiment of text that could be used for, again, large scale analysis
+of large text collections.
+Also, just for accessibility sake.
+We are lucky that we live in a time where natural language processing has made such
+a large progress in recent years.
+I can also talk about the different ways in which you can use natural language processing
+for your work.
+Ten years ago, it was a bit different when I started my PhD.
+This was a newspaper headline at the time where a journalist was talking about the plan
+of Google to work on real-time translation on the phone, speech translation, and the
+commentary was, are they now megalomaniacs?
+Because it sounds a bit gag-a-discord if you look at the translation quality of text translation
+at the time.
+Now we can see that these scores actually were not as gag-a-discord or as megalomaniac
+as they seem at the time and they actually have achieved quite good text translation
+and also have made advances in speech translation and other tasks.
+What I want to do today is first talk a bit about how natural language processing models
+work.
+I will look at a specific type of model that can be used for modeling language and also
+with a condition on other things, modeling translation, text recognition.
+Then in the second part I will draw the link to digital humanities and show some example
+applications and what a practitioner has to think of when they want to apply natural language
+processing to their task.
+So when I talk about how natural language processing works I will talk a bit about the
+perspective for machine translation because that's what I'm most familiar with but I
+hope I can convince you also in the course of this lecture that actually a lot of the
+methods are very generic and if you understand how machine translation can work you will
+also understand other approaches to mapping some sequence of text to some other sequence
+of text.
+I want to talk a bit about the current models by contrasting them as historical models and
+also help you understand why the models look the way they do right now.
+I made this caricature of natural language processing how it was done in the last century
+where people were attempting to write rules to deal with the transformations, for example,
+that you need to do in translation.
+At first it can look quite simple if you want to translate something like Ehera-Danen-Krebs
+as the typical you could say, well we do have bilingual dictionaries of translations,
+why don't we just look up each word and put the translations there.
+That's quite simple to do but it turns out you actually only get one of the five words
+here translated directly, the others wouldn't be in a dictionary in this form.
+Not too bad if you do a bit of morphological analysis, some kind of identifying the base
+forms via lemmatization then you actually get four of the five.
+Unfortunately it gets a bit more complicated because there are some words you might not
+see like this in the in your dictionary like Krebs test is a more compound consisting of
+several components so you might need to actually split this up and look up the individual
+parts and then you get something like a Krebs test.
+Of course we don't have a nice translation yet because on the target side we also need
+some kind of morphological analysis and generation component to be able to say oh I actually
+want to not produce the base form but I want to produce in flexed form like here third
+person singola or here as well.
+You might see that this is actually wrong because some word forms can be ambiguous so
+if you have something like entwichled you actually need to decide that here it's not
+third person singola, here it's actually a participle form so here we will translate
+it as developed and you also need to do some syntactic analysis to then identify that and
+identify whether we actually put this in the target sentence so we have some kind of reordering.
+So we've had to do a lot of work, had to write a lot of linguistic analysis components and
+generation components.
+So the smiley has turned a bit into a saddy here.
+Well we have stuck with one problem that's really hard now to solve with rules which
+is that the problem of meaning here probably we're not talking about the Krebs test, we
+are probably not talking about the cancer test.
+But how can I write rules that will be able to tell me for words that maybe I haven't
+seen before like Krebs says when one meaning would be appropriate and when another meaning
+and another translation would be more appropriate.
+And this problem has caused the shift in the 90s to statistical methods, data driven methods
+and for translation one symbol of the shift is that there is of course much older this
+Rosetta stone and illustrates why we can make this shift because the Rosetta stone was
+used to actually decipher the Egyptian hieroglyphs by being able to align the hieroglyphs with
+two other texts.
+One was the Egyptian Demotic script and one was an ancient Greek translation.
+So if you actually have a text that you don't understand but you have a translation of it
+in a language you do understand then it is possible for smart people to then be able
+to also decipher and slow to get to understand the original text that you didn't at first
+know what it means.
+Now I wouldn't say that the algorithms that we are going to use are as smart as the researchers
+who worked on the Rosetta stone but luckily enough we also have a lot more texts that
+we can use for training.
+So what do we need for training machine translation systems?
+We need lots of texts that have been translated and these texts exist in large quantities.
+So I'm just looking here at some data collections for English German and I'm going to say like
+how many words do we have, how many sentences but also as a way of putting this in context
+I'm counting the number of books and I'm using the whole thing here because that's actually
+quite nicely quite a nice round number about 100,000 words of 5000 sentences.
+So there are large scale text collections that have been used for translations like the transcripts
+of the European Parliament which have been translated into many official European languages.
+That's actually quite a sizeable collection of translations about 50 million words, about
+500 books worth of translations.
+Other popular collections are for example subtitles in movies and TV shows which are
+also shared on the website OpenSubtitles and where we have like three times as much data
+as we have from the European Parliament already about 1,000 to 2,000 books worth.
+The largest collections of translations that we have are the ones that are automatically
+crawled from the internet and one project per crawl for English German in that project
+we have around 4,000 million words, about 300 million sentences that consist roughly
+to 40,000 books worth of translation material.
+So that this is more than a human would ever read but it's a good basis for these automatic
+algorithms to try to learn to translate from them.
+And the basic assumptions that we make in these data-driven approaches to modeling translation
+is that we try to extract some statistics from the training data from these existing
+translations and we make the basic assumption that when we see a translation there frequently
+then it's likely a good translation.
+So we can train our system by trying to count frequencies and translation probabilities from
+there and then when we need to generate a new translation we say if we take the most
+frequent which are also the most probable translations and produce this then this is
+likely also a good translation.
+It's not always 100% true but it's a good approximation that works in practice.
+By the way when we're not dealing with translation but just dealing with text like in one language
+we can make do something very similar we call this then language modeling.
+And the only difference that exists here is that we are not saying we are not counting
+translations of words but we just count how texts are being continued with what are probable
+of frequent continuations of a text.
+And then with these language models we can also create new sentences by saying well let
+me create let me generate a text that is probable under my model.
+We are probably not generating the most probable sentence because that's going to be boring
+that's always going to be the same sentence.
+In some dialogue the most common response might be I don't know which is not a very
+interesting response if you want to create a model that automatically chats with you.
+So there's often we can introduce some randomness and say create something that has some high
+probability but it doesn't need to be always the most probable.
+Now in statistical machine translation since the 90s what people have done is use some kind
+of fragmentation of the text to deal with the problem that we can't easily just count
+sentences how sentences have been translated because if you just count sentences and then
+you encounter a sentence that you've never seen before you don't have any statistical
+evidence of what a good translation is.
+But if you do this on the level of words or maybe small sequences that we call here phrases
+then we can start counting and we can say oh Herr Steyger is often translated as Mr. Steyger
+and is sometimes translated as has and so on and so forth and when we then want to translate
+something new we can take these words in the source text we can look for frequent translations
+of these and put them together.
+Now in practice this doesn't always work great because maybe the most frequent translation
+of is is is and then you put this here and then you get Mr. Steyger is gone to Cologne.
+So you get some things that can locally you make the right decisions but the whole translation
+that it produced is going to be ungrammatical because the pieces these fragments that you
+combine and don't fit well together.
+This fragmentation approach when we talk about translations we call these phrase pairs when
+we just talk about text we call these 10 grams and this has some basic limitations which
+I want to illustrate with an example.
+So one limitation is that we're going to be able if you have seen something a lot of
+times we're going to be able to make good predictions of what are good fragments and
+what are bad fragments.
+So we can say oh the dog barks that's more probable because it's much more frequent
+than the dog meows and the cat meows is a lot more probable than the cat barks.
+But what if you have some rare dog breed like a Chihuahua and you've seen this dog breed
+a few times in your training data but you haven't actually seen it with the continuation
+of the barks or meows supposed to be count as zero.
+Which one is more probable?
+Well you can't say based just on that.
+Another limitation is if you want to model some interactions over longer distances so
+let's imagine you have the dog in the pet store barks and the cat in the pet store barks.
+Which one is more probable?
+Well for us it's clear the dog this sentence here is the better sentence because dogs bark
+but cats don't.
+But if you slice up this sentence into small fragments and you look at whether these individual
+fragments are plausible they all sound fine.
+They all will be well evidenced in the text that you train on.
+So he has no dependency and no ability to say the cat in the pet store barks should be less
+probable than the dog in the pet store barks.
+Now around 2015 in machine translation maybe a few years earlier in language modeling an
+alternative method for dealing with these limitations has arisen which is called neural
+machine translation or neural language modeling.
+The basic idea is that you're not going to do a fragmentation of our text and then count
+the frequencies of our fragments but to learn some continuous numerical representations of
+words or sentences or even sentence pairs.
+And based on these we want to learn representation from which the task of predicting the next
+word is going to be as easy as possible.
+And if you can find this representation then we can actually generate text by just doing
+a chain of predict the next word, get a new representation of what you've produced so
+far and then predict the next word again and again and again.
+So if you find a good representation the task should be easy but of course finding a good
+representation has been a hard challenge.
+But I'm just going to illustrate how such a representation could look on the level of
+words.
+So the basic idea would be that we want to learn a representation where similar words
+like different breeds of dogs have similar representations and other words like similar
+breeds of cats would have representations here.
+But you can see that these build some clusters that are clearly separate and then we could
+have a simple classification that says well if the word is one of these then the next
+word is probably going to be barks and if it's one of these words the next word is
+probably going to be meows.
+Now this is a simplification in many ways because in practice we have more than just
+possible classes of next words, we might have tens of thousands there but we also have much
+more complex representations.
+So this would be here a two dimensional representation, in practice it might be 500 dimensional or
+a thousand dimensional.
+So we can actually in theory have a lot of nuanced differences in meaning than represented
+along different dimensions of these representations.
+How do we learn this model?
+Well, we can start with some random representations of the words and then we compare the prediction
+the model makes against the true next word that we see in our training data.
+And whenever the model makes a mistake we can slightly update the representations.
+So imagine here we have leopard and we see the first time and we make a prediction here
+and the prediction would be that the next word will be barks but actually leopards are
+type of felines so they are more likely to meow.
+So what do we do if we see this well?
+We can do two things, we can slightly move the representation of leopard in the direction
+that the correct prediction will be meow.
+We can also slightly adjust the decision boundary here, slightly rotate it that the leopard
+lies on the right side of the decision boundary.
+And we can actually do both of these things at the same time.
+We will just do this in very small increments because we look at millions of these training
+examples or billions of examples and always make small updates to try to minimize the
+error that the model makes on this example.
+And then over many examples that we have seen it turns out that we arrive at relatively
+good representations where we can then make these predictions not always correctly.
+But we get some clear clustering of similar words and we get this clear distinction that
+the model can say barks is a lot more probable than meows as the next continuation of Chihuahua
+for example.
+Now the next breakthrough that was really necessary was that we can not just do this for words
+but we can do this for basically arbitrary texts, phrases, sentences, even words.
+Even paragraphs.
+And for that it would be not possible to just store a representation of every sentence because
+again we want to make predictions for sentences that we've never seen before.
+So we can't just memorize everything.
+It would also require much too much space on the device to do that.
+But what we can do is if we have representations of the individual words we can define a mathematical
+function that takes these representations.
+I illustrated them here two dimensionally.
+And then computes the representation of the phrases for example here the dog or then down
+here the dog in the pet store.
+And the goal is that these representations should then also be useful for the decision
+that to say oh if the current phrase is the dog the next word is more likely barks than meows.
+And if the phrase is the dog in the pet store still the same as true the next word is more
+likely to be barks than meows.
+Now these representations they need to be quite sophisticated because it's not just going to be
+an average of the word representations because we want to learn some of the things like what is the most
+important word in the phrase.
+Like here clearly dog is the most important much more important than the for the meaning of the phrase.
+So you can also see in these numbers I've made them up but you can clearly see that the representation of dog
+and the dog is very close to each other much closer than like the representation of the.
+And the way to achieve this is that we have these mathematical functions that actually become quite complex.
+So here's one example of a recurrent function there.
+Well that just illustrated before some errors is actually these equations here and you can see that we got some input in here
+and some input in here and then these are actually combined in some non-trivial ways.
+I could spend hours or even whole courses just explaining how this works.
+You're not going to do that here but I think what is important to know is that this mathematical function then has two types of numbers.
+One are the results of the computation like the representation of the dog in the pet store.
+So this is something that is the result of the function that you don't learn directly.
+What you learn directly are just the representation of the individual words here in red.
+And then the neural network itself, these connections, they also have numbers that get multiplied here with the other representations.
+And these numbers don't vary too much about what they exactly are but they can be used to learn what we actually want the model to do.
+For example to learn well if the input is some kind of, now then maybe it should have a higher effect on the final representation
+and if the input is some article that is less important.
+And if your representation here is harder to actually make this distinction
+but if your representation is large enough like you have a thousand numbers to represent the word
+then you can also learn to have information like oh this is often an important word as part of your representation.
+And if word representations here are like a thousand numbers then these representations here instead of four numbers
+they are going to be millions of numbers, millions of parameters.
+So these neural networks, the principle stays the same but in terms of the amount of numbers that you learn here
+behind the millions or even billions.
+So you can also imagine this is computationally very intensive so these models can train for days or weeks or months
+depending on how much compute you have available.
+And you'll need lots of training data to actually learn some good representations here.
+So if you then actually train these models
+the basic principle in the end stays the same that you're going to compare the prediction you make
+also like for the continuation for the dog in the pet store.
+And if the prediction is actually wrong, if the prediction is that we are predicting meow when we should predict barks
+we try to move the representation in the right direction.
+But we can't directly move the representation there because this is the result of the computation that I just illustrated before.
+So what we need to do is update maybe individual representations of the birds if that helps us make a better prediction
+or these other parameters in the network.
+And we can actually compute in which direction we need to move them to reduce the error
+and then we take a small step in that direction that reduces the error on this example.
+So this might sound a bit like magic if you're not too familiar with all the technical details how this works.
+But if you now trust me that this works, this is actually a very powerful method because if you now can make predictions
+with any sequence of text we can also do a translation which basically is the same type of model.
+All we need to do is to change the type of text that we train on.
+Instead of just sentences we now have pairs of sentences and we have something like
+a der Hund belt and then some special token that says okay the sentence is now finished,
+the translation starts and then we have the dog or just the next word.
+And this should actually for the model be easier to learn than before because we now have strong evidence with belt
+that the next word should be barks not meows.
+So with neural networks we can now also learn translation.
+I'm almost at the end of this first part, I just want to highlight one other thing, namely that
+I talked about words a lot but words are actually not great as a basic unit for processing language
+because it's very costly to have large vocabularies in the neural network.
+And there's lots of words that we can actually generate on the fly that we would never have seen in the data we train on.
+So if you train on data that it doesn't include data since like 2019,
+you probably have never seen a corona pandemic mass now in Gagina,
+like an opponent of the corona pandemic measures.
+But you still want to be able to translate this and it should be possible intuitively if you know the translation of the individual parts.
+So what we can do is we can train this on the level of characters.
+This becomes a bit expensive because the sequences get very long or you can do something in between
+also called subwords which can be of varying lengths.
+This is actually learned based on frequencies to have like frequent words are going to be one unit
+and rare words are going to be split up into these units.
+You can see these don't necessarily make linguistic sense these units, they look quite arbitrary,
+but the models are strong enough to, from this representation, then learn the continuation and predict the next unit, the next subwords.
+Okay, now let's look at some applications of this in digital humanities.
+And I want to talk a bit about the Bullinger digital project.
+This is not a project I was involved in.
+My colleague Martin Falk is leading this project, but I think it gives some interesting insights.
+So this is actually a project which deals with the letter collection from Heinrich Bullinger,
+about 12,000 of his letters that he sent or received survived.
+And the project had several goals like creating a system to actually access these letters digitally and search these digitally,
+but also improve access to them, for example, with the automatic transcriptions of the letters
+that don't have a manual transcription yet or provide translations for the letters that are open letter.
+And I have some examples of the letters here.
+Here one from Heinrich Bullinger to, I think it's his son in early New High German.
+Here is a letter that Heinrich Bullinger has received, this one in Latin.
+And you can imagine if you look at these, it's handwritten, so it's actually challenging to get an automatic transcription from that
+and also because the language is highly non-standard, the German is non-standard.
+We have medieval Latin here.
+This is not easy to automatically process.
+So what has the project done?
+Well, one of the components was a machine translation system from Latin to German.
+So the first sentence of the letters was Katia, Phineidae, Tecum, May the grace of God be with you.
+Now, to actually generate a translation system from Latin to German, you don't need to worry too much about this neural network,
+this architecture of the components, because you can reuse these across many different tasks.
+What you need to worry about is the training data, because this will be very limited for Latin, of course,
+but even more so having translations from Latin into German.
+So what Lukas Wischer, the colleague who worked on the translation system did here,
+was that he, on the one hand, he put efforts into collecting Latin German translations.
+He collected translations from different time periods, because even though the language might have changed a bit,
+it's still valuable to overcome this sparsity of training data.
+So even actually it turns out even Italian German translations were still useful as additional training data for this.
+So you also use this training data. And it also turns out that you can actually create training data automatically.
+So if you have a system that translates from German into Latin, you can take the German letters, translate them into Latin.
+The Latin might not be very good, there might be errors in them, but the errors are only on the source,
+so you can then use this to continue training your Latin to German system.
+For actually digitizing the text to get from the scan of the letter to the Latin or early new high German text,
+you can actually follow a similar principle, you can treat this as a sequence to sequence problem,
+where the only difference is that your input allows images.
+But with neural networks you can actually also learn a numerical representation of images, like we did for words.
+And if you then have a network that builds these representations also for images,
+you can basically apply the same principle as in translation to learn good representations for your images,
+or for like small parts of the image.
+I mean, these systems, they are better than what I could do.
+So this is a letter from Heinrich Bulling, and I would have a hard time reading what it says here.
+God, for Lidia, allezit, allezgut says the automatic transcript.
+If I look at it closely, I think this makes sense, it's also the beginning of the letter,
+so God may give you all the good things all the time.
+But you can imagine, there's again lots of problems with training data if you want to learn text recognition,
+so the recipe that Bulling did follow was to first look for a large collection of pairs of images and transcripts
+in the model that was already trained on them.
+So they found this in this ECTA 17 model, trained on more than 590 million words with lots of different writers.
+They say they didn't get a character error rate of about 6% on this data set.
+It's from the right time period, it's also like German and Latin, it's the right languages.
+When they apply this model, just with very little training, just with extra 30 lines of training,
+you can see the character error rate is still a bit high, like still 13%, like 1 out of 10 characters is going to be wrong.
+But you can then take this model and you can continue training this on the letters from Bullinger,
+where we do have training data, we do have manual transcriptions,
+and you can see taking like 3,000 lines of training data gets the character error rate down to about 2.7%, which is not too bad.
+And this is by the way also a nice illustration of why this paradigm of taking a trained model on lots of data
+and then continue training it on your data is so valuable, because if you only train on data from the Bullinger corpus
+without the other one, you get decent quality 3.3% character error rate,
+but you can still see the final model is worse than the starting of the general model and then continue training.
+By the way, you will see big differences in the error rate, depending also on the writer,
+because different people have different handwriting,
+so training data, getting transcriptions that have been done manually that are as close as possible to the text that you want to translate here at Transcribe is really valuable.
+So maybe it helps that a lot of the handwriting of Bullinger has been transcribed by hands,
+even though it's writing is not very easy to read, it was still possible to do this automatically for the system.
+I want to at the end talk about a new paradigm that has emerged in the last few years,
+which is that if you have very, very large scale language models that have been trained to just predict the next word in a sequence,
+they are known under names like GPT or Bloom or Porm, you can do a lot of things with them even without doing continued training.
+Some of these models that even might ling well, even though most of the training data is English.
+So if you have some tasks that you want to solve that is important for you,
+if you can think of a way of turning this task into a task where you just need to predict the next word in a text,
+then the model might be able to actually solve this task.
+I'm going to show you some examples.
+I'm not going to say that actually extracting facts is the best use of these large language models,
+but maybe you want to find out what is the capital of Belgium.
+And you can think, okay, I now just let the model predict the next.
+I'll just use this as the prompt, the capital of Belgium is, and then I get out the capital.
+It actually turns out there's many probable continuations of this prompt,
+because you could produce something like a nice city and just from the perspective of what is the most probable continuation of this text,
+that's actually not a bad result, but it doesn't solve your task.
+But if you actually make the input something like the capital of France is Paris and the capital of Belgium is,
+then you let it continue.
+Then if you have seen, if the model has seen a text like this in the training data,
+Brussels is much more likely a continuation than a nice city.
+So actually, engineering, devising a good prompt can be very important for getting a good result with a language model that you don't continue training.
+I tried out to what extent we can do text normalization with one of these language models, Jack's GPT.
+Again, this was not on purpose trained to do text normalization.
+This is just a general language model trained to predict the next few words in a text.
+One of the things that is maybe special about it is that it was then continued training this on dialogue,
+so that you can have more of like a dialogue interaction with this model.
+So I can tell the model modernize this into standard German.
+Gott, Valiadier, Alizid, Alisgut.
+It actually turns out without any training, Möge Gott, Dier, Zviel, Zeit, Alisgut, the given.
+This is not a bad normalization, so this could actually be quite useful if you want to do something like make this more accessible or have some kind of search system
+where you can also find this letter if you search for Zeit or if you search for Gott, even though it might contain some errors.
+I have to end with a few words of warning here because these language models are trained to predict probable continuations of text.
+So they're quite good at actually producing something that looks fluent, that looks like good German or English or whatever text.
+That doesn't mean that it's going to be correct.
+So with the all those statistical approaches with this fragmentation, one of the problems you often had was that you could clearly see all this text that was just an adverse salad.
+I don't know what this means.
+With the neural methods you could have a translation that looks very good or an organization here that looks very, very good, but that has some errors that you don't even notice.
+So if I tell the model that normalized this with German text in the standard German, it had three Ruchichestchen kaufeln willen.
+It produces, it had three Ruchichestchen kochen wollen.
+It didn't actually do the normalization of Ruchichestchen, okay.
+But this is a bigger problem this year would be by.
+Here you get cook, so these things can happen.
+And there's more limitations that people are not research on trying to maybe reduce them, but I think it's also important to raise awareness of them.
+So these models, they're going to work quite well on English, not too bad on German because these are high resource languages.
+I wouldn't expect that you could do the same interaction like for example, with Latin, because just the amount of training data will get a little bit lower.
+And that's of course language spoken right now in the world where the amount of data that you can extract from the Internet, where these models are trained on, is even smaller than the bulletin.
+Producing likely continuations of text has no real grounding in the world, so the model doesn't really know anything about that.
+Things change over time, so you have something like the President of the United States is, then actually Obama is a probable continuations in the Texas of training, or Trump, or Biden, or maybe Biden even not if the training data is too old.
+So be careful about trying to extract facts from these types of models.
+And a last problem that is very unfortunate is that the training texts of these models, they have some social biases in them, like doctors in the texts they're trained on are more likely to be male, nurses are more likely to be female.
+So if you ask the model to produce a continuation of the text about a woman, the woman works as a more likely to get a nurse, a doctor, and actually even more these biases might be even stronger than the original training data, because you have these biases to produce a high probability output.
+So be aware of these biases, don't use language models for something like automatic decision making, because you might end up treating people unfairly, but especially if I think about digital humanities applications like text normalization or text transformation, I could imagine that you might find use of them for your own work.
+Alright, let me conclude. So what are the main takeaway messages from this talk?
+I talked about one type of model in natural language processing which are these language models, which actually only do one thing, they predict the continuation of the text, predict the next word or the next subword in a text.
+Maybe this is conditioned on some other input like the source text in translation or an image or text recognition, but this is a very flexible approach that you can use for a lot of different applications.
+I talked about why this can work so well, I talked about these numerical representations of text and the neural models that can build these representations also for normal texts that have overcome this fragmentation of previous approaches where we were producing a grammatical text.
+And I gave you some examples of things that you can do with language modeling in the Bully-Modigital project.
+What is really important in practice that you find in training data that this is a similar task, similar language, similar historical period, similar subject period, I talked about similar handwriting, which can be important.
+These things can really help you boost the quality on your task a lot, but for some tasks even without further training you can actually solve some tasks that you can just conceive of a way to turn this into a text completion problem.
+With that I'm at the end, I thank you for your attention, I have some links here if you care about machine translation or text recognition or the results I talked about with the Bully-Modigital project.
+Goodbye.

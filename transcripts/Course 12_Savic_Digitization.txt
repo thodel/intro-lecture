@@ -1,0 +1,174 @@
+Hello, welcome to the lecture on digitization, in which I will talk about data materialism in digital humanities as part of the digital humanities introductory lecture series.
+My name is Selena Savage and I work as a head of makes sense PhD program at the Basel Academy of Art and Design, where I also lead research projects.
+Previously, I have been a postdoc at architecture, Syrian philosophy of techniques department at technical university Vienna, where I worked on digital literacy in architecture.
+After completing my PhD at EPFL in Lausanne between architecture and computer science with a thesis on space people and networks or rather on materiality of wireless signals.
+My main research area is digital materialism, which is something I will try to explain throughout the lecture, and it come I come in with a background in architecture and media theory with a working knowledge of programming.
+I will give an extended perspective on digital humanities, addressing what is indeed implied in digitization, how new materialism matters to digital humanities, and how can feminist and anti colonial methods contribute to the way digital
+humanities reflect on materiality of digitization.
+I work on the philosophy of new materialism as a way to combine concerns for critical issues and technology identified as central to the field by some digital humanities scholars.
+And I also am interested in data materialism as a way to refuse a data idealism.
+I address our focus on data feminism and related research practices that propose to integrate critical concerns for inequality and discrimination and ways this may be propagated by technologies and data processing into the humanities work that is resulting in digital research methods.
+This lecture will proceed to us through a double perspective, I will answer the above questions through a theoretical account of the possibility for data materialism in digital humanities, namely,
+articulating materialism as that which can give us access to the process of digitization, as well as discussing practical techniques for implementing this thinking in research projects.
+My entry to digital humanities comes mostly through working programmatically with text, starting with my postdoc research into the use of computational terminology in architecture practice and theory.
+I related their literature in architecture theory of the digital with a professional discourse on Twitter and applied a method described by Martin Griglian for identifying the digital humanities community on Twitter to the community of digital humanities.
+And then analyze this textual corpus using different algorithms, such as the self organizing map or latent derelict allocation to model topic detection and characterize the discourse.
+I found the corpus to be significantly more homogeneous than a comparable amount of tweets from general Twitter, which is a very common topic.
+I also found the terminology and topics propagate a specific form of optimism, rather techno optimism, which can be related to the typical expressions of optimization put forward to technology.
+So in an upcoming article for digital creativity journal, I will be talking about the
+!
+I also found the terminology and topics propagate a specific form of optimism, rather techno optimism, which can be related to the typical expressions of optimization put forward to technology.
+So in an upcoming article for digital creativity journal, I propose to use these findings to rethink this shortcut between optimism and optimization.
+This project in the broader scope contributes to data materialism by engaging with materiality of language through a programmatic approach to the scraped Twitter feeds and the combination of critical or humanistic concerns raised in architecture theory to which digital technologies are then applied.
+This work made me even more interested in methodologically combining humanities interests and digital tools.
+With this I turn to David Berry and his book understanding digital humanities, in which he discussed the computational turn in particular through literature studies.
+The digital very argued is the new unifying idea in academia knowledge with this new idea reasoning shifts towards a more conceptual or communicative method, a way of thinking that raises different kinds of questions, such as how many time a word repeats in a text, and leads to different kinds of findings, which he demonstrated also among others through the work with the books by
+David Berry, and I get through this time.
+One short note is that you will find the references to the book and other literature I referred to highlighted here below and bottom yellow, as well as listed at the end of the presentation.
+One additional note I would like to make now is that positions and references I discussed here come from wide range of fields that are related to digital humanities but not are not only coming from digital humanities publications.
+The field itself establishes its methods as a meta discipline and thus claims ability to contribute to a wide range of disciplines.
+And while interdisciplinarity or a transversal disciplinarity as a topic are beyond the current lecture, I still find it important to mention as an important feature of digital humanities.
+In a book published 10 years later than the one we looked at previously, Johanna Drucker characterized digital humanities as guided by the principle that technical expertise and awareness of critical issues are inseparable.
+This is something that I already mentioned as a perspective that is rendered possible through a materialist approach philosophically.
+Drucker discusses methods developed in digital humanities that combine critical concerns and application of technology. She also insisted on making as an activity that is important to research and stated that unless you have tested theory with making, you cannot understand a medium or a process.
+Importantly, all this work is premised on data. The acquiring of data is important and articulable in terms of technology for sampling and measuring values.
+In terms of access to the phenomenon under observation as well as to the technology of measurement and in terms of labor which goes into capturing, organizing and storing data sets to which we then have access.
+The positivist ontology posits that data exists independent of an interpretive frame waiting to be collected by a human, but this is untrue for both qualitative and quantitative data obtained through measurement and or observation.
+Contrary to its Latin name in singular datum, data is never simply given but produced in complex processes. To this authors like Elizabeth Adams Saint-Pierre, in her text, The Appearance of Data, can asked when, where, why, how and by whom data is called into being to do any work and what data look like when it appears and what even counts as data.
+To further develop my approach to digitization of data materialism in this lecture, I will focus first on technology and access.
+In terms of technology of digitization and according to recent accounts from philosophy and history of science, which are informed by quantum theory and contemporary notions of in physics data is not simply discrete but it is continuous discreteness obtained through measurement data is a sample at an arbitrary moment of some continuous flow.
+So data is obtained through discrete measurements or observations.
+A small digression into the legal definition of measurement can reveal its materiality in the eyes of law.
+Measurement, according to Swiss law is an act or process which articulates materiality of a process or an object, an objective attribute of something that exists.
+So the law on metrology prescribes as a measuring instrument any apparatus intended to determine values of physical or chemical quantity, as well as the measuring method itself.
+Furthermore, measurement is related to the establishment of a material quantity by comparison to material instruments or methods.
+Measurement could also be expressed in terms of equation or proportionalities.
+There are a brilliant pointed out in her entry on equation in the post human glossary edited by Rossi Bradotti and Maria Lava Lava.
+Equations work beyond equating quantities as magnitude and multitude.
+For example, how much CO2 is emitted or how many entries are in a data set.
+But rather towards a symbolic systematicity that establishes this comparative methods.
+Comparative method implies an articulation of proportional comparison of unrelated magnitudes.
+This can be illustrated in the picture you see in the slide, which is an illustration of the methods that Thales used to measure the pyramid, the great pyramid of Egypt.
+While he had no physical access to the pyramid because of social constraints, he could still construct an uncom, an unrelated magnitude relationship with the between the pyramid and the stick and thus through a third input of the shadow of the sun measuring its length, establish a non causality and comparability between the
+these unrelated things.
+Thus he rendered the pyramid comparable to the stick using the medium of the shadow such non causality between the measured and the measuring instruments opens interesting perspectives on the mediacy of measurement.
+It implies the importance of the role of techniques in acquiring indirect access or learning and articulating the process of mediation between phenomena we observe and their transformation into measurements.
+Measurement is therefore a leap from the way things are to the way things can be mediated by different techniques of comparison, differently determined.
+Measurement is more than quantification matter and meaning nature and culture what and how they constitute each other in a loop matter and meaning do not pre exist but are co constituted via measurement Karen Barad insisted in her book of me meeting the universe halfway and in her work with the kind of a
+particle physics and quantum field theory into a much larger philosophy of matter informed by training in quantum field theory Karen Barad proposed the theory of a gentle realism, originally developed in particle physics as a way of understanding the politics ethics and agencies of any act of
+understanding and indeed any kind of knowledge practice.
+A gentle realism can be the method to analyze literature social inequalities and many other things, because each thing is entangled with everything else in material specific ways.
+All interactions including measurements reconfigure these entanglements.
+Importantly, and in accordance with non causality of equation discussed in the previous slide reconfigures this causality by challenging the usual notion of interaction between instruments and the measured, which is also going to famously discussed in the measurement affecting the
+observation in quantum physics.
+And on that, would like to go back to the question of new materialism and a new data materialism to speak about materialism not simply as a concern with matter, or about being about being attracted to materialist values, but rather a philosophy of
+being attracted to entanglements that are readable in matter or enacted in matter, but that are always in having implications that are much broader than any objective or discrete object can be considered to contain.
+The anacole and Samantha frost challenge the common sense that the real material world consists of solid bounded objects with predictable and controllable behaviors, which is something that we could consider idealism that these objects are forever identifiable such as a telephone or a glass,
+but also to insist on on material philosophy that is able to combine things that are hard to put together.
+This is interesting we illustrated also in the previous account of measurement and equation with Tullis and his stick, which are in terms of magnitudes and in terms of materiality, and in terms of function completely
+incomparable but can be rendered comparable in terms of heights when we use the medium of the shadow of the sun. And so, this is kind of a perspective that new materialism takes to the phenomenon of the world, the real world.
+And I really speak here with new materialism as a philosophy and not as a as a tool or technique to do something.
+But however, in the tradition of new materialism.
+So, I think that the anacole and Samantha frost insisting on the new material suspiciousness towards fixed predetermined categories and modes of existence. In the most general sense this alertness is addressed at unsettling the human nature
+dichotomy, which is one of the very important concerns of new materialism beyond also concerned for the centering idealism ideas and even the notion of the thinker or the human themselves.
+So, the answer they claim again is not identifiably discrete, as is confirmed in a number of ways this has been problematized by a different contemporary theories, but rather matter cannot be conceptualized as discreet entities or close systems, but rather
+a network systems with porous boundaries and this is also what I'm interested in with the question of digital and materiality to kind of establish this porous porousness of borders between what we considered digital which is often also considered immaterial and its material implications in the
+world, the way it acts in the world the way it is constructed but also simply the way it is not possible to to put the digital into the realm of only matter or only ideas.
+Now, to come back to the collection of data and technology for working with data. Once we have obtained data through some form of measurement to be put to use data must be classified in some way.
+In their well known work on classification and its consequences sorting things out Jeffrey Borker and Susan Way-Star discussed classification as essential to any working infrastructure.
+Data sets and digital archives provide comprehensive lists and systematization of details that document diverse natural and social phenomena, for example, a data set of European animals of world temperature and precipitation measurements or social media and directions
+or a corpus of European Parliament transcripts those could be data sets with which we are faced that all sort of operably work as they can be considered as a totality of some measurements in which their organization or their structure becomes naturalized.
+We have seen that continuous processes can be turned into data through assembling and measurement, producing sets of discrete measurements, this process of taking all aspects of life and turning them into data, termed datafication in popular book by Victor Meyer Schoenberger and Kenneth
+Schoenberger results in an abundance of data sets. Data set is any collection of data that documents attributes or variables. Data sets are principally tabular data, organized or organizational into columns that list values of variables where each rock
+corresponds to a specific record or recording or again measurement, because data sets are collections of data, records or measurements creation of a set implies a large number of observations or measurements to be taken and these then are organized into a coherent way which can be further analyzed, which again in turn requires technology
+labor and access as shown on the beginning of this theoretical input. What is the nature of data set and how can we look at them.
+Media and information studies scholar Alexander Galloway pointed out that any visualization of data requires a contingent leap from the mode of mathematical to the mode of the visual.
+Any data visualization is first and foremost a visualization of the conversion rules themselves Galloway said data have no necessary information he claimed, or rather they are formless or rather form is not logically included within data.
+And so he claimed only one visualization has ever been made of an information network as illustrated on this slide.
+Also using Galloway's visuals.
+And thus, Galloway claims the only thing we can reliably say about the form of data is that information likes to cluster.
+And this critique of course causality established between data and ways it can be represented in visualizations, we should pay attention to what some information scholars terms database ontology, the way database carefully and hierarchically represents knowledge according to one single or logic of the world.
+And thus, Lindsay Juliano and Ramesh Srinivasan note how within databases, we always construct categories of normativity, singular ways of commanding the logic of the world.
+And Lindsay Jittles, community scholars, Miriam Pozner and Lauren, at Klein, pointed out how data comes always already categorized in some way, as we have sort of already inferred.
+And this propagates.
+They identify the presumption that these categories are inherently meaningful.
+So I have one question the meaningfulness of categories in archives and connected that to feminist theory in particular to the work of Judith Butler Donna Harrow and Karen Barad to challenge the repressive systems of classification that always come as sore so naturalized, or rather,
+the categories that are logical to be used.
+The point is not that data should never be organized but that we should not take as a given the way data sets are organized.
+It is quite simple, but still a very subtle point, which makes us always have to having to reflect on these decisions that we make, and things we take for granted.
+And to which digital humanities have an interesting access.
+So in data feminism, Catherine Ignacio and Lauren Klein engaged with intersectional analysis of the ways in which systems for data vacation and classification perpetuate oppression.
+They recognize an initial impasse to be put to use data must be classified.
+These implied in classification become naturalized in this process and such naturalization leads to the assumption of rationality or givenness of certain relationships that are in fact always socially constructed and produced by labor and this is the point to which we have to pay attention, as I just previously stated.
+So data is always recorded collected and classified through some bodies or some things work, extending previous critiques of the database.
+Data feminism is concerned with uses and limits of data set informed by direct experience and by intersectional feminist thought, which pays attention to power and knowledge relationships in the process that produces or result in data.
+Finally, cultural anthropologist to honey Nadim wrote critically on the impact of such categorization on the understanding of nature itself.
+Taxonomic categorization of for example European animals in a data set tends to translate the taxonomic gaze of European 19th century natural history collections, from which such a data set is made with its colonial blind spots, and bring into that work
+a rationalization that renders entries manageable and computable databases are not passive containers of data.
+They facilitated certain rationalizations while hindering others, they're historically specific, practically different and their context matters, and we will hear more on that in this next part on access.
+These critical positions brought out so far, offer a non comprehensive overview of the implications the technology for digitization can have on the data and the way we work with data in digital humanities.
+Moving on to the point of access, the second strand in data materialism I trace here.
+I can say that through a problematization of access to data as well as technology for making storing organizing and processing data, we can articulate another important aspect of materiality in in the digital and the process, a materiality of the process of digitization.
+Information studies scholar, Andrew Andrew listen pointed out how we always take availability of archives for granted and equate availability with access.
+Access to search in a inextricably linked to retrieval of information.
+So in his introduction to archives, which is a book about alternative self organized contested archival practices, he problematized this contemporary privatization of search with tech giants as a totalizing expansion of knowledge retrieval operation perpetuated
+by Google, as one of the ways to access the internet content on one side, and the tools for retrieving it on the other. And he problematized the fact that these are unequally distributed the access to the the information which Google somehow has abundant,
+abundant because of the computational tools with which Google can index the entire web, and thus also offer to us limited tools for retrieving those results of the search in the way they find appropriate.
+Further along the critique of assumption of access anti colonial pollution scholar Max liberal theorize the appropriation and assumption of access as key mechanisms of colonialism, by which land and relations get subsumed for profit making assumption of access is in classical
+pollution science, which liberal recounts is based on the theory of environmental capacity to assimilate specific forms of pollution and act as a sink for pollution, which for liberal is already a colonial form of thinking, as it presumes access to pollutants,
+and presumes that pollutants have access to land and people that they will pollute simply in limited amounts in contemporary computation at assumption of access to data as well as the phenomenon that are observed and measured is also presumed as granted, although sometimes we recognize that it's
+not really problematic in examples such as Facebook or Google activities of collecting, but we should also think of other forms of research, research including environmental and social sciences.
+So insist the data and analysis never speak for themselves, the presumption of unproblematic and unaccountable access and data collection reproduces colonial relations to resources and to reality.
+Access can be also problem is this scraping and in the example I propose here in the work of Sam Levine.
+Scrapism is characterized as a technique for automatically downloading and processing web content or converting online text and other media into structured data.
+While, while Levine means scrapism at on one side as a critique or provocation to the work he recognized being done widely by tech giants and large tech companies on the internet, both for training machine learning algorithms and other forms of work and for journalism and sociological research.
+He characterizes this as a methodology also to make sense of a world in which everything is mediated by internet companies. Thus, recognizing the possibility to take back control when we would acquire the skills to which he proposes a sort of a sort of a how to,
+especially when it comes to traces that companies such as Google and Facebook live online. So here we can have a look at some instructions on how to scrape anything on the internet and learn everything we need to know about power.
+Levine claims.
+This perspective establishes a clear, clear relation or the articulation of these previous perspectives clear articulation between data and digital.
+Digital can be that which gives access to data. We need to access digital data computationally to implement digital humanities methods. Nevertheless, presuming the unproblematic access and converting life into data streams and act a new form of data colonialism as Nick Coldry and Ulysses Ali Mahias have demonstrated.
+Sam Levine's crepe is and can also be read as a critique and a mode of resistance depending where the technology and access are located.
+And to the question of location. We should also turn to the information scholar, Yanni Lucasus, who claimed that all data are local in a book by the same title data is entangled with people instruments and knowledges that produce it.
+He challenged the use of the term set in a data set to describe collections of data as finite complete discreet as we critiqued previously and propose to think of data settings instead.
+The conception of setting would emphasize the ensuing importance of place and context and work of the people involved.
+Lucasus drew attention to the specificity of all data practices, and his use of the term local also suggests the undoing of universality.
+Close reading of data is thus necessary to understand patterns that can be observed in distant automated abstract readings, which informs data visualizations.
+Lucasus argues for developing also digital techniques for close reading of data that should be able to point out to relationships that are not observable on abstract large levels, but there are nevertheless technologically driven data are also defined by what is left out and as a
+example, we have tested in numerous contemporary examples of problematic collection and classification practices informed by colonial and racial prejudice.
+Machine learning models are inseparable from the data set, these statistical algorithms used to analyze data.
+The machine learning can learn only what is in the data already, and therefore, these these these perspectives are completely bound.
+Therefore, critical data studies emphasize the way in which the application as discussed by Mayor Schoenberger and Suki has benefited governments and corporations at the expense of people's liberty and privacy.
+In order to obtain these data sets, we have seen that access to data is presumed as given by the very powerful players in her work on race and technology sociologists through a Benjamin identified this as engineering inequity and default discrimination, because some people
+do not have access to these data streams, but also because some people do not have the possibility to refuse that they are being part of that.
+Also, most of us do not have the right the capacity to to refuse a lot of data collection that is happening at the moment. Furthermore, taking correlations between data on for example, employment history, and somebody's address at face value.
+And so, the discriminative operations of algorithms recent research proposed some technical solutions to this, for example, by offering frameworks for data set development transparency that supports decision making and accountability, we in the process of producing the data set which itself is a very material doing.
+And so, if we were to change this, we would have to start from the data set and reimagine the expectations we set from training processes, but also the expectations we set from optimal organizations of of this data.
+And again, once more, we do not want to end up with unorganized data sets, but with data sets that can be differently organized or organized that are continuously reorganized, for example.
+To summarize, I discussed here data materialism in terms of technology required to create store organizing process data, as well as problematizing access to data and these technologies.
+Thus, access to data is problematized as information retrieval problem as a problem of collection and access to land as problem of categorization, and also, as an access to data locally.
+And finally, uncomplicated access requires a well oil backbone infrastructures which are built on machines that heat make noise and use a lot of energy, as well as people's work people skills and knowledge, and material built into these components and these relationships.
+I would now like to illustrate a possible data materialist approach to working with digital archives humanistically and digitally using tools and techniques this guy discuss previously.
+Namely, I would like to present or demonstrate this through a recent project making arguments with data in which I used self organizing mob or some an unsupervised learning based artificial neural network.
+And simply speaking, I used the song as a technique of differentiation that enabled me to work with non labeled unstructured data on identifying patterns and characterization of the data set itself.
+The song was first introduced by Finnish professor to work on in the context of technical physics and gain traction in research and engineering practices that work with visualization and data mining, such as topic modeling of text visual pattern recognition speech recognition
+and even electromagnetic signal processing. The sum can organize records of different properties of data.
+We extract here with radio signals recordings as digital traces of environmental transmissions in audio format. We extracted features, such as the probability of silence and the level of noise in the audio sample.
+The data observatory is a some code book, which you can see here on the left where data point vectors are connected together in a topological arrangement which is then rendered into to the two dimensions.
+And then you can see the distances as well as in kind of a density, which is indexed in the in the color of of this code book.
+We use, we can see some regions separate and some patterns emerge here, but these arrangements are loan do not produce meaningful inter inferences, rather the reorganization of the archive with some offers a different system of
+encoded in terms of multiple perspectives and perspectives that are inherently non instrumental as they are not coming from the application of radio technology, but rather from the information that we could computationally obtained from from these digital traces.
+And the output of these experiments, which is what we call data observatory explores the capacity of machine learning techniques to contribute to challenging fixed dichotomies such as nature human and their role in the way we think of identities data observatory is a navigation apparatus, which
+can be used to orient oneself in the vast landscape of data, based on computable similarity.
+And so, the actual similarity is one thing which I would call a digital materiality. And with this technical setup I challenge instrumental categorizations of technical artifacts such as radio signals inspired by feminist critiques of techno science I propose to work on becoming skilled in using these
+traditional techniques differently as one possible mode of resistance, which is what I have been kind of building on until now.
+To conclude, these techniques could lead us to the capacity to explore effective ways in organizing digital data differently, and include what is sometimes referred as digital literacy or what I would call the cognitive coupling with the digital to relate to
+the human in practice how computation and networks work and what we can learn with them. My understanding of such literacy or coupling includes in structural and technical literacy and engages with feminist arguments and inquires into ways that patriarchalism racism and colonialism
+can be used in our relationship to techno science and engineering, which normally value efficiency optimization instrumentalize and all that comes into scope. We need to extend our perspectives on the digital to explore modes of resistance through developing skilled and alternative
+uses of these technologies, which is something that I think a material orientation in digital humanities can do. This matters to digital humanities as addressing several critical issues in recent digital digital humanities coursebook
+I want to draw her identified as critical issues that digital humanities was criticized from various sides for making less intellectual contributions of substance or for promoting an entrepreneurial approach to scholarship, or for monopolizing
+practices, but further, more recently questions of whiteness and diversity among practitioners hegemonic values imprinted imprinted in technological systems practices of inclusivity and exclusivity in access and expertise across a range of communities have become current topics within the field.
+These were the topics listed here on the left, which I addressed through the question how data is made, how it is rendered accessible and which labor is involved in producing it, which build the theoretical part of my lecture.
+Furthermore, I aspire to demonstrate with my practical work how the making and access to data can be addressed in digital humanities problem projects, or problematized using digital humanities methods.
+I list here the references mentioned throughout the talk, which I recommend visiting and hope that such an overview was useful and inspiring to pursue some of the some of the approaches that scholars in digital humanities as well as outside have voiced as in terms of the materialist entanglement
+of techniques and technologies with questions that we address in humanities.
+I thank you for your attention and look forward to seeing you during the contact hour.

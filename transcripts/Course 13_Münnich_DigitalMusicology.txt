@@ -1,0 +1,255 @@
+Hello and welcome to this talk on digital musicology as part of the lecture series Introduction
+to Digital Humanities.
+This is Stefan Münich from the University of Basel, where I am a research associate with
+the Anton Webern Gesandhausgabe at the Department of Musicology.
+In this lecture, I have the great pleasure of introducing you to the field of digital
+musicology.
+We will explore a variety of research areas within that field and will discuss how digital
+methods are providing new perspectives on music.
+Now they are changing the way we study and document musical practices.
+Whether you are a musician, digital humanist, researcher or simply someone who loves music,
+I hope that this lecture will provide fascinating insights into the world of digital musicology
+and its potential to shape our understanding of music of the world.
+By the way, although I used the term music in the single-line of this talk, it is always
+meant in a plural sense to reflect the fact that there are many different kinds of music
+each with its own unique cultural and historical context.
+So let's start with the question, what is digital musicology?
+In fact, there is not a single definition of the field yet, but I have tried to reference
+some widely available and accessible descriptions.
+In general, one can state that digital musicology is often described as a branch of digital
+humanities and musicology that uses computational methods and technologies to create new ways
+of exploring musical traditions and practices from around the world.
+On the slide, there is a reference to an online guide to digital musicology from the
+University of Texas Libraries, which describes some typical tasks of the field.
+These tasks include the study of music with computational models and simulations, creation
+of corpora and archives of digital collections, corporate-specific research, as well as the
+use and development of digital tools for music encoding, composition or performance
+practices.
+We will go into this in more detail in a moment, but even this brief overview shows that digital
+musicology requires the collaboration of experts from different disciplines, such as musicology,
+music theory, library science, pedagogy, psychology, computer science or engineering, to study
+the role of technology and music research, music creation and reception.
+Such an interdisciplinary approach is needed, as in other fields of the age, to ensure that
+digital musicology research is sustainable with a focus on data stability, long-term availability,
+secure storage and referensibility and sightability of musicological data.
+This not only ensures that the findings of digital musicology are accessible to future
+generations, but it also allows for the continuation of critical reflection on the impact of technology
+and on the consequences of digital transformation from music.
+The topics covered in digital musicology are diverse and can range from analysis, transcription
+and interpretation of musical scores and recordings to the study of musical performance
+and interpretation through the cultural and historical context of music.
+Some specific areas of research within digital musicology can include music and coding,
+optical music recognition, digital music additions, music information retrieval or musical analysis.
+Further topics can be music performance, that is the use of digital tools to study musical
+performance including aspects such as timing, expression or interpretation.
+Music cognition, the study of how musical sounds and expressions are perceived, processed
+and understood by the human brain.
+This can involve, for example, using digital tools to analyze the brain's response to different
+types of music.
+Or music preservation and restoration, the use of digital technology to preserve and
+restore musical recordings, scores or other materials.
+And music history and culture, the study of the cultural and historical context of music
+from around the world, including their role in society and its relationship to other cultural forms.
+This can include using digital tools to analyze large collections of musical data, including
+scores, recordings and metadata, to study musical style or other characteristics of music, to
+analyze musical trends over time and to explore the cultural and historical context of music.
+In all these cases, computational methods can play an important role in providing new
+perspectives on musical practices, enabling researchers to analyze and understand musical
+data in new and innovative ways.
+They help uncover patterns and relationships in musical data that might not be apparent
+through traditional analytical methods.
+After this first general overview of the field, in the next slide, on the next few slides, we will look at why
+music in general or music data in specific is different from other humanities data.
+First of all, it could be stated that music as a temporal form of human expression is not primarily
+bound to the uniqueness of instances, like many other forms of expression.
+It is not possible to glue yourself to a musical piece or to steal it from a museum like the
+Vinci's Mona Lisa in 1911.
+Copying a painting would be a best at best a reproduction, at worst a forgery.
+If you pass off another author's music as your own work, it is considered plagiarism rather than forgery.
+So multiple copies of musical pieces can be ascribed equivalent status.
+Reproducibility and reinterpretation are important characteristics in music.
+Secondly, there's a huge variety and richness of musical information sources.
+These include but are not limited to, of course, performances, recordings of these performances
+or other sound representations, symbolic representations of music notation in scores,
+tablatures, piano roles and others, models from music theory and analytical approaches,
+visual representations of music and paintings or drawings, which are an important source
+for iconographic studies, but also music pedagogical models, information about musical instruments
+and instrument making, encyclopedic knowledge and academic discourses, library catalogs
+and metadata formats, printed or online editions and other publications of musical content
+and digital representations of music in music encoding formats of app-related technologies.
+Another point why music is special and complex is the tension between audio and symbolic processing of music.
+This tension can be considered a key issue in traditional and digital musicology.
+Audio processing involves analyzing the raw sound or sound waves of a musical recording
+and is most useful for analyzing acoustic features of music.
+It is often used in music information retrieval or performance studies.
+Symbolic processing, on the other hand, involves analyzing the symbolic representation of music,
+such as sheet music in handwritten, printed or digital scores or music encoding formats
+and is most useful for analyzing musical structures or formal features of music.
+It is mainly used in music encoding and edition projects or in optical music recognition.
+Converting between these two approaches requires significant effort and the use of different types of converters,
+from analog audio to digital audio to digital sheet music to written sheet music, as indicated on the slide.
+As you can imagine, very different kinds of expertise are involved from signal processing to music encoding to programming
+and the arrows on the slide represent entire communities, research projects or companies active in a particular subfield of these conversion processes.
+Interestingly enough, there is no direct path from analog sound to written sheet music so far.
+Finding ways to reconcile these two approaches of audio and symbolic processing
+and to make a round trip of conversions almost lossless will be crucial for future applications and research.
+If we take a closer look at the field of symbolic representations now,
+we see plenty of musical notational forms in the cultural area influenced by European music traditions alone.
+The slide only displays the most widespread manifestations which have established over the years themselves as a canon,
+but it is reasonable to assume that there have been hundreds of alternative forms in existence.
+And of course, there are many musical representations outside that canon too.
+We know of ancient musical notation in Coney form or ancient Greek or Byzantine numinotation,
+the letter used from the 2nd or 3rd century until the 19th century.
+These include most likely the earliest surviving musical notation and the oldest surviving complete composition.
+Other impressive examples can be found outside Europe such as the Turk Arabic notational variant to be read from right to left,
+Guatemalan choir books, Japanese numes to be read from top to bottom and from right to left or Armenian numes whose semantics are mostly lost.
+All this variety and richness contributes to the complexity of musical notation and data.
+As a final observation of the section of this talk, let's have a look at the typical encoding of a text here in the markup format of the text encoding initiative TEI.
+If you remove all the markup, that is everything inside the angled brackets and the brackets themselves, you get a legible representation of this letter from Vincent von Koch to his younger brother.
+So far so good.
+Now let's do the same thing as a musical representation in the music encoding initiative markup format MEI, which is based on similar XML based principles as TEI.
+If you remove all markup here, we get a blank sheet.
+This means for symbolic representations of music, the vast majority of cases, the musical text itself is first created by the encoding.
+It is not additional markup, but an essential part of the representation.
+I hope these examples could show that musical content and data differ on many levels from other materials such as text or images.
+In the next section of this talk, I would like to give some closer insights into a few areas of digital musicology.
+I will present a short overview of each area, explain typical research questions and then present some use cases whenever possible related to research in Switzerland.
+Since we've been at music encoding before, let's start with it.
+Music encoding refers to the process of representing musical information in the digital format that can be processed and analyzed by computers.
+This includes the representation of musical scores as well as contextual and metadata, such as performance information or physical source description.
+Having a machine readable capture of music information in any kind of encoding format serves as a starting point, or the ground truth if you like, for many other applications and areas of research in digital musicology.
+Since the 1960s, music encoding formats have been an important topic in the field of music technology.
+Hundreds of approaches have been developed based on various encoding ideas and technologies such as ASCII, TECH or XML.
+These formats serve different purposes including layout, analysis, interchange, scholarly endeavors or semantics.
+Today some of the most commonly used formats include MIDI, Hamdram, Lillipont, MusicXML and MEI.
+We will look at these formats a bit closer now.
+The Musical Instrument Digital Interface, MIDI, is an industry standard implemented in 1982 that allows computers and electronic instruments to communicate with each other.
+The basic idea of MIDI is to exchange musical control signals in byte form between devices.
+MIDI can be seen as a milestone in the field of music encoding which has spawned countless more advanced applications and possibilities for interaction.
+That's one of the reasons why the developers of MIDI received a Technical Grammy Award in 2013.
+As mentioned before, in addition to the binary format MIDI, four or five other encoding formats have gained popularity in recent years.
+Besides Musikbrel, which is based on the TECH-TILE writing system created by Louis Brel in the 80s and thus may be considered maybe the first music encoding format ever.
+These are mainly Hamdram, Lillipont, MusicXML and MEI.
+Hamdram provides a notational style for representing music in a way that is suitable for analysis and transformation.
+It is one of the few formats that represents musical content in a column by column manner.
+Lillipont is a program for engraving music that produces high quality sheet music through a text-based input format based on the programming language scheme.
+The program focuses on optimizing the musical layout and on transferring the knowledge of traditional music and engraving into machine generated scores.
+MusicXML is an XML-based format for representing Western musical notation and is mostly used for exchange of visual outputs between music notation software programs and other musical tools.
+The Music Encoding Initiative, MEI, is a community-driven open source effort to define a system for encoding musical documents in a machine-readable structure.
+The term MEI simultaneously describes the organization, the research community behind it and the markup language discussed and formalized by that community.
+This MEI schema is based on XML-II but with a greater focus on the semantics of the musical content rather than the visual appearance.
+It can be considered a de facto standard for academic use cases including musical edition projects, library cataloging or pedagogical purposes.
+It aims to define best practices for representing a broad range of musical documents and structures and its modular design allows for representing even different types of historical music notation forms including news, mensual notation or tabled job.
+As we saw with the different types of music notation, there were also hundreds of alternative encoding forms that we cannot discuss in this talk.
+But the project Rosetta Stone of Digital Music Representations that is linked in the slide provides a good overview and comparison of many of these forms.
+In order to exploit the potential of such music encodings and to be able to generate an interactive representation of musical notation, tools are needed that can perform a visual reconversion into musical notation.
+This process called rendering is supported for instance by the notation engraving library Verovio.
+Developed since 2017 at the Rism Digital Center in Bern, Switzerland, Verovio allows for a dynamic rendering of digital music scores as scalable vector graphics SVGs in the browser.
+Layout options and settings can be changed on the fly and in real time. Verovio reads multiple formats like music XML, ABC, plain and easy or MEI for which it is optimized and outputs SVG, MEI or MIDI.
+It is used by a multitude of institutions or projects that develop interactive applications such as music notation editors, interactive digital editions or digital music archives and catalogs.
+Before we move on to the next research area, one last remark in regards to music encodings. As happy as one can be about the existence of all these forms and tools, as a critical discipline, digital musicology must also always investigate and critically analyze how working with different representations
+affects and alters our knowledge of musical notation and music in general. The comparison of the rise encoding methods or the evaluation of different conversion processes can be useful research approaches in this context.
+Quite closely connected to music encodings is a research area called Optical Music Recognition.
+Optical Music Recognition or OMR is a field of research within digital musicology used to recognize and extract musical notation from scanned images of musical scores and other documents to transfer them into some type of encoded representation.
+You can think of optical character recognition, but for music. Its main goal is to improve discoverability and searchability of musical information within music documents.
+OMR has made significant progress since its initial development in the 1980s, resulting in high recognition rates for standard printed notation using commercial software.
+However, for handwritten or medieval manuscripts containing all the forms of musical notation, optical recognition still presents a challenge and ongoing research is now using machine learning techniques to improve recognition accuracy and workflows.
+In this field McGill University in Montreal, Canada and the University of Alicante in Spain are leading institutions. In Switzerland, a research group at the Zurich University of Applied Sciences, Vintetour, together with partners from Lugano and Venice, Italy, contributed to the field in recent years by exploring new object detection systems and providing a huge dataset called deep scores.
+This dataset consists of 300,000 full pages as images, containing tens of millions of objects separated in more than 120 recognition classes, just to give you an impression of the dimensions of such research approaches in OMR.
+We continue with another research area also quite related to music encodings, that is digital music editions.
+Digital music edition projects have achieved fundamental milestones in the field of encoding large scale musical information regarding the entire over of composers or genre specifics perspectives, and they have made significant contributions to both the theory of scholarly editing and digital applications.
+Digital music editions typically offer a range of features and functionalities that enable users to interact with music scores and related materials. This includes features such as audio ployback or the ability to compare different versions of a piece.
+The project Freischütz Digital, coordinated by the University of Paderborn, Germany, together with partners from Frankfurt and Erlenen, can be considered a pioneer of this development.
+Here, MEI encodings were applied very comprehensively for the first time using the example of the opera der Freischütz by Karl-Maria von Weber.
+In order to present the various aspects of the edition, such as manuscripts, prints and encodings, in one interface, the tool Eddie Rom was developed and used. You can see it on the slide.
+This tool, which runs online in the browser today, allowed for example a coordination of the displayed measures between different sources.
+Various demonstrators developed during the project aimed at showing the most diverse facets of what could already be realized in digital editions at the time.
+These demonstrators included dynamic score rendering of MEI encodings, genetic text stages, visualizing text annotations and text variants, network analysis, a sync player, which synchronized multiple audio playbacks to scanned images and their renderings,
+and a production of royalty-free audio material of selected pieces as a multi-track data set with the possibility for the user to select individual microphones of the recording or to modify equalizer settings.
+Another significant project is Beethoven's Werkstatt, a joint effort of the Beethoven Hausbond and the musicological seminar, Detmau Paderborn, Germany.
+The project describes itself as employing two research methodologies, Kritikse et.tik and Digital Music Edition, to investigate and document the dynamics of Beethoven's compositional processes.
+The project aims to produce exemplary digital editions by reconstructing and exonmining the writing processes based on selected autographs or workshop manuscripts, such as sketches or correction lists.
+It is structured around five modules that explore topics such as representation of text variants, Beethoven's arrangements of his own works, revision documents, sketchbook editions, and a combination of different edition types.
+The findings are presented on an interactive website, of which you can see some detail on the slide.
+A different approach is taken by the Digital Mozart Edition. Like many edition projects, this one started long ago as a print-only edition.
+So the collaboration of the Foundation Mozartium Salzburg and the Pakelter Humanities Institute in Los Altos, California, the contents of the completed print edition, the Neue Mozart Ausgabe, could be integrated into an online platform.
+First as full-scale images that are now transferred to MEI encodings step by step. The online presentation is enriched by user-oriented features, sound recordings, automated extraction of musical parts, and various download options.
+As a last example of digital music editions, the Anton Wever Gesamtausgabe at the University of Basel has the aim of researching and testing the scientific application of graph-based semantic models in terms of RDF vocabulary for the purpose of a digital music edition.
+The possibilities for the representation of semantic relationships and the links between different areas of a scholarly digital music edition, the overlap-free representation of non-hierarchical content, as well as the connection, interlinking, and interoperability with external datasets, appear to be the main advantage of such an approach.
+Finally, we have to take into consideration that such digital approaches to scholarly music editions are not only about using fancy and cutting-edge technology, it is about transforming philological knowledge into a machine-interpretable environment, and about changing the way in which we ourselves are enabled to think about philological and music historical processes.
+While speaking of linked data, the field of music and linked data has made significant progress since its first steps in the early 2000s, with initiatives such as Music Brains or the Music Entology.
+While these early efforts mostly focused on representation of music production, performance, or recording, recent projects have targeted more specific areas such as the alignment of archive materials as seen in initiatives like Do Amuse from around 2015.
+Other projects have targeted music on the sound level, like MIDI linked data, or the score level, like the Music Out project.
+These graph-based knowledge models of music contribute to the vision of a web of data or semantic web, as it was proposed by Tim Berners-Lee and others around the year 2000.
+Formalized by RDF-based ontologies, the aim of these models is to enable a machine-readable description and connection of music metadata, especially in the context of music information retrieval, music recommendation system, or music library cataloging.
+With Meld, that is music encoding and linked data, the former British Transforming Musicology project has created a semantic framework that supports the distributed real-time annotation of digital music scores with the help of semantic technologies.
+The self-declared goal is to combine digital representations of music, such as audio and notation, with contextual and interpretive knowledge in a semantic web.
+This allows user comments in any type of media to be linked to a musically meaningful structure.
+The Meld framework was utilized by the Tromper project, that is, towards richer online music public domain archives.
+This platform aims to interlink, digitize, semantically enrich and annotate various forms of classical music, including scores in MEI format and sound recordings.
+The project also included the development of the Clara rehearsal companion shown here on the slide, a web application that allows musicians to revisit and review their performances or rehearsal renditions in a midi-stream and musical score, and thus to receive immediate feedback on their rehearsal renditions regarding stylistic and technical aspects.
+The Lohan Green Time Machine digital companion is our last example in this section.
+It is a Meld-powered tool that enhances a scholarly essay on Richard Wagner's use of leitmotifs in his opera Lohan Green.
+The digital companion enables users to explore the relationships between leitmotifs interactively, view commentary material, listen to audio samples, and see a simplified visualization of the orchestration.
+Users can also compare individual motifs in the Time Machine view and observe how the motif changes throughout the opera via a timeline view.
+Such projects already touch on some aspects of our next research area, that is, music information retrieval.
+Music information retrieval, or MIR, is a subfield of digital musicology that seeks to advance the access, organization, and understanding of music information.
+It has a rich history dating back to the early days of computing and music technology.
+It became very prominent in recent years through the International Society for Music Information Retrieval, ISMIR, and its annual conference.
+Today, MIR is a constantly growing field that, in the words of ISMIR, focuses on the research and development of computational systems to help humans better make sense of music data.
+This includes the use of deep learning and artificial intelligence to improve music recommendation systems, the development of new music similarity metrics, and the use of interactive visualizations to explore and understand large-scale musical data.
+MIR combines methods from psychoacoustics, psychology, signal processing, computer science, machine learning, optical music recognition, computational intelligence, and other fields to retrieve machine interpretable information, not only about music context, but also about bibliographics and metadata, or even audience and user-related information.
+Typical applications are music classification and recommendation systems, think of Spotify and other streaming services that analyze user data and recommend new music based on individual listening habits, audio source separation and audio feature analysis, or search and discovery systems for large collections of music, making it easier for users to find and explore music information.
+A very common tool in this field, 80% of which deals mainly with audio data, is the sonic visualizer. This freely available software package is optimized for the visualization, analysis, and annotation of audio recordings.
+It is often used for the extraction of dynamic or tempo curves in the context of performance analysis for examination of energy levels with the help of spectrograms or for audio feature extraction.
+As a last use case in this area, I would like to introduce a master's thesis from 2022, written by Daya Ashwantan at the University of Basel in Digital Humanities and Musicology.
+The thesis examines genre classifications on one of the largest community-based websites for metal music, Encyclopedia Metallum, the Metal Archive, and compares them with those on Spotify.
+The comparison is based on the difference between curated decision-making processes on the Metal Archive and mostly automated processes for genre identification on Spotify.
+The author approaches the topic from an interdisciplinary perspective, incorporating musical genre theories and a summary of the historical development of metal music, as well as academic engagement with it in the context of recent metal studies from the field of musicology.
+From the field of digital humanities, a distant reading approach is used, supported by self-made scripts for the creation, cleaning, analysis, and presentation of the necessary data.
+The author then presents the extracted genre data and audio features in a dynamic and analyzable format through a customized app.
+In my view, this is a great example of how methods from musicology and digital humanities can benefit from each other.
+As the final research area presented in this section, we next look at musical analysis.
+Analytical approaches to music have a long history, at least as far back as the 18th century.
+Subsequently, a variety of different theoretical concepts have been developed to explore the inner structures and relationships of music.
+The identification of musical parameters and their description and evaluation play an important role here.
+Digital tools and applications have supported such approaches since the late 1940s, when the first comparative analysis using an electromechanical calculator were designed.
+Since then, rise developments can be observed, which on the one hand aim at the use of mathematical models and statistical procedures, as you know, computers count incredibly well and fast, and on the other hand, at visual representations of, for example, harmonic or formal structures, but also pitch, rhythm, tempo, or dynamics.
+One important toolkits should be mentioned here. First, the humdrum toolkit, and second, the Music21 toolkit.
+The humdrum toolkit is a set of common line resources for computational music analysis that provides a variety of pre-made analysis tools that can be applied to humdrum data.
+In recent years, it has been extended by additional extras and an online viewer.
+Music21 is a Python-based toolkit that models musical elements like notes, chords, harmonies or sequences as stream objects, which can be modified using a variety of built-in functions.
+These streams can be exported as musical notation using notation software like Musco or Lillipont, and can also be output in MIDI format.
+Additionally, the toolkit includes a corpus of encoded musical pieces and features for importing the rise encoding forms.
+The digital music analysis also relies in many cases on the creation, annotation and analysis of datasets and larger corpora.
+In disrespect, members of the Digital and Cognitive Musicology Lab, DCML, at the EPFL Rosanne, among others, have done fundamental work in recent years.
+Over time, they have created and published a larger collection of annotated corpora, which are available for further analysis through the DCML corpus initiative. It is linked on the slide.
+One of the best known corpora is certainly the annotated Beethoven corpus, called ABC, which contains harmonic annotations for all of Beethoven's string quartets.
+Such automated or curated approaches to music analysis can form the basis for a variety of further applications.
+They can help support analytical and music theory research questions through quantitative evaluation.
+After this more detailed look at different research areas of digital musicology, I would like to turn the spotlight a bit on the challenges ahead.
+In the future, digital musicology will face a lot of challenges. These will be related to data quality and storage, including addressing concerns about data accuracy and reliability.
+Developing robust storage solutions that can accommodate large amounts of data and preserving the integrity of the data over time.
+Ensuring interoperability between different digital music databases and tools, navigating complex legal issues related to intellectual property and copyright,
+and addressing the ecological impact of processing and analyzing large volumes of data will also be significant challenges.
+Finally, ensuring that digital musicology tools and resources are user-friendly and accessible to a wide range of users will be critical to promoting the adoption and advancement of the field.
+Other challenges will be determined by the further development of technology.
+For example, we do not know yet what impact quantum computing will have on future research.
+Likewise, the role of non-fungible tokens, NFTs or blockchain technologies has yet to be explored.
+And how will AI-generated music or virtual reality affect our musical practices and habits?
+These are all questions that digital musicology will need to address in the future.
+Although the outcome is uncertain, we can say with certainty that this future has already begun.
+As such, I have come to the conclusion of my presentation.
+While this overview of digital musicology is by no means exhaustive and I had to omit many fascinating and compelling examples from the field, there are numerous resources and projects available on the web.
+Therefore, I would like to provide you with some starting points that will allow you to explore various subfields and research projects on your own.
+A helpful overview of digital resources for musicology is provided by the Center for Computer Assisted Research in the Humanities at Stanford University.
+The list includes 340 entry points, one third of them databases, another third music manuscripts and reprints, others being newspapers and magazines, corpora and other materials.
+Another quite comprehensive resource is the CrowdSource Directory of Digital Scholarship in Music, provided by the Digital Humanities Interest Group of the Music Library Association.
+It lists another 200 entries about digital musicology projects.
+If you are looking for further literature, you are invited to look at the proceedings of major conferences such as EASME or MEC.
+Please also do not hesitate to get in contact with larger research communities like the International Society for MRR or the Music Encoding Initiative MEI, if you have any specific questions about their activities.
+In conclusion, digital musicology is an evolving field that brings together music, technology and scholarship in new and fascinating ways.
+By leveraging the power of digital tools and data, digital musicologists can explore music from new perspectives, unlocking new insights into musical structures, history and culture.
+Despite the many challenges that the field faces, the potential benefits of digital musicology are immense and the field is poised to make significant contributions to our understanding and appreciation of music.
+I encourage you to explore some of the resources and projects I have mentioned and to consider how digital musicology can enhance your own research and engagement with music.
+Thank you for your attention and I look forward to continuing the conversation.

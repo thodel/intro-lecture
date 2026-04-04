@@ -1,0 +1,281 @@
+Welcome to this lecture about historical sciences and consequences of applying machine learning.
+Within the next about 40 minutes I would like to introduce you to what is currently being done in this field,
+especially with regards to early modern and medieval documents.
+The goal is that you will get a very basic understanding of machine learning applications with regards to historical data.
+Unlike recent documents, recent data, we do have to produce a lot of our algorithm, especially our language models ourselves.
+At the same time, this offers us the opportunity to think in depth about the methods, about the algorithms, about the structures we are applying to these documents.
+In a sense, this gives us a better understanding of consequences, of problems, of biases that are induced when we are using big data in history,
+but also when we are using machine learning for our everyday life.
+My name is Tobias Hodel, I teach at the University of Bern and I am a professor for Digital Humanities there.
+My field of expertise is utmost in the field of early modern history and medieval history.
+This is also where I got my PhD.
+At the same time, I started to use machine learning applications back in 2016 and follow the changing field since then.
+Now let's get started.
+I would like to start with a very brief preamble.
+With machine learning and artificial intelligence in general, we get a lot of opportunities, but we also get to use a technology that we are not really familiar with.
+Humanities is keen on thinking about its own methodologies.
+If we apply something from computer science, we should also follow this path.
+We should think about what does it mean if we use one method?
+What does it mean if we combine a set of methods?
+This means that we also should be starting at the point where we think about what do we really want to do, what are the questions we want to have entered by these algorithms?
+And what are the questions that should be answered by the machine?
+For medieval documents and also for early modern artifacts, we usually rely a lot on scholarly editions that have been worked on for many, many years and which then are produced in the form of books.
+Currently, of course, we do see a switch towards digital scholarly editions, which do make a difference since they are much easier accessible and also allow a lot more options to deal with them.
+But if we go in this direction, we need to start with one question.
+The question is what do we understand as text?
+What do we understand as the text that might be recognized by a machine?
+Even before text recognition became available for handwriting, Patrick Saale, now teaching in Wuppertal, thought a lot about this question.
+And he came up with his ingenious text wheel.
+What he basically claimed or found out, let's put it that way, is that a text is not really defined by itself, but rather it is a perspective on text that we are able to see.
+A text, in his view, can be the idea, the intention that has been brought into this product by an author or a group of authors, maybe even a society or parts of society.
+A text can also be part of language, so basically a string of characters, or it can be a document, it can be a material thing where someone wrote some signs on it.
+And he goes even more into detail and divides between this.
+For our approach it's really important to think about text as a document, because if we want to use a machine to deal with handwritten documents or even with printed documents, it needs to rely on an image.
+And the image can only focus on the document itself.
+So we have a very documentary approach to text.
+For our experiments we are going to use two corpora to source collections.
+The one is a scholarly edition of Königsfeld and Ebi, spanning 1300 to 1600, which I was involved in the production.
+And the second one is an ongoing project also at the DHS, the University of Bern, where we want to make available the Bernese Tower Books.
+The time frame is a bit later, so about the middle of 16th century to end of the 18th century, although we are at the moment mostly focusing on the first two centuries.
+Königsfeld is a rather recent scholarly edition, only available digitally.
+We didn't bother to bring the book, because the demand is here in the digital realm.
+And it has been entirely handmade.
+So basically experts working on these documents.
+Let's have a look at one of these documents.
+As you can see, you have the image of the original available to you and you have tagged entities.
+So person, places and dates have been tagged by the group that worked on the edition.
+This makes it possible to showcase which entities are connected to each other, which are occurring frequently with each other and other questions.
+So if you're researching one specific person and you come across the edition, you will easily find all the instances this person is occurring in.
+This has been the work of about four years, so it's showing you that it's quite a lever's task to work on scholarly editions.
+The Tower Book approach is quite differently.
+Here we're dealing with about 300,000 pages, whereas Königsfeld was at about 1,000 pages and we took a student-led approach.
+So basically we regularly offer courses where people work on the whole workflow with this document.
+From digitization to text recognition, also to transcription of course, to train text recognition.
+We'll come back to that in a second and more in-depth to a wide variety of approaches of information extraction.
+Currently we have 35,000 images at our fingertips and we can basically start playing around with them.
+The Tower Books are interrogation protocols.
+So people that have been kept in burn or in the vicinity of burn due to their behavior or since they have been accused of something,
+they were often tortured and interrogated for what seemed to have been happened.
+What we see here is not the higher echelons of the Bernie's society in early modern times,
+but rather people you would never encounter in other sources.
+These are people that have been wandering around, maybe not living at one specific place.
+These are people that are of lower stradars.
+So what you really see is basically a society from below, which is one of the highly appealing parts of this document.
+At the same time nobody would care to go through all of these protocols.
+Most of the things that you will encounter here are rather mundane.
+So people stealing stuff, maybe robbing someone, but of course you will also see cases of witchcraft or accusations of witchery and other more problematic cases.
+It's also not very easy to deal with this sort of documents because you literally see the suffering of people because we know that they have been tortured.
+For us these two corpora are really helpful to establish or use different machine learning technologies.
+That means that we now can test out these machine learning applications that are already available, but mostly used for as I said modern or even recent textual documents.
+The middle focus on two applications, the one is text recognition.
+Now in this case for handwriting, but in a sense it doesn't really matter since printed documents are just really regular handwriting for the machine.
+And the second one is named entity recognition.
+I will try to put this in the whole workflow that we used to use for scholarly editions or that we usually use in working on historical data.
+But let's focus on this too.
+And both of them rely on machine learning.
+As I said we can imagine the workflow of producing reliable textual instances in the way that is shown here.
+If you start at the top you need something like a digital representation of a text, you need an input.
+And what you need to do is basically a two or three step approach which is usually subsumed under automatic or handwritten text recognition.
+So you start with layout recognition, followed by text recognition and then in most of the cases text correction which is most of the time manual labor, but it depends a bit on the source material.
+For this step already we need what you can see in the right column, language models.
+For HDR this is mostly so called ngram models, so the likelihood of the appearance of certain characters in a specific order.
+But as you will see language models are at the moment the most important part of this process.
+Which also means that we will need a lot of textual data of a specific domain or of a specific time in order to create such language models.
+This is then followed the HDR process by either normalizations, I'm not going to focus on that because we try to avoid as much normalization process as possible and named entity recognition.
+Where we will also need a language model.
+As a next step which is not being covered here, it's possible to link these entities to already existing databases like wiki data you might have encountered.
+But you can also use it for contextualization, for categorization so that in the end you will get an annotated text and output that you then can work on with your historical questions.
+Let's start with text recognition.
+At the time of this recording 2022 we encountered a variety of engines available to us.
+Some of them are available in larger frameworks, some even with the graphical user interface like Transcriber's or eScriptarium and others just as command line tools.
+Maybe you know or heard about HGAR Plus or Pyliot, Pyliot later in part of Transcriber's.
+Kraken is the engine that's being used by the eScriptarium framework or Tesseract developed by Google.
+What we are currently working on are Transformer implementations with Choker for example which has been produced by Microsoft.
+And here the experience is that you reach a character error rate that are usable.
+Character error rate means the amount of characters in percentage, so per each 100 characters so and so many errors.
+For such general models, I will talk about that also a bit more in detail, we see character error rates in the vicinity of 5-10%.
+The examples here are medieval scripts and the early modern current.
+This is really like focused on central Europe, but in theory we can show that it's possible for most of the scripts except maybe for Chinese scripts.
+If we have a look on medieval scripts we can see that with large amounts of training material here about 25,000 pages that's charters and other documents.
+That we reach a character error rate for a validation set in the vicinity of about 5% with early modern current.
+So German script of the 16th to 19th century or even early 20th century.
+We are not there yet, but already getting in also in the vicinity of this 5% on validation sets.
+Validation set is basically the same writing that has been in the training, so the same hand, same scribe, but not this specific page has been part of the training set.
+So in order to determine how good model really is for any writing of a time, we need a third entity so called test.
+How does this work? This is the first part of your very brief supervised machine learning introduction.
+What we are using is a so called neural network. This is from a paper from 2010 and 2012 where Graves and Schmidhofer worked on this early implementation of neural networks.
+But in theory, no not in theory, in practice we see the same implementation today, but only with larger networks.
+It changed a bit with the invention of transformers, that's another form of a neural network architecture, but also it's quite comparable of what happens.
+So if you read this image from bottom to the top, you can see that we start with an image.
+We basically go through this image pixel by pixel, this is what you can see in the first part from the bottom.
+And this gets fed forward, this is what is even called feed forward.
+And here we see this first neurons.
+Now what we don't do, unlike in other algorithmic approaches, is we don't tell the system what it has to do, but rather we want the system to figure it out itself.
+That means we tell the system what an input is and what a desired output is. This is the so called training process.
+What happens in the middle, we don't care in a sense, we just provide the means for the system to optimize itself.
+So this whole task becomes an optimization problem basically.
+Meaning we give this input, this image and we tell the system this is the desired output.
+Here we're working with one word, but of course this could be anything.
+Also from an epistemological point of view, we need to acknowledge that these two things, the input and the output, so the image and the string of characters,
+they don't have anything to do with each other. All that we do is we claim that there is an interlinking.
+So we claim that this bunch of pixels represent a character, part of the string.
+For the system, it wouldn't care if we would make it recognize smileys for example.
+It's really like an imitation process. So the system tries to imitate what is the desired output.
+This will also be a problem when we think about the whole bias.
+So if in a text and we train a system to imitate it and the text is full of biases, of course the system also will learn these biases
+and represent these biases as it has been in the whole corpus represented.
+From a paleographical standpoint, we see that the system does not know anything about it and it does not really care.
+So it's all about trying to optimize this neurons.
+Now this seems a bit obstruct, but let's see some examples. What does this mean?
+So if we apply this form of text recognition, as I said, it's not the same neural network we have seen before, but rather a bit larger, but in the same sense.
+And we use about 5000 words to train a specific model. That's about 1000 lines here.
+We get results on the validation pages, so the pages that the system did not see in the training process of about 7% character error rate.
+That's CER. Now keep in mind 7% CER is quite a lot of errors.
+So out of 100 characters 7 are going to be playing out wrong.
+And here in this example, that's a Coral Engine Miniskill from the 8th century, from the Abbey of Sengal.
+The problem is not really the shapes of the characters, but rather the abbreviations.
+So in the first line, for example, you see this P with a strike through, which stands for PER.
+That's an abbreviated part. And this is basically the problem of the task here.
+But that's also not a lot of material. So this 5000 words is about 40 pages of this manuscript.
+Now if we enlarge the amount of training data and detect a data set of early modern ladders, here with almost 50,000 words, about 6,500 lines,
+we see that we increase the quality or the accuracy of the recognition.
+Here on the validation pages we achieve about 2.5% character error rate.
+And this is also more or less the ceiling of this technology at the moment.
+This also means that scholarly additions cannot be done by the press of a button.
+But rather it's still a correction process involved if you want to achieve 99.9 or something similar character accuracy.
+Also it teaches us that this specific person used to write quite regularly.
+Otherwise it would not have been possible to reach this 2.5% character error rate.
+Now let's enlarge the amount of training data even further.
+Here at 77,000 words, about 3,500 lines, we get interestingly a bit worse character error rate.
+Why is that? Unlike the example before, what we see now is that we included several hands in the training process.
+So not just one person, one model, but rather let's try to fit four different scribes into this data set.
+And as you can see the result is still usable, so 5% is not that bad.
+It will speed up the whole transcription process heavily, but we need more training material.
+That means we need a lot more training material and here we can showcase with enough training material, 150,000 words from a data set of the 19th century.
+That's now from the canton of Zurich. We still get back to this 2.5% character error rate.
+Although we need to acknowledge that this has been all highly skilled and trained scribe, so it's not like your everyday scribble.
+It's rather nicely carried out script.
+And with this we end our little excursion into text recognition.
+There is one whole lecture about text recognition by Andreas Fischer in this lecture series, which I highly recommend.
+But what I wanted to show you is that it is possible to create these large almost channel models that are suitable to recognize one specific hand, but rather one kind of script.
+So for example German Courant of the 19th century, we have a lot of material available from a lot of different people.
+So we can basically claim that this is a solved problem if you need to recognize that you will be able to do it with a decent quality.
+But of course if it needs to be on a higher quality you can start creating your one specific model.
+And what you will see in the upcoming years are more and more such rather generalized models made available to the public for the different engines and frameworks.
+Now let's move one step further towards the second task, the Denamed Entity Recognition.
+We are using for this task the Flare Framework, which is open source available.
+It has been initially developed by Salando and is now being maintained by the Humboldt University in Berlin.
+What we need here are basically two ingredients.
+The first one and the most important one is a specific language model.
+The second one is then a tagger. But what does it mean? What is a language model?
+Let's zoom in a bit on that.
+A language model is nothing else than a representation of a language.
+So how can we achieve such a thing?
+Mikalov some years back claimed that you can do really nice representations using the so called word-to-vector approach.
+This works really nice in the sense that you try to create a vector also based on a neural network, based on a large corpus where you look at occurrences of single words or to make it a bit more complicated to single tokens.
+The token does not need to be one word, it could also be only part of a word.
+But it can also span several words, because some entities like New York as an example are better treated as one thing.
+So basically this is a token, whereas maybe it's only part of a word, can also be a token.
+Now we do this representation by training a system like a text where it has to fill the blanks.
+So you show the system a text, but you leave out certain words and you make the system fill in the words.
+The better it achieves a result that makes sense, the better scores it gets, so it's optimizing towards this result.
+Which then basically gives you these so called embeddings.
+An embedding is nothing else than a value, a vector for one specific word or in our case a token.
+This seems a bit complicated, but for our case it's only important that you keep in mind that we create a vector for each of the words.
+Now the problem with this is that of course certain strings, like strings of characters, can mean several things.
+The example we took here, which are in German, is the example of Stadt.
+So Stadt, S-T-A-T in German or in early modern and especially in Medieval, German can mean several things.
+On the one hand it can mean the city, Stadt.
+Nowadays you would write it as S-T-A-D-T or it can mean standing, so Stehen as you would put it today.
+And it's written completely the same, but depending on the context it will have different meaning.
+Now what we use, and this is one of the interesting things about Flair, because you can train your own character language mod, so you can go on a character basis.
+You can get a vector not only for each token one, but depending on the whole sentence you will get different vectors.
+And what you try to do here on the right side is basically represent this in a 3D space.
+So each of these points is one of the occurrences of Stadt.
+The one mean the city and the others mean standing.
+The red one is especially interesting because it's referring to something that has been written before, so it's standing written as you would say in German, which is not really translatable into English.
+And as you can see, thanks to this language model, this character language model, we can represent these different occurrences of standings or city and we can cluster them.
+So the left cluster would be the occurrences of city and the right cluster is the standing occurrences.
+And of course you can also do this for a lot of other things.
+This means that the whole name and entity recognition process is based on such clusters.
+But in order to do so, you need basically to create a model, so called tagger, that recognizes this cluster.
+Or that says everything in the vicinity of this vector space could, should or has to be a, I don't know, place name or the name of a person.
+Like that it's also possible to distinguish certain things that are also homonyms.
+So for example, Washington can point at a place or rather several place names, but it can also point towards a person.
+But depending on the context, you will be able to define what it means.
+And with such character language models or also with other approaches like BERT that has been used by Google, you are able to distinguish.
+These two.
+But in the end, it's a language model in behind where this clustering needs to happen.
+And this is basically where the, the tagger uses the language model to showcase this on a rather statistical level.
+You can see that we reach not a state of the art for modern triggers where you would expect that the name and entity recognition would be in the vicinity of about 95 percent or 0.2.
+95 f score wise, f one score wise, but a bit below and really comparable to everything that's around for historical data.
+So for example, for the Koenigstaven dataset, the person and places are being recognized with a rather high recall.
+So 88 and 85 percent with organizations, it's a bit more difficult because if you start thinking about what an organization is and how it's being like called,
+it's getting rather complicated.
+And as you can see, even with the experts doing the tagging in the Koenigstaven corpus, the results are not that high.
+Even worse with the tower books, the tomb Richard corpus, where we reach a recall and even worse the precision.
+That's not worth mentioning.
+Also, this is basically my fault because the introduction to the students of these organizations were not elaborate enough so that they weren't really able to distinguish and we have a lot of different taggings going on.
+Now, the dataset is quite different, which is remarkable because although Koenigstaven has a lot more training data, the results are not that much better.
+Which tends to show that it's not really about the training of the tagger, but rather the language model behind.
+Because for the tomb Richard dataset, we had a much larger and more domain specific language model.
+So you see the language model is really the key and the tagger basically needs to rely on this language model.
+The second really interesting thing is that we used two totally distinctly different approaches to tag.
+For the Koenigstaven approach on the bottom, we wanted to make aware that we're not really certain what is part of the name and what not.
+So we decided to include as much information as possible that could be part of the name.
+Maybe you know that for medieval times this first name, last name structure is not a given, but rather invention of the 15th century in the middle and central Europe.
+And of course some cultures just don't use this structure at the moment.
+So it's basically a really Eurocentric view that you need the first and the last name.
+For the second corpus, for the tower box, we used a completely different approach where we said it's really hard to discuss with the students or it would be too time consuming to discuss in depth.
+What it really means that something is a name.
+So we assumed that everything that would be understood as a name nowadays probably has been a name.
+So this is really the first name, last name approach.
+And as you have seen, the results are comparable.
+Now the third interesting part was the application of this trained tagger for the tower books on documents that have been automatically transcribed or recognized.
+Now the tagger has been trained on documents that have been corrected by students and then intact by students.
+Now what you do is basically we take this tagger and apply it to documents that are only automatically transcribed.
+And you can see that the results are rather good.
+So although basically no word has been correctly transcribed, the writing of this tower box is quite a challenge because it has been written as the name says.
+In the towers, most of the times the lightning wasn't really optimal.
+But still the tagger is possible, thanks to the language model, to tag correctly the instances.
+So we see that this Hans Kohler should be Hans and not Han and it should be Kohler and not Kohlen is correctly identified as the beginning of a person and then the end of a person name.
+The same goes for the Fisher and of course we encounter also some errors.
+So for example the Grossweibel, it's a position and that's not a name.
+Charner by the way shouldn't be written with W but still it has been identified as part of a name, of a person name.
+So now we can claim that we don't need perfect transcriptions in order to process this information further.
+So that means that we can really tackle large amounts of data and we will be able to at least identify where persons, places or called.
+So we may not have it perfectly transcribed but we at least know this here we encounter a person or a place name or a date.
+And of course then we can start doing the linking.
+Even if the transcription is not perfectly accurate, we still can assume that this could be a person that is in the database.
+This is then the entity linking process that is still working progress and the research in progress at the moment.
+In order to give you an overview of how this all came together and what we tried out, this is a very simple model that has to be read from left to right.
+So we basically start with a main corpus and the raw data, basically the text of it and we train this language model.
+We used different approaches, as I said, FLARE was the most successful but also we used fast text and BERT fine tuning, which then created a language model and which then was used to train this NAND entity recognition model.
+And which resulted in these rather successful models that I have been showing you.
+But in order to create a more reliable language model, we needed to have data of this similar nature.
+So that we have text from the same domain and also from the same time frame.
+And this proved to be highly valuable.
+And as you will see in the very end of this talk is basically also the secret recipe that GPT and chat GPT that you might have encountered relies on.
+And if this we come to the end of or the extended end of this presentation.
+So in the end it will result in the co-creation of human machine inputs and also the idea of mutual criticism so that we try to take the machine seriously.
+Does this mean that we just automate everything?
+I don't think so. The opposite.
+The things what we need is new forms of dealing with sources.
+That also means that we need new views of how to deal with it workflow wise.
+So when do we do what steps, how can we redo these steps, if newer approaches get available.
+How can we work in this information enrichment process?
+So how can we extract this information and then feed it back in probably in order to train new models?
+This is still a process that's ongoing.
+That's not a process that's coming only from computer science but it needs to have a lot of input also from humanities, from historical sciences here.
+Of course this will also result in new questions with regards to copyright and authorship.
+So who has been responsible of what and also with view on technical knowledge.
+So next generation and you're the start of it.
+You will need to have a basic understanding of machine learning the least.
+Optimally you will also make your hands dirty with it, try it out and train your own models and make available your own data so that you really get into a lot of discussion.
+This results in further questions.
+So what quality is necessary for the text recognition, for the taggers in order to work on the documents, on the material even further.
+What steps of processing are put in what order and how can those be done?
+Read on.
+And with that we are already at the end of this little introduction to digital historical sciences and machine learning.
+I'm happy that you made it through and I hope it was of interest to you and I'm looking forward to hear from you.
+Thank you and goodbye.

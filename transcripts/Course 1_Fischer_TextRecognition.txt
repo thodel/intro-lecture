@@ -1,0 +1,439 @@
+Welcome everyone to today's lecture about text recognition.
+My name is Andreas Fischer.
+I'm a professor in computer science at the University of Applied Sciences and Arts Western
+Switzerland in Freiburg and I'm also a lecturer at the University of Freiburg.
+A few words about myself.
+I did my PhD thesis in 2012 at the University of Bern on the topic of handwriting recognition
+in historical documents.
+The fields of research that were involved were essentially pattern recognition, automatic
+recognition of text, using methods for artificial intelligence and especially machine learning.
+In the past years have been involved in many projects that addressed transcription, keyword
+spotting, transcription alignment, layout analysis and ground truth creation, topics
+all of which I hope to explain a bit more in detail in this lecture.
+On the right I made a collage of a couple of documents I've been working on, I'm still
+working on regarding text recognition.
+You can see medieval old German manuscripts, there is also papyrus at the bottom, you can
+see engravings in stone, these are old Vietnamese steels and all at the bottom there is a letter
+correspondence from Heinrich Bollinger that has to be transcribed automatically and converted
+into a digital edition.
+So today's lecture has the following topics.
+First I will talk about why we want to do automatic text recognition and what are the
+different tasks we have to solve.
+Then I will attempt to give an insight into the inner workings of a text recognition system
+without going into algorithmic details but to convey a certain feeling how the machine
+proceeds to recognize characters and words.
+And finally I will give a few pointers to literature but also software that might be
+interesting in this domain.
+So why automatic text recognition?
+The overarching goal is to preserve our written cultural heritage in a way that we can access
+old manuscripts not only in libraries such as this very nice Baroque room of the Abbey
+Library of St. Cole but conveniently in an electronic form.
+Having access to a document is not only having access to the images but ideally also to the
+contents especially for text recognition having access to the actual text.
+This would then allow us to browse in the library similar as we are used to browsing
+on the internet.
+We can search by keywords and find pages, documents of interest according to some search
+text.
+So the search will not only be an author search or by year etc. as we are used to from metadata
+in the libraries but actually go into the books and navigate through the individual words.
+In order to achieve this automatic reading there are a couple of steps that are usually
+solved in sequence.
+The very first task is to have a look at the scanned page and to find zones that actually
+contain the text.
+They can be organized in columns, paragraphs, family lines and we might even be interested
+to separate individual words.
+For a human it's a rather simple task even if we don't know the language we can apprehend
+somehow the structure of writing and except in very difficult cases I think even a child
+could tell us where are the different lines on this scanned page.
+It turns out however for the machine this is one of the hardest tasks.
+The machine does not necessarily know about the textual structure in general and handwriting
+in particular can be in very creative force on a page so this is already a very first
+difficult challenge to solve.
+Once we have identified zones of text and typically the goal is to have the text at
+the line level.
+This is currently the unit of processing that is preferred for the text recognition systems.
+This image of the cutout line will then be given to a text recognizer and the text recognizer
+goes from left to right through the image reads and outputs a sequence of characters
+and words accordingly.
+Once we have this transcription we can also think about the third step which is the text
+retrieval.
+This is the internet search I have been talking about but with this special aspect that the
+transcription that we have produced automatically usually contains errors.
+So what we need here in this third step is to include kind of a fuzzy search that the
+system helps us find words that are maybe written a bit differently or contain OCR
+errors.
+Among these three tasks let us focus on the second one which is the main topic of this
+lecture text recognition.
+In this scenario the classical goal is as I mentioned before the transcription input
+is a text line image and output is a sequence of machine readable characters.
+Machine readable is important in that context because afterwards we want to do text search
+for example on these transcriptions.
+However this is one of the hardest tasks that has to be solved.
+Recognizer does need a robust model for the individual character shapes that can be quite
+different even within the same manuscript but essentially the problem is that there
+are so many different historical manuscripts, languages and scripts out there that building
+character models, optical character models for all of them is a tremendous task.
+Also the language should be known because during the recognition some statistics about
+the language what kind of word is more likely to follow given a certain number of recognized
+words.
+This kind of information also helps to produce a nice transcription but more often than not
+the resources needed to train such a transcription system are simply not available.
+Another task that is a bit less involved I would say is keyword spotting here.
+We are no longer interested to produce a complete transcription but we have a few select words
+that we are interested in and we go through our text lines that we have already cut out
+and we try to return those text lines where we believe the keyword to be present.
+This can be done also by template matching for example the user selects one example of
+the word we are interested in and then the machine can go through the lines and do some
+image to image matching to see where the word might be present or not.
+But even this task part of experience requires a couple of resources essentially text lines
+images for which we know the correct transcription to train some character models.
+If this is not available there is a third task that is even a bit easier for the machine
+which is the task of transcription alignment.
+In this scenario we have the image and we already know the text.
+This might be a plausible scenario for example for the Bible where we know the text of the
+Bible and we have a new image material that needs to be aligned with it or coming back
+to the papyrus if there is the Iliad we know what is written but we need maybe to align
+fragments of papyrus with the text.
+What the machine does here is to find the best possible correspondence between individual
+words of the transcription and the image taking into account that there might be some parts
+of the image that have no correspondence to the text and also some parts of the text
+that have no correspondence to the image.
+It's not only to find the start and end position of the words it's also a bit more involved
+if the transcription does not match 100% what is visible on the image.
+As I've mentioned from a machine learning point of view to do these tasks the transcription
+alignment can be done with probably the least resources.
+That's the easiest task and the full transcription is the hardest task and this should only be
+attempted if there is a lot of material ready for the machine to learn from.
+We will talk about that later.
+I've been talking a lot about handwriting but more generally what is possible today
+in terms of text recognition.
+When it comes to modern print I would say it can be considered as mostly solved.
+There are commercial applications available.
+There is Abbey Fine Reader for example that can deal pretty well with scanned modern prints.
+The fonts are known to the system.
+If the scan quality is high enough I would say then almost perfect optical character
+recognition can be attempted.
+This will give us at least access to the characters on such a page but interpreting for example
+the logical layout.
+Where are the articles?
+Where are the titles?
+Where are the paragraphs?
+Where does an image belong to?
+To which article?
+These are still quite open questions so this is why I would say it's not solved but it's
+maybe mostly solved at least when it comes to the actual work of recognizing characters.
+When it comes to historical print it's already much more difficult.
+The condition of the paper for example can lead to artifacts on the scans.
+The fonts are not well known to modern OCR systems.
+The layouts might be unfamiliar with respect to modern prints but there are some studies
+especially a larger European project called Impact that have shown that in this area since
+its print models can be trained fairly accurately with reasonable resources.
+So I would say here historical print is partially solved.
+If you want to create an electronic edition of a historical print you will still need
+to invest a lot of effort to reduce the number of errors.
+When it comes to handwriting however the challenges are enormous.
+Handwriting is very individual.
+I think it's clear for all of us when you compare your own handwriting with that of
+your friends.
+The character shapes that need to be learned are much more variable than a printed font.
+Also the layout on these pages is more challenging because with handwriting we are rather free
+even if there are of course examples where monks follow a very clear structure and also
+try to copy a character according almost font like according to a predefined style.
+However overall I would say this domain of handwriting recognition is more unsolved than
+solved.
+There are character error rates that go easily to 10% word error rates that go easily to
+20%.
+So from five recognized words one will be wrong and these kind of errors usually prohibit
+the publication of clean electronic editions.
+There always needs to be some human involved if you want to have an error free result.
+However for tasks like indexing, finding specific keywords even having an 80% correct word
+recognition is of course enormously valuable when you compare it with a raw scan where
+you only have access to the image itself.
+There is also another problem for handwriting recognition that was already stated by an
+American philosopher Seire in 1973.
+Speaking about the problem of handwriting recognition it was clear to him pretty soon
+that in order to recognize the handwriting you need to segment it into characters first
+so that you can then recognize the characters.
+However to segment the characters you actually need to understand to recognize the character
+in turn.
+So recognition requires segmentation, segmentation requires recognition.
+This is not necessarily the case for printed text where the fonts are so regular that you
+can easily separate individual characters and then recognize them.
+If you look here at the example I'm pretty sure especially for distinguishing the start
+and end of the N and the T of this word even for humans it's quite difficult to get a
+perfect segmentation.
+This problem occurs whenever characters are touching.
+It's especially difficult for cursive handwriting with a lot of different ways how the characters
+are linked.
+So what modern recognizers do to solve the problem they actually solve the two problems
+at the same time.
+They recognize, they segment, they recognize, they segment and they find the best overall
+solution.
+But this is one of the main reasons why handwriting is, well maybe not the main reason, but one
+of the reasons why handwriting is so much harder than printed text recognition.
+Now that we know what we want to solve let me try to give you an impression how text
+recognition is solved, how the machine approaches the problem.
+And for that we first need to consider how a machine actually perceives an image.
+You can see on the top left an image of some wooden balls lying on a table and if you zoom
+in into this rectangle that is marked in white what the machine actually receives are numbers.
+It's a matrix of numbers, one number per pixel in this grayscale image ranging from
+0 to 255.
+And you can also consider this as a kind of a landscape on the top right.
+You have a representation of the numbers that goes higher the higher the number is.
+So it's kind of a landscape of little hills that we need to analyze.
+This is now the surface of a wooden structure on the table, but if you look at handwriting
+it will exhibit similar shapes to be analyzed.
+So how can we treat this matrix of numbers?
+Let us consider the example of character recognition in the context of voting.
+Let's from a German example so we would vote J for Ja or Yes or we would write N for 9 or No.
+In this scenario let us assume that the ballots are scanned somewhere and the region where
+the characters are written are then extracted so that we end up with these images that contain
+either the handwritten character J or N.
+We also apply some pre-processing to the image.
+Instead of having numbers between 0 and 255 we decide either it's a white pixel or a black
+pixel depending on the characters or the black pixels or the character foreground and the
+white pixels are the character background.
+If we have a look at all the possible images that we can find for our machine let's assume
+those rectangles with the character in it they have a dimension of 25 times 20 pixels.
+So we have 500 pixels and each of the pixels is either white or black.
+So the first pixel is either white or black this gives us two options then if we take
+the second pixel as well we have two times two already four different configurations
+so white white white black white and black black and so on and so forth.
+So combinatorially speaking we have two to the power of 500 different images that we
+can produce that might be the input of our system 10 to the power of 150.
+This is of course impossible to list and to label correctly each of them.
+Instead what the machine does is to reduce the problem by extracting so-called features.
+These are numerical characteristics of the text that will then allow us to simplify the
+recognition.
+For example we know that Anne is quite symmetrical as a character and Jay is not so we could count
+we could cut the image in half so let's say we draw a line here in the middle of the image
+and then we count how many black pixels are on the left hand side and how many black pixels
+are on the right hand side and it's clear for the Jay there are much more pixels to
+the right than to the left so if we divide left by right we will get a number that is
+clearly lower than one and for the Anne it's more or less symmetric so we might expect
+a number on average for this feature that is around one and by looking at the problem
+from this perspective we can then say that the J's are the images where this ratio X
+is rather small and the Anne's are the images for which the ratio is close to one at least
+larger than for the J's and quite naturally we can then put the threshold on this value
+X and say whatever is below let's say 0.75 is considered a J and everything that's above
+this threshold is considered an Anne and with that we have already built our first character
+recognition system.
+To look at the problem with a bit more detail we can do a so-called probabilistic classification
+which is also known as the patient classifier.
+In order to do that we first need what is called a training set so these are images
+of J's and Anne's that have been labeled by a human imagine maybe a thousand images
+and person sits in front of them and for each of them decides this is a J this is an Anne
+this is an Anne this is a Jay and so on and then in this training set we know for each
+image what it is.
+Afterwards we count how many times we see J and how many times we see an Anne and we
+count a bit more in detail we create so this is still our feature X and we create bins
+for example this bin could be between 0 and 0.1 how many times did we find an image where
+the value of the feature has been between 0 and 0.1 then between 0.1 and 0.2 and so
+on.
+By doing that and normalizing the value we will get this kind of density distribution
+at the distribution of our feature and we can see that most of the J's have a value
+of about the third and most of our Anne's have indeed a value on average of about one
+but this distribution takes really all the details into account and then we can choose
+a suitable threshold that is optimal in the sense that if we now classify all the J's
+below the threshold all the images below this threshold as J's we can immediately see
+that this area here this will be the errors we expect to make because these Anne's will
+be wrongly classified as J's.
+On the other side all these Anne's are correctly classified and all these J's will be wrongly
+classified as Anne's so this gives us this overall Bayesian error under this curve and
+you can try to move the threshold to the left and to the right and you will see that the
+error that you are expected to make for the classification will only increase.
+So here the threshold is put at the optimal position.
+With some assumptions actually so the assumption here would be that there is an equal number
+of J's and Anne's in general so we don't have to wait the two distributions.
+But with this in mind we can try to make a classification that is even a bit more reliable.
+We can say that well we don't want that much errors so we reduce the errors by defining
+two thresholds.
+We can say everything that's below the first threshold is a J and the error that we expect
+is smaller and everything that is above the second threshold is an Anne and the error
+that we expect is also smaller than before.
+This depending on how we put the thresholds we can actually reduce the expected error
+to some threshold that's acceptable for the problem.
+So you might think what's acceptable for voting 1% error, 2% error.
+This can be defined and thanks to the training set we can then put the thresholds in a way
+that the estimated error is within a reasonable limit.
+And what happens in between?
+So these are the images where our recognizer does not know what to do and here we can simply
+reject automatic classification and give back the image to a human to decide in these more
+difficult cases.
+Of course the more samples we reject the more work manual work for the human but by using
+this procedure here we are sure that the human only needs to look at difficult cases and
+not images that are rather clear and can be recognized automatically.
+So far we have looked at one feature.
+This was the fraction of black pixels to the left divided by the number of black pixels
+to the right.
+And so this is again our feature that we have looked at so far and we have seen on average
+it's a third for the chase and about one for the ants because they're symmetric.
+We can now also add more features and following the same logic we can say how many black pixels
+are in the top part of our image divided by the bottom part.
+And again for the J because there is a lot of black pixels on the bottom.
+The second feature here will also have a value of let's say around the third for the J's
+and around one for the ants.
+And we are now in a two dimensional plane and we can see here the circles they represent
+images that are J's and the squares they represent images that are ants.
+And the goal of classification is now to separate the two for example with a straight line to
+say on the left side here of the straight line these will be the J's on the right side
+there will be the ants and the learning process if you want is to find the good positioning
+of this straight line.
+This is for example what support vector machines do or also the perceptron algorithm optimizes
+the positioning of such a separating plane.
+As you can see or assume here from the two dimensional case it should become easier to
+classify the two classes because we have more information.
+Now what was not so clear here we have maybe an example.
+There is a J that has a relatively large value for the first feature but because we now also
+look at the second feature we can actually find out that it is nevertheless a J and not
+an M. And with that we can add more features we can think about characteristics ourselves
+that are pertinent for the character and like that we can construct larger number of features
+and the better separation of our recognition of our characters.
+What I've explained so far is a rather classical perspective on machine learning on how to
+create a text recognition system.
+As you are certainly aware since maybe 10 years I would say a novel methodology called
+deep learning has changed the way machine learning is done nowadays.
+What is the difference?
+So in the previous example I said we start with raw data then imaged and we apply some
+pre-processing what we did is we distinguished the handwriting foreground.
+We said this is a black pixel and the background here we said that's a white pixel which gave
+us some binarized cleaner data.
+Afterwards we decided ourselves what kind of features we would like to have to have a
+look at to decide essentially what character it is and we've defined two.
+The fraction of black pixels left divided by right and top divided by bottom and this
+then gave us some abstract representation of our character.
+And finally we trained a model to distinguish the chase from the ends and in order to do
+that we needed a training set.
+And in this training set we had a lot of images in the example it was 1000 images for which
+a human assigned a label J or N to each one of them.
+And thanks to this training set we could then find a good model that can decide between
+chase and ends.
+What happens in deep learning is that this pre-processing and feature extraction part
+is learned as well.
+So the machine looks at the training data and just by analyzing it it finds out what
+are good ways to pre-process it, what are structures that are interesting and then also
+what are the features essentially that should be taken into account to decide which character
+it is.
+Like that in the deep learning area you only have to provide the raw data and the training
+set and the rest is done by the deep learning system.
+The advantages are at the moment it's clear that the deep learning approaches lead to
+typically better results, significantly better results than classical machine learning approaches
+but the disadvantages are that you need more training data because the machine needs to
+learn more from the data.
+And also it's not always or mostly not intuitive what kind of features that the machine extracts
+automatically.
+So if you want to explain at the end why the J is a J and why the N is an N it gets a bit
+complicated and this can lead to troubles.
+If you think about the voting example it might be problematic that you cannot explain why
+this vote was considered as a yes or a no.
+So there are some pitfalls with deep learning but overall it's a fascinating technology
+that tries to analyze and understand the important parts of the data to distinguish the different
+classes by itself.
+The implementation of deep learning is typically done with artificial networks that have a
+large number of layers and each layer in that context is considered as a further abstraction.
+So the first layers would deal with some basic structures in the image like vertical or horizontal
+changes and intensity and then the middle layers would be building a bit more abstract
+features as we did with counting the top and the bottom number of black pixels and the
+final parts of the model would then be the ones that distinguish based on the automatically
+extracted features and the different classes.
+So I've talked a lot about the training set and especially in the deep learning area there
+is nothing more valuable than a good training set of high quality and also of a large quantity.
+So this is the key to make historical manuscripts or historical prints digitally available to
+extract the text.
+This is to provide the machine with a lot of learning samples.
+Those learning samples are also called ground truth.
+The truth about what is written on the image is a bit ambiguous because of course even
+humans will not always agree on what is written and there might be variants and so on.
+But from a machine learning perspective this will be the targets that are given to the
+machine to learn.
+So the machine in the end will be guided towards recognizing this character as a D and this
+character as an E if we give it a good ground truth.
+What is ground truth?
+For text recognition it actually has not only the transcription part so we need of course
+to say on this image this is the exact sequence of characters but there is a second part
+which is sometimes also quite difficult to provide is where are the text lines on the
+scanned page image.
+If you remember from the beginning of the lecture there is a processing part where you
+try to understand the layout of a page, the columns, the paragraphs and the text lines
+so this also needs to be learned.
+And for that ideally around each text line you would put this kind of polygon to be exact
+and also separated from the lines above and below and then you can basically tell the
+system this is a text line.
+And if you provide the system a lot of examples like that it will begin to do the layout analysis
+part better.
+And then within each of these polygons you provide also the transcription and then the
+system can begin to learn character shapes, it can also begin to learn the intrinsic statistics
+of a language, what is the characters that typically follow each other, what are the words
+that follow each other, what are the different variants maybe of the same word.
+All of that can be implicitly learned if you provide the system with enough learning
+material.
+One point that is important when we talk about the transcription here for the ground truth
+for text recognition, ideally this transcription is accurate at the character level in the
+sense that it corresponds one to one with what is visible.
+For example the sceptre here can be written out in a transcription because it makes more
+sense for a human when reading the text.
+However, for machine learning aspects it would be better to annotate it here with a special
+character for the abbreviation to say here on the image I have this special abbreviation
+character so this part of the transcription is what ideally is available.
+If a transcription has written out abbreviations like here it's admissible, it's still possible
+to learn but it will provide targets to learning the optical model that are a bit noisy.
+So the machine learning system will react a bit less well to your training material
+if you have words like these, they should be as much as possible accurate at the character
+level to what is visible on the image.
+Alright, with that I hope I could give you a good impression on what text recognition
+is about from a computer science perspective.
+I would like to finish the lecture with a few pointers.
+First in terms of literature, if you are interested in pattern recognition in general
+there is the pattern classification Bible by Dutthard and Stork.
+It has especially a very nice introduction that explains a bit similar to what I've
+tried to do with the classification of Js and Anns, what are the basic mechanisms behind
+classification.
+I can really recommend that as an introductionary work that is also quite comprehensive when
+it comes to classical machine learning methods.
+If you are interested especially in the deep learning models there is a standard book these
+days from Goodfellow, Benjo and Gubil.
+The book is called Deep Learning from 2016 and Benjo is one of the Turing Award winners
+on the topic of deep learning together with Hinton and Jan Le Brum.
+These are people at the very core of the development of the methods and it is written
+in a very didactic way so I can recommend that as a starting point.
+And finally if you want to be more closely where the newest research happens every year
+I can recommend the conference series, the International Conference on Document Analysis
+and Recognition.
+It was a b-annual conference but it is now every year and there from a computer sense
+point of view the newest technologies and text recognition are presented and exchanged.
+It's quite a large conference but it typically also has some workshops dedicated to specific
+topics, satellite events and I can mention especially the historical document imaging
+and processing workshop called HIP that is still strongly focused on computer science
+but welcomes also participants from the humanities through to exchange and often datasets are
+discussed on historical manuscripts and then there is also a workshop, a new workshop computational
+calligraphy that was introduced and this workshop especially warmly welcomes people
+from the humanities to in an attempt to bring a bit together the scientists from computer
+science and humanities.
+And finally I cannot do a lecture about computer science without citing some code.
+There is a lot of software available these days that allow to do handwriting recognition,
+it was not the case when I started my PhD a few years back but now it is handwriting
+recognition or text recognition in general is actually quite accessible.
+The first three, four links are links to free software that a programmer can use.
+These are links to code, to source code and in the case of the transformer OCR the fourth
+link it's a implementation in hugging phase it's quite nice API simple to use and very
+powerful handwriting recognition system.
+It is not recommended for persons who were new to programming but if you have some experience
+especially in Python these are all options you can use off the shelf on your own to perform
+text recognition.
+And then there is also more and more commercial products that are available for historical
+documents I would like to highlight the Transcribals platform this came out of the European research
+project and is now in a self-sufficient mode let's say with a subscription fee available
+and it has a very interesting interface as you don't need to be a programmer to use it
+you can upload your documents and then apply handwriting recognition models to it and download
+the results and use them for your research.
+There is also a Google Vision component that does handwriting recognition with astonishing
+accuracy.
+This is also not for free essentially but one of the options you might consider to have
+a high quality handwriting recognition result.
+High quality and this is my final caveat still means let's say 5 to 10 percent of the characters
+are wrong and let's say 10 to 20 percent of the words are wrong.
+This is not something that is going to be solved within the next couple of years I fear
+but there are many applications and use cases that are interesting even if the text recognition
+does not have a perfect quality.
+With that I end for today I thank you for your attention and I'm happy to get in touch
+with you should you have any questions.

@@ -1,0 +1,370 @@
+Hello, my name is Mikhail Piotrowski.
+I'm Professor of Digital Humanities at the University of Lausanne.
+Today, I'd like to talk to you about theory and epistemology of digital humanities.
+In very general terms, our starting point is the observation that so far digital humanities
+has largely contented itself with borrowing methods from other fields and has developed
+little methodology of its own.
+This borrowing of methods is often very pragmatic.
+Some may say opportunistic and rarely accompanied by theoretical reflection.
+The consequence is that there is effectively no epistemology of digital humanities.
+In other words, there's little reflection on how knowledge is produced in digital humanities
+and whether the production of knowledge in the age differs from that of the traditional
+humanities and if so, in what respect.
+This is particularly striking because digital humanists, especially from the Anglo-American
+school, do not seem to tire stressing the aliveness of computational methods to the
+humanities and their immense epistemological impact.
+For example, Barry and Fargoord, a note in 2017, some of the key techniques that are
+deployed in the digital humanities importantly raise questions for epistemology in relation
+to knowledge production and analysis.
+And in fact, according to Burdick and colleagues, the foundational layer computation relies on
+principles that are on the surface at odds with the humanistic methods.
+And Galloway warns few things will cripple the humanities more than the uncritical adoption
+of tools or the continued encroachment of positivistic research methods borrowed from
+cognitive science, neuroscience, computer science, or elsewhere.
+And consequently, Johan de Bracker, exhorts digital humanities can no longer afford to
+take its tools and methods from disciplines whose fundamental epistemological assumptions
+are at odds with the humanistic method.
+What we find here, notabena, among proponents of digital humanities is a fundamental unease
+with the tools and methods that presumably characterize digital humanities.
+Computational methods are essentially regarded as intrusion of a useful but lesser mode
+of inquiry into the humanities.
+While the research methods may be similar to those in the analog humanities, the constitution
+of what counts as an interesting answer may have changed so profoundly that it no longer
+is compatible with the traditional epistemology of the humanist sciences is one of the conclusions
+of Bergen-Forghjord.
+And Dobson affirms that these conflicts between computation and the traditional epistemology
+of the humanist disciplines are not only still unresolved, but in fact fundamentally unresolvable.
+The issues raised here seem pretty serious to me, but, and I find this quite remarkable,
+none of the authors actually feel the need to tell us what the traditional epistemology
+of the humanist disciplines is, what the methods of the sciences refers to in this context,
+or how any cooperation may be possible with disciplines whose epistemological foundations
+and fundamental values are at odds with or even hostile to the humanities as Drucker writes.
+And in fact, there is very little research on the epistemological foundations of digital
+humanities and how they differ from the traditional humanities.
+In other words, research that tries to answer the question, what is the impact of computational
+methods on the production of knowledge in the humanities?
+And there seem to be two main obstacles to even start thinking about these questions.
+First of all, as Abou Hamour remarked, there isn't actually not much in terms of an epistemology
+of the humanities.
+And I think this is still true today.
+Of course, there is, for example, Ansgeo Gadama and many humanist scholars would argue that
+the hermeneutic method, that is interpretation, is how the humanities produce knowledge.
+This is, however, a misunderstanding in Weidt und Methode, Gadama's Opus Magnum.
+Gadama rejects Diltai's conception of the geistesswissenschaften on the model of the
+naturwissenschaften, as well as his idea of the kind of methodological parallelism between
+them.
+For Gadama, interpretation is not a method in the scientific sense, something that could
+be taught.
+Instead, according to Gadama, it's all about Bildung and tradition.
+He writes, the modern concept of science and the associated concept of methods are insufficient.
+What makes the human sciences and two sciences can be understood more easily from the tradition
+of the concept of Bildung than from the modern idea of the scientific method.
+It is to the humanistic tradition that we must turn.
+In its resistance to the claim of modern science, it gains a new significance.
+And in fact, he argues that unlike the natural sciences, the humanities don't have fixed
+research goals and that the notion of progress doesn't make any sense for them either.
+Because according to Gadama, research results in the humanities become practically never
+obsolete.
+A modern reader, he writes, can easily make allowances for the fact that 100 years ago
+less knowledge was available to a historian and he therefore made judgments that were
+incorrect in some details.
+On the whole, he would still rather read Dresden or Monzen than the latest account of the subject
+from the pen of a historian living today.
+Thus, I believe, Gadama isn't really a good foundation for an epistemology of the humanities
+or at least none that would be useful to us.
+The second problem is a large share of the people in the digital humanities or who consider
+to themselves to be in digital humanities persistently refuse to define what this field
+is about.
+This is of course not news, but just to give you a very recent example.
+Here is an excerpt of an interview by Harry Schaffer from the University of Luxembourg
+gave in March 2022.
+Ask about how she would define digital humanities, she answered, that's very easy, absolutely
+no controversy and discussion about it.
+No, of course, I cannot give you a unique definition because there are a lot of people
+trying to define digital humanities and it's quite complex.
+I would prefer not to give a precise definition, but rather to say that for me it's an interdisciplinary
+field at the intersection of humanities and computer science, which is based on a shared
+passion for research, creativity, new ways of working and values.
+So according to her and many other people, digital humanities is all about community,
+shared passion, creativity and values.
+This sounds to me like just a bunch of people hanging out together and having fun.
+Now, there's nothing wrong with this if we're talking about nightlife, but it's a big problem
+when we are talking about research.
+And it's definitely a problem with respect to the epistemology.
+If you cannot say what you're doing and why you're doing it, it will be hard to say how
+you're producing new knowledge and it will also be hard to justify why taxpayers should
+fund you.
+So in order to discuss the epistemology of the age, we need to say what we mean by the
+age.
+I won't go into details here, but we need a definition if we want to move on.
+And so I'll just give you my definition and I hope it will be clear why I propose this
+definition, which is actually a double definition.
+And as you can see, I distinguish between applied and theoretical digital humanities.
+Applied digital humanities are concerned with the construction of formal, particularly
+computational models of the phenomena studied by their mother disciplines, as well as the
+methodology of their construction.
+And two, the theoretical digital humanities study the general properties of formal and
+particular computational models in the humanities at a higher level of abstraction.
+And it's crucial to make this distinction because the research objects of these two
+types of digital humanities are very different.
+So the theoretical digital humanities create and study the meta models whose concrete
+applications to research questions in the disciplines of the humanities is the object
+of the applied digital humanities.
+Now clearly the notion of model is central to my understanding of digital humanities.
+So let me briefly explain what I mean by model.
+Even the natural sciences, the explicit notion of model is surprisingly recent and only began
+to be studied seriously in the 1950s.
+One of the first modern attempts at a general definition of models is the following one by
+the Belgian philosopher Leo Apostle who said, any subject using a system A that is neither
+directly nor indirectly interacting with a system B to obtain information about the system
+B is using A as a model for B.
+I think this is still an excellent concise definition.
+It does not just apply to science but holds generally.
+This cartoon here by Irina Block perfectly illustrates the fact that what we have in our
+heads is not reality but merely a model of it.
+And the purpose of science is of course to build intrasubjective models that can be communicated
+and that can be tested against reality whatever that is.
+As Gilles Gascon-Granger notes, the goal of any science, natural or other, is to build
+coherent and effective models of the phenomena they study.
+And as Jean-Pierre Dupuis wrote, there is much debate in history and philosophy of science about
+nature and foundations of scientific knowledge.
+But the fact that science as an activity contains essentially in constructing objects
+in the form of models is incontastably true even if it is not well known among non-scientists
+as it should be.
+So if we take this idea of modeling and what we have then in any discipline is a setting
+that I've recently saw is calling the modeling trial.
+Now first there is the original.
+That is the phenomenon that we want to study and on which we aim to gain insight.
+And the original is not directly and completely accessible to us.
+Something which is obviously true for historical phenomena and which is precisely why we model.
+The second step then is to play with the model that we constructed.
+And playing can mean, for example, to change the value of a parameter or to add or remove
+some component depending obviously on the nature of the model.
+In this context playing should be understood as a technical term for manipulating the model.
+In contrast to experimenting which refers to strong interaction that is the manipulation
+of the original.
+We're not doing this here in the humanities in general especially when we're studying history.
+We cannot manipulate or perhaps intervene into the process of history but we can only
+play with the model and our hope is that playing with the model will yield new insights on the
+original.
+And then third we apply our insights gained from our interaction with the model to the original.
+The play clearly has to be understood in a very wide sense that the nature of application will be
+very different in different domains.
+In natural sciences a prediction made on the basis of the model can be compared to the actual outcome.
+This is not possible in the humanities so the viability of the model will have to be
+evaluated in different ways.
+And I say viability because I let me stress this again a model cannot be compared to the original.
+This would require an objective observer and as Hans van Fersen put it objectivity is a
+subject's delusion that the preserving can be done without.
+So the big question is now what are models in the humanities and computational models in particular.
+Some disciplines in the humanities have a long tradition of using explicit models.
+Something sometimes even semi-formal or formal models under various names.
+For example grammars and linguistics.
+Other disciplines are openly hostile to this notion of models.
+And with respect to historians for example Gorin Leff observes historians as a profession
+are not given to constructing or employing models in any formal or explicit sense.
+Where they do it is mainly in the areas bordering on other disciplines especially economics
+or social studies.
+Most historians if asked would probably deny that models have anything to do with their subject.
+In fact he points out historians could hardly put pen to paper without having implicit models
+of what they were studying.
+Nevertheless most research on models in philosophy of sciences focused on models in the natural sciences.
+In the humanities the importance of modeling is frequently acknowledged but and this probably
+due to the fact that modeling is widely considered foreign to the humanities.
+Typically as a specific clearly delimited activity which is needed for technical reasons.
+For example here is a quote from Chula at Hale.
+The author writes the use of models and modeling also has a long tradition in the humanities.
+Nevertheless it is fair to say that the explicit use of word modeling in humanities research has
+increased significantly with introduction of data to humanities.
+Where modeling is considered one of the core research practices.
+The high reliance on modeling in this discipline is due to the fact that explicit models are
+extensively required in the age in order to operationalize research questions.
+And while I agree on many of these points I would argue that the understanding of modeling
+as one of the core research practices is too limited and potentially misleading.
+Just as Joshua Epstein has remarked the choice is not whether to build models it's whether to
+build explicit ones and that's the difference. In actual research practice in the age modeling is
+of course explicit and formal in many cases as it is required by computational methods
+but it's often like theoretical reflection and this becomes especially clear when we consider
+as when you consider corpora as one example. Now because when we look for epistemological
+difference between traditional and digital humanities machine readable corpora stand out.
+Their machine readable is today usually implied so people just talking about corpora and I would
+use the term in this sense as well which has been likely inspired by the usage in computational
+linguistics. Of course scholars have always created and studied collections of documents and
+artifacts and in fact this could be said to be a significant aspect of humanities scholarship.
+What is clearly new however is that corpora machine readable corpora are well machine readable
+and this has obvious practical advantages that they are easier to store and they can be processed
+automatically. What tends to be overlooked though is the epistemological impact.
+After all it is not some menial task that is being automated. The main results of many
+DH projects is based on the automatic analysis of some corporas and the availability of machine
+readable corporas is the precondition for the use of computational methods as at least as they are
+commonly understood that is quantitative methods. While there is much discussion of methods and
+their appropriateness and many common definitions as well as a large part of the criticism of DH
+are related to these methods there is surprisingly little discussion about a discussion of corpora
+in DH and in typical DH paper or project proposal just a few words are said about the corporas that
+was used and most of it tends to concern its size and composition so n items of class x,
+m items of class y and so on and the technical aspects of its construction so for example how it
+was scraped from the web if the authors did not use an existing corpus.
+The methods used and the results achieved and their interpretation and visualization are typically
+discussed extensively though. So here is an example just
+an example according to Achabi at Moods in their study of Anglo-American literature
+Moods have followed broad historical trends including a sad p corresponding to World War II
+and two happy pigs one in the 1920s and one in the 1960s. There's also a sad period storing the 1970s
+with increase in happiness in the later years of the data set. Now what's interesting here
+is that World War I does not seem to register any particular change in mood birds in Anglo-American
+literature and I'd like to highlight just two epistemological problems here which should be
+obvious as they also apply to statistics in general but apparently they are not that obvious.
+The first one is that all the seemingly objective quantitative measures so n items of class x,
+m items of class y and so on are crucially dependent on the preceding qualitative analysis
+that established the classes. The difference between an apple and an orange is not a quantitative
+but a qualitative difference. What is more is in no way the only possible classification.
+Classify apples, oranges and pear as fruit or baccala cites or shape or for that matter
+acidity and you may get completely different numbers. So this all depends on how we analyze our
+reality in the literal sense of the ancient Greek analysis which means break up and there is always
+more than one way to do it. And grangeri cause this the decoupage des phénomènes and the English
+translation leaves the term decoupage untranslated so I'll do so as well but in my opinion there is
+really nothing inherently untranslatable about it. This notion of cutting up things according to
+certain conventions ideas criteria. In any case the grand g notes that the decoupage of human facts
+is those studied by the humanities presents a special difficulty. He writes here the phenomena
+have an immediate sense which means that they spontaneously take part in the universe of
+valorized and directed actions either in the consciousness of an individual or in the organization
+and functioning of a collectivity which is given as a whole even when the relations of this whole
+escape us. This sense is transmitted by language for the speaking subjects of each social group
+and is this that constitutes for our consciousnesses as agents the very essence of the given human fact.
+And as a native instrument of this decoupage of facts, grangeri argues language naturally
+transmits what he calls myths as well as ideologies that is more or less explicit justificatory
+interpretations of situations actually realized by social organization and practice at a given
+moment of history. And one of the first challenges is this to overcome this over determination of
+notions in order to reach scientific concepts. We can then think about what more concerns the first
+step in the transition from the vague towards the exact measurement as a system of comparison
+between the subjective human impression and the external material data as in the example of a scale
+of roundness as a function of the radius or curvature of the various asperities and angles of
+particular particle considered in a way establishing an intersubjective scale between a rock and a paddle.
+However, in general, the humanities still have a long way to go in this respect.
+Grangeri knows that the constitutive problem of the humanities can be described as the
+transmutation of lived meanings into a universe of objective meanings. Hence,
+the fundamental importance beyond the trials and tribulations of new disciplines like information
+theory and cybernetics. It was of course in the 1960s, so perhaps today instead of cybernetics,
+we would say computer science or informatics. The second issue regarding the example of the
+paper of a Chalbian colleagues is again a general one, but which is particularly tricky in our context.
+In statistical terms, a corpus can be considered a sample of some population that cannot be
+analyzed in its entirety, say all French language novels published in the 90s century.
+The core idea of statistics is that by analyzing the sample, we can obtain results that can be
+generalized to tell us something about the whole population.
+And as a matter of fact, this is merely a special case of the modeling trial I showed you earlier.
+Thus, and as I've argued before, corpus should be considered a model in the sense of a postal.
+Creating a corpus thus means constructing a model, and modelers consequently have to answer
+questions such as what is the original, in what respects is the model reduction of it,
+and for whom, and for what purpose am I creating the model?
+And these are not new questions. Every time historians select sources, they construct models
+even before any detailed analysis. However, machine readable corpora are not only potentially much
+larger than any material collection of sources, which is already not inconsequential, but also
+have important epistemological consequences. The larger and the more complete a corpus is,
+the greater the danger to succumb to implicit essentialism, and to mistake the model for the
+original, a fallacy that can be frequently be observed in the field of culture and comics,
+when arguments are being made on the basis of the Google Books Angrom Corpus.
+So here again, the old reminder dating from the 1930s by Khajibsky, a map is not the territory it
+represents, but if correct, has a similar structure to the territory which counts for its
+usefulness, and the map is of course a model of a territory. So the same then goes for any
+analysis of corpus. If the corpus is true, so must be the results of the analysis. If there is no
+evidence or something in the corpus, it did not exist. This allures even greater when the analysis
+is done automatically, and in particular using opaque quantitative methods. As the computation
+analysis is assumed to be completely objective, there seems to be no reason to question the
+results. They merely need to be interpreted. However, analysis for corpus will always yield
+results. The crucial question is whether these can tell us anything about the original phenomenon
+it aims to model. The typical case of corpus-based dehumanities project that resembles an experimental
+system as defined by Rheinberger, an appearance supported by the laboratory metaphor typical
+for the age. However, this appearance is deceptive as ultimately research objects,
+research questions, and research methods differ substantially from the natural sciences.
+The crucial point here is that corpus are not naturally occurring,
+that intentionally constructed. The corpus is already a model, and thus not epistemologically
+neutral. And here we can build on Gaston Bachelin's notion of a phenomena technique.
+Bachelin originally revealed this notion, which treats scientific instruments as materialized
+theories as a way to set the epistemology of modern physics. As we have said before, the
+humanities have also always constructed the objects of the studies, which are again, to
+a large extent, not directly observable, but only through artifacts and particular text.
+Though, for example, the categorization and selection of sources and the hermeneutic
+postulation and affirmation of phenomena. However, in the humanities, only the praxis has been
+codified to some extent as best practices, such as source criticism. Theories, or perhaps bare
+models and meta models as the term theory has a somewhat different meaning in the humanities
+than in the sciences, are not formalized and are only suggested by the natural language narrative.
+And what history and humanities in general traditionally do not have is something that
+corresponds to the scientific instrument. And this changes with digitalization and
+datafication. Phenomena are now constructed and modeled through data and code. And like in the
+sciences, the computational model takes on the role of the instrument and, to quote Weinberger,
+sits in the center of the epistemic ensemble. Corporal are then methodologically speaking
+phenomenotechnical devices and form the basis and influence how we build, understand, and research
+higher level concepts. This may seem to be unintuitive at first. A corpus produces
+the phenomenon to be studied. But as a model, it has Stahorwex three characteristics of models.
+The mapping aspect. Models are always models of something, namely mappings from representations
+of natural or artificial originals, which can themselves be models. The reductive aspect.
+Models generally do not capture all attributes of the original they represent, but only those
+that seem to be relevant to the model creators and our model users. And third and perhaps most
+importantly, the pragmatic aspect models are not per se uniquely assigned to their originals.
+They fulfill the replacement function. One for particular cognitive and or acting subject that
+use the model. Two within particular time intervals and three restricted to particular mental or
+actual operations. And note that also while a model does not have all properties of its
+corresponding original, it has abundant properties that is attributes that are not present in the
+original. Statistics provide us with means to formally describe and analyze a specific subclass
+of models that are able to represent originals that have particular properties. However,
+the phenomena studied by humanities generally do not have these properties and we
+thus lack adequate formal methods to describe them.
+Now let me say a few more words about formalization. As I've mentioned before, when we consider the
+epistemology of the digital humanities, we are especially interested in a specific type of formal
+models, namely computational models. Considering formalization in the humanities, we're both in
+particular on the work of Virgaston Granger. As for the meaning of the word formal, he noted that
+to formalize is to reduce the language of theory to primitive expressions and explicit rules of
+constructions. And this, they note, makes some humanities scholars feel uneasy because they
+associate formalization and computation with mathematicalization. And as Granger has observed,
+it's so true that for many who work in the humanities, mathematicalization is
+equivalent to the introduction of quantity, indeed, of number. This immediately raises the
+question, but isn't all formal modeling quantitative? Don't the digital humanities mean above all
+the treatment of large quantities of data, big data, and therefore the use of statistical methods
+resulting in the reduction of phenomena to calculations? I don't think so. And also Granger
+stressed that formalization in humanities consists in the transition from the unstructured to structured
+rather than in quantification. And as Granger points out, there's a common confusion between
+formal thought and the work of mathematicians. While it is quite true, in a sense, he writes,
+that all effective scientific formalism tends towards a mathematical form, this still does not
+mean that all formalism is unavoidably reduced to the usual and current instruments of mathematics.
+And he asks, is it not just this supposed reduction that the opponents of all formalization in the
+humanities are criticizing? It will be one of the aspects of our task, Granger says, to show
+formal thought at work in the humanities, not only as a reduction of phenomena to calculations,
+but also the invention of new structures, even indeed of an original mathematics.
+And I believe that this could really be considered the main challenge of digital humanities.
+And this also highlights a limitation of current DH research, which is overwhelmingly quantitative,
+whereas humanities research questions are ultimately qualitative, why questions?
+The original mathematics that Granger envisioned have thus to be understood as mathematics without
+numbers or general science of patterns. Further methodological inspiration comes from Jean-Claude
+Gelder, whose logistic approach aims to formalize scholarly constructs, that is,
+the scientific discourse and thus scholars previously implicit models.
+Very briefly, Gelder's basic premise is that an argument in the humanities can be reformulated
+as a chain of propositions, P0, P1, P2, Pn, where P0 designates the given facts or database,
+and Pn, the hypotheses or conclusions based on them, and P1 to Pn minus 1, the inferences that
+establish Pn on the basis of P0. Then depending on the chosen mode of argumentation, the chain of
+propositions can be followed either in the empirical inductive direction, that is, from P0
+to Pi, Pi plus 1, and so on and so forth, to Pn, or in the hypothetical deductive direction,
+that is, from Pn to Pi, Pi minus 1, back to P0. And as Gelder makes clear, the logistic perspective
+should not be regarded as another manifestation of scientism or neo-positivism in the humanities.
+He stresses that the goal is strictly epistemological. Gelder speaks of practical epistemology.
+In fact, he notes, the logistic program is an attempt to demonstrate its limitations in the
+humanities in order to determine which parts of the reasoning can and which cannot be formalized.
+So, to conclude, so far, this humanities has largely contented itself with boring methods from
+other fields and has developed little methodology of its own. And the almost exclusive focus on
+methods and tools represents a major obstacle towards the construction of computational models
+that could help us to obtain new insights into humanities research purposes, rather than just
+to automate primarily quantitative processing, which without doubt is useful but inherently limited,
+given that the research questions that we aim to answer are ultimately qualitative.
+I've outlined some epistemological issues in the humanities and have sketched some potential
+approaches for addressing them. Regardless of the application domain, the humanities research
+tends to rely heavily on corpora, that is, curated collections of texts, images, music,
+or other types of data. However, the epistemological implications have so far been largely ignored.
+I propose to consider corpora as phenomenotechnical devices, following the ideas of
+Bachelin, like scientific instruments. Corpora are, on the one hand, models of the phenomenon
+and the study, but on the other hand, the phenomenon is constructed through the corpus.
+So we therefore need to study corpora as models to answer questions such as how do corpora model
+and produce phenomena? What are commonalities and differences between different types of corpora?
+How can corpora as models be formally described in order to take their properties into account
+for research that makes use of them? This is all work in progress, but I believe that the combination
+of Bachelin's phenomenotechnique, Groner's theoretical work on the formalization in the humanities,
+and the logistic approach of Gare-Garde, constitute a solid basis for studying
+the epistemological questions I have outlined, as well as others that I could not discuss today.
+Thank you very much for your interest. Goodbye.

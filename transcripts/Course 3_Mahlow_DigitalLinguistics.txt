@@ -1,0 +1,351 @@
+Welcome to this talk on digital linguistics.
+My name is Kerstin Marlowe.
+I'm professor of digital linguistics and writing research at the School of Applied
+Linguistics at the Zurich University of Applied Science.
+I'm a computational linguist by training and I have a longstanding interest in writing
+research to understand how writing works, what happens during writing, what happens
+to the text.
+And the ultimate one ultimate goal is to develop tools and services to support human writers
+to write better, to write more comfortable, to write easier and to this end I aim at linguistically
+modeling the writing process.
+So in this talk I will focus on my view on digital linguistics, then I will explain
+what writing research is and in the main part explain what actually is linguistic modeling
+of the writing process.
+So let's start with what is digital linguistics.
+There are various views to explain this term.
+One view is to concentrate on the digital aspect of linguistic or language data.
+So this would mean you have spoken or written data that is available in digital form.
+It can be born digital, either spoken or written or it can be digitized either oral or written
+language.
+That would be one possibility and having data in digital form then would allow to apply
+digital tools that are able to work on this digitized data.
+The other view would be to have or to handle language data, linguistic data in the digital
+space that is this data is born digital and it occurs in the digital space in the web.
+So that would be language used in forums, in the use net, on web pages, on social media,
+these kind of things, in Wikipedia, discussions on Wikipedia, versions of Wikipedia articles,
+etc.
+That would be another view.
+A third view is related to observations you have in other fields of the humanities where
+you have terms like digital philology and also computational philology.
+So one could argue that digital linguistics in fact is or could be named computational
+linguistics.
+But computational linguistics is a field on its own.
+It exists since the 1950s and the goal of computational linguistics is to understand
+how humans use natural language to model the use of natural language, natural communication
+or communication with natural language, either spoken or written, to model these phenomena
+and then to be able to produce these human like natural language to allow humans to communicate
+with machines, similarly as they communicate with other humans.
+And there you have terms like grammar, language models, etc.
+So computational linguistics is a specific field and digital linguistics is or should
+be, must be something else.
+My view on digital linguistics focuses more on the aspects of digital as such and digital
+of course means that you can implement something.
+You can have a computer program.
+These programs handle digitized data and to be able to do so, this data must be unambiguous
+and must be explicit otherwise a computer program cannot handle it.
+When we think about language and linguistic data then it's often vague, it's ambiguous,
+it's almost impossible to implement vague data or to operate on vague data but of course
+it's possible, it's still hard but it's possible to implement vagueness.
+In any case you have to describe your data in an explicit way, you have to formalize
+it and this brings us to the idea of formal modeling.
+So what is formal modeling and can you formally model linguistic data, language?
+Yes you can.
+There is work by Alexei Glattke and Igor Metschuk from the late 1960s in their book on elementary
+mathematical linguistics in German translated as elementary mathematical linguistic.
+And there they argue that to formally describe something and language in particular you have
+to describe it in a way that the data is logically coherent, it's non-ambiguous and it's absolutely
+explicit and then you can model it and ultimately you can build computer programs on it.
+So this means that formal modeling of language of linguistic data means making explicit everything
+that's the data itself, so the text or the relations within the text, so the code text
+and also all the relations to the world around this text, this textual data is describing,
+so the context.
+And if you can do this then you can build a formal model and you also can run this formal
+model in a computer program to test your theory behind your model building.
+So digital linguistics in my understanding is the formal and thus computational modeling
+of language data either spoken or written.
+Which brings us to the second focus which is writing research.
+So what is writing research?
+Writing research is quite large field, it's relatively old too and the one question one
+could use to describe what writing researchers are doing is to understand how writers produce
+text which involves everything.
+The actual production being with a pen on paper or a tablet, with a keyboard on a computer
+or again on paper but with a typewriter or on a tablet but using one thumb or two or
+several other fingers or wire dictation or with a combination of all of those.
+So with today's technology you can have a combination of dictation using your fingers
+on your virtual keyboard, on your tablet, on your smartphone then switching to an actual
+keyboard for corrections, have autocorrect etc.
+When we try to gather all this data and try to model it then we have to consider everything
+that is available about this writing process which is of course the text or the texts itself
+or maybe we can even access several drafts, versions of a text.
+We can have process data, so the logging data, if we type on a keyboard and also if you use
+a pen we can have the process data.
+We can ask the writer either during writing or in retrospective interviews about their
+writing process and we can ask about specific instances we observed.
+So why did the writer decide to delete this or why did the writer decide to change a formulation
+to introduce a new paragraph, to rearrange paragraphs etc.
+Of course we can also observe what writers are doing through the writing process with
+video or just with actual observations or someone is observing what the writer is doing
+and we can also have eye tracking data.
+And we have all these information or these statistics trying to align them to understand
+them to make sense of them also considering the writing task, everything else the writer
+is doing, the length of the writing session etc.
+And if we do this in the end we again arrive at a model, the so called writing models.
+And this modeling started in the late 1970s with the model by Linda Flower and John Hayes
+published in 1981 where they tried to organize all aspects involved in writing in an unboxing
+error.
+A model intended to explain what can be observed, explain how writers talk about what they are
+doing and explain what changes can be observed during writing towards a specific text.
+This model had been developed mainly using think aloud protocols so writers wrote and
+at the same time talked about or thought aloud reflecting on why are they executing this
+procedure that they are currently doing.
+John Hayes developed this model further and the most current version is his model published
+in 2012 where he separated various layers you can focus on the most highest level of
+the control level where the motivation or the writing task is coming from the writer
+has a specific goal, he has writing schemas on his disposal then the actual writing process
+where written language is produced and is transcribed onto a medium and the task environment
+which also involves the technology at a certain moment in time everything that has been written
+so far, the material that is available and then there is a resource level which involves
+all the cognitive capacity or cognitive resources a writer can choose from.
+So this is the most current model by John Hayes.
+These models are intended to be used to describe what can be observed in writing and also to
+make predictions if I am a writer myself given a specific writing task, a specific writing
+environment it is expected that I execute certain actions that I have certain strategies
+for revising and editing and I will arrive to a certain amount of time at a specific
+kind of text in a specific quality that's the intention of this writing model.
+There are other models as well where you can more easily see that writing is a recursive
+or iterative process, you think about what you are supposed to write, you have certain
+resources and sources, you can use the product is growing, you read and reread what you have
+already written, you think about formulation, you think about content, you think about the
+audience, the characteristics or the features of the language you are using and you have
+to consider etc.
+So the model by Parang and Willi makes it obvious that this is first a complex process,
+it's not boxes and errors but it's more a spiral and a moving process, a living process.
+The main question is how do writers produce text, so what do writers do?
+So with a focus on the writer you can try to explore to a certain degree what is happening
+on a cognitive level but of course you cannot look into the writer's head, one can have
+an idea what is happening via think-aloud protocols or via interviews or using eye
+trackings and follow the eye movements of the writer compared to where the cursor is
+or where the next word appears.
+So is the writer focusing the place on the writing medium, either paper or green, where
+the next characters are to appear or is the writer reading something that she has written
+before or is the writer reading some source material.
+You can also focus more on what is happening to the text, so there is research focusing
+on editing and revising.
+Some writers edit mentally, so they are thinking about what to write, then trying formulations
+and then deciding on a specific formulation before it is visible on screen or on paper.
+A lot of writers decide to have something written either on paper or on screen to be
+able to read it and then to assess it and maybe edit it and revise it.
+So this includes copy editing.
+Focusing on editing and revising also have been developed specific models, here a box
+and error model from the early 1980s, from the left starting with a representation of
+the intended text, so what I want to write and below this the representation of the actual
+text, so the text I have already written.
+I have to compare them and then decide if there is a mismatch, if I either change my
+plan or change the text that I have been producing so far.
+These models are intended to be used in computer programs or in statistics.
+They are built on observed data from a set of writing sessions.
+These statistical models are then used to check if new data from other writers in new writing
+sessions can be explained using the same statistical models.
+If this is possible, this would mean that the theory or the explanation found why writers
+are doing this and that is a valid theory and can be used to explain what is happening
+during editing and revision.
+Another aspect of writing are bursts.
+So these are sequences of written production without interruption and this is the bursts
+getting longer, the more familiar you are with the keyboard you are using or the more
+trained you are with writing, the more automatized or mechanized typing becomes and with bursts
+there is another concept or another term which are pauses and pauses are sequences of time
+where no typing or no writing on the tablet or on paper is happening.
+Pauses can be due to the key to produce the next character or pauses can actually mean
+I am just sitting in front of my computer or in front of my piece of paper and maybe
+I am thinking about what I should write next or I am rereading what I have written so far.
+This can be detected with eye tracking only almost but pauses are the boundaries of these
+bursts and the big question is how long can these bursts be?
+What do bursts mean?
+Is a burst the immediate expression of a specific idea or a specific revision action I want
+to achieve?
+These questions are still under research.
+There are also writing models taking a more general view on writing which uses the three
+aspects of I plan something, I have an idea I want to communicate, I actually compose
+and create text and then I revise, I evaluate what I have written so far and maybe I will
+revise it either the plan I have or the text I have written so far.
+Reading the text produced so far can also mean that I come up with new ideas, I couldn't
+imagine when I started my writing process so this model by Mike Sharples is a good visualization
+that everything is connected with almost everything and writing is a process that actually has
+no beginning and no ending and as a writer you often need an external authority or an
+external trigger to stop writing either times up and you have to submit the text you have
+or the specific length you have to reach or there is someone giving feedback, appear
+or an expert reading what you have written and deciding okay that's it.
+Now it's finished.
+This model is not only used to explain what writers do but this model was also intended
+as a basis to develop at that time new or other writing technology and writing technology
+is also an element of writing research there has been more focus on writing technologies
+in the 1970s and 1980s when computers came into households into universities and when
+a word processing was produced and then at some point when Microsoft Word became the
+de facto mark leader and was incorporated in almost all personal computers became the
+standard word processing software also in universities and in schools somehow research
+on writing technology stopped today it being easier than ever before to implement applications
+with a nice and convincing user interface new writing technology comes up with the integration
+of language technology natural language processing first with the focus on checkers for spelling
+and grammar and now nowadays with summarization with predictive texting with suggesting synonyms
+and incorporating phasory, phrase books offering summarization, accessing GPT models etc.
+So this is growing again and it's starting to become a topic again technology supporting
+human writers to allow them to produce texts more comfortable and more easily.
+And considering what writing research is then a phasomerization would be writing research
+activities to analyze and then model all processes involved in creating and editing texts which
+can focus on cognitive aspects on aspects referring to the evolving text or on aspects
+considering the writing medium and the input device or writing technology.
+So we have a relation to modeling also similar as we have been defining what digital linguistics
+is. So digital linguistics is about modeling, writing research is about modeling and what
+I'm focusing in my research are linguistic models of the writing process or of writing
+processes. So what is this? We can write on various devices on various media using various
+input devices and if you are producing text on a computer with a physical keyboard then
+it's possible to log these activities and this process is called keystroke logging.
+So and keystroke logging means that you are logging and storing all events on the keyboard
+so every pressing and releasing of a specific key gives a data point and this is a short
+excerpt from such a log. Two events are shown, event ID 388 and 389 so it's not the very
+start but beginning of a writing session it's a keyboard event so the type is keyboard,
+it's a specific position in the document, the document already has a specific length
+and two keys are pressed, the IK producing a lowercase i and the TK producing a lowercase t.
+So and we have the time when the key has pressed down and the time in milliseconds when the
+key has been released and you see that this is happening really fast. If you imagine that
+every event on the keyboard produces such a data point, capital letters involves pressing
+two keys so pressing and holding down the shift key and pressing and releasing a character
+key and then releasing the shift key again. So for producing a capital I that would involve
+pressing two keys and having two data points. So as you can imagine a keystroke log for the
+writing process producing even a small amount of text, maybe a paragraph is growing pretty
+fast and it's getting pretty messy. What we want to do is to use these keystroke logs to explore,
+to research what is happening on the surface, what is happening with respect to linguistic units,
+to these texts, which units do writers use for revising, which typical units are produced in
+bursts. One assumption would be that multivote expressions that appear to language users as
+fixed units that they are produced faster than having several words just as a sequence. And to
+be able to do so one would have to explore and research and query these logs. There's something
+specific to writing. Writing is happening linear in time but not in space. So I can only produce
+one utterance, one word, one letter after the other in respect to time. I can press one key after
+the other but I can go back what I have written so far and change something. Add characters,
+delete characters, reorder words and in the final product nothing of this will be visible. I have
+executed a sequence of action in linear time but non-linear in space. And this information is
+reflected in the keystroke log and that's the reason that I always have information on time and
+also always have information on the location. So I can reconstruct using this keystroke log,
+I can reconstruct and replay how a text has been produced. Which makes it possible to create so
+called text histories. I can tell the story, the history of the evolvement of the production of
+this text. I could set various stop points using information on time or specific events to access
+the text version or the status of the text at that moment and then maybe let another five minutes
+pass and have another version that is different to the previous one. So I can construct text histories
+and these text histories rely on the text produced so far so every version is a text
+produced so far at a specific point in time. When I can do this I can also look at the smaller
+unit. I could look at paragraphs or sections and can also look at sentences and we are interested
+in syntactical evolvement of the text that is produced and for this we are reconstructing out
+of the data so called sentence histories. So we gather all information with respect to one sentence
+and as I said before the writing process is linear in time but not in space. So I can go back to the
+very first sentence and make adjustments at later points and in the final text no trace is left
+giving the reader any hint on how this sentence has been produced but using these keystroke logging
+data we are able to construct these sentence histories. Thinking about the history of a text,
+the evolution of a text or the story, a text telling about its own production is a concept also
+developed or the idea has been prominent from the very beginning and one possibility to have another
+view or to use the information from these keystroke logs and make it more human readable is the so
+called s notation and you see an example here it's a starting of a paragraph from an article
+and there are a lot of indices, pipes, curly brackets, square brackets, everything in curly
+brackets is an addition or insertion. The pipe is used for indicating that the writer stops here
+and then moves somewhere else in the text she has been written so far to execute some other
+action and everything in square brackets is deleted or has been deleted at some point
+and when you look at the at the numbers the indices are given in linear order in linear
+order and time when you follow the indices at the very beginning so the first index you see is 16
+then 17 then 15 then 1 then 2 then 3 which means that the writer came back to the very first sentence
+at the later stage. S notation has been developed by Colbeck and Sörensson Eklund and is widely used
+in writing research but it it's not really that reader friendly so looking at the very first text
+you can see that the the writer is coming back to this at later stages and makes additions and
+makes insertions and also some deletions and when we look at the very first action then the writer
+writes the words an edit operation is an act of either removing or inserting a sequence and the
+also green marked full stop here then there's a pipe with index one and the writer then decides to
+introduce before the full stop the two words without interruption and then the writer goes on
+writing the second sentence so S notation allows the indication of all events deletions and insertions
+in the final text and you have to go back and forth in the text following the indices to reconstruct
+what the writer did. What we would like to have is all actions or all events with respect to one sentence
+given to the human researcher in chronological order and then two versions of a sentence
+would differ by what we call a transforming sequence so this first sentence so the first
+insertion of without interruption would produce a second version of the sentence and the second
+and the second version would differ from from the first version by just these two words the
+transforming sequence is the diff between two versions of a sentence or of a text so here's
+the the example explained so the text produced so far at version three is an edit operation is an
+act of either removing or inserting a sequence full stop then the writer goes back before the
+full stop and inserts a without interruption and the two versions of this sentence both versions
+perfectly grammatical and valid they differ by without interruption and without interruption is then
+handled as a transforming sequence the type is an insertion and of course one can annotate and
+parse all these elements so the first sentence the second sentence and also the transforming
+sequence to get more for syntactic information and of course you can do these analyses of
+extracting transforming sequences in chronological order so that would be following the indices
+as shown in the s notation and you would come up with a list of the various versions a sentence or
+start this in this case a start of a paragraph has in chronological order and on the right side
+you have the transforming sequence so the diff of two versions how do they differ what's the difference
+and then you can have you can add more for syntactic information to it and you can also add
+timing information to it to explore if these transforming sequences because some are longer
+some are shorter if these transforming sequences are produced as a burst or are result to a longer
+process interrupted by process to be able to extract these transforming sequences we designed
+a text history extraction tool which is called the tool it has been developed by my collaborator
+Margo Jada Anna Urashic also from the Zurich University of Applied Sciences this is available
+as an open source tool at github and there is also a publication about it
+so you can run this tool on your own history logging data what it produces is structured
+information as shown here where you have information on the text the first version of the text the
+resulting version of a text or the resulting text and the transforming sequence and of course then
+you can have all additional information you can produce by applying various nlp tools and the
+transforming sequence here is these two words without interruption being able to parse
+the keystroke logging data and produce this kind of structured and hierarchical information
+we are able then to visualize these text histories so that's a text history the darker
+colored parts are insertions and appending the text the the dark red parts are deletions and you
+can see here that this writer edits or revises more on the current sentence which is on on the edge
+of the text produced so far and occasionally the writer goes back to edit something in the
+in the text she has already written when you look at the left part of the visualization then you see
+that there was some editing concerning the very first sentence at the very beginning
+and then the writer comes back to this sentence making insertions a deletion and another insertion
+later in the process so this means this sentence has been revised at various times and we can
+can collect all information with respect to a specific sentence and then tell the sentence
+history of this sentence which gives something like like this the numbers refer to the text
+version and you see that this sentence has been edited at various times during the writing process
+in the first line it's visible that the writer stops in the middle of a compound
+at no specific boundary and then adds something towards before what he has already written and
+then moves on to continue the compound and also the sentence then he moves back again and deletes
+the determiner replaces this the determiner deletes the adjective replaces the adjective and then
+continues to write so this would be one sentence history we can tell and make visible and we can
+also analyze this from a syntactic or morphosentactic point of view and give information about typical
+deletions typical insertions typical changes this method also allows us to compare two writers
+given the same writing prompt and in this case both writers had the same amount of time
+at their disposal and one produced a lot of sentences with a lot of versions per sentence
+and the other one produced fewer sentences with only as always fewer maximum number of versions
+per sentence so this writer wrote less and with less edits per sentence another view would allow to
+look at the number of produced and deleted words so you would see that the the green bars are the
+words produced and the red bars are the words deleted during time so there are longer bursts of
+producing text and smaller bursts of deleting text what is visualization does not tell us if the
+writer is inserting something in the text she has written so far or if the writer is adding
+to the the text at the very edge but we can also access this and the first writer indeed
+produced more words by inserting words somewhere in the text she has already produced and the and
+the other writer just appends the text on the edge of the existing text the number of deletions
+is almost similar and we can also use these visualizations to compare text histories of in this
+case four writers and you see that two writers are writing and editing on the edge of the text
+they are producing while the second writer is going back in the text she has already produced
+and still adding to the text at the edge and the other writer probably has only a round of revision
+going through the existing text making deletions and insertions but no further adding
+on the edge of the text so it can be used to create profiles of writing strategies
+what the tool is used for is actually modeling so we are gathering all information we have
+we are gathering all information the keystroke log is giving us to be able to create sentence
+histories and text histories based on the and transform sequences and actually this
+then gives us a model on what is happening on the linguistic level so this is giving us data
+and relations between data points to be able to model on a linguistic level on a syntactic level
+what is happening to a text during writing and this we call linguistic modeling of the writing
+process so to sum up i introduced digital linguistics i explained what is digital linguistics
+and for our purposes we used the view that digital linguistics means formal and computational
+modeling of language data i explained what writing research is namely the namely analyzing and
+modeling all processes involved in creating and editing texts so modeling again and in the final
+part i showed what we understand by linguistic models or linguistic modeling of writing processes
+which we understand as the creation or extraction of sentence histories and text histories
+based on transforming sequences by using keystroke logging data
+and of course these models these linguistic models of writing processes can then be used to
+either come up with appropriate support for human writers by offering features and functionality to
+support specific editing and revising actions results can can also be used to be able to
+give automatic feedback or to support peer feedback or to give the the writer another view
+on the writing on the text they are producing and thus helping them to reflect on on their own
+writing process and make it easier to discover new ideas and to decide where and why to arise
+to edit and it will also be used for looking at strategies and habits and beliefs of writers to
+help them reflect on their general writing strategy and combine this with with text quality and writing
+tasks etc to help them write better so in this understanding writing research with a focus on
+linguistic modeling is of course a part of digital linguistic which is modeling of linguistic or
+language data

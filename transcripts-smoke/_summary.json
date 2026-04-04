@@ -1,0 +1,21 @@
+{
+  "model": "mlx-community/whisper-small-mlx",
+  "language": null,
+  "word_timestamps": false,
+  "clip_timestamps": "0,60",
+  "input_dir": "audio",
+  "output_dir": "transcripts-smoke",
+  "successes": 1,
+  "skipped": 0,
+  "failures": 0,
+  "files": [
+    {
+      "audio_file": "Course 11_Sennrich_NLP.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 22.2,
+      "txt_path": "transcripts-smoke/Course 11_Sennrich_NLP.txt",
+      "json_path": "transcripts-smoke/Course 11_Sennrich_NLP.json"
+    }
+  ]
+}

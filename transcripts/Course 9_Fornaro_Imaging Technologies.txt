@@ -1,0 +1,302 @@
+Meine sehr verehrten Damen und Herren, ich begrüße Sie sehr zu dieser Vortragsserie,
+zu diesem heutigen Vortrag zum Thema Bilder und Imaging in Digital Humanities.
+Und ich möchte Ihnen in diesen rund 30 Minuten sozusagen einen Überblick geben über das,
+was eigentlich unter Imaging im Bereich von Digital Humanities verstanden werden kann,
+was digitale Bilder sind, wie wir sie erzeugen und wie wir sie vernünftig nutzen können.
+Nun, wenn Sie an digitale Bilder denken, dann sehen Sie vielleicht Fotografien vor sich,
+Sie sehen vielleicht irgendwo eine Übersicht über verschiedene Ölgemälde vor sich,
+die in einer Datenbange gezeigt werden, aber schlussendlich, wenn es um digitale Bilder geht,
+dann gehört auch so etwas dazu. Der Text, der hier auf einem Kindle dargestellt wird,
+einem Lesegerät, ist zwar eigentlich als digitale Text gespeichert, das, was wir aber
+schlussendlich sehen, wird als Bild raufbereitet, auf diesem Gerät angezeigt und wird von uns
+so interpretierbar. Das ist nur ein Beispiel dafür, was eigentlich unter einem digitalen Bild
+alles verstanden werden kann. Denn auch solche eher beiläufigen visuellen Darstellungen, um
+sozusagen vielleicht ein Plattencover zu zeigen auf einem solchen Abspielgerät, einem alten iPod,
+auch das sind visuelle Darstellungen, die vielleicht unmittelbar mit digitalen Bildarteien
+verknüpft werden können, die aber sehr latent nur in Erscheinung treten, die oft an sich gar nicht
+so als digitale Bilderflut da verstanden werden und die eher eigentlich sozusagen einen unterstützenden
+Charakter besitzen, um irgendeine andere Funktion, Musik zu hören, Musik strukturiert zu abzulegen,
+um das eigentlich zu unterstützen. Auch wenn wir ins digitale Kino gehen, werden wir digitale Bilder
+sehen, die jetzt weniger vielleicht mit einem digitalen Fotobild zu vergleichen sind, sondern es
+handelt sich hier um einen Datastream, um eine Abfolge von Einzelbildern, die natürlich einen
+visuellen Charakter besitzen, die aber schlussendlich auch eher, ich sage jetzt mal, aufgrund ihrer
+Randlosigkeit sehr immersiv sind und uns eigentlich erlauben in eine digitale Welt einzutauchen, ohne dass
+wir irgendwie in einem Webbrowser oder auf einem anderen Betrachtungskräte, diese Bilddaten uns anschauen.
+Nun, was sind eigentlich Bilddaten? Bilddaten sind nichts anderes als das, was der Computer sowieso
+eigentlich nutzen und verarbeiten kann. Es sind nämlich faktisch Bineerdaten und diese Bineerdaten,
+ja ich denke da lohnt es sich, dass wir uns auch ganz kurz einen Schritt zurück machen und uns anschauen,
+was eigentlich diese Bineerdaten genau sind. Es sind nämlich schlussendlich nichts anderes als sozusagen
+digitale Zeichen, ein digitale Zeichensatz, der aber nicht wie unser Alphabet, das eine Vielzahl von
+unterschiedlichen Buchstaben besteht, sondern nur, und auch nicht wie unser Dezimalsystem mit
+zehn unterschiedlichen Ziffern, sondern nur aus zwei unterschiedlichen Ziffern besteht, typischerweise
+0 und 1 genannt, true, false, 0 Volt, 5 Volt, wenn wir von elektrischen Spannungen sprechen. Dieses
+Bineersystem ist eigentlich das, was wir verwenden, um jegliche Formen von digitaler Information zu
+beschreiben. Völlig unabhängig davon, ob wir von Text sprechen oder Bildern sprechen oder Tönen
+sprechen, Klängen sprechen, wir verwenden immer dieses Bineerdatenformat und dieses Bineerdatenformat
+ist deswegen so praktisch, weil es eben mit einem Computer ausratenlich einfach bearbeitet und
+verrechnet werden kann. Wieso ist das so? Nun, das Bineersystem ist uns Menschen definitiv nicht
+besonders nah. Auch eine einfache Zahl wie zum Beispiel 256 wird in einem Binercode relativ
+umfangreich dargestellt, 255 nämlich durch 8 1, 128 zum Beispiel durch eine 1 gefolgt von 7 0,
+das bedeutet, wir plähen eigentlich alles, was Zahlen sind extrem auf und Buchstaben können
+wir dadurch beschreiben, dass wir ein solches Binersystem verwenden und eigentlich eine Tabelle
+definieren, wo drin steht ein A diesen Code, ein B jenen Code, ein C diesen Code. Eine solche
+Tabelle wurde standardisiert, wir nennen dies auch ASCII Code, American Standard Code im Prinzip
+für den Informationsaustausch. Nun, warum aber Bineerdaten und wieso nicht Dezimal,
+ein Dezimalsystem oder etwas anderes? Der Grund liegt eigentlich in der Funktionsweise des
+Computers. Der Computer arbeitet heute im Prinzip immer noch mit Transistoren und Transistoren sind
+elektrische Schalter, die etwas ganz besonders gut können nämlich einschalten und ausschalten.
+True, False, Null, Eins. Diese Transistoren sind eigentlich nichts anderes als elektronische Schalter
+und dieser elektronischen Schalter kann man sozusagen durch ein kleines elektrisches Signal ein
+und wieder ausschalten. Wenn man ganz viele solche Schalter nimmt, entsteht daraus ein
+integrierter Schaltkreis. Dies sind diese typische Weise schwarzen Käfer, die in einem Kunststoffgehäuse
+mit vielen Beinen viele solche Transistoren beherbergen. Sie sehen im rechten Bild in diesem
+schwarzen Kunststoffgehäuse mehrere Dinge. Erstens die Pins, die in diese goldfarbenen
+Beinchen, die sozusagen verwendet werden, um diesen Käfer in einem Steckplatz im Computer
+einstecken zu können. Auch dies entstandatisiert, dass Marastemaß dieser Pins ist 2,5 mm,
+all diejenigen, die vielleicht schon mit Insch oder Zoll gearbeitet haben als Längenmaß,
+kennen diese Einheit. Wir sehen dann weiter das schwarze Gehäuse und innen drin diesen
+Schaltkreis, der aus einem Halbleitermaterial typischerweise Silizium hergestellt wird. Diese
+Schaltkreis ist nichts anderes als eine große Zahl von Transistoren. Diese große Zahl von
+Transistoren werden geschickt angeordnet auf einem sogenannten Wafer hergestellt. Ein solcher Wafer
+ist eigentlich nichts anderes als ein Produktionsschritt, der im Prinzip zwischen dem grafischen
+Design einer logischen Schaltung steht und dem, was danach dann eigentlich in einem solchen
+schwarzen Käfer eingebaut wird. Sie sehen rechts diese Runde Scheibe mit diesen vieräckigen
+quadratischen Elementen. Diese quadratischen Elemente sind nichts anderes als sozusagen eigentlich
+diese logischen Anhäufungen von Transistorschaltungen, die eine gewisse logische Funktion übernehmen können,
+die als Speicher fungieren, die als Grafikchip fundieren können, als Mikroprozessor, wie wir sie
+in einem typischen Computer kennen. Nun, das was ein solcher Chip verarbeiten kann, nennen wir
+Bitstream. Ein Bitstream ist schlussendlich nichts anderes als quasi eine Abfolge, eine Serie von
+0 und 1, die in hoher Geschwindigkeit von einem solchen Mikroprozessor verarbeitet werden können.
+Die Taktfrequenz, früher war das eigentlich häufig eine sehr wichtige Zahl, die bei einem
+Computer angegeben wurde. Heute ist das eher ein wenig in den Hintergrund geraten, ist bedeutet
+schlussendlich nichts anderes als diejenige Frequenz, die im Prinzip diesen Bitstream, wie Sie hier das
+sehen, diese 0 und 1 verarbeiten kann. Das heißt, habe ich eine tolle Taktrate, also irgendwo
+vielleicht 2,5 Gigahertz, dann bedeutet das, dass diese 2,5 Gigahertz sozusagen angeben, wie viele
+Millionen oder Milliarden von 0 und 1, so und zu sagen von einem solchen Chip verarbeitet werden können.
+Wenn wir nochmal kurz zurückgehen, dann ist wichtig zu erkennen, dass die Dichte dieser Struktur
+auf einem solchen Mikrochip enorm hoch ist. Wir sind heute, was die einzelnen Strukturgrößen,
+also das, was wir eigentlich über einen fotografischen Prozess in dieses Silizium
+einbringen können, bewegt sich in Nanometedimensionen. Das bedeutet, es ist extrem klein, wir haben
+Millimeter, Mikrometer, das ist ein Tausendstel eines Millimeters und nochmal ein Tausendstel eines
+Mikrometers ist ein Nanometer, also ein Millionstel Millimeter. Das sind so die Größenordnungen,
+mit denen Strukturen eines solchen Prozesses heute hergestellt werden können. Deshalb haben wir
+Millionen von Transistoren auf geringste Fläche und diese Millionen Transistoren können nun diese
+0 und 1 in einer extrem hohen Geschwindigkeit, zum Beispiel mit 2 Gigahertz, also zwei Milliarden
+Prozessschritte pro Sekunde oder Takte pro Sekunde, mit denen diese Einheiten verarbeitet werden,
+abwickeln. Das ist eine extreme Geschwindigkeit und das ist der Grund, wie so ein Computer,
+obwohl eigentlich die Information extrem rudimentär und einfach gespeichert wird,
+dennoch unglaublich schnell prozessieren und verarbeiten kann. Nun ein solcher Bitstream,
+das habe ich schon angedeutet, kann nun wirklich ganz ganz unterschiedliches bedeuten. Es kann
+eine Zahl sein, zum Beispiel 42, es kann ein Buchstaben dargestellt werden, wie zum Beispiel ein
+P, es kann ein Teil von einem Musikstück dargestellt sein, also ein Ton, ein Klang, eine
+Frequenz, es kann eine Farb dargestellt werden oder zum Beispiel eine sogenannte Floating Point Zahl,
+also hier 3,14. Was dieser Bitstream genau darstellt, das hängt ab von den Metadaten. Ein
+Dateisystem, welches Dateien speichern kann, kennt unterschiedliche Dateitypen, so gibt es JPEG
+TIF, es gibt DOC, PDF und je nachdem welche Dateiform ich meine, wer kann ich eigentlich durch diese
+Dateiform das eine oder andere Datenformat darstellen. Ein JPEG Dateiformat entspricht sozusagen
+einem Bild, ein TIF entspricht einem Bild, ein PNG entspricht einem Bild, die alle sehr ähnlich
+sind in ihrer eigentlichen Natur, dass sie nämlich im Bezieh Farbpunkte oder schwarz-weiße in vom
+Helligkeitsinformationen darstellen, die also sehr verwandt sind zueinander, die sich aber vielleicht
+in gewissen Details noch unterscheiden. Nun, die können wir uns einen solchen digitalen Code eines
+Bilders noch genauer vorstellen. Schauen Sie sich hier diese Fotografie, diese historischen
+Dampflokomotive aus den Vereinigten Staaten an und ich habe da oben so einen wenig Rauch,
+der aus dem Kamin dieser Lokomotive kommt und wenn sie sich nun anschauen wie dieser Bitstream
+ausschaut, dann ist das schlussendlich nichts anderes als eine Menge von Nullen und Einzen,
+die im Prinzip nun diese Fläche dieses Bildes beschreiben. Was ist denn nun aber genau
+eigentlich eine solche kleine Einheit eines solchen Bilders? Nun, das möchte ich Ihnen anhand
+von diesem Beispiel zeigen. Sie sehen hier eine Fotografie einer Landschaft. Das könnte zum
+Beispiel eine Fotografie sein, die bereits aufgenommen wurde analog und die wir nun abtasten
+möchten oder es könnte aber auch ein Bild sein, das über ein optisches System eine Kamera sozusagen
+auf einem Chip projiziert wird. Wenn wir nun ein Chip ist nämlich nichts anderes, also ein
+Bildsensor ist nichts anderes als eine periodische Anordnung von Bildpunkten, dann können wir schlussendlich
+diese Menge von Bildpunkten sozusagen als Abtastgrößen verstehen. Das bedeutet, bei jedem von diesen
+blauen Punkten messe ich, was ist die mittlere Helligkeit oder die mittlere Farbe dieses Bildes
+und dieser Wert wird gespeichert. Innerhalb von einem Pixel habe ich keine weitere Unterscheidbarkeit.
+Schauen Sie sich zum Beispiel hier dieses Beispiel an. Wenn ich das rechte mir anschaube, dann sehen
+Sie habe ich da relativ wenige Pixel, diese wenigen Pixel haben auch unterschiedliche Farben und diese
+Pixel sind sozusagen die kleinste Einheit eines solchen digitalen Bildes. Wenn ich nun mehrere
+Bildpunkte nehme, dann sehe ich das Bild natürlich deutlich schärfer. Der Speicherplatz wird aber
+entsprechend größer. Ich brauche einen größeren Bitstream, ich brauche mehr Nullen und Einzen,
+um sozusagen dieses Bild darstellen zu können. Nehme ich noch mehr Bildpunkte, wähle die Auflösung
+noch mal größer und ich habe die Möglichkeit, dass ich ganz feine Strukturen ja schon fast die
+blättete Bäume zeigen kann. Sie sehen, das mittlere Bild ist weniger geschärft oder weniger
+scharf als das Bild links. Im Bild rechts sind die einzelnen Bildflächen sogar deutlich zu erkennen.
+Nun möchte ich Ihnen zeigen, wie dieser Übergang von Bitstream zu Bild auch zu verstehen ist. Wenn
+wir in eine TIF-Datei schauen, ein TIF ist ein Bildformat, das Dateien sehr einfach beschreibt,
+nämlich einfach Pixel 1, Pixel 2, Pixel 3, Pixel 4, dann ist das hier dargestellt ganz links,
+also im linken Teil des Bilders als Hexadecimalcode. Dieser Hexadecimalcode ist eigentlich nichts
+anderes als ein nochmal anderes Zahlensystem, welches den Bitstream kompakter darstellt,
+nämlich jede Ziffer kann zwischen 0 bis F darstellen, das sind 16 verschiedene Werte und
+mit zwei Ziffern kann ich die 256 unterschiedlichen Werte eines Bytes, also von 8 Bit ebenfalls
+darstellen. Wenn ich nun diese Hexadecimalwerte mir anschaue, dann ist das nicht besonders informativ.
+Dass es eine Bilddatei ist, erkenne ich lediglich, wenn ich die Metadaten mir anschaue, aber von
+den Hexadecimalwerten an und für sich, ist kaum zu erschließen, dass es sich hier um eine Bilddatei
+handelt. Wenn ich nun diese Daten mit computergrafischen Hilfsmitteln einfach irgendwo als visuelle
+Darstellung zeige, dann habe ich hier die Möglichkeit, dass ich schlussendlich zwar irgendwie etwas
+Grafisches zeige, eine dreidimensionale Landschaft, ob das aber jetzt nun wirklich ein Bild ist oder
+nicht. Also natürlich ist es ein Bild, ein Bild dieser dreidimensionalen Abbildung, was aber
+der Bitstream genau darstellen möchte, ist hier nur schwer zu erkennen. Es ist also eine Frage
+der Perspektive. Wähle ich die Perspektive des Textes, erkenne ich zwar die einzelnen Binären oder
+besser gesagt digitalen Hexadecimal gespeicherten Zahlenwerte, wenn ich die Zahlenwerte so speichere,
+sehe ich irgendwie eine Topographie dieser Werte, aber wenn ich jetzt nun das als Bildhelligkeiten
+zeige, dann erkenne ich plötzlich, dass es sich um ein Portrait handelt von Professor Rudolf Geschwind,
+mein Vorgänger, der an der Universität Basel Fotografie unterrichtet hat. Nun schauen wir uns mal an,
+wie diese Auflösung eines solchen Bildes denn überhaupt von relevant ist. Stellen Sie sich vor,
+wir hätten hier eine historische Fotografie und diese historische Fotografie eine Glasplatte
+zum Beispiel haben wir digitalisiert. Welche Auflösung der Bilddatei ist nun von relevant? Wenn wir
+eine geringe Auflösung verwenden, dann sehen Sie hier, dass wir nur sehr schwer erkennen können,
+was eigentlich hier auf diesem Bild zu sehen ist. Natürlich erkennen wir, dass es ein Haus ist,
+wir kennen, dass es Fenster hat, wir kennen, dass Fensterläden vorhanden sind, aber was
+dieser schwarze Punkt oben auf dem Dach ist, ist nur schwer zu erkennen. Sie sehen das hier,
+das ist die Vergrößerung dieses Bildausschnittes, es sieht schon etwas deutlicher, aber die ganze
+Information ist sehr unscharf. Diese Bilddatei so hat vielleicht ein paar wenige Megabyte. Wenn ich
+jetzt nun die Auflösung vergrößere, dann habe ich deutlich mehr Information, aber auch natürlich
+deutlich mehr Speicherplatz, den ich verwenden muss. Ich erkenne jetzt, das sind Sprossen in den
+Fenstern, ich erkenne auch irgendwo, dass das oben auf dem Dach eine Form von Kamin ist. Im Vordergrund
+erkenne ich, da ist ein Laubbaum und wenn ich die Auflösung nochmal vergrößere, wird die
+ganze Abbildung deutlich schärfer. Das bedeutet, ein digitales Bild ist ein Informationsträger,
+der irgendwo eine gewisse Qualität besitzt. Diese Qualität wird vor allem durch die Auflösung
+definiert. Allerdings muss man auch sagen, dass diese Auflösung irgendwo eine gewisse
+Grenze besitzt. Sie können heute ein Bild machen mit 150 Megapixel. Dieses Bild hat eine
+gigantische Datengröße von rund ungefähr 2 Gigabyte pro Bild und ob dort dann wirklich noch
+die entsprechende Informationsmenge auch wirklich gespeichert werden kann, ist außerordentlich
+fragwürdig. Sie haben aber jetzt gesehen, ein Bild ist eigentlich nichts anderes als ein Datenstrom
+von Nullen und Einzen. Die Metadaten, die zu diesem Datenstrom beschreiben, dass es sich um ein Bild
+handelt. Das Bild besteht aus Bildpunkten, die wir Pixel nennen und diese Pixel bedeuten oder
+stellen eigentlich eine gewisse Helligkeit dar, irgendwie eine Farbe, ein Grauwert und die werden
+sozusagen grafisch in dieser Form dargestellt, dass ich eben sozusagen ein visuelles Bild erkenne,
+dass ich mit einem Kamera aufgenommen habe, dass ich abgetastet habe von einem Film oder was auch
+immer. Nun möchten wir uns aber ein wenig anschauen, was für zukünftige oder weitere Bildtechnologien es
+gibt. Denn ein großer Nachteil einer klassischen auch digitalen Fotografie ist, dass es sich um ein
+statisches Bild handelt. Ich kann eigentlich nicht wirklich viel damit machen. Ich kann es vielleicht
+durch lineare Operatoren drehen, skalieren, ich kann es spiegeln, ich kann aber sonst eigentlich
+nicht viel machen. Ich kann zoomen, ich kann das Bild also eine größere Distanz anschauen, das ist es
+dann aber auch schon. Wenn ich mir nun anschaube, was es für innovative Möglichkeiten gibt, um
+sozusagen Bilder in einer anderen Form darzustellen, dann ist eine Technologie, die hier von der Firma
+Truvis gezeigt wird, eine Start-up Firma der Universität Basel, wo ich nämlich mit einem
+Lichtdom hier dieses Cope D50 im Prinzip aufnahmen machen kann von einem Objekt, so dass ich nachher
+ein Bild habe, das ich interaktiv verändern kann. Wie mache ich das? Wenn jeder diese Lichtpunkte einmal
+aufblitzt, dann habe ich im Bezip mehrere, hier in diesem Fall 48 unterschiedliche Fotografien,
+welche ich nachher mathematisch so andersweitig beschreiben kann, dass ich eigentlich ein
+mathematisches Modell erhalte von diesen 48 Messwerten. Hier sehen Sie eine spezifische
+Stelle in diesem Bild links. In diesem Bild links wird gezeigt, wie eigentlich Glanz dargestellt
+wird. Ich sehe rechts davon unterschiedliche Bildpunkte, also das ist eigentlich, ich muss
+es anders sagen, das ist eigentlich im Prinzip nichts anderes als die Darstellung ein und desselben
+Pixels, aber unter der Bedingung, dass dieser Bildpunkt unterschiedlich beleuchtet wurde,
+also aus einer unterschiedlichen Richtung. Sie sehen hier auch dieser Leuchttom besitzt die
+Alampen an ganz unterschiedlicheren Stellen und je nachdem, wo diese welche Lampe leuchtet,
+es leuchtet immer nur eine, wird im Bezip eine andere Lichtwirkung provoziert,
+sodass sich dieses Material, das gezeigt wird, anders zeigt. Besonders einfach funktioniert
+das mit Mattenstellen. Mattenstellen lassen sich durch diese rote Kurve sehr gut darstellen. Es ist
+nämlich eine Funktion zweiter Ordnung und diese beschreibt sehr gut, wie eigentlich in einem,
+in einem Obfläche sozusagen Mathe Materialien gezeigt werden können. Wenn ich nun aber Glanz habe,
+das ist dieser eine Punkt, der deutlich weiter weg liegt von der roten Kurve, dann brauche ich eine
+modernere Technologie, um diesen Glanz zeigen zu können. Warum das das spannend ist und wie das
+das funktioniert, möchte ich Ihnen in dieser kurzen Filmsignal. When we find objects in the field
+while doing excavations, it is important that we have, underspoten already the possibility to record them,
+and to have good photos, and to have good photos, because at home then is the true research going on.
+Our system takes photography to the next level. A set of images each illuminated differently. A set of images
+each illuminated differently. A set of images each illuminated differently. A set of images
+is transformed into a mathematical surface model that contains information about the object color,
+shape object colors, shape materiality. It has a whole new dimension. It has a whole new dimension.
+It has a whole new dimension. It has a whole new dimension. It has a whole new dimension.
+Just looking at a plane, photographing, just looking at a plane, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing,
+photographing, photographing, photographing, photographing,
+mit neuen
+Sie sehen, die glänzenden Tessere sind sehr schön zu unterscheiden von der Mattenhaut.
+Das heißt, dieses Maß an Interaktivität erlaubt uns, dass wir plötzlich Bilddaten
+erzeugen können, welche für die Forschung genutzt werden können, um Originale sozusagen
+wirklich von einem Ort, wo sie physisch vorhanden sind, an einen anderen Ort digital zu transferieren,
+wo man dann mit ihnen arbeitet.
+Wenn wir nach einer Dimension weitergehen und uns nicht nur zwei dimensionale Bilder mit
+einem interaktiven Lichtwechsel anschauen, dann befinden wir uns im dreidimensionalen Raum.
+Der dreidimensionale Raum ist im Prinzip nichts anderes, als dass wir im Bezu- ein Gitternetz
+einer Oberfläche definieren.
+Auf dieses Gitternetz der Oberfläche legen wir sozusagen eine Textur und diese Textur
+kann wiederum sozusagen interaktiv bewegt werden.
+Wir haben so die Möglichkeit, dass wir effektiv, qualitativ, höchstwertige, digitale Objekte
+in einen neuen virtuellen Umgebung betrachten können.
+Doch damit ich so etwas im Internet transportieren kann und damit ich so sozusagen an verschiedenen
+Orten mit diesen Bilddaten arbeiten kann, braucht es Intro-Prabilität.
+Intro-Prabilität bedeutet, wir müssen standardisieren, wie wir diese Bilddaten übertragen, wie wir sie
+abfragen, wie wir sie nutzen können und wie wir sozusagen diese Dateien, die auf einem
+Gerät gespeichert sind, über das Internet an ein anderes System übertragen.
+Wir brauchen also eine Sündtags, wir brauchen weitere Metadaten, wir brauchen eine gewisse
+Semantik und wir brauchen eine Schnittstelle, eine sogenannte API, ein Application Programming
+Interface, um diese Daten in der entsprechenden Semantik, in der mit der entsprechenden Sündtags
+abzurufen.
+Ein großer und bekanntes Standard ist das Tripoli-F-API System.
+Tripoli-F ist das International Image Interoperability Framework.
+Eine solche API ist nichts anderes als eine Abmachung, wie man irgendeine Bildinformation
+zum Beispiel oder auch andere Daten von einem Computer abruft.
+Es gibt unterschiedliche APIs, die nötig sind, um sie parallel einsetzen zu können und so
+eigentlich Informationen von einem Gerät abzuholen.
+Wir haben hier die Tripoli-F Image API, welche uns erlaubt, Bilddaten zu laden.
+Wir haben die Tripoli-F Presentation API, um Metadaten anzeigen zu lassen, das heißt textuelle
+Informationen über die Bilddaten.
+Wir haben die Authentification API, um sozusagen eine sichere Verbindungssicherheit zu stellen
+und wir haben die Search API, welche uns erlaubt, nach inhalten zu suchen.
+Doch wie funktioniert ein solcher Abruf?
+Sie sehen hier eine klassische URL.
+HTTPS zum Beispiel, danach eine Server ID, ein Prefix, ein und ein Identifier für ein
+Projektname und dann können wir in dieser URL sagen, dass wir zum Beispiel nur eine spezielle
+Region dieses Bild haben möchten, in einer spezifischen Größe, dass das Bild gedreht wird,
+dass es in einer spezifischen Qualität angezeigt wird und dass wir die Bilddaten in einem ganz
+spezifischen Format heil unten laden möchten.
+Sie sehen das hier.
+Hier wird dieses Bild auf sozusagen anders geladen, obwohl es nur in einer Art und Weise
+auf dem Server gespeichert wird, erlaubt uns, diese Standard mit der entsprechenden
+Zündtax eine URL zu formulieren, welche dem Bildservers sagt, liefere uns dieses Bild
+in eine spezifischen Form, nämlich vielleicht normal wie oben links, auf dem Kopf stehend,
+also um 180° gedreht, um vielleicht irgendwie einen Wert von 45° gedreht
+oder sogar gespiegelt.
+Diese Art von Abhay kann nun natürlich weiterentwickelt werden.
+Das sind ja nur Bilddaten.
+Wenn wir jetzt aber sogar noch Metadaten auch über eine solche standardisierte Schnittstelle
+übertragen können, dann wird es plötzlich möglich, dass ich bildliche Informationen
+von einem Computer auf einen anderen übertragen kann, dass ich kollaborative Netze von Forschenden
+definieren kann, die gemeinsam über das Internet an einem solchen digitalen Bild arbeiten.
+Ich kann also nicht nur alleine an meinem Computer irgendwo den Glanz dieses Mosaics
+verändern, sondern ich kann plötzlich Informationen, Anotationen, Kommentare hinzufügen und sozusagen
+einen Fahrtwert, hier diese Nasenspitze, im LAP-Farbsystem definieren.
+Oder ich kann oben eine Anotation, ein Kommentar angeben, wo ich sage, dass ich etwas Spezifisches
+hier vermute.
+Diese moderne Form von Bilddatenformaten, RTI, Dreidatenformate und die Möglichkeit,
+das über das Internet zu übertragen, das sind ganz interessante Dinge, die sozusagen
+sagen, eigentlich das darstellt, was für die moderne Form von digitalen Werkzeugen im Internet
+im Kontext von Forschungsarbeiten mit Bilddaten nötig ist.
+Ich hoffe, ich konnte Ihnen in dieser halben Stunde einen groben Überblick geben über das, was Bilder sind,
+über das, was Bilder leisten können und über das, wie Bilder in der Forschung vernünftig einsetzen
+können sollten und Sie sehen, es braucht eine Infrastruktur, Applikationen, welche uns erlauben,
+dass wir solche Dinge wie das interaktive Steuern hier dieses Mosaics eigentlich umsetzen können.
+Ich danke Ihnen für Ihre Aufmerksamkeit und wünsche Ihnen weiterhin viel Unterhaltung in dieser Vortragsserie.

@@ -1,0 +1,580 @@
+All right. Good morning, everyone. Welcome to the lecture on Network Analysis, which is
+part of the lecture series of Digital Humanities Introduction. I'm Romona Rola, and just for
+you to know who you're dealing with, a little introduction about myself to start with. I'm
+currently a postdoc at ETH Zurich at the Chair of Systems Design, and originally I'm a computational
+social scientist. My research topics of interest include societal transitions, and especially
+I study social differentiation during the Reformation, so the big socio-transformative
+movement that overthrew the Catholic Church in the 16th century in Europe. So social differentiation
+is a term that defines how society became specialized, so how communication specialized,
+how professions got specialized, and I'm interested in the underlying mechanisms
+that define this differentiation. Specifically, I use network analysis. I use a lot of letter
+correspondence networks between scholars and also many spatial temper models. On the right-hand side,
+you can see an example of such a network. We've got our notes. These are our reformers, and they
+are connected by the exchange of letters, and we already see some hubs like Martin Luther,
+who was really famous, and Philip Melanchthon, but more about this research later. It's just for
+you to have a glimpse of what a network looks like. So let's dive right in. When we look around us,
+networks are actually ubiquitous in our lives. You might have seen the film that got released in
+2010, The Social Network, which is about the Facebook story, so how Facebook was founded,
+and when we talk about social media, especially Facebook, we often say, oh yeah, this is a social
+network. Another example is our worldwide web, so the interconnections between different web pages,
+then we've got electricity networks like this one here, like power grids, electricity supply
+networks, where we have different power stations generating electricity, and then lines transmitting
+this electricity to end consumers like us living in these houses. And last, we talk about networking
+events where we mix and mingle and try to find new job opportunities. So common to all these
+examples is that networks capture relations and interactions, and we have some interconnected
+entities. These entities may be humans, they may be power stations or websites. And we see that
+without research, networks actually occupy a very large part in our colloquial language already.
+So we see networks are kind of important in our daily language, but it's also important to have a
+formal definition of what a network is. A network is a representation of relationships, namely
+friendships, for example, or interactions, such as the exchange of messages between individuals.
+So what is the exact difference between relationships and interactions? It's a
+a difference of timing. So relationships are long lived, I'm friends with someone and this friendship
+possibly lasts for hopefully a couple of days, but sometimes longer. And interactions, which are
+short lived. So I send a message right now, and the sending is instantaneous, it doesn't last over time.
+This is the difference between these two types, and networks can represent both types,
+relationships and interactions. Then second, we have two building blocks of networks. So the first
+one is notes or our notes. Notes are representations of individuals. And in math, in mathematical
+sciences, we often call them vertices, many vertices, one vertex. In the social sciences,
+we call them sometimes actor or agents. In this presentation, we talk of notes. So it's just for
+you to know that these are all synonyms and mean the same. The second building block are edges.
+These are the connections between notes and synonyms are ties or links. And this is it. So
+network consists of notes and edges. Very important in the definition of a network is this term
+representation. So we do not talk about reality itself when we talk about a network, but we
+represent reality. And I try to visualize that here at the bottom. So we've got a network here,
+and we see this, that we see that all notes are kind of black boxes. So they all look the same,
+they are all this user figure. And these users are connected by these edges here. So we don't
+really know what's going on inside of these, of these notes. In reality, however, if we look to
+the right hand side, we see that things are much richer and complicated. So we have different types
+of users that might have an emotional inner life. We've got the graduate user, the ninja user,
+the medic user, or the secretive user, all having different emotions, beliefs, desires,
+and so on, so on. But they are hidden in the network representation. On top of that, also the
+edges have an inner life because we've got some content that is exchanged via these messages.
+So these guys might talk about skiing and these about the weather and these ones about death,
+and so on, so on. But all this richness is not part of the network. So we simplify reality
+in order to be able to study it. Now, we know what a network is, but what it is actually good for,
+why do we care about networks? The answer is that we use networks as models to explain aspects of
+complex systems. Okay, two technical terms in this definition, models and complex systems,
+let's look at them in turn. So model is a simplified representation of an object or a system
+with an intended goal. We all know, for example, the model of architects, the market, where we
+have this miniature version here of buildings that we first make in order to get a good understanding
+of what the building in the end will look like. In biology, on the other hand, we've got models
+such as the double helix, which model the DNA. And in the digital humanities and social sciences,
+we use networks in order to model complex systems. We have a look at the definition of a complex
+system in a second. For now, it's only important to understand that a complex system comprises a
+large bunch of people, of individuals that interact in complex manners. So we see here,
+a network can be used to model such a complex system. So the bottom line is that because
+reality is too complex to be studied on its own, we restrict analyses to aspects of interest and
+simplify them by using models. And a network is one such a model. Now the second technical term,
+a complex system. A complex system is a large group of heterogeneous entities whose interactions
+are local, nonlinear, and not controlled by global authority and give rise to global behavior that
+is more than the sum of all local components. And this last property, more than the sum of all
+local components, is also called emergence. Okay, this is a very long definition. Let's look at some
+examples that it becomes more tangible. Termites, for example, are a complex system. Why? Because
+they live in large groups. And each termite is heterogeneous compared to the other termites.
+Every termite is different. So we have a large group of heterogeneous entities, the different
+termites. These termites interact locally because every termite can only sense its small
+peripheral surroundings. So a termite can sense other termites, perhaps a meter away,
+but it does not know what's going on 10 meters away. So we have local interactions.
+These interactions are also nonlinear because whatever one termite does, if a second termite
+chips in, this behavior might not be twice as much as the one the single termite did.
+Furthermore, the behavior is not controlled by global authority because we do not have the chief
+termite, the termite king or the termite queen, who determines what individual termites have to do.
+This is not the case. Every termite for itself knows what to do, namely gather dust and resources
+to contribute to this big global behavior, which is the termite mount. This is shown here in this
+picture. It can actually be quite large, actually larger than a giraffe. So this is the global
+emergent property that is the result of all local interactions of the individual termites.
+And the thing is, none of the termites actually knows that it's building towards this big mount.
+So every termite is just interacting locally. And then as a result, we get this big global
+behavior. And this is why we say these, this global behavior is more than the sum of all
+local components that this termite mount emerges from these local interactions.
+Another example is, for example, a flock of birds that you can see here in this center image.
+The flock, so this nice big global shape, it's the global behavior, the emergent behavior,
+but every single bird does not know what formation to fly in. It only senses the birds in its vicinity,
+but it does not know about the general shape of the flock. Moreover, we don't have any controlling
+authority, no chief bird saying, you fly there and you fly there. Every bird only interacts locally
+with his other local birds. And then more towards the social rearm. Another complex system is,
+for example, a mass panic. So the global behavior is the panic itself, but the local interactions
+only happen in the vicinity of individuals. And no individual knows, oh, I'm just creating a mass
+panic right now, but the mass panic emerges from these local interactions. And on a larger scale,
+societies are also considered complex systems. We can think of our modern societies, but also
+historical ones or even fictional ones in literature. Every individual in a society interacts in its
+vicinity. And then globally, we get some societal behavior that cannot be predicted from these
+local interactions alone. These are just some examples of complex systems. So complex does not
+mean complicated or difficult to understand. Complex means that there is no global authority,
+and these local interactions give rise to these emergent properties.
+Now, these were many concepts to take in, and they might have been a little bit overwhelming and
+complicated. This is why I added this reflection slide. So here you have time to think about these
+questions to reflect on these concepts. And in our contact hour in May, we can discuss possible
+answers. So let's walk through the questions together. The first question is, which complex
+systems could be of interest for the digital humanities? So think about a situation where
+you are a DH researcher, and you would like to understand a complex system better, which system
+would you choose? About which system would you like to find out more? The second question is,
+what would you like to learn about these systems? So for example, is there any global behavior that
+you would like to explain? Or are there any local interactions that could be combined in certain
+ways in order to get a better understanding of these systems? What are these interactions? What
+are these global behaviors that you would like to explain? The third question is, how could you
+represent these systems as networks? And for such, think about two ways. Think about what are the
+nodes in your system and what are the edges? And if you've answered these two questions, then you've
+defined your system as a network. And then the last question, just for you to get like quick or no
+answers, are the following examples complex systems? Twitter, Amazon, the global ship traffic, a watch,
+so the thing you wear on your wrist, a university, your family, or think of your own examples. For
+this question, it's important to know that there is no right or wrong. Depending on your focus
+and depending on your justification, several answers might be correct. For example, for Twitter,
+you might consider the interactions going on at the Twitter headquarters, or you might consider
+the interactions going on on the actual online platform. And depending on this focus, you would
+define a complex system in different ways. And this is why your answers might differ there,
+just as a hint for you. So these questions will help you to reflect on the concepts and to process
+them a little bit more deeply. In this lecture, we go on and talk now about network concepts.
+So when we discuss networks, we have to agree on a common language, and this language is based on
+math. Why is that? Because we use computers to study networks and computers actually use mathematical
+notation, and this is why we have to adapt this notation as well. And we walk through it now.
+So when we define a network, we normally label it as G, because networks are also called graphs.
+And this G is comprised of a set of notes, these vertices here, and a set of edges. These dot dot
+indicate that you can add other attributes like temporal components and these type of things,
+but they are not necessary. What is necessary is the set of vertices and the set of edges,
+and then you've defined your network. A second important concept is the notion of topology.
+Topology defines the connection pattern among notes. So it is a synonym for the structure of
+the network. A related term is network embedding. And an embedding describes the topology in a
+note's vicinity. So very often you would say, oh, let's describe the notes embedding in the network,
+and then you would describe how the note is embedded in the network structure in a certain
+surrounding around the note. When we work with networks with a computer, we normally use adjacency
+matrices to represent these networks in a mathematical way. So the adjacency matrix is normally
+denoted as A, and it's an N by N matrix. This means it has N rows and N columns, and N refers to the
+number of notes in the network. So every row corresponds to a note, and every column also
+corresponds to a note. Now, the single entries in this matrix called A ij represent the connections
+between notes i and j, i for the row note and j for the column note. So for example, if you have the
+entry A12, this means we can see how note one, namely the row, is connected to note two, namely the
+column. And for this entry, we might have a one, meaning that note one and note two are connected.
+If it is a zero, then these two notes are not connected. This is the most simple case. So the
+cells in the adjacency matrix are just ones and zeros. On the other hand, in a more complicated
+case, we can also have numbers for these adjacency cells, for example, five, meaning that, for example,
+note one sends five messages to note j or note two. What's also important are the diagonal values
+of the adjacency matrix. These correspond to so-called self-loops. So how a note is connected to
+itself in the network. In many networks, diagonal values are always zero because self-loops are
+not allowed. For example, consider a marriage network. Well, you can't be married to yourself.
+And this is why the cell A11, so how note one is connected to itself, would be zero. However,
+in other types of networks, for example, communication networks, there can be values
+on the diagonal. I can send a letter to myself and I could also call myself. So I could have a one or
+a two as a diagonal value just for you to know. Another important concept is neighbors. Two notes
+are neighbors when they are connected by an edge. And a related concept is degree. We denote degree
+with the letter K. So the degree of note i, K i, is the number of neighbors of note i. Consider this
+example here to the right. We've got note i and it has connections to three other notes. These guys
+here, so it has three neighbors and we say it has a degree of three. Very important, back to the
+notion to our models, network, our models and every model makes certain assumptions because we do not
+study reality as such, like in the full complexity, but we have to simplify it. And for the simplification,
+we have to make certain assumptions. And one of the biggest assumptions of networks is that the
+connections between the notes matter. We assume that we can find out something meaningful about
+the underlying complex system when we look at connections about these relationships and
+interactions. And as a consequence, our note attributes are secondary. Remember this previous
+slide here? We've seen our user notes, which are in fact black boxes. So we do not know about any
+attributes, beliefs, desires, emotions, you name it. Whereas in reality, things actually look richer.
+So we actually have a simplification when we talk about networks.
+So in conclusion, we can say that computational network analysis requires a formal language that
+a computer can process. And concepts like the adjacency matrix or the notion of degree help
+us to define this formal language. Now, when we study networks, there is no not just one
+network that everyone studies, there are different network types. And depending on your
+research question and your data set, you may choose between different types and justify them.
+So here in the top row, I plotted several network types schematically. And here at the bottom,
+I defined them. So let's walk through them to have a look what they actually mean. The most
+simple network type is called a binary network that you can see here. Who notes are either connected
+or they are not connected. And these connections are done by single edges. So for example, here,
+you could say A and B communicated or when the edge would have been absent, we would say A and B
+did not communicate. Typical networks that are or typical systems that are represented with
+networks with binary networks are marriage networks, for example, I'm either married to a
+person or I'm not married to that person. Another type of network are directed networks.
+Now we've got a direction of the edge represented here by this arrow. So we can, for example,
+say that a sends messages to be and directed networks are very typical representations for
+communication networks. A third type of network are weighted networks. Here, the edges are characterized
+by an additional attribute, the edge weight. We can see that in this example, the thickness of the
+arrow becomes larger because we've got an edge weight of five. What do these weights mean? Well,
+they can have different meanings depending on the underlying system. We could, for example, say that
+these weights indicate the strength of friendship. So here in this example, we would interpret this
+as A likes B a lot or it could be the number of exchanged messages. A sends five letters to B,
+stuff like this. Another type of network are the so-called signed networks. Compared or in
+contrast to the weighted networks, now the weights are negative. And this could, for example, correspond
+to the emotional tone of a sent message. So here in this example, we've got a weight of minus two
+and we could interpret it as A sends an angry message to B. Furthermore, we have multi-edge
+networks. In a multi-edge network, messages or multiple parallel edges connect pairs of notes.
+For example, in communication networks, we have messages that are separated by sending dates. So
+we would say A send one message to B on Monday and then on Tuesday and one on Wednesday. So you
+already see that one system like a communication system can be represented by different types of
+networks. Like the communication can be represented as a multi-edge network or it can be represented
+as a weighted network. And there is no right or wrong. The choice depends on your system of interest
+and also on your research question. Sometimes it makes more sense to use weighted networks and
+sometimes it makes more sense to use multi-edge networks. So it depends on you and your justification.
+The last network type I would like to introduce is the so-called multiplex network. You see this
+here on the very right hand side. It consists of several layers and every layer hosts another
+individual network. Important to multi-edge to multiplex networks is that on every layer, we've
+got the same type of notes. So on this first layer, we've got notes A and B and on the second,
+we have A and B as well. And these layers differ in the definition of the edges. So on this first
+layer, we've got friendship connections versus on the second one, we have communication.
+Sometimes these multiplex networks are also called multi-layer networks. And this might be
+confusing because actually they are two different things. Whereas multiplex networks always use
+the same set of notes across different layers, multi-layer networks in turn use different sets
+of notes. So in a multi-layer network, we might have notes that correspond to, say, students on
+this bottom layer. And on the top layer, we might have notes corresponding to professors, for example.
+And professors and students can be interrelated among each other. So intra layer edges and they
+can be interrelated between each other. So inter layer edges, these ones. But for multiplex networks,
+we only consider the same types of notes. And as a hint at this is only a small selection of
+different network types, we can also have temporal networks, bipartite networks,
+hypergraphs, multi-layer networks, and so on, so on. So there is actually much more to study.
+For you as another exercise, I would like you to think at home about combination of network types.
+So we've seen these individual examples of binary network, weighted network, multi-edge network,
+and so on, so on. But very often in science, we combine them to study more complex phenomena.
+So for this exercise, think of a complex system that is of interest to you, for example, a
+communication system or a co-location system, you name it. And then think how these combinations
+could be applied to your system of interest. So can you think of examples of a weighted
+multi-edge network or an undirect and signed network or a binary multiplex network?
+Just think about your examples that are of interest to you. There is no right or wrong.
+Several answers may be correct. And again, we can discuss stuff in our contact hour.
+Right. So we know now what a network is, and we've got the concepts to talk about networks.
+Now we would like to study networks. We would like to have a look at the topology of networks in
+order to understand stuff about the underlying complex system. And for this, I selected three
+different examples of how to study these networks. The first example are topological network measures.
+Then we will have a look at motives and then at communities. So let's start with topological
+network measures. So the definition of a topological network measures is as follows.
+They describe the position of nodes in the network. So we compute topological network
+measures for all nodes in the network. And by the value of these measures, we know
+how they are positioned in the network. Topological network measures comprise several types of
+measures. And one group of these measures are called centralities. And centralities indicate
+the importance of a node. So how important this node is among all nodes within the topology of a
+network. For this lecture, I brought two different centrality measures with me that I'd like to discuss
+with you. So let's walk through them. The first one is called between a centrality. We see here a
+little schematic example of a network with our focal node, the red one having high between us,
+and then the green ones here in the periphery having low between us. Now to compute between us
+of the red node, we select different node pairs, like for example, this green guy and this green guy,
+and then check what's the shortest path to reach from this to this node. So what's the shortest part
+that connects one node pair? And we do this for all node pair. Well, let's have a look. Well, in
+order to get from this node to this node, we have to traverse two edges. So a path of length two,
+and it traverses via our focal node, the red one here, node A. And we do this for all node pairs
+in our network. Then we choose this guy, and this one, oh, again, a path of length two, that's the
+shortest connection, and it again traverses through the red node A. So for every node pair, we check
+what's the shortest connection between them. And then we check whether our focal node for which we
+would like to compute between us lies on the shortest connection. And if it does, it's between a
+centrality increases. And if it doesn't, it decreases. So the between us of node A is the
+number of shortest paths between all node pairs that traverse A. And this guy here has a high
+between us because it lies basically on all shortest paths, connecting these notes here on the
+left with these nodes on the right. So between us in this case actually means that this red node
+passes on information from these nodes to these nodes. So it has some kind of mediating role.
+Let's look at our at the second example of centrality, namely closeness. In this example,
+again, the red node is our node of interest, and it has a high closeness, whereas the green ones
+have a low closeness. Why is that? Because the red node is close to the other nodes. So only a small
+number of edges has to be passed in order to get from all green nodes to the red node. So the red one
+is very much accessible by all nodes in the network. Mathematically, what do we do? For every node in
+the network, we count the number of edges that it takes us to reach the red node. So from this node,
+it takes us one edge to reach the red node, whereas from this one, it takes us two edges to reach the
+red node. And the fewer edges it takes us to reach the red node from all other nodes, the higher the
+nodes closeness. So mathematically, we would compute the following one divided by the shortest
+distance between node A and all other nodes. So closeness is a form of accessibility. So how fast
+can other nodes reach our node of interest? Let's have a look at the last example, which is
+eigenvector centrality shown here on the right hand side. Again, we are interested in our red
+node having a high eigenvector centrality, and the green ones here have low eigenvector centralities.
+Eigenvector centrality is basically a combination of the number of neighbors. So eigenvector
+centrality is high if I've got many neighbors, and the neighbors of my neighbors. So if I'm connected
+to neighbors that in turn are connected to many other nodes, then I've got a high eigenvector
+centrality. And we see this in this example here. All neighbors of this red node, one, two, three,
+four, have again many neighbors. This guy has three, this one has three, three, and three.
+So a node has a high eigenvector centrality if he is connected to popular other nodes.
+Mathematically, we could say that the degree of node A is weighted by the degrees of its neighbors.
+The higher the degree of my neighbors and the more neighbors I'm connected to,
+the higher my eigenvector centrality. These are the three different centrality measures I would like
+to introduce to you. Well, as I said, they all have or they all correspond to some notion of
+importance. So they all kind of compute how important nodes are. However, they have to have
+a different notion of importance. Otherwise, we wouldn't have different centrality measures.
+And this different notion of importance is visualized here in these different
+network visualizations. So what do we have here? We have the same network every time.
+So we see, for example, this node here corresponds to this node here and this node here.
+We've got this triangle here, this triangle here, and this triangle here. And what we now do is we
+compute our different centrality measures for all nodes in the network. So between us,
+for this graph, closeness for this graph, and eigenvector centrality for this graph.
+So the different centrality measures apply to the same network. The node size in each of the
+networks corresponds to the magnitude of the respective centrality. So we see that this node
+here has a high between us. And this one here has a medium between us. And this one here has a small
+between us. And this one here has a high closeness, for example. Now, what do we see? We see that the
+same node differs in size across different centralities. For example, this node here has a medium
+between us, but a large closeness, and again, a large eigenvector centrality. Where is this one
+here has a high between us, medium closeness, but a small eigenvector centrality. So the magnitude
+of the same node changes depending on the different centrality measures that we apply.
+So this shows us the different centrality measures indeed account for different aspects
+of the network topology. So they all define importance, but they define importance in
+different ways. And depending on how you define importance for nodes, you have to choose different
+centrality measures. So you have to justify your choice. Well, we have seen that computing
+centrality measures is kind of straightforward. Now we would like to have a look at the interpretation
+of these centrality measures. So how do we interpret centralities in networks? And for this,
+I brought with me two different examples on the one hand here on the left, a communication network,
+and on the right hand side, a marriage network. And we will compute between a centrality in
+these networks and then try to interpret it. Let's have a look at the communication network first.
+The nodes in this network correspond to human individuals and the edges correspond to letters.
+Since one person can send several letters to another person, we've got a multi-edge network and
+it is directed because we distinguish between senders and receivers. For example, this node here
+sends one letter to this person here and this person sends a letter to this center person here.
+Now, when we compute the betweeners of all the nodes here in this network,
+we would like to know what this between is actually means. So if this node, for example,
+has a betweeners of 10, how do we interpret it? Betweeners in a communication network is actually
+pretty straightforward because we can interpret it as a certain way of mediating between different
+parts of the network. So consider this to be node A, then we can say that node A passes on
+information from node B to node C. So betweeners indicate some mediating flow of information.
+We pass on information from one part of the network to another one. That's a nice interpretation.
+In the marriage network, however, things look different. We turn to the right hand side
+and have a look at this network. Nodes in this network correspond to human individuals. Edges
+are marriage relations. I'm either married to a person or not married to a person. This is why
+the network is undirected and binary. Here, for example, we see a typical monogamous relationship.
+One person is only married to another person. Whereas here, this is a polygamous relationship.
+One person has several marriage relations to other people. Good. If we now compute the betweeners in
+this network, interpretation is kind of difficult. I would say it doesn't even have a meaning.
+This guy here will have a very high betweeners because it is connected or the pass from this
+node to this node traverses via this node. And again, these other paths walk through this node
+as well. So this center node has a high betweeners. However, we do not really know what kind of
+quantity flows on the network. So which information is passed on from this node to this one, where
+this node in the center would facilitate this information flow. This is different from the
+communication network. We knew that some information was flowing, but betweeners in the marriage
+network is not really well defined because no quantity flows along the edges. These examples
+show you that sometimes we just don't really know what the centrality measures mean in networks.
+We can always compute them. We will always get certain values, but interpreting them is not
+always straightforward. And it's actually our job and not the one of the computer to do this
+interpretation. And if this interpretation is not working or really weird, then perhaps you've
+chosen the wrong measure or the wrong network and you should reconsider your choice. For you,
+as an exercise back home, I would like you to think of networks that do not or do allow for an
+interpretation of closeness and eigenvector centrality. So now we've run through an example
+of betweeners centrality. And for you at home, you can think of other examples for closeness
+and eigenvector centrality. So the bottom line of this slide is that topological network measures
+can always be computed, but they cannot always be interpreted. And it's our job to do this interpretation.
+All right, let's move on to the second way how we can study the topology of networks,
+namely network motives. Network motives capture the interaction patterns between a small number
+of nodes. I brought with me two different network motives that are very often used in network analysis,
+namely reciprocity and triadic closure. So reciprocity is the proportion of outgoing edges
+that are returned by a receiver. Let's look at an example. We've got this little network here on
+the left hand side. We've got node i, and it has three outgoing edges, one, two, and three. And we
+see that two of these three outgoing edges are returned, one and two. And this is why we could
+say that the reciprocity of node i is two thirds, because two of these three outgoing edges are
+returned. Reciprocity is very important to study altruistic behavior. We see it very often in social
+networks because humans are inclined to return favors. So we can actually see whether these
+social properties are in place in the social systems we study. Let's look at triadic closure.
+Triadic closure defines the proportion of triangles and node i is part of among all possible triangles.
+Again, we look at an example. We have here node i, and it has three connections to three other nodes.
+And via these three connections, three triangles are opened. We've got one triangle here.
+We've got another one here. And we've got the large one here.
+And by closing these triangles with these edges here, we increase triadic closure.
+So in order to compute the triadic closure of one node i, we check how many triangles
+can it be part of theoretically. And then we check how many of these triangles are actually
+closed by edges. And in this case, we see that all of these three triangles are closed. And this is
+why the triadic closure of this node i equals one. This triadic closure can then, for example,
+be used to test certain social interaction patterns. So for example, this notion whether the friend of
+my friend is my friend. So this guy here does not really know whether it should reach out to this
+node. So is this node here really trustworthy? I don't know. Should I connect to it? Making
+connections is costly. How can I find out? Well, then this node just turns to node i because they
+are already friends. And this node then knows, ah, node i is already connected to this node up there.
+So apparently node i trust this node. I can use this trust relationship to infer that probably
+this node is friendly. So I reach out to this node as well and make this connection here.
+This is this notion the friend of my friend is my friend, which is also very common in social
+networks. And once it is absent, we can study the underlying mechanisms further, whether there are
+missing trust relationships or something weird going on in the network, which is actually quite
+meaningful. So much about network motives. Let's move on to our last way to study the network
+topology, namely community detection. A community is defined as a group of nodes that have a higher
+probability to be connected than nodes of different communities. Synonyms are cluster and module.
+And here on the right hand side, I plotted a network and colored the nodes according to their
+community membership. And what we already see is nodes within one community are highly interconnected,
+whereas connections between communities are rather sparse. Now the term community detection is an
+umbrella term that comprises several methods to group nodes into communities based on topological
+proximity. Very important for you to know is that several algorithms exist for community
+detection and they define communities in slightly different ways. And it's up to you to justify your
+choice. Not every algorithm is appropriate for every research question, every underlying system.
+For this lecture, I would like to have a look at one specific definition of a community and one
+specific algorithm that is actually widely used. When you look at inbuilt network analysis packages
+like Gefi, I explain Gefi in a second. So it's just a standard software for network analyses.
+Very often this algorithm is inbuilt. So it's kind of useful to understand how it works.
+The definition of a community with modularity maximization was done by Newman. This is this
+paper here. The original algorithm to find modularity maximization originates from this
+paper here, Blondel and colleagues. And then the updated algorithm that actually improved the
+Louvre algorithm a little bit, this Leiden algorithm that goes back to this Tragedal paper.
+Just for you to know how these papers are connected. All right. In order to find the
+maximized modularity, we have our network and we randomly group the notes in the network
+into a certain number of communities, K communities. For this example, let's assume we want to find
+two communities. So we move to the right hand side and we separate this network here into a blue
+community. These are the upper notes and into a red community. These are the lower notes.
+And then we count the intra community edges. So we count how often notes within the blue
+community are connected among themselves. And then we count how many times the notes in the red
+community are connected among themselves. And then in a second step, we randomly rewire all edges
+in the network. This gives us a so-called randomized network, which can be seen here on the right
+hand side. So our notes remain the same and the community division also remains the same.
+But what changes is the exact connection pattern. Here in our original network, we had this edge
+here between these two blue notes, whereas in the rewired version, it's missing. We do not have this
+edge here. Why it is missing? Because now it connects to another note. And we already see that this
+edge connection pattern looks different in the randomized version compared to the original
+version. Now, what we do is we again count, first of all, we do this randomization many,
+many times. We do this about 1000 times. So we get 1000 of these randomized networks.
+Now, for every randomized network, so again, 1000 times, we count the number of intra community
+edges. So how often blue notes are interconnected among themselves. And we do the same thing for
+the red notes. So how often are notes in the second community connected among themselves.
+And then we compare the edge numbers of the randomized networks with the ones from the
+observed network. If in the observed network, the intra community edges are significantly larger
+than in the randomized network, then we infer that this community division is meaningful. And
+we get as a result, this community separation. Now, in this example, we already see from from
+eyesight that in the observed network, we have many, many more intra community edges. So if you
+count the number of red edges here, you see that it is more than in this randomized version.
+And in addition, we see that the edges between communities, these black ones here, are more in
+the randomized version compared to in the original version. And once you, you find a division where
+the intra community edges are significantly more than in the randomized version, then you submit
+this as a result. And this is the community separation that the algorithm spits out.
+Significantly more refers to a statistical significance test. And if you're interested
+in this concept, I recommend you to read the Wikipedia article, whether or not so nice for the
+references with more deep statistics. Well, this is the classic way for modularity maximization.
+And I would say the most popular way to compute communities. But as I said, there are also other
+ways to compute communities. Just for you to hear the names, inform app or label propagation are also
+well established algorithms that you might come across.
+Well, you've been exposed to all these concepts and all these analysis, of course,
+you would like to run these analysis yourself, I assume. On this slide, I hinted you at some
+resources where you might start. This is only a starting point. This is not supposed to be
+in depth tutorial. So please check out other resources that I provided in the forum,
+or that you find on the internet in order to get a grasp on network analysis.
+So very often we would like to run network analysis to study a data set. So we need to
+get our data into the right shape. And for many network packages, we can actually do this with
+a CSV file. So the most simple version is to have the CSV file that I indicated here on the right
+hand side that consists of two columns, one for the source nodes and one for the target nodes.
+And then you just specify which nodes are connected with each other. Very often you have to provide
+node indices like these numbers here, but you could also provide names or whatever label suits you.
+So what does this mean? This means here that node one is connected to node two in the network,
+and node one is also connected to node nine and so on and so on. And if this network was directed,
+then we also knew that node one was the sender, whereas node two was the receiver.
+And well, a CSV is the most common way to provide the data, but you could also use text files or
+use direct queries from databases with SQL or any other query language you like.
+Now, when you get your data, you can actually plug it into some network analysis software.
+And the most easy point to start with is Gefi. This is a software that comes with a graphical
+user interface. You do not need any programming and you can normally just plug in your CSV file,
+do nice visualizations of your network and compute simple network measures like, for example,
+the centralities or communities that we had a look at. If you look for Gefi on the internet,
+this is the logo, so you recognize it. The nice thing about Gefi that it's pretty much straightforward,
+I find the GUI very intuitive, but on the downside, it has limited reproducibility.
+You very often only have to click buttons in order to two certain parameters. However, the
+code, the underlying source code is hidden in the background, and very often you do not really
+know what the thing is actually computing. So if you would like to reproduce certain results,
+Gefi is of limited use, but for a first playground and also to do nice visualizations,
+I can really recommend it. More advanced software analysis tools include packages in Python and R,
+so Python and R are two programming languages, and within them, you have certain packages that
+allow you to do network analysis. In Python, the most famous ones are iGraph, NetworkX, and
+GraphTool, and in R you have SNA and iGraph as well. So you have the same package in two different
+programming languages. I find all of them actually kind of nice, and it's definitely worth to give
+them a go if you want to have more advanced network analysis or if you aim for a high reproducibility,
+because you can just provide the source code, and this allows you to get the same results for
+different analyses. What I would like to emphasize is that network analysis takes time to learn,
+and a lot of practice will be required, so especially with data sets. It's not always
+straightforward because data sets are messy, there are missing values and other kinds of issues.
+Take your time, don't rush, and don't expect to have the greatest insights with your first
+network analysis, just for you not to have too high expectations.
+All right, to give you an idea of what you can actually do with different network analysis,
+I brought with me three different examples of network analysis in the digital humanities.
+So we'll have a look at three different sub-disciplines in the digital humanities,
+historiography, archaeology, and literature studies, and have a look how networks can actually be useful
+to answer relevant research questions. The first example comes from my own research,
+where I study the letter correspondence network of Protestant performers in the 16th century.
+As I already hinted it, I use a network of Protestant performers, so these performers
+are my notes, I've got about 3,000 of them, and the edges correspond to the exchange of letters,
+so I distinguish between senders and receivers of letters. The period of data collection ranges
+between 1510 and 1565, so directly in the 16th century. With this network, I would like to
+understand certain societal processes within the 16th century, and one of the societal processes
+I'm interested in is the adoption of Protestantism as part of the European Reformation. For this,
+we have to have a little bit of a background in the political situation in the 16th century.
+So back then, the main geopolitical structure in Europe was the Holy Roman Empire, which consisted
+of a patchwork rug of several territorial states, and every territorial state was ruled by a prince,
+and these princes could choose the denomination for their subjects. So, however, Prince decided,
+well, I would like to become Lutheran, then all the subjects had to obey and became Lutheran as well.
+Well, of course, in practice, or in reality, it was a little bit more complicated because some
+subjects just went underground and practiced other denominations, or some princes were less
+fair and let their subjects just do whatever they wanted. For this analysis, we simplify
+reality a little bit, and we assume that a territory becomes Protestant once the ruler
+officially decides on a denomination. On the right hand side, you can see a visualization of the Holy
+Roman Empire in the middle of the 16th century. So in red, we see territories that are Catholic,
+and in blue, we see territories that are Protestant, and this is a snapshot for a certain decade. I
+think it was between 1540 and 1550. And then you also see these purple territories, meaning that a
+territory had switched denomination within this decade. In black, here you see the letter
+correspondence network, where I plotted the location of the sender and the receiver as the
+starting and end point of these black lines, respectively. We already see that there are
+some hubs here in Wittenberg, for example, another one in Frankfurt, one in Strasbourg,
+and several ones here in the north of Switzerland. So the network is very much focused in today's
+Germany and Switzerland and Western France. Now, with this combination of this geospatial
+representation of the territories and the network, I would like to address the following research
+question, namely, how large is the impact of reformers on the adoption of Protestantism in
+the territories? So can these letters that reformers sent here around tell us something about whether
+they influenced the chance that territories became Protestant? Well, for the analysis, I use this
+geospatial network combined with a longitudinal data analysis, a so-called event history model.
+And this model in the end revealed that every sent letter of a reformer increased the chance of a
+territory to become Protestant by 0.7%. So every letter had actually a positive effect of the
+adoption of Protestantism in the territories. And what I find more surprising even is that
+personal visits did not have this positive effect. So when reformers sent letters to territories,
+this had a larger effect on this becoming Protestant than if they had visited these
+territories personally. So letters versus personal visits, letters win. This is the bottom line of
+this analysis. And the nice thing here is that networks alone can also be combined with several
+other data sets, like for example, this geospatial data in order to answer really relevant questions
+about underlying systems, like for example, the Reformation. Let's move on to the second example.
+It comes from literature studies. And it works with a character network from Game of Thrones.
+So there's a big novel written by George R. R. Martin, where you also have the HBO series.
+In order to construct a network, the authors use the characters as notes. These are about
+2000s. And for edges, they use the personal meetings of these characters. So in the novel,
+when there was a scene where two characters met in a meeting, then an edge was created.
+And also when from the context of the plot, it was clear that two characters had met in the past,
+but now in the present, they didn't meet. Also an edge was created. So meetings could have happened
+in the present or past. Unfortunately, the authors did not provide a number of the edges, but given
+the network visualization on the right hand side that I took from the paper, it's actually a quite
+large number. Now, actually quite nice because it fits to the centrality discussion we had beforehand.
+The author asked the following research question. Who is the most important character? So again,
+a centrality measure can be used to define the importance of characters, and they actually
+use these centrality measures. According to the between the centrality, I think it was the authors
+found out that John Snow is the most important character in the network. So here's John Snow.
+Unfortunately, I don't know what node size corresponds to in this network visualization.
+It cannot be between us because otherwise results would not be John Snow. But here he is. And already
+you see that he is very well embedded within the network structure. What is nice about this result
+is that it matches our subjective notion of character importance. When we read the novel and
+also when we watch the series, we get some kind of the idea that John Snow is pretty much important.
+Well, he's definitely not a peripheral character, but very central to the plot. And our computational
+methods actually show that this finding is valid. So they come to the same conclusion.
+Now you might say, well, we already knew it. We know from our subjective notion that John
+Snow is important. So why do we network analysis? The answer is that it's always important to address
+the same question with different methods. This increases the robustness of the result. And then
+we have more certainty that our results are actually closer to reality than if we had just
+used one method alone. The last example comes from archaeology. And here authors studied a
+visual signaling network of medieval strongholds in the Himalaya. So as nodes in the network,
+they used medieval forts. They had about 200 of them. And as edges, they used the selected
+distances between forts. So they would, for example, connect two forts if they had a distance of 15
+kilometers. And in another network instance, they would connect two forts if they had a distance of
+50 kilometers and so on and so on. So they used these different distances. And by such, they
+derived at different networks. And this is why the number of edges is given here as a range,
+because they selected different distance measures to compute different networks.
+Now, the problem with these forts is that no one really knows what they were used for.
+Archaeologists have found these forts, but what were they good for? Were they defense fortresses
+or did they have any other meaning? No one really knew. So the researchers of this paper came up with
+the hypothesis that these forts may have perhaps been used as visual signaling forts. So they might
+have been embedded in a visual stickling network. And the authors would like to find out whether
+these forts could have functioned as such a network. Visual signaling means that if danger is coming,
+then one guy lit the fire on one fort, and this signal is then passed on to other forts, so they
+weigh flags or whatever. So in order to warn other forts of danger. And in order to address this
+research question, the author used a combination of motive analysis and a comparison to random networks.
+So what do they, specifically, they selected different motives that they found typical in
+other signaling networks that were known. And then they checked whether these motives could also be
+generated in randomized networks of these forts. And what they found was that connected forts display
+typical characteristics of visual signaling networks, namely these selected motives, that could not be
+generated by connecting forts randomly. So their conclusion is yes, visual signaling is a possible
+function of this network. And they've used a network analysis quite extensively in order to
+derive this conclusion, which is I think a very nice example where archaeology and network analysis
+actually fused to address a very meaningful research question about archaeological sites.
+And as such, we have derived at the end of our presentation. So let's summarize what we've gone
+through so far. One of the most important aspects of networks is that they are actually models.
+They do not exist in reality. We use models in order to understand complex systems. This is the
+aim of networks. The underlying assumption is that connections carry meaning and nodes
+are actually kind of black boxes whose characteristics are kind of secondary.
+We had a look at different network types. And we have seen that the choice of a specific type
+depends on the data and the research question at hand. The same data can actually be represented
+in different ways. As an example, we discussed the communication network, which can be modeled as
+a weighted and a malignant network at the same time. We had a look at three different analysis
+tools, topological network measures, motives and community detection. And we have seen that
+descriptive network statistics can actually compute it for any network. The problem, however,
+is that interpreting them is not always straightforward. Example between a centrality,
+not so much for the marriage network, yes, for the communication network.
+So it depends on the user to justify their choice. The computer can only help you so far.
+I know that this lecture almost lasted an hour. However, we've only scratched the surface of
+network analyses. So stay tuned for advanced network tools like network ensembles, null models,
+dynamics, network inference, and many, many more. There is much more to discover. And I hope this
+lecture helped you to spark the interest in network analysis. And it would be great if you
+conducted this interest further and do some network analysis yourself. I hope to see you in our
+contact hour. If you have any questions, well, hold them for the contact hour. You can also send me
+an email. The address can be found on our website, which is written here. And otherwise, yeah,
+I'm happy to help. And I hope you also enjoy the other lectures of this lecture series. Bye, everyone.

@@ -1,0 +1,427 @@
+Welcome to digital book studies. So the field has a name digital and book studies.
+So let's start with book studies and then see how book studies could become
+digital book studies. So the whole story starts with this man it's called
+Gutenberg or Johannes Gensfleisch. Johannes Gutenberg. He was an inventor of
+the 15th century and enables the printing with movable letters or movable types.
+And this was not one invention but a couple of inventions. But together it changed the
+landscape of media for more than half a thousand years. And because Gutenberg is such a towering
+figure it turns out that many people are interested what he has invented and what are the effects
+of his invention. And this is one reason why we have a field called book studies.
+Well book studies is pretty much everything about what's going on through print. So it's the social
+and cultural history of communication but specifically communication by print. So whenever
+people do something with books with printed leaves then this is a subject of book studies.
+Well this is mostly the field not a specific method. But first any science needs a certain
+area of interest and in that case is anything which is printed in the last 500 years. So
+if you want to get into the details check out Robert Darten's very important book
+What is the History of Books. This is a lecture by Robert Darten and very helpful to understand
+the details. To give you an example is if you want to understand the rise of the French Revolution
+how was it possible that revolution occurs. The specific modern revolution like the French
+Revolution. Well what we know is printing was very important. More specifically clandestine
+printing. Clandestine means you do this not in the open you do this by night. You do it
+outside of France. You do it in secret chambers in cellars and then sell the new radical ideas.
+And here's a letter of a book seller from Portier to supplier in Switzerland. Why in
+Switzerland? Well Switzerland has a border with France and therefore it was possible
+to print radical books outside of France and transport it by night or over the mountains
+into France. And this was one of the ways how new ways of thinking entered France.
+And if you look a little bit closely maybe you're familiar with one of those titles but you may get
+the gist of these books. These are radical books in combination with pornographic books.
+You might think that radical philosophy, radical political thinking and pornography are separate
+genres. Well this is not the case in the advent of the French Revolution. So second half of the 18th
+century. Turns out that many books uses the interest in pornographic printed books with
+the dissemination of radical thoughts. And these are exactly these books very famous for examples
+the Therese philosophique or the philosophische Therese. So this is an example what book historians
+are doing. They study how books change the way people think, how they organize themselves as a
+society and the French Revolution couldn't be happened without these books. So however,
+book study as a discipline took a while. First because of the towering figure of Gutenberg,
+it's the history of early printing in Cunabels. So 15th century. But then also the history of
+publishers of book trades but also history of techniques like printing techniques, typography
+and the whole thing was mainly part of philology in a broad sense. But there's more.
+There's also a tradition in bibliography, in library catalogs, in building indices as part of
+what is called in German the Hilfswissenschaft, the ancillary science. And these ancillary signs
+are very helpful to develop methods. Methods which has a certain tendency towards numbers,
+catalogs, tables, very structured data. And if that sounds for you
+very much like in computer days, well this is one of the preparations. So we have two parts. One is
+the history interest, the philology. And the other tradition is the bibliographic tradition. So
+organizing data about books. These are the reasons why a field like book studies popped up.
+As a discipline it became very late in the early 20th century. First in Leipzig because Leipzig
+is the main town for book trade until today. But besides Frankfurt the main town for the book business
+since many centuries. But there was no academic professorship for this. This happens first in
+minds after Second World War. So it's still a small field, not a field like German philology,
+French philology or something bigger. It's a small field and the reason for it is the interest in
+this history of the printing process, the techniques, but also the books, the details of this and
+the bibliographic tradition out of the ancillary science. So it turns out during the 20th century
+book study became more and more a field. If you compare it the German speaking countries,
+this is a small field in the academic landscape. If you go to the Anglo-Saxon world or Scandinavian
+world, book study is a huge field. So there are differences in academic traditions.
+To understand why the digital is not so far away from book studies, it might be helpful if you look
+into very famous publications in this field like Roger Chartier's Lecture et Lecteur dans la France
+dansien or Mackenzie's Bibliographie and the Sociology of Texts.
+Because they are close to topics like economic history. They count books, so
+bourse-cundes, bibliographic collections of books, building tables, writing catalogue data.
+All these areas are in the bottom of book studies. In German it's Buchwesen,
+in the English tradition mainly historical bibliography or critical bibliography.
+And from there it's not so far if you look into today's data landscape. We have a lot of those
+publications, catalogues about the printing history, like the ICTSE or
+der Gesamtkatalog der Wiegendrucke and so on. So there's a couple of big collections, simply
+data about books and their history.
+Then there were many efforts done in the last, I would say three or four decades
+to improve these bibliographies by these initiatives. And I here I stuck first on the German side,
+German speaking side, so the Verzeichen des Deutscher Drucker des 16. Jahrhunderts,
+des 17. Jahrhunderts, so the catalogues of printing of the 16th to the 18th century.
+But think about also in the English-speaking world, early English books online, you have in the end
+big catalogues about printing, early modern printing. Same is true in Gallica for the French books.
+And there are many other historical catalogues about books. So writing down long lists about
+books is pretty much a data-driven approach. But you have to be aware that these data are scars.
+Even these catalogues look like big data. It's not a big data thing, not yet.
+And one of the major pitfalls are that we do not know exactly the population. So we have in the end
+only some data, but the whole population of publications, for example, do we really know
+what was published in the 18th century, the whole number, or do we know only a smaller part,
+which is in the catalogues of libraries. So we know the population, but not the data on which
+we can work. What's the relation between the whole population of the data and the Stichprobe we take here.
+But this is the first start. So there are quite a lot of collections, quite a lot of data about
+old books, or what is old, yeah, from 15th century until the 20th century, but always with some limits
+we have to discuss more in detail. So the computational methods are not far away
+for somebody working in the field of book studies, because numbers, metadata, catalog data,
+indices, etc., are very close, or are simply part of the book studies tradition.
+We have these indices and catalogues of libraries, of booksellers, of printers, and so on.
+We know there are groups of, in the book trade, so-called Warengruppen in German,
+meaning we have different categories, what collects, which genres belong to one another.
+So for example, novels are genre, or bellatristic literature, scientific literature,
+but also books who give advice, textbooks, and so on. So we have different
+classification of these books, of these catalogues, given by the book trade.
+Then we have a lot of numbers about bookselling. Of course today we have real-time data,
+but also from history we have a lot of data about who's buying what, who's lending what book.
+For example, Jean-Jacques Rousseau's Nouvelle Eloise. This book was landed often only for
+some hours, because the interest in the Nouvelle Eloise was so high that everybody wants to read
+this book, who can't read in the 18th century, and therefore it turns out that we even know
+that people sometimes only read for some hours, and then give this book for their reading,
+the Nouvelle Eloise, to the next reader. So we have a sense what people are interested in,
+what they buy, what they are interested to read. And then we have a lot of publications by the
+book trade journals and papers of the book industry, like The Bersenblatt, starting in 1835,
+or publishers weekly, also published since the 19th century, and they gave us a pretty
+clear picture of what book industry is interested in, what kind of genres, what they are publishing,
+and so on. So a good database, but of course only printed and only partly now digitized.
+And today we have a lot of real-time data, simply by a book industry, so Hougendoubbel,
+Orelie Fusselie and others, they have all data what people are buying. So we know people buy these
+books, but we do not know whether people who buy books also read these books, because this is not
+the same story. But somehow it gives you a hint what people are interested in. So that's a new
+situation since the digital age, we have these real-time data for bookselling.
+And now we have to, if we want to start doing this book study as a data science,
+then we always start with modeling our questions. What exactly are we interested in to do? Well,
+first of all, make clear in which theoretical concept you want to work. Are you working in the
+framework of social history of readers, for example? Are you interested more in the history of
+the history of techniques? So who is using which new technique, for example, in 19th century,
+to print children books? Because children books is a new genre of the 19th century, and it turns out
+this was also an industry which developed really interesting new techniques to print in colors,
+to print heavy books, books for different age groups, etc. So they were very creative,
+and you have to think about what is exactly your interest, your framework, whether it's social
+history of books, whether it's readers history, whether you are more interested in children books,
+and so on. So there's a wide variety of possibilities to start your research.
+Then secondly, you have to think about what is exactly my hypothesis. Are you interested in,
+for example, to understand the dynamics of 19th century book trade? Because 19th century,
+the book trade flourishes a lot. It became an industry before it was a printing press,
+limited to these technical constraints. But in 19th century, since the advent of steam
+engine driven printing possibilities with rotations and new techniques, it turns out
+that in 19th century, the book trade became very different what it was 300 years before.
+So if you want to understand something like that, you can say, okay, I expected a certain kind of
+differentiation in the book trade, and I expected specifically to have certain genres or publishing
+houses who are more specified to certain reader groups, and so on. Then you have to nail it down
+and say, okay, I want to formulate my hypothesis now in a clearer sense. So for example, you are
+interested in the rise of books specifically for girls in 19th century. And then you have to say,
+okay, does it start at first in the Protestant areas? Does it start in the Catholic areas at
+same level? Yes or no? Whatever your hypothesis is, this is what you have to formulate at the beginning.
+Then think about what could be my sources? Are you using the Bersenblatt for the German-speaking
+countries, for example, to detect any kind of informations about girls books, for example?
+Or are you looking in certain publishing houses? So you have an idea what kind of houses are very
+much interested in doing this? Do you have an idea because there's no German-speaking nations? So there
+are big differences between different areas in 19th century. So it's the middle German area and the
+upper German area and copyright restriction were not in place, specifically in the upper German
+regions, and therefore many so-called illegal printing was in place. And they make a lot of
+money and they developed new publishing ideas. And that's the reason why we have a couple of
+publishing houses like Esslinger, Tienemann, Karlsson and others in the Sassan parts of the
+German-speaking world. And the reason is simply the constraints of the copyright. So you have to
+think about whether publishing houses, specifically in the upper German regions, are of greater interest
+for your research. Okay, but this you have to know something about your field and you have to know your
+sources, how reliable they are. Here we distinguish between collections and corpus. Collection is,
+you have simply the books of a certain library, of a certain publishing house, whatever.
+A corpus is where you have very carefully collected the item you do, you run your research.
+It could be, for example, balanced. You are looking into Catholic and Protestant publishing houses
+and try to collect resources or sources from both confessional sides, because you're interested
+on the influence of the religion on reading habits and publishing strategies, for example.
+Then one of your main tasks is you have not only simply collect randomly the books you're interested
+in, but you have very carefully go through all bibliographies, library catalogues, etc. of the
+19th century and try to find out what is a reasonable part of your corpus.
+Then it's often the case that these sources already contain classification. So for example,
+in the Börsenblatt of the 19th century, you have many classifications, what kind of books people
+at this historical moment think this is a specific book for girls. This is a classification
+done by historical actors who have a certain understanding of this type of book. Or you have
+a classification in libraries like the Dewey catalog system you see here on the right side.
+So books were always classified by publishing houses, by libraries, but also by readers.
+So if you can catch any of these historical classifications, this is also a helpful resource
+to understand your data. And then you have to formalize your questions.
+Okay, first you have a framework, you build your hypothesis, you look onto your resources,
+you look specifically for classification or any formality which is already in your data,
+and then you try to formalize your question. And formalize is in the perspective of bookstallies
+as data science, specifically what are the categories you can use to quantify. So for example,
+the number of books published per year by a certain publishing house, or the number of books
+collected in a library by at a certain time period, for example. This is a sort of formalization
+of your research question, because you are not so much interested in reading each of the books.
+You are not only looking for the content, you're more looking for quantitative data.
+So, and to give you an example, you have many data in library catalogs, in collections here.
+It's a book of Thomas Moore. It was not only his books, you have the title and the place where
+it was printed, maybe you know something about the decorum of this book, the typography and so on,
+but you have also manual notes by Thomas Moore himself, because he used this book heavily,
+and this is described in here the library catalog of the University of Yale. And if you look into
+the details, you have a long description, and this description has already classification.
+What's the title, what's exactly the printing place, who was the printer, but also information
+about the owner of this book. And so you have quite a long description simply given by a library,
+here the library of Yale. And this is very helpful, because you have already categories you can use
+to formalize to model your research question. You have also these data already in a certain format,
+here by a library of Yale, you have it in JSON format, and you can use this for your computational
+analysis. And you have already the IAF manifests in the library catalog. So a lot of your work is
+already done by good libraries like the library of Yale University, and you can reuse their data
+for your research question. And if I speak about data, it means always that these data
+are already modeled along certain categories, in that case here categories of libraries.
+Okay, now if you start to do this kind of book study as data science,
+you have three major steps. One is reprocessing, second is analysis, and the third one is
+post-processing. Now let's start with reprocessing. First of all, we have to get the data, and this
+is not an easy task, of course. You have to be thankful to a library who offers you not only
+the images, but maybe also the full text. If not, you have to use optical character recognition
+by a software, for example, like Transcribus and others, for all sources where it's possible
+to transform the image in a machine-readable way into a full text. And this is now thanks to the
+training of Transcribus and other machine-learned techniques, now possible to do also with Black
+Letters, of course. The German-speaking tradition is printed in Black Letters and not in Antuiqua.
+Antuiqua works well with OCR because Adobe is trained mostly on Antiqua texts, but not on Black
+Letters. So this is possible, but could become very tricky. For example, if you read the Börsenblatt
+of the 19th century, you see the pages. Even on one page you have changing typography on one page.
+It could be five or six different typography used, and this is hard for OCR really to catch the text.
+Okay, but okay, in the end this works at a certain degree, not always perfectly.
+And you can be here very grateful, for example, in the case of Börsenblatt, the library of Dresden
+already done this OCR for you. So you have not only the images, you have also the full text
+of the Börsenblatt. Now in these pages you have often tables or other information,
+and you need certain software, and I take you just one example. OpenRefine is very well
+working to extract data from tables. So if you're scraping catalog data, and these catalog
+data are only printed, and you have no electronic catalog because you're working on historical books,
+then you need OpenRefine to extract these data out of printed tables.
+Of course you can, if you're lucky enough, scrape the data from library systems, from certain
+platforms, from reading platforms, if you're working with today's readers and their writings.
+And therefore you need to be familiar with scripts like Python, and here packages like
+BeautifulSoup are very helpful to extract data from different digital sources. And by these three
+ways I think you can get the data for your research question. But data, they need always metadata,
+so data who describe your data. And metadata is not something you can simply make up,
+you have to use the schema already in place or the ontologies. So the Deux De Somal classification
+system for libraries is, but one of these metadata where books are classified according
+a certain schema, the author, the title of the book, the printing place, the printer, the year,
+but also things like a genre. So this is very helpful. And of course it depends on your research
+question, what kind of metadata schema is most appropriate to your research question.
+Then you might also think about you have to annotate your data, enrich them, or if there are
+some unbeke information, for example you have an author name, it's a very common name, like Hans Müller,
+then you have to distinguish the different authors Hans Müller and say this is a certain person
+with this GND number to say this is the author and not someone who's named Hans Müller.
+So this is a lot of work and we often said if you run a research project in digital book studies
+or in computational book studies, 80% of your time is invested in this pre-processing.
+Because if you have bad data, your results will be flawed. So in computer science you might be
+familiar with this quote garbage in, garbage out means if you have the wrong data or dirty data
+or whatever you might call them, your results will be flawed in many ways and are not very helpful.
+Okay, 80% you invested in that. Now the second step is now you have your data, you invested a lot of
+time and you want to explore and maybe analyze your data. That's the second major step. And you
+use different natural language processing techniques, it could be word embeddings,
+stylometric approaches, topic modeling, sentiment analysis, network analysis, graphs,
+you might use even a geo browser or machine learning algorithm. There could be many ways
+depending on your research question. And you analyze also the metadata. So if you
+have any sales figures of a certain book, you have not only the library information, but you can
+match it together with sales figures of that book. Or you know about how many libraries this book was
+or is collected, then you get a certain sense this book might be very important because in many
+libraries of the world, you find this book collected. That's very helpful. That could be also be part
+of your analysis. So data and metadata. And this research you do has always two parts. It's exploring
+what we call we are playing with the data. But your research become better if you have
+at the beginning a hypothesis within a theoretical framework. And you want to prove this hypothesis.
+So you have a certain theory about how girls books, for example, became a genre in itself in the 19th
+century due to the following factors. And you analyze them by using data from publishing houses,
+by using data from library catalogs, by using antiquariate numbers and other stuffs. And therefore,
+you prove that, for example, girls book were invented mostly around the region of Leipzig,
+so in the middle German area. And analyzing always needs some statistic. Descriptive or
+inferential statistic. Descriptive is like in this little score or little image here, the little
+figure here about the correspondence of Albrecht von Haller, simply describing with whom
+Haller correspond more or less. And this is mostly simply in the distribution.
+But inferential statistic, there you are interested in correlations. So what is correlated with what?
+Might be the reason that, for example, girls book popping up in Leipzig more than, for example,
+in Frankfurt or in Zurich or whatever your hypothesis is. Then you try to build a correlation
+between two factors, how they are connected. And that is what inferential statistics do.
+And of course, it's very helpful if you can visualize your analysis, because somehow putting them
+into tables, give some pie charts or other histograms, whatever the way you use,
+this is helpful to make arguments, whether your hypothesis is plausible or not.
+And finally, we have pre-processing, we have analysis, but now you have your data, you have
+your results. Now post-processing comes into place. Whenever you publish an article about your
+findings, it's very helpful, specifically if you do computational book studies,
+not only to publish your article, but to publish the corpus, meaning your data behind,
+and also your tools, you run your analysis. So someone could follow you step by step what you have done.
+Publish it whenever possible, openly, downed behind paywalls, not in journals who
+ask you for a lot of money. And one way to do it, just to make it a little bit more concrete,
+the Journal of Open Humanities data is an example where you can even simply
+publish interesting data for others to reuse them, and you have a certain identification number.
+And if someone else is using your data, this person will quote you simply by using the number and
+say, okay, I get these data and run another analysis because I have another research interest.
+And by this way, you do not only publish your article or your book, but also the corpus you
+have built. So the good data and someone else can pick them up and continue to work with that.
+Then if you publish your tools, you have to write down your scripts. It could be Python or R script
+or whatever in a markdown. And someone else could pick up your markdown script. And you
+apply this script on another corpus, for example. So there's wide a variety. But do not think as in
+humanities often the case only in publication, but think about that building carefully data
+and building thoughtfully written scripts is really an asset and you should publish all together.
+By giving you publication, and I mean not only the article, but also your corpus and your tool,
+a certain object, identify numbers like doys and other things on platforms like the dash,
+that's a nodal, the national national of foshions, the data infrastructure and FDE,
+then it's able really to quote precisely your research results.
+And there are other opportunities specifically for sharing your scripts is GitHub or GitLab.
+And so anyone who's interested in could follow you in the details of your research and not simply
+putting the results out and do not really show the way how you generate these data and how you
+on which tools your analysis is based on. So that's the main difference in
+non computational data, book studies, you normally do not publish your corpus and you do not publish
+the way you come to your results. But in digital book studies, you do exactly this, always your
+results together with the corpus and the tools. So now let's give you some examples.
+There's for example, the WorldCAD identities, and you might be interested in music,
+and how strong is the interest in Wolfgang Amadzeo's Mozart, for example.
+And there are plenty of opportunities to check more than 7000 libraries across the world,
+because the WorldCAD collects or scrapes these data from more than 7000 libraries in the world
+together and gives you the numbers over time, starting from the late 18th century until today.
+In how many libraries you have, how many works of Mozart and publications on Wolfgang Amadzeo.
+This is here blue and red is the collection of his works in libraries of the world.
+And as you can see over time, it's very clear that the interest in Mozart is not declining,
+it's constantly growing more and more and more and more people write about Mozart.
+So Mozart is a superstar in the world and one indicator, one model to prove that
+is the WorldCAD. So that's very simple, you can do it.
+Another way would be, and we are thinking about to do exactly this, build a portal where we
+aggregate the collection of different VDS, Verzeichnis Deutscher Drucker, from the 15th century
+until the end of the hand presses. This is the beginning of the 19th century.
+And if we put all these catalogues together, you get a better picture of how printing,
+printing technology and the outcome of print changed over 300 years, nearly 300 years.
+So a great opportunity in digital or computational book studies is to look into the larger picture.
+And the larger picture means mostly the larger picture of long development, the long evolution
+over 300 years. Not look into specific details that you could do very good by hand and eye,
+but a computer is very helpful if you have large amounts of data distributed over larger periods
+of time. And therefore one of our ideas is to think about whether we can
+recombine the existing catalogues of hand press printing into one portal and offer this for the
+research community. But of course this is not yet in place. So to give you more concrete examples,
+you might be interested in the rise of a certain genres, like first person novels.
+And this is your hypothesis is this is pretty much done in the French world.
+And they are somehow the inventor of these new kinds to write about my own feelings.
+And then you distinguish between different first person novels. This is not classified by yourself,
+but you take the classification of first person novels according to historical ideas.
+Historical ideas, what are the differences between first person novels.
+And then you go through the library catalogues. You can scrape these data and plot it on a timeline
+and see, okay, this is changing. There came a kind of Alamort's interest in first person novel.
+And it's going down at the end of the 18th century, something like that. So you want to understand
+historical changes. And you're specifically interested in the history of subjectivity.
+And first person novels is a good example. And that is what Nicholas Page has done in his book
+about first person novels and their history in Europe in the 1670 and 18th century.
+Another way is you're interested more from a social science perspective. And you think about
+that the changes in population size in countries like Ireland, for example, and the British
+Isles has an impact on the novel production. More people means more novel production,
+because it's a larger market. And then you run a sort of inferential statistic. So you correlate
+the increase of population with the number of books printed in Great Britain
+from the late 18th century until the end of the First World War. And then you plot these
+correlations in one figure. And one of the outcome, and that is what Alan Riddle and Michel
+Berrencourt have done, is to understand the dynamics of the novels in England, the English novels,
+and say, well, there is a strong correlation between the rise of the printing of English novels
+and the increase in population, something like that.
+Another way to look into it is to understand the rise of a new literature. So America,
+or the modern America, came into place somehow in 1670s, 18th century. And of course, since the
+18th century, people start to print a lot also in America and to write a lot. And you want to
+understand how this develops over time. There's a very famous bibliography by Little Wright,
+American Fiction, a contribution towards bibliography, which is pretty much in five volumes,
+the bibliography of the emerging American fictional world. So when American fiction became
+separate from fiction printed in Great Britain, became a known national literature. And that happens
+from the late 18th century towards the beginning of the 20th century. And what we do in our project
+at the moment where we started is to look into the places where people start to print American books,
+American fiction books, whether these books are written by a male or female author. You see on
+the right figure here. And you see red are female writers and blue male writers. The female writers
+play an important role in the early, since the early days of American fictions. And specifically
+after the Civil War in America, the second half of the 18th century, female writers became more
+important and sometimes more important than even male writers. We look in the distribution of these
+writers and printing processes. And we try to visualize these data in a certain way. So
+we use a geobrowser and we have a little time slider below. And we put it on the map. And you
+can see that it starts, of course, from the east and going step by step to the west and becoming
+larger. We have many things still to do because we haven't got all five volumes already
+transformed into machine readable data. But this gives you an first idea that in the end we want to
+visualize our findings and give you a new way, new insights into the rise of American fiction.
+Another way is you can try to understand books by hands. So you annotate them
+because still until now to identify automatically motifs or moods in books. Here our example are the
+poems by the German poet Hermann Hesse, about 600 poems or not a big corpus. And we annotate them
+by three annotators and do an inter-annotator rating. And by doing so we get a picture about moods
+and motifs in his writings, specifically in his poetic writings. And you can explore the details
+of these writings on the website where we have many techniques we use to visualize the outcome.
+So if you scroll over these motifs, for example, you see in which poem these motifs are more prevalent,
+at which part of his biography, these motifs are more prevalent than in others. And all the details
+you can explore. And we publish not only articles about this, but we publish also a complete visual
+environment, visualization environment, so that everybody who's interested in Hermann Hesse's
+work might explore by him or herself the motifs and moods in his writings. To continue with
+examples, we also think about couldn't we measure what the world is reading? So we think about
+how could we model such a broad question, what is the world reading into a doable research agenda?
+And our suggestion is, while we could do that, maybe Wikipedia is a good proxy to understand
+what the people in the world are interested in. Therefore, we think about if Wikipedia is a proxy,
+then we have to go more into details how to model this question and think about how could we catch
+this exactly. So we can scrape all data written about authors, authors of poetic works, or authors
+about certain genres, or author in general. But then we have to think about what gives us a cue
+about the importance of a certain author. It could be the length of the article, it could be the
+number of revisions, or the number of people who invest their time to improve these articles.
+And it turns out in our little research we started there, that the numbers of links
+pointing to a certain article and the links from this article to other articles is a good proxy
+to understand the centrality of certain authors. And here's a visualization of the English Wikipedia,
+and of course William Shakespeare is here in the center. But if you look into the details,
+you see immediately that certain articles cluster very well together. So the fantasy,
+shawry, on the left hand side, for example, is different from the more modernist writings
+on the right side and so on. So we transform very broad research questions about what is the word
+reading into a model where we follow Wikipedia entrances, or the Wikipedia, DPPdia database,
+and from there we continue to formalize our question and in the end try to count.
+It turns out that we find many biases in the worldwide Wikipedia. You know there's more than
+26 languages in Wikipedia available, and it turns out that there are many, there's a lot of garbage
+into our data. And it takes a lot of time to clean our data, because you have, for example,
+translation by bots, and this does not really show interest in a certain author,
+it's simply done by machine. All the structure of these articles, think about the info box of
+the DPPdia database, is differently used in different languages, and therefore you can't
+easily compare the outcome if you look into the English Wikipedia and compare it to the
+German Wikipedia. Well, the structure of the article is simply different. For digital book studies
+we are in a happy age, because we have real-time data about literature. We have, by Netflix,
+a lot of what people are interested in to watch, to see, by Spotify, what people hear,
+but on platforms like Tolino or Watpat or fanfiction.com or fanfiction.de, we have billions
+of data about reading habits. So what genres do people prefer? Who is reading at which time during
+the day? What are differences in regions, why are certain genres more read in some parts of,
+for example, the German-speaking world than in other parts and so on. And of course, this is not
+easy to get these data, but we run a couple of analysis you find in our papers. And on my website,
+for example, on Watpat, we have, we could scrape billions of data points about the interest of
+people, specifically young women, reading teen fictions. This is on the left side. And our
+research question was, is there a correlation between the interest in teen fiction with reading
+hybro-literature by the Prontisisters or Jane Austen or anything like that? And here we visualize
+our results. You can't read it from the left side. You see they are reading quite a, in a huge
+numbers, teen fiction, like I sold myself to the devil. That's a teen fiction book. And some of them
+are stepping towards reading also the hybro-literature. Okay, so computational book studies.
+We have a lot of challenges and opportunities in a very small field. It is not a big field like
+digital archaeology, for example, is very small. But with many and plenty of opportunities.
+We can build not only collections, we can build corpora of books or printed, could be also leaves,
+single leaves, for example, because we have already these many bibliographic and library
+data's, indices, etc. And to make and to reuse these data could be very, very helpful. We have
+even data by OCLC about library structures of today, what we find in these libraries of today.
+So to get a sense about what the world is interested in with regard to books, we could do that.
+Okay, that's one great opportunity, but a lot of work has to be done in that.
+What is always important is you have to know your data. You have to have a knowledge about
+book history, about systems of building library catalogs, and so on. If you have no ideas about
+these kinds of data or metadata, you will get results, but these results are not very meaningful.
+So expert knowledge is still necessary. You have to read, only use the computer is not enough,
+reading and using the computer is the way to do it. We have also the opportunity, thanks to really
+sophisticated tools, to make use of maps, of trees, of correlations between books or
+actors in networks. We can use graphs and we can use statistics and build structural models
+when we want to understand how price policy influences the printing process or the number
+of publications or the differentiation between different genres, etc. We can do that,
+thanks to good tools, but again, it needs a knowledge of the historical field you're interested in.
+And we can run a lot of visualization of our results, not only in a very dry way in describing
+them, but make it interactive, available to others. Finally, we need an infrastructure for our data,
+for our software, for our analysis, but there are a couple of journals already in place,
+like this Journal of Open Humanities data or the Journal of Cultural Analytics,
+where you can publish not only the data, but also pointing to GitHub or GitLab or
+to Doys where your data are stored. And I hope that the infrastructural initiatives in Switzerland,
+Austria and Germany also support this way, not only to publish the results, but also to publish
+in the end the results together with your data and with your tools. So great opportunities
+to do this research. Now, thank you and join our group. We are small, even at a worldwide scale,
+who's doing computational book studies and you can easily become a member of our groups.
+That would be amazing. So join us and have a nice day. Goodbye.

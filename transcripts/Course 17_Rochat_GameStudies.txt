@@ -1,0 +1,237 @@
+to this lecture on game studies. My name is Yannick Rocha. I'm an assistant professor at the
+Department of Linguistic and Information Sciences at the Faculty of Arts of the University of Lausanne.
+This is part of the lecture series, Introduction to Digital Humanities.
+During this presentation, I will show you, I will give you an introduction to game studies
+and show you some glimpses of what is being done, what it is, how we can link this to the
+digital humanities. I'm myself, I'm a mathematician who wanted to study humanities and social sciences.
+So that's how I discovered the digital humanities, where I did my PhD and from there I entered the
+field of game studies, where I'm very happy to work and do research and teach now. I am part
+of a study group called the Game Lab in ELEPFL and what we see from this list of disciplines
+from our members on the left is that it's very diverse. There are a lot of different
+disciplines which are relevant when you study video games like Asian studies,
+archival science, computer science, cultural studies, etc. We'll see a few examples. This is just
+a short sample. We'll see a bit more of what can be done, but there is a similar trajectory for
+game studies as digital humanities. It starts with the objects that we study is so diverse
+that we can borrow from so many different fields, from so many methods when you want to study
+a video game. You can be interested in what is really at the core of the game, which is the game
+design, but also the way you present a story or the way you put everything in place, how you draw
+the things, how you animate them. This is all about creating a game, but then you can study them
+and you can also try to preserve them and use them in different contexts. So we'll see that a
+bit in detail, but keep in mind that what I'm showing here is biased by my own trajectory
+and that game studies would have been presented differently if it had been someone from sociology
+or someone from English literature, for example, or from cinema.
+So what we do at the Game Library in EDPFL, just to present that shortly, is that we do some research.
+We publish some texts, some academic books. We also give a lot of teaching, which means
+analyzing games, but also creating some games. We do some mediation because video games are so
+particular and people need to know a bit more about it because it's an object that you can
+see sometimes in fair or in some public libraries, but people are not used to see video games presented
+like books or films presented. So we are trying to work on that and especially to show played
+conferences, which we call Let's Play. So while the conference is given, the game is activated behind.
+Here are the contents of this course. I will first talk about game studies as a field,
+then talk about what there was before the game studies, who is interested in studying games and
+how, and talk about the games in digital humanities, game studies in Switzerland,
+and provide you with a bibliography at the end.
+So game studies, the study of games started in the last century, but at the turn of this century,
+in 2001, this publication, this scientific journal was created. There were already a few
+conferences and discussions before, but this kind of launched the study of games as a field.
+So it was kind of a recognition for what the games are and what they provide, which is different,
+especially the idea of interacting, of being active in the game, active in the narrative,
+being able to express yourself in the game. So right now this field has a huge international
+conference called DIGRA, but many local conferences. It started more or less in North America,
+United Kingdom, and Scandinavian countries, which still have a few laboratories and many
+positions for studying video games. But since then, many such positions and labs were created in
+different countries in Europe, in fact in every continent, South America,
+Africa, Asia, and Oceania, with a lot of research being done in Australia and a bit in New Zealand.
+So this is very interesting that now there is a global network of researchers interested in video
+games. But the thing is, this is when you want to study games a bit traditionally, but there are also
+more applied conferences like the game developers conference, where you can meet or listen to
+game developers who will explain how they create games, but they will also do their own analysis
+of their games or the SIGGRA or some human-computer interaction conferences or stuff like that.
+It can be very applied, which is interesting because people discuss from one side to the other,
+and it helps you understand really the object. But you can also stay far from that, of course.
+So before the game studies, the study of games started very early, I mean in ancient times,
+obviously, but also with Jean-Jacques Housseau, people interested in educational sciences,
+philosophy in the 19th century. And here we can find in 1938 this book,
+Omorudens, by Johann Heusinger, in which he studies the place of the game in our culture.
+It's a very interesting book, which already provides many concepts that are still being used
+today to describe games and the practice of games, its place in the society. Later in France,
+Roger Caillois would write man play and games, also interested in this subject. Of course,
+this is before video games, but there is a continuity we can make between games and video
+games. And when we talk about game studies, usually, most of the time, video games are being
+studied, but it's not limited to them because when you want to study storytelling in games,
+or you want to study simply game design, there are strong links between the two.
+So Roger Caillois provided this grid, this theory, with two axes, or at least one kind
+of continuous axis between the païdia and the ludus, between disorganized and organized play.
+And then he tried to describe some properties of games and create this classification.
+So of course, since then, people try to do things differently or to provide new dimensions.
+But this was the start of this discussion, this great typology of what games are.
+And last book from Brian Southerl and Smith, who wrote a lot extensively in the 20th century
+games and play. I would like maybe to define what a game is. This is a citation from Robert Zuback.
+It has been customary for game design texts to start by defining the word game,
+but I will resist this temptation. Many definitions have been suggested over the years.
+These kinds of succinct definitions tend to be inaccurate, however, because they routinely
+fail to match the vastly heterogeneous variety of things that people call games. The word game
+is used to describe an enormous category of activities and artifacts, etc. There are a few
+pages to discuss what games are or games aren't. I am supposed to start this course by defining
+what a game is. And I find it very interesting to take the definition from people in social
+sciences, especially. A game is what people say is a game. It's pretty wide as a definition
+and as a mathematician. It wasn't the first definition I was using of games. But you can
+find a lot of discussions, especially in between 2000 and 2002 and about definitions of games.
+But it's a bit outdated now. It's interesting to think about what this medium is,
+but in the end it doesn't help much. Feel free to have a look at this. There is a book by Jasper
+Jules, Half Real, which could help you. But right now, this is not a crucial point.
+So there are many different approaches to the study of video games and games in general
+that you can take. Some from the social sciences, educational science, sociology, psychology.
+These are some of the most famous results. We can also cite neurosciences, how the brain reacts to
+playing video games. In the case of educational sciences, how we can use games to teach or help
+learn. Same with sociology, how people discuss how they behave when they play or collectively,
+how they react to some such properties of playing. There's also the critics of games in literature
+or based on cinema. That's what my colleague, Selim Krishan, did. He was studying the camera in
+video games. So what are the point of views? What does it mean in terms of experience?
+Art history is also interested in the study of video games,
+neuratology in order to highlight the structure of the games and especially the stories they tell.
+And an approach maybe more interesting here for us of studying the games by having a look at the
+code and the platform. So the software, the hardware, because games are made of code and assets,
+textures, and it's important also to take into account these elements of games.
+There's the study of the representations of history in video games. We often find
+kind of factual history as background, but usually there are some negotiations between
+the facts and the gameplay in favor of the gameplay most of the time. But if it's a sales game,
+it will be in favor of the factual history. And it's interesting to study this equilibrium
+between the two. The fact that historians are now hired by game companies blows a bit the frontiers
+between the two. Still history, but a bit different. The history of video games. Video games are
+digital heritage, which is very interesting to study for itself, but also because it tells the
+story of computer science and how people started to program, learn programming, acquire computers
+at home. So this whole history deserves to be studied. For that, we also use as a source the media,
+newspapers, or specialized magazines. This leads us to the importance of preservation and archiving
+these digital artifacts. This is something which is being done in some cases by museums,
+in other cases by libraries. In Switzerland, there was recently a report trying to recognize
+who was doing preservation in our country. There are not so many initiatives, and this same report
+called Pixel Vertica led to a few guidelines that were aimed to guide professionals who have to deal
+with the preservation of video games. In sports science, people are interested in studying
+e-sports or the practice or the physical effects of playing video games on the body, on the people.
+And we also see the use of game and gene or video games in the context of robotics, of rehabilitation,
+for example, with virtual reality, or by using game and genes in order to model or simulate some
+situations. So it's pretty wide, the different ways to use video games, obviously, but also to
+study them. It's pretty diverse. So in particular, game studies and digital humanities. Here I showed
+there are some results when you look at the abstracts from the previous digital humanities
+conferences. This is a work being done by Scott Waringout. Here with his database, maybe you see
+it's quite small, but when you look for games in this database, you get 333 results. And these
+results are in some cases the study of video games, like in game studies, but in other cases it's the
+use of video games in museums or for exhibitions or to display some results or some knowledge to
+translate it. And video games are not so common in the context of digital humanities, but still
+you always find a panel here or there. You sometimes find special issues on games in the
+context of digital humanities. And there are objects which epistemologically have a lot of
+similarities with digital humanities. In the case of games in digital humanities, it is interesting
+to consider the video game technologies. In particular, two game and genes, Unreal and Unity,
+used in the context of history, cinema, pedagogy, architecture or modeling and simulation.
+This doesn't mean that it's often used in digital humanities projects, but it's interesting to keep
+in mind that there is this transition between the software and some applications in different fields.
+And here are a few examples of the use of video games with digital humanities. I will show them
+in the coming slides. So of course, I'm using some examples I know well in this context. We wanted to
+to study the emergence of the concept of a cinematic or cut scene, which corresponds to
+some kind of small movies, I mean, non-interactive sequences in games.
+And we were interested in observing when these terms would start to be used.
+And then be normalized. So we scrapped thousands of magazines from the web, which were there
+digitized, thanks to the work of some hobbyists. And then we extracted the data. In this case,
+we extracted the text. We built a search engine. And then we made some queries and
+visualized everything here. In this context, it was using R. And this is what we decided to call
+middle reading, because it's distant reading, as you know, from digital humanities, in the fact that
+we gather this huge corpus and decide to make some kind of large scale data analysis. But then
+we went to see the sources, we went to see the different occurrences in order to make sure that
+we could really exploit these results, these visualizations, and see for which reasons there
+would be so many or so few occurrences. We are also interested in the study of the history of
+video games. Here you can see some of the oldest known video games from Switzerland that were produced
+in something like 81, 82, probably, on the SMACI, which is a Swiss computer.
+So here is the professor, who created this SMACI and who was teaching courses in which
+his students would learn programming by creating video games. So this is a trajectory,
+which is very interesting for us in order to understand how people get used to computers and
+to video games at the time, starting in the 60s. Here is a small sample of video games that were
+produced then on the SMACI. They were commercially released. It's interesting to see that first it
+started at the university, but as often then it was developed by hobbyists and then commercialized.
+At the same time, people in the world of Switzerland were developing video games on Amiga,
+Amstrad, on Atari ST, etc. Then came the web and then the possibility to play video games
+directly in the browser, etc. We are also interested in such initiatives. Here you can see a video game
+developed in the 90s, which allowed people to play tennis games between EPA, FH, and University of
+Geneva. So when you have a look at the presence of games in the universities, you will see a lot of
+of the things that will then become very popular. Here you have the motion mechanics,
+you have the virtual reality, you have the possibility to play online. So that's a lot of
+different innovation and it's interesting to trace the origins of such usage.
+I talked about archiving and preservation. We are working closely with the Memory App,
+with the Swiss Video Game Archivist Association and the Bolog Museum. They are doing the work
+of preserving digital objects. We can provide them research questions and work together
+on preserving these games, thinking about the ways to preserve them, the techniques, the methods,
+but also provide use, research questions, means to do exhibitions
+than with all these history of video games. I just wanted here to highlight
+what I would call a media restorer in video games. This is work which is being done on the
+Blupy games. So Mathieu Chretard here with the pseudonym of Skywalker 13 is providing a big archive
+of video games based on Blupy, this yellow character we've seen before. And he goes to the
+source code, he cleans it, he puts away everything which is outdated and then he makes sure that
+we can run the game on the current platforms. So this is a great way to serve the question of access
+to old games and fight against programmed obscenity.
+Another work which can be done with such material is to study the source code,
+but to study it as a historical document or as a literary work. So in this case we wouldn't use or
+at least the first thing to do wouldn't be to launch the game and play it and think about the
+experience and the mechanics, but have a look at the source code and try to understand in which
+context it was produced and what is the historical context and the historical importance of such
+a thing. So in this case there are still methodologies that need to be produced, created,
+but this is an ongoing work which is sometimes also called critical code studies.
+We can find some such initiatives in the context of platform studies. And yeah, about platform
+studies, this is an approach close to game studies, close to digital humanities which
+invite researchers to think about the hardware like a computer or video game console and that's
+how it came to exist and for which reasons it existed, for what kind of games or how was it
+optimized, what were the industrial constraints and how was it used and how was it used or how did
+it survive the end of the commercialization. In many cases, I mean nowadays most of the consoles
+and computers are still being used and you will find some new games developed for these consoles.
+This is not anecdotal because it's also a way to reuse these computers, these machines and therefore
+to reduce our impact on the environment. So now let's talk about the game studies in Switzerland.
+This is not a full map, but it will show you the diversity of the approach when we want to
+study video games. So first at the Turscher Hochschule der Kunst, there is a game design
+bachelor and master and research is also being done. It's one of the, if not the most active
+place in Switzerland to study and create video games. They have close to 20 years of experience
+in the field. At the University of Freiburg, Freiburg, recently Professor Veronique Dazan
+acquired, I mean she received an ERC project, it's a project of a few millions to study games
+in the ancient times. So this is the other, the opposite in fact, if you think the dimension of
+time, it's really the origins of games. But it's very interesting to understand that also because
+they study the mechanics of games. So they have traces and they have to find out to understand
+what were the game mechanics, what were the rules. And the very interesting thing here
+too is that Professor Dazan creates video games in order to display, in order to showcase
+their research on these ancient games. At the University of Basel, at the Institute of Psychology,
+there is some research being done, especially in the context of human-computer interaction.
+At the University of Lausanne, at the Bavaria Lab, they try to understand the impact on the brain
+of playing video games and at the Tech-Phile Laboratory, they try to understand how to explore,
+how to use video games in the context of education. At the Hautekal Dare design in Geneva, so it's an
+art school. They have a master in media design where they teach game design and they have also
+a lot of professors or colleagues which study video games. So as you can see, sometimes it's in
+the universities, other times it's in the applied universities and it's always different approach
+of the video games. There's also the HAKAB in the Berliner-Faouche-Rue or the Institute of
+Psychology of the University of Lausanne at the ETH Game Technology Center. They do a lot of
+research creations, so they create games and they study them or they try to answer open questions
+about what you can do, what you can showcase, what you can study. And I am part of the Game Lab
+in EEPFL which I showed in a slide at the very beginning. So very recently, that was
+surprised but also great news, in Switzerland there was a big grant which allowed to hire 15 to 20
+persons which was accorded and in order to study video games in Switzerland in the 20th century.
+So it's about game design but also about the practice and just about the history which games were
+produced, why, when, where, how did they spread. Most of them were distributed very luckily.
+We also think like in the case of cinema that most of the games in fact were lost since they were
+they were created by amateur developers. But still this is something we are, we are what
+right now studying. It started this, it started in February 2030, no sorry, it started in February
+2023 and it will end in January 2027. So here I end with the biography, a few books there,
+there were some books or articles cited before. Cyber text from Espen Asset is kind of a classic.
+It links narratology with possibility in the games to be actors, to incarnate avatars.
+So this is one of the first work in game studies. Alexander Galloway is a philosopher,
+his book on video gaming is a really great resource, a lot of great questions,
+great intuitions and it's still very interesting to read it today. Franz Meier wrote an introduction
+to game studies, it's from 2008 so it's very old but still makes a lot of sense today.
+Then Jan Burgers wrote a lot of books, he's also one of the first to have coined the term
+platform studies. He's a polarizing person in the context of game studies but still
+all the time with great input it's always fascinating to read his books.
+And here I put two books, Multiplayer and Multiplayer 2, which are collective works
+on the social aspects of video games and the last one, Elements of Game Design by Robert Zubeck.
+There's a lot of literature on game design and game creation, game development
+and some of these books link the science with the practice,
+especially around the concept of game design. So this book by Robert Zubeck is one example
+and I recommend it because also it's short, it's a great introduction to this kind of thinking.
+So thank you very much for following this course, I'm available so this is just a very
+small summary and it's biased towards digital humanities and my own activities but I'll be
+happy to get in touch. There is also one hour in which I will happily answer any questions you might
+have. So have fun with the rest of the lectures, thank you very much.

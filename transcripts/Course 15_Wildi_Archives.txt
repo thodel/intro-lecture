@@ -1,0 +1,282 @@
+Hello and welcome to my brief introduction to the field of archives and digital preservation.
+My name is Tobias Wilde and I teach archival studies at the Fachhochschule Graubünden
+in Chur.
+The agenda for today is that I first want to give you a definition of what archives are
+and then talk about the role of public archives in our society and third give you some basic
+concepts about the preservation of digital archives.
+So what are archives?
+Archives are collections of items, of documents, of records which have been selected for permanent
+preservation because either they have a value as an evidence or we consider them today as
+a future source for historical or other research.
+Now records are created by activities of organizations and people, for example by the
+public administration.
+They serve an active purpose with the current use and some of them are later selected and
+preserved as part of an archival collection.
+So we don't keep everything that is produced in the public administration but we do a selection
+and then take some of the records that are produced and decide to preserve them over
+the long run.
+Archive collections are usually unique, that's where we have a difference to libraries.
+In libraries you have books which have been printed many times and that's also reason,
+this uniqueness is a reason why it is so important to take proper care of the archives.
+In these archival collections they are kept in specialized institutions which we also call
+archives.
+Example of this includes national or continental archives.
+Here on the right you see a picture of the Swiss Federal Archives in Bern.
+On the local level we have city archives for example and then we also have specialized
+archives for certain topics like for example the Swiss Economic Archive in Basel or the
+archives of contemporary history in Zurich.
+Other archival collections are kept by institutions like museums or manuscript departments of large
+libraries.
+Now the role of archives in our society.
+Archives allow a time delayed traceability and monitoring of activities of administration
+and governments.
+In this way they have an important control function in a democracy.
+Of course this control function is not immediate but is time delayed 30 years, 50 years later
+we can ask questions as historians of what governments and administrations have done at that time.
+Archives provide an evidence of activities which occurred in the past.
+They tell stories, document people, identify and are valuable sources of information for
+historic research.
+They are our recorded memory.
+They form an important part of our community, cultural, official and unofficial history.
+And last but not least they guarantee legal reliability over the long run.
+Now something that is important to keep in mind is the difference between a work and
+a record.
+And here we can make a rough distinction between libraries and archives.
+Because libraries they normally contain works, archives they contain records.
+So what is a work in the sense of copyright law?
+It's an independent artistic creation such as works of art, literature, music, paintings
+and so on.
+A work is protected or protected or a protected or a protected creation within the meaning
+of the copyright law.
+On the other side records they are the output of administrative processes in public administration
+but also in private companies in the form of documents or files.
+Records are kept in records management systems.
+That might be something like a database.
+That might be a web server.
+That might be other systems, file system and so on and so forth.
+Records make activities and decision making processes traceable.
+Economic activities, administrative activities and so on.
+And what is important, the records that come out of public administration, they are not
+a work in the sense of the copyright law.
+So we have a difference between these two words.
+Now if we have an archival collection, what are the main principles for structuring these
+collections?
+The first important principle is called the principle of provenance.
+Provenance refers to an individual, a family or an organization that created or received
+the item in a collection.
+The principle of provenance is the respective form that dictates the records or different
+origins be kept separate to preserve the context.
+So we don't mix up archival content, for example along subjects or geographical provenance
+and so on.
+We keep archival collections separate from each other according to the context in which
+they have been created.
+Now if we have a structure in the archive, a first structure along the provenance, then
+the next question is how do we structure within the provenance?
+This second principle we call the original order.
+So archives are kept in the order in which they were originally created or used.
+So we don't recreate the complete structure within a collection but we try to reflect
+the way in which a collection has been created.
+This is essential to understand this when working with archives as a historian so that
+this original order is preserved.
+First it's important to respect this order as an archivist when you create structures
+but then it's important as a historian if you work with archival collections to know
+this second principle and to faster find what you're looking for.
+This original order allows custodians to protect the authenticity of the records and provides
+essential information as to how they were created, kept and used.
+And now what are the metadata standards to describe and contextualize archival material?
+This is the status quo in archives.
+It is about to change to new standards but today we use a standard called ISAG, the International
+Standard on Archival Description.
+That's the metadata standard for describing the content of archives.
+Then we have two other standards, ISRCPF, to describe corporate bodies, persons and families.
+That's the agents, they work for example in public administration and then we have a description,
+a third standard, a description of processes of functions of business processes, how have
+the records been created.
+That's the standard ISDF.
+Most of the archives today they only use ISAG and rarely ISRCPF or ISDF.
+So this is the important standard when you as a historian look for content in an archive.
+Here see as an example the archive plan of the Swiss Federal Archive and you see that
+ISAG is structured in a hierarchical way.
+We start on the top with the Gesamtbestand des Schweizerischen Bundesarchivs, so the totality,
+and then drill down into the large France, Archiv der Hilfetik, Archiv der Mediationszeit
+and so on and so forth.
+We go further down, E1, the Federal Chancellery and in the Chancellery you see that we have
+a collection from the Federal Council, Reden, Ansprachen, Appelle and then at the lowest
+point in this hierarchy we have the presentations, the talks from one Federal Council, Enrico
+Cogelio and you see on the lowest level the item level you see these different documents.
+That's how ISAG works, always in a hierarchical structure and this hierarchical structure
+helps you to comprehend the context of the production of this material.
+Now we come to the next topic and that's the goals of digital preservation.
+When I talk about digital preservation what is the goal of it, keeping digital information
+usable in the long term.
+You know all administrations work with digital systems, with records management systems,
+with databases and so on and the task, the large task of the public archive is now to
+preserve this digital information over the long term.
+So what does long term mean in the word of digital archiving across multiple generations
+of hardware operating systems, software applications and file formats.
+The second term that is important to understand what does usable mean, it means it's identifiable,
+findable, we can display it, interpret it and finally reuse it for a new business case
+for example or for research.
+So the digital archive documents the context of origin of records, ensures the long term
+traceability of administrative business processes in the digital world.
+The basic challenge of digital preservation is that we have digital information, we pack
+it, we send it into the future many years pass by and finally after 40-50 years a historian
+unpacks this information, wants to understand, render it, use it and make use of it.
+And the challenge is that we have no direct link between a data producer on the left and
+an archive user on the right.
+So the user cannot go back to the producer and ask about the context, about the system
+and so on but we need additional information when we package information to send it into
+the future so that an archive user will be able to understand the digital content correctly.
+The big question is now what additional information metadata is needed to ensure that package
+information remains usable.
+And this I want to show you in the following five steps.
+Digital archiving always starts in an organization, it's not a guerrilla project but it is a
+well-planned task within public archives, within the specialized archives.
+So we need money, we need expertise, we need people who can plan, who can install the systems,
+maintain the systems and so on.
+The first thing is we do not send everything that is produced in an administration into
+the future.
+We have a strong selection process.
+We already had these processes in the paper world and this goes on in the digital world.
+So the first question is why should we archive something?
+It depends from the legal mandate, from the archival strategy, from the legal basis, are
+we allowed to archive it?
+And it depends from the historic value.
+The second question is what should be archived?
+And here we do an evaluation and selection of documents and metadata so we ask what are
+the tasks that an organization has?
+What is this task?
+Something that is important?
+Is it something that is on a very low level and it doesn't make sense to preserve it?
+It only costs but nobody will use it.
+Then we decide not to keep it.
+But then the third question is for whom should the archives be preserved?
+And often we ask ourselves what is the designated community, the community of stakeholders and
+users that the archive serves?
+If you don't know for who we are going to archive then it doesn't make sense to keep
+the material.
+And one thing that is important to keep in mind is that only 3 to 5% of the records and
+data produced in the public administration will be preserved in an archive.
+And that's not new, that hasn't changed with digital transformation in administrations.
+Already in paper based administrations we didn't keep more than that.
+This might be shocking for historians who often think that archives they keep everything
+that is produced but the archives would be completely overwhelmed if they would try to
+keep a much higher percentage of material.
+The second step is the preparation of data for archiving.
+Once we have decided what we want to keep and the material arrives at the archives the first
+thing that is normally done is a virus check, quality control and validation against file
+format specifications.
+Often we do a file migration to archive formats.
+That depends from the archive strategy.
+In public archives that take material from administrations which is normally in office
+or mail formats.
+This is an easy task to do.
+If you deal with other kind of data for example with research data normally you keep the original
+format and then it's a task of the user to access the archive material with tools that
+re-engineer for example the data.
+Then we do an extraction of technical and descriptive metadata from the files.
+We try to get the necessary metadata for preservation out of the files or we add them automatically
+or in the worst case manually to ensure that we have all these metadata that is necessary
+to send the package or the file or the database into the future.
+We assign unique identifiers to each file.
+There are different practices to do that, different systems to do that, they are well
+established.
+Then we store the files and their metadata in a standardized form in repositories.
+So we have a lot of metadata standards.
+We don't invent the wheel every time we store something.
+We always use standardized metadata formats.
+The standardization makes things easier in the future.
+In reading rooms for example you only need to deal with very few metadata standards.
+You always know what the base of the package will be.
+We update the archive catalog with the descriptive metadata and the important thing is that we
+document all the steps.
+Documentation is an integral part of the archiving process and it ensures traceability
+of what has been done to protect the archive.
+Next step is the archival storage.
+I want to say something about archival storage on two layers.
+First we have the application layer, the management of the storage.
+We also can call it a repository.
+A repository is a piece of software to manage fixed digital information that isn't changed
+or isn't changed very often.
+Today software has interfaces for receiving and delivering data to the outside world.
+These repositories are able to make automated integrity checks.
+They can monitor the storage and alert in case of errors.
+One important thing is repository systems.
+They have user management so only those people who are allowed to access the digital information,
+the archive collection, they get the access to do it.
+On the lower level below the repository as an application we have what we call the bitstream
+preservation.
+So the raw storage, storage systems, disk tapes, cloud applications and so on.
+On this level we do everything to protect the bitstream through redundancy and diversity.
+So we use different storage technology, different vendors, different protocols just to make sure
+if one vendor goes out of business we still have copies on systems that they will maintain.
+The general requirements for archives, for long-term archives is to have three copies
+of the archive collection in two geographical locations and at least one of these copies
+is completely offline, for example on tape.
+If we have a ransomware attack or something else then we know that at least one copy is
+offline and well preserved.
+An important thing is to ensure the integrity of the storage to make sure that the storage
+is well preserved.
+We do that through checksums with the help of checksums.
+We also monitor not only on the repository level but normally also additionally on the
+storage level the integrity of the storage and repair if necessary.
+Now the preservation planning is the function for monitoring changes that may impact the
+digital material in the future.
+This function distinguishes digital archives from just making backups of the material on
+additional storage servers.
+So the preservation planning is a proactive activity within the archive where we do technology
+watch, so how do the file formats change, how do we have file formats in our repository
+that become obsolete, do we have storage technology where the vendor wants to go out of business
+or that become obsolete, where there are our tools and infrastructure environments that
+we have, do we have to adapt tool, maintain tool, invest in new tools and what are the
+access mechanisms for the users, do we have the right tools there.
+The next or the second field of preservation planning considers designated communities,
+so on the one hand the needs and expectations of our archival users and on the other hand
+the needs and expectations and development on the producer side.
+So do the producers introduce new systems, new tools, new data models and do we have to
+adapt our archival processes based on these changes.
+And also with the designated communities, the designated communities does not only refer
+to human beings and organization but also to machines.
+So what are new emerging tools for example for machine to machine access.
+And the last point, the last step in the archival process is the access, the reuse of
+our cache, so opening the repository for the outside world for our users, we have to understand
+the designated community of users or let's say the designated communities, normally it's
+more than one community that we serve for, we serve for the broad public for example
+but also for experts like historians who want to dive very deep into the data and use raw
+data and not only copies for the web for example.
+We have to map the archival formats, often we have things like TIFF, we have made OCR
+for example and the user needs are different, users want to have instant web access, they
+want to have text findability, full text search mechanisms and there we have contradictions
+so we have to make sure that we have a transfer of the archival material to the web application,
+to the digital reading rooms.
+Sometimes we also have contradiction between efficient access and data protection or lockup
+periods which are defined by the archival law.
+So as archives we want to give access, basically give access to everything but we are restricted
+by laws, by data protection and so on.
+And we have to deal with this contradiction in as pragmatic way as possible.
+And there are two ways of access basically, on the one hand we have digital reading rooms
+normally built as web applications and these are built for human beings, on the left you
+see the entry point for the digital reading room of the Federal Archives in Bern.
+On the other hand we have interfaces for machines, programming interfaces, sparkle endpoints
+in the case of semantic data and much more.
+As an archive we just provide the endpoints and then third parties can program their own
+applications, their own reading rooms that are for example collecting data from more
+than one archive.
+So I come to my conclusions and I want to repeat my main points which in my opinion
+are really important to understand the basics of archiving.
+I've said in the beginning archives they have the duty and the function to make a government
+activities traceable over the long run.
+Then we have the two main principles for structuring archive, the principle of provenance, where
+does the material come from, what organization, what person and within the archive collection
+we have the principle of the original order.
+The archive description is today based on ISAPG, the international standard on the archive
+description.
+So basically every archive in Switzerland is very large, very small, is described based
+on ISAPG.
+And then for the digital preservation you saw that we need to write metadata, write
+contextualized information to keep the digital information usable in the long term to make
+it possible to send digital information into the future and be able to understand, use
+the information in many years from now.
+So thank you for your attention and I hope you enjoyed this short overview about archives
+and digital preservation.
+And thank you for listening.

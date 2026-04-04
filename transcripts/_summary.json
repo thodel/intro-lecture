@@ -1,0 +1,149 @@
+{
+  "model": "mlx-community/whisper-small-mlx",
+  "language": null,
+  "word_timestamps": false,
+  "clip_timestamps": "0",
+  "input_dir": "audio",
+  "output_dir": "transcripts",
+  "successes": 17,
+  "skipped": 0,
+  "failures": 0,
+  "files": [
+    {
+      "audio_file": "Course 11_Sennrich_NLP.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 125.67,
+      "txt_path": "transcripts/Course 11_Sennrich_NLP.txt",
+      "json_path": "transcripts/Course 11_Sennrich_NLP.json"
+    },
+    {
+      "audio_file": "Course 12_Savic_Digitization.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 193.37,
+      "txt_path": "transcripts/Course 12_Savic_Digitization.txt",
+      "json_path": "transcripts/Course 12_Savic_Digitization.json"
+    },
+    {
+      "audio_file": "Course 13_Münnich_DigitalMusicology.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 168.98,
+      "txt_path": "transcripts/Course 13_Münnich_DigitalMusicology.txt",
+      "json_path": "transcripts/Course 13_Münnich_DigitalMusicology.json"
+    },
+    {
+      "audio_file": "Course 14_Hodel_EarlyModernHist.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 188.33,
+      "txt_path": "transcripts/Course 14_Hodel_EarlyModernHist.txt",
+      "json_path": "transcripts/Course 14_Hodel_EarlyModernHist.json"
+    },
+    {
+      "audio_file": "Course 15_Wildi_Archives.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 134.91,
+      "txt_path": "transcripts/Course 15_Wildi_Archives.txt",
+      "json_path": "transcripts/Course 15_Wildi_Archives.json"
+    },
+    {
+      "audio_file": "Course 16_Chiquet_DigitalPhoto.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 142.08,
+      "txt_path": "transcripts/Course 16_Chiquet_DigitalPhoto.txt",
+      "json_path": "transcripts/Course 16_Chiquet_DigitalPhoto.json"
+    },
+    {
+      "audio_file": "Course 17_Rochat_GameStudies.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 107.32,
+      "txt_path": "transcripts/Course 17_Rochat_GameStudies.txt",
+      "json_path": "transcripts/Course 17_Rochat_GameStudies.json"
+    },
+    {
+      "audio_file": "Course 1_Fischer_TextRecognition.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 131.2,
+      "txt_path": "transcripts/Course 1_Fischer_TextRecognition.txt",
+      "json_path": "transcripts/Course 1_Fischer_TextRecognition.json"
+    },
+    {
+      "audio_file": "Course 2_Prietl_UnderstandingDigitization.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 85.6,
+      "txt_path": "transcripts/Course 2_Prietl_UnderstandingDigitization.txt",
+      "json_path": "transcripts/Course 2_Prietl_UnderstandingDigitization.json"
+    },
+    {
+      "audio_file": "Course 3_Mahlow_DigitalLinguistics.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 159.64,
+      "txt_path": "transcripts/Course 3_Mahlow_DigitalLinguistics.txt",
+      "json_path": "transcripts/Course 3_Mahlow_DigitalLinguistics.json"
+    },
+    {
+      "audio_file": "Course 4_Chestnova_DigitalEditing.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 148.3,
+      "txt_path": "transcripts/Course 4_Chestnova_DigitalEditing.txt",
+      "json_path": "transcripts/Course 4_Chestnova_DigitalEditing.json"
+    },
+    {
+      "audio_file": "Course 5_Lauer_DigitalBooks.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 166.43,
+      "txt_path": "transcripts/Course 5_Lauer_DigitalBooks.txt",
+      "json_path": "transcripts/Course 5_Lauer_DigitalBooks.json"
+    },
+    {
+      "audio_file": "Course 6_Rosenthaler_LOD.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 82.15,
+      "txt_path": "transcripts/Course 6_Rosenthaler_LOD.txt",
+      "json_path": "transcripts/Course 6_Rosenthaler_LOD.json"
+    },
+    {
+      "audio_file": "Course 7_Piotrowski.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 86.75,
+      "txt_path": "transcripts/Course 7_Piotrowski.txt",
+      "json_path": "transcripts/Course 7_Piotrowski.json"
+    },
+    {
+      "audio_file": "Course 8_Bubenhofer_CorpusLinguistics.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 32.03,
+      "txt_path": "transcripts/Course 8_Bubenhofer_CorpusLinguistics.txt",
+      "json_path": "transcripts/Course 8_Bubenhofer_CorpusLinguistics.json"
+    },
+    {
+      "audio_file": "Course 9_Fornaro_Imaging Technologies.m4a",
+      "status": "ok",
+      "language": "de",
+      "elapsed_seconds": 77.11,
+      "txt_path": "transcripts/Course 9_Fornaro_Imaging Technologies.txt",
+      "json_path": "transcripts/Course 9_Fornaro_Imaging Technologies.json"
+    },
+    {
+      "audio_file": "Course_10_Roller_NetworkAnalysis.m4a",
+      "status": "ok",
+      "language": "en",
+      "elapsed_seconds": 136.05,
+      "txt_path": "transcripts/Course_10_Roller_NetworkAnalysis.txt",
+      "json_path": "transcripts/Course_10_Roller_NetworkAnalysis.json"
+    }
+  ]
+}

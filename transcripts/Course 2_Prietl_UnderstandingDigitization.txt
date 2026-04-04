@@ -1,0 +1,218 @@
+Hello, my name is Bianca Plietl and I'm professor for gender studies with a focus on digitalization
+at University of Basel.
+In this short introductory lecture, I will talk about digitalization from a gender studies
+perspective, more precisely from a social science perspective on gender and technology.
+I will thus first sketch very briefly what it means analytically to think about gender
+and technology as being co-constructed and how such a constructivist perspective can
+inform our understanding of digitalization.
+I will then raise three issues that are at the center of public discussion and research
+on digitalization and gender, namely the digitalization of work and digitalization
+as an era of work itself, second digital technologies as gendered technical artifacts, and third
+digital media technologies as arenas for gender politics.
+As I can only scratch upon the surface of this topic, I have inserted texts for further
+reading and where possible also links to online sources, so as for you to individually
+dig deeper into topics of your interest.
+To conclude this lecture, I will shortly revisit some lessons learned and consider the question
+of how to move on from here, that is how to shape the digital transformation of society.
+As mentioned before, my take on digitalization is informed by social science perspectives
+on gender and technology being co-constructed.
+What does that mean for how to think analytically about digitalization?
+First of all, a constructivist perspective on gender and technology rejects any essentialist
+or naturalist thinking, but instead focuses on the social practices, cultural norms, and
+societal structures that only just bring about gender as well as technology.
+Put differently, neither gender nor technology are thought of as just given, but they are
+understood as social constructs, as the cumulative effects of what happens and is done within
+society.
+Such a constructivist perspective, hence, directs our attention to precisely what is
+done by members of society in order to bring about gender and technology as we then come
+to encounter them.
+From this analytical stance to gender and technology also follows that as they are not
+given in any way, the form they are taking could be different.
+The gender order needn't be patriarchal and heteronormative.
+Women need not be more likely to be in danger of poverty due to working in poorly paid occupations,
+and trans and non-binary persons needn't be excluded due to a gender order that knows
+only two genders.
+Similarly, technology needn't thrive on the exploitation of natural resources nor need
+digitalization be primarily used, quote, in the service of profit, for a few, surveillance
+of the minoritized and efficiency amidst scarcity, as Catherine DiNazio and Lauren Klein criticized
+so pointedly in their book, Data Feminism.
+In feminist technology studies, these perspectives are joined to consider gender and technology
+not only as constructed, but as co-constructed.
+This means to look at gender and technology as inextricably interwoven as shaping one
+another with technology being a resource for the construction of gender, while gender
+is at the same time understood as a resource for the construction of technology.
+Again, what does it mean more precisely and how can we apply this perspective when thinking
+about digitalization?
+First, this means to analytically distinguish three levels on which digitalization as technical
+development and gender are being co-constructed.
+A cultural level of knowledge that comprises not only technical know-how in a more narrow
+sense, but also knowledge about digitalization and the ways we as a society think about digitalization
+as well as how we think about gender, what gender norms we adhere to, which ideas of
+femininity and masculinity are dominant.
+When it comes to digitalization, for instance, one important insight is that technological
+development is not happening in and out of itself, like techno-deterministic narratives
+suggest.
+Rather, it's promoted and driven by mostly techno-optimistic discourses, politics and
+stakeholders.
+When we look at digitalization, it's especially the promise of solving all kinds of problems
+from poverty to climate change that drives and legitimizes the call for developing and
+deploying ever more digital technologies in almost every sphere of society.
+This techno-solutionism, as Afghani Morozov calls it, thereby draws heavily on masculine
+ideas about technological control and power and the supposed neutrality of machines being
+superior to the bodily situated knowledge and practices of people, as I've analyzed in
+an article in the Promises of Big Data.
+Second, digitalization as a label stands for the development and deployment of a highly
+heterogeneous amount of technologies and technical artifacts ranging from social media
+sites, speech assistance, smart home devices and robots to algorithmic decision-making
+systems, body scanners, self-service units in supermarkets or banks, to name just a few.
+All of these technical artifacts are designed and shaped by specific people in specific
+development contexts with specific ideas in mind, thus influencing the very form and
+shape that these technologies take.
+Excuse me for a second.
+These development contexts are gendered in so far as they are sites of gender work relations
+with big tech companies being dominated by mostly white middle class men situated in a
+global north, bringing gender norms to the table and also to developing digital artifacts.
+The concept of script and technology studies grasps this idea by pointing out that designers
+and engineers as Madeline Aklesh writes, construct many different representations of the users
+and use context and objectify these representations in technological choices, effectively inscribing
+their ideas about users and scenarios of use into the final artifact by grounding their
+design decisions on these very ideas.
+As gender research on technology has shown, these scripts rarely stem from thorough research
+but are mostly derived from personal experience.
+This is why feminist scholars on technology speak of a so-called eye methodology being
+prevalent amongst engineers and designers.
+Thereby, those responsible for designing, constructing and shaping technical artifacts
+imagine themselves as ideal users, thus founding their design choices on their own preferences,
+skillsets and wishes.
+This is of course especially problematic in a society in which those in control of developing
+and shaping technologies constitute a rather small and homogeneous group of people, thus
+not being representative of the people who end up using the technologies.
+As a consequence, many technologies reflect the perspective of those designing them, excluding
+or hindering the use for those not being presented, such as Google Maps calculating the shortest
+path without taking into account that steps, for instance, are impossible to overcome for
+a person in a wheelchair or a woman pushing a prem, or considering that touch screens
+need or expect fine motor skills often no longer available to elderly people.
+When designers and engineers bring, I'll buy it pre-refractively and thus unintentionally.
+Gendered ideas to the table, they engender technical artifacts in a very specific way,
+thus objectifying these ideas and making them durable.
+As we have all come to live with digital assistants that mirror the stereotypical image of female
+assistants to the extent that Alexa or Siri have been shown to keep a calm, polite and
+always serving attitude even when literally being attacked in a sexist way.
+At the same time, and I now want to turn to the third level of practice, acting and doing,
+handling technical artifacts and acting with digital technologies may take quite different
+forms than initially intended. That is, the level of knowledge must not be and often is not
+identical to the level of actual practice. Think, for instance, about the introduction of
+industrial robots and the consequences it might have for the workforce.
+Introduced as making production faster, more efficient and less prone to mistakes,
+it will likely have consequences for the gender relations among the workforce.
+For those who are let off due to rationalization and cutting down on personnel,
+this development might add to a crisis of working class masculinity that is strongly
+linked to employment and earning a life for one's family. For those who stay on,
+not only the concrete work practices change, but with it also the conditions for doing gender,
+for doing working class masculinity. It's now no longer centered around the idea of heavy,
+bodily labor, but around the image of the technically skilled machine operator.
+From these examples, we can thus see how digitalization becomes a resource for the
+construction of gender in a multitude of ways and vice versa. To summarize so far,
+thinking of gender and digitalization as co-constructed means to reject any
+essentialist thinking about gender as well as technological development. But to look into how
+specific gender and technology relations shape one another in specific contexts,
+especially taking into account the different forms of shaping, different forms of becoming
+together are possible. And thus to acknowledge that other technologies are just as possible as
+our other gender relations and norms. Let me now turn to the first of the three issues I want to
+address in today's introductory lecture. How is digitalization changing gendered work relations?
+As the example of the introduction of industrial robots and ensuing consequences for working
+class men and masculinity has already shown, there are no generalizable statements possible when
+we look at the digitalization of work. Because work settings, gendered work relations, and the
+technologies introduced differ so strongly, it's instead necessary to conduct thorough in-depth
+analysis of specific work settings and occupations. Asking how is the introduction of a specific
+technology affecting the gendered structure of the workforce? How is it renegotiating the
+distribution of labor, for instance, amongst men and women? Whose skills and competences are valued
+or devalued? Whose perspectives, preferences, skills are favored? Whose are being marginalized?
+And although overall assessments are not possible, I want to draw your attention to one
+insight from feminist perspectives on work and digitalization. Feminist perspectives on work
+and digitalization draw our attention to the often unseen, unacknowledged and ignored aspects
+of work. Such as the work of content moderators or dataminers, that is, all by being essential to
+digitalization, often done as unqualified, poorly paid, hardly appreciated click work
+by an anonymous workforce that is mostly located in the so-called global south.
+And is thus standing in strong contrast to the almost glamorous, highly visible and well-paid
+work of so-called big tech workers in the global north, be it data scientists, AI scholars, or
+software engineers. Going a step further, Kylie Jarrett has coined the term digital housewife
+to direct our view to the similarities of housework that is still mostly done by women
+and all the invisible, unpaid and unappreciated work we all do when using digital technologies,
+thus adding indispensable worth to digital companies such as posting a comment on social media sites,
+which we rarely even acknowledge as work, let alone for what we expect to be paid,
+but without which the respective social media companies would be worthless and their product
+just wouldn't exist. When it comes to digital technologies, as specific technical artifacts,
+feminist technology studies draws our attention to the gender norms inscribed into digital
+technologies, gendering them fundamentally and at the same time having gendered effects
+for the people who use them and or are put to use through them. Again, the question of what
+gender norms are being objectified in digital technologies can only be answered with regards
+to concrete artifacts, with some gendering being more obvious and others being more subtle
+or implicit, at least for the majority of us. I want to hint at one example
+for how social gender norms and a deeply heteronormative gender order takes the existence
+of only two genders as the norm are inscribed into the construction of digital technologies.
+Sasha Konstantzichak has demonstrated how security scanners at airports are continuously
+flagging trans women and men as security risks, because their bodies do not conform to neither
+of the two gender body norms the machine has been programmed to match the person to.
+They do neither conform to the supposed norm of a man's nor of a woman's body. Being flagged
+then results in the trans person being scanned manually, raising the question of who is appropriate
+to scan them. A man or woman security officer highlighting again they're not fitting into the
+binary gender order and potentially adding another traumatizing event to their personal history.
+This example shows how social gender norms are inscribed into technical artifacts that are then
+taking part in constructing gender masculinity and femininity. By, as in this case, deciding about
+the right and wrong gendered bodies, literally signaling which genders are to be acknowledged
+as true or false and which are to be put into question.
+A third topic that is of importance when talking about digitalization and gender
+are digital media, especially social media, and how they are used to promote gender politics.
+Ever since the early days of the internet, feminist scholars have pondered upon the question
+whether a virtual cyberspace would path the way for freeing us from our bodily gender,
+allowing for people to play with or even swap their gender identities as Sherry Turkle elaborated
+on with regards to digital arbiters. Nowadays, interest has shifted to social media sites as
+arenas for negotiating gender politics. Assessments of if and how digital media sites
+promote a feminist agenda or are on the contrary sites for anti-feminist engagement
+are so far very ambivalent, nearly twofolded. On the one hand, hate speech and sexual violence
+directed at women and LGBTQI plus person demonstrate that the internet and social
+media sites are no gender neutral spheres, but are just as permediate by heteronormative
+patriarchal norms as is the so-called offline world. On the other hand, however,
+digital media offer a platform for raising the issue of sexual violence and discrimination
+on the basis of gender and sexuality, thus demonstrating that gender discrimination,
+for instance, is no singular event, but a structural component of how our society is made up in works.
+The so-called hashtag feminism with, for instance, hashtag MeToo that was initially started by black
+women having literally gone viral globally can thus unfold very empowering effects
+by allowing for those otherwise minoritized and silenced to join their forces to speak out together,
+crossing even geographical boundaries and to counter strategies of shaming the victims
+or privatizing the problem. As lawsuits and new regulations against sexual violence and
+gender discrimination show, raising awareness to a wider public may eventually lead to changes in
+other areas of society, making digital media technologies important arenas for feminist
+net politics. What can we learn from this multitude of heterogeneous insights into the
+interrelations of gender and digitalization? Most importantly, what can we learn for how to engage
+with the digital transformation of society? As you might expect, there is again no one answer
+to these questions. I therefore want to draw your attention at some last takeaway messages.
+As the examples presented have hopefully demonstrated, digitalization is indeed a very
+complex, highly heterogeneous ongoing and thus open-ended socio-technical process
+that is at different levels and in different ways shaped by and is shaping gender relations,
+norms and practices. Taken seriously, this insight means that there simply cannot be
+the one answer to any question concerning the digital transformation of society.
+Instead, we are called upon to put in the effort and to look very closely at and study the multitude
+ways and forms that digitalization is interrelated with gender, be it to ask how the introduction of
+a specific technology changes the gendered work relations in a concrete occupational setting,
+be it to scrutinize the explicit and implicit gender norms inscribed in digital artifacts
+or to differentiate the articulations of gender politics in digital media.
+As a deeply social process, digitalization and the way it's interrelated with gender can be shaped.
+Again, taking this insight seriously, we can at least theoretically all take part in shaping the
+digital transformation of society. Following Donner-Haraway, who has for many decades advocated
+for taking responsibility for and engaging in technoscientific developments, this offers the
+chance of developing technologies that allow to build a world that is less structured and
+organized by power asymmetries and inequalities. In order to do so, she and many others who have
+thought about how to intervene in technoscientific development call for participatory design
+approaches. Participatory design is guided by the idea that technological development should
+start from the everyday practices, wishes and needs of the later users.
+Thereby, it's especially those who speak from the margins of society, such as the elderly,
+the less affluent, the disabled, trans and non-binary people that promise to offer perspectives
+for technological development that not so much reproduce existing inequalities,
+such as gender inequalities, but that challenge them or even contribute to reducing them.
+With this slightly optimistic note that is founded on a cyber feminist idea,
+instead of techno-solutionist ones, I want to end this short lecture.
+For those interested, please consider some recommendations for further reading and do
+not hesitate to get in touch.
+Thank you.

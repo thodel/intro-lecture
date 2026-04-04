@@ -1,0 +1,326 @@
+These students welcome to the introductions to digital humanities.
+In this lecture we will learn something about openlink data and the semantic web.
+So why is metadata important?
+I think that's one of the basic questions, because we always need metadata to our digital
+assets.
+The data associated with digital objects that are often images, soundbites, video text,
+they don't speak for itself.
+For example this image.
+You can see it's a plane, it's a color image, it has a Swiss cross on the side, it looks
+like a propeller plane, so probably something older.
+But we do not know what the thing is.
+So all these digital assets normally do not speak for themselves.
+We need data about the data and that's exactly what metadata is.
+If I give you some more information on this you will better understand what this image
+means.
+First, it's a fighter plane from the World War II, it's a Messerschmitt MA-109E3.
+It was built in 1940 and was put out of service in 1949.
+The photograph has been taken in the winter of 1943 on a special location, that's the
+military airport in the Lachen, which at this time was very important because it was
+closed in the mountains.
+As you can see it's a color slide and it's an aqua color and the film has been provided
+by the former scientific photography department of the University of Basel and that's very
+special because at this time color slides were not available in Switzerland.
+They have been introduced after the war.
+So the photographer, which by the way is my father, worked for the scientific photography
+lab and he had access to this very, very modern photographic material.
+So he used it to document his military service.
+He was a fighter pilot at this time and this is a friend who is preparing his plane for
+a flight over the Swiss mountains.
+So it was taken in 1943.
+With this information we can much better position this image into the context we are looking
+at.
+So often the metadata are more important, more profound than the data itself.
+This view of an iceberg clearly shows that the metadata is the hidden part which is extremely
+important for research.
+Of course metadata has to be structured, searchable, it should follow standard and it should be
+flexible.
+So in order to organize the metadata normally we require some kind of a database management
+system.
+In the early days the metadata has been stored on files, so in a filing cabinet but since
+many, many years of course electronic means like databases are being used for this.
+Traditionally relational databases, RDBMSs have been used.
+They are well established, they are widely available but on the other hand they are very
+inflexible, they are heavy and complex.
+And with metadata we often have the problem that the metadata may differ from object to
+object.
+The depth of the metadata might differ.
+In order to make a good scheme of metadata sometimes you need hundreds of fields and
+this makes the whole thing very difficult to manage, very difficult to search.
+Relational databases which I call a legacy database technology, they are the data organized
+in tables.
+Each row in a table has to be absolutely unique.
+A field in a row can reference another row in another or even the same table.
+This is called a foreign key and of course the database has to guarantee that such a
+reference never references an empty table, an empty row, an empty data it must be valid.
+In order to access relational databases there is a special query language which is called
+SQL.
+So it's an old, very proven technology but in the end I think for modern databases in
+digital humanities it's neither efficient nor good at all.
+For highly networked information and that's what's really interesting in digital humanities
+and for largely unstructured information.
+Where we do have a lot of different things and each object has its own description, its
+own things, this kind of very strict scheme that relational databases impose is not very
+suitable.
+So here just a small example of a relational database where you can see how foreign keys
+relate to rows in other tables.
+The new key in the block are the so called graph databases.
+There the data is organized as a directed graph of resources.
+A resource is something representing a real world object.
+This can be a physical object like a painting, a vase or something but it can also reference
+ideal objects like an idea, a thinking part.
+But it's something that is related to the real world.
+And these resources are linked with literal values and connections to other resources.
+So the nodes are called resources and the edges which link the resources to literal
+values or to other resources are called properties.
+So in fact we have a very simple description of resources, objects with properties like
+has a name, has age, was created by and so on.
+This principle of linked open data allows in a very flexible way to describe objects
+and their data and metadata.
+It loosely follows a mathematical model which is called a graph.
+So we can apply the mathematical methods of graph theory to this kind of databases.
+And RDF, the resource description framework which is the base of linked open data allows
+to describe these models in form of ontologies.
+So we can describe what these resources and properties do have a semantic meaning.
+And another thing that's very nice, we can use predicate logic in the database to draw
+conclusions.
+So let's start what's a graph?
+A graph is nothing else than a series of nodes which are connected by edges.
+The nodes and the edges can be provided with labels.
+So let's here look at a very simple graph which just describes the relationship between
+musicians and bands.
+So here we have on the left two bands, the purple and your IAHEAP, these are resources.
+And we have musicians like Don Erie, Phil Lansson, Steve Moss, Mick Box.
+And on the right side we do have instruments like guitar and organ.
+And now we can connect these resources by edges.
+Let's say one type of edge is placed in.
+So Don Erie plays in the purple, Phil Lansson plays in your IAHEAP, Mick Box plays in your
+IAHEAP, Steve Moss again plays in the purple.
+On the other hand we can have edges which denote the property of the instrument, the
+musician plays.
+So un-instrument.
+Mick Box is an instrument guitar.
+Steve Moss is also playing the guitar.
+Don Erie and Phil Lansson are playing keyboards or especially the Hammond organ.
+So with this graph network we can describe the relationships between bands, musicians
+and instruments.
+This is a very small example.
+Of course we can expand this and with this we could really make permanent the relationships
+between these different resource types.
+The smallest element of data in such a graph model is called a triple.
+It consists of three parts.
+We have the notes which are normally called subject.
+They represent the physical ID or the ideal object which can be named.
+So it has a name at the end like Phil Lansson, like Don Erie, like John Lord.
+Then we have edges which are called properties or predicates.
+They name the properties of the object and then we have at the end of the triple the
+values.
+They are called values by the way and they contain the value of a predicate.
+A value can be a literal, it's a string that directly denotes something or it can be the
+reference to another note.
+So a single triple is actually a very simple declarative sentence.
+Mozart is the composer of the magic flute.
+That's a typical triple.
+We have a resource Mozart.
+We have a resource magic flute which represents the piece, the magic flute and then we have
+the property composer of which connects these two.
+Mozart has the last name Mozart.
+So here we have again the resource Mozart which is the same like above because it has the
+same label which has the last name and this points to a literal which is the string Mozart.
+The third triple Mozart has the first name Wolfgang Amadeus.
+Very clear we have another triple.
+Mozart was acquainted with Salieri.
+So here we have again a connection between a resource called Mozart which is a composer
+with another resource called Salieri which in this case is also a composer.
+The magic flute has the title magic flute.
+Again the resource magic flute which by the way because it has the same label is the same
+resource like the value in the first triple on this slide has the title magic flute which
+is a literal.
+The magic flute was composed in 1791.
+So these are now six triples which in a very coarse way describe Mozart as a composer of
+the magic flute.
+Give some information about Mozart some information about the magic flute.
+We left out all the information about Salieri.
+He's just a resource and note standing at the moment without properties.
+Now the rules are that the naming of the note is done using a unique URI.
+This is just to guarantee that the label of a note or of a property is unique and as you
+know URIs can be constructed in a way that they are really worldwide unique.
+Also the naming the label of a predicate is done with the help of a unique URI.
+Sometimes because writing long URIs we can use prefixes which allow to shorten the URIs
+and we will see this later in an example.
+So if we show the graph we have here an example of another object of the real world the Stulti
+Ferra Navis the Narnschiff which is an early print of Basel from the 15th century.
+So here we now use the full URIs.
+So the label of the resource is Http answer one stultiferra navis.php.
+Then this resource is denoted by three properties.
+We have the predicate's title, the predicate's transcription and the predicate author.
+On the left the property title points to a literal which is the string Stultiferra Navis.
+The author in this version also points to a literal which is just the string Sebastian
+Brandt.
+Here in the future maybe this could be exchanged by pointing to another resource which denotes
+the person Sebastian Brandt.
+This is on the designer of the data model to decide how these things are being done.
+On the right we have the property transcription which points to a transcription of the text
+and this transcription is another object.
+In fact in this case it's a real world object, it's a XML file that can be viewed and downloaded.
+So this property in reality points to a dataset that we can download.
+Here again the other example from before with Mozart and this example you can look at it
+yourself and try to determine the different things.
+It's a little bit more complex for example we have this property knows, the compose
+here has title and so on.
+Now these are very simple examples.
+Let's look at a little bit more complex sample here again from the world of the Stultiferra
+Navis of the Narrenschiff and here we have two resources which do have the same name
+but not the same URI.
+We have on the left top HTTP Luver Narrenschiff and in the middle HTTP in Kunabula Narrenschiff.
+These are two different resources.
+Both have the human name Narrenschiff but one seems to be connected to the Luver and
+the other to the in Kunabula to the early print.
+It's obvious if we look at the property type DC type which stands for doubling chord type
+which is a standard property says for the resource up left it's a painting and for the
+middle resource it says it's an in Kunabula an early print.
+So we can clearly see that these are two different resources.
+These are two different things which have the same name Narrenschiff but do have a different
+label.
+We can further see that the Narrenschiff in the Luver has the creator, Jornimus Bosch
+which has been a famous painter, it has a description, it has a title, the title is
+in both cases does the Narrenschiff.
+The in Kunabula has some more information for example we can relate to the pages of
+the book and on the lower left we see a resource which connects these two resources and this
+connection is another type of resource which has a comment which describes why these two
+other resources the Narrenschiff in Kunabula and the Narrenschiff painting are connected.
+So here you can see that using this graph based approach to metadata and to databases
+we can put a lot of information in a very natural way into our metadata.
+We can really make a network of information about the things and this is an extremely
+strong tool in the humanities because in the humanities we often have very complex objects
+which do have complex relationships.
+And this is much easier to represent using the RDF, the semantic web model than for example
+relational databases.
+Now of course it's possible to serialize this kind of information.
+There are several standards but the most common standard is called the turtle notation.
+The IRIS must be braked in these parentes, each statement is terminated by a period.
+We can have multiple predicted objects combinations which are separated by a semicolon or multiple
+subjects which are just separated by a column.
+So let's have a look at an example.
+Here again we have our Mozart with a Zauberflöte and you see this is the first part really
+full written, every URI is written, everything is redundant.
+If we do compact it a little bit more we can use the semicolon and the colon then we can
+make a description which is not only machine readable.
+That's very important, it is machine readable.
+So there are libraries and processes where you can read this and build in the computer
+this kind of database.
+For example with Python it's very easy, there is an RDF library which directly can read
+this kind of files.
+But on the other hand it's also readable for us humans, we can understand this.
+Mozart has first name Wolfgang Amadeus, Mozart has last name Mozart.
+Mozart composed Zauberflöte, Mozart knows Salieri.
+Zauberflöte has titled Zauberflöte, composed here and so on.
+So the big advantage is that this kind of serialization is readable easily for machines
+because it's a formal language but it's very close to the human language so we can really
+read these statements as statements about things.
+To further simplify we can define prefixes and bases and then the whole file looks even
+more simple.
+So for example I can define a prefix which I use for this example.
+The prefix name is EX1 which is this part of the URI and then we can just say EX Mozart
+has first name Wolfgang Amadeus and so on.
+This is still machine readable because the read process will resolve this prefix and
+construct the complete URIs.
+But it's much easier to read for humans like this so we can really read this information.
+This is especially important if you take into account the longevity of data.
+Having a database you are always dependent on special programs, on special applications.
+Having a text file, a simple text file which has information which can be read which is
+simple which even the structure is very simple.
+Even in 50 or 100 years a computer science student is able to write a reading program
+in one or two days.
+Even if the whole computer industry changed there always will be programming languages,
+there always will be things to read this kind of simple text files.
+So with this kind of information we gain longevity which is especially important in digital humanities
+because in humanities we have project and information which lasts for decades or even
+centuries.
+Just one example I am working on a project, the critical edition of the works of Leonel
+Oehlo.
+This project started in 1904.
+It's still ongoing and we expect to be finished in about 30 years.
+So around 2050, 2060.
+In the moment all new addition work is done in the digital domain using computers.
+So we have to guarantee that the information we are producing now will still be readable
+in 30, 40, 50 years.
+And therefore we are using this kind of serialization which is both human and machine readable.
+The resource description framework also allows to define data models, to define simple ontologies.
+For this we are using the RDF schema which itself is expressed in RDF.
+With this we can define some kind of semantics.
+I cannot go too deeply into the details of this because that's quite different and a
+little bit more difficult stuff.
+But we can define that certain things are resources.
+We can define classes of resources.
+So I can define a class person where I can also define that for example the class person
+might have a property called first name and last name.
+So there are many, many possibilities with all these kind of things.
+I can define ranges.
+I can define domains.
+So I can say that a property defines a domain.
+If something has a first name then it must be a person.
+If something has a family name, this is expressed here, a ex1 fam name belongs to the domain
+person.
+So if something has a family name I know the thing must be a person.
+This goes on and on.
+I will skip quite quickly about the things because this really would go too far right
+now.
+But with these terms I can really construct ontologies.
+So I can define the semantics of the resource classes of the property names of the resource
+labels I use.
+So for example I could construct a thing called band which consists of members which
+must be musicians.
+Band should have a name.
+A musician should have a name.
+A musician plays an instrument.
+So the RDF database finally will have some semantic knowledge and because if I'm doing
+this the database itself can apply a predicate logic and deal with incomplete information
+and this is a very very strong feature of this kind of data representation.
+So here an example how I could define the ontology for bands and musicians.
+And this leads to reasoning which is predicate logic.
+So bluespons has band name bluespons.
+Then the database automatically knows without any further information that bluespons have
+to be a band because has band name in place this through the RDFS domain definition in
+the ontology.
+If Rosenthal plays Hammond this triple automatically says that Rosenthal must be a musician and
+Hammond must be an instrument even if these two labels didn't have not been mentioned
+before.
+So an ontology is much stronger than a normal data model.
+An ontology is not a data model that says what is valid and what is not valid.
+The ontology defines the terms and the relations among each other in order to deal with incomplete
+information.
+So their database is enabled to make conclusions about the nature of things and dealing with
+implicit information.
+Not everything has to be set in explicit.
+The database itself and the query itself can make implicit assumptions and reasoning.
+There are some widely used ontologies.
+For example the DC terms the doubling core which is a very small set of rules of reasoning
+rules for human artifacts and works.
+It's about one dozen types of resources and maybe two to three dozen predicates that are
+defined here which do have a very specific meaning.
+The doubling core is very widely used and is somehow very important to compare artifacts
+from different databases.
+With several databases from different institutions use the DC terms ontology the data can be
+compared and is interoperable.
+Another very important ontology is the friend of a friend which describes the relationship
+between human beings.
+It was developed for social networks but it's very useful also in digital humanities as
+soon as you have human beings involved as creators, as artists and so on.
+Another very important ontology is the side of CRM which is metadata for art and cultural
+properties.
+This ontology also encompasses non-physical things like events happening so you can describe
+things like dance, like music performances and so on.
+And it's important that you can combine these ontologies so you can use in the same database
+different ontologies.
+You can even define equivalents that one term in DC terms should be considered to be the
+same as another term in cytosyram.
+So using this kind of technology you will get a very very powerful tool to describe metadata
+and to describe the digital objects that you are using in your research and for your
+work.
+RDF is still relatively new technology even if the roots go back more than 20 years.
+There are some commercial and also some open source databases available that you can use.
+For Python there is the RDF LEAP which really implements a very very good interface for
+experimenting and even for productive work using RDF.
+So I will close with these notes.
+Thank you very much for listening.

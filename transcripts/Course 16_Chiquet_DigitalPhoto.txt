@@ -1,0 +1,543 @@
+as an expert in digital photorealistic manipulation.
+I am pleased to be the introduction
+for the following contribution.
+I now pass the word on to Vera Chiquet.
+Hi, thank you very much for this nice introduction
+to my AI avatar.
+So this is me, Vera Chiquet.
+I'm currently deputy head of the department
+of the Professorship in Digital Humanities
+at the University of Basel.
+Unfortunately, I am not an expert in digital manipulation
+like the previous speaker,
+but with my PhD in art history and sociology,
+I focus on new methodologies in the humanities,
+in particular on computational and experimental methods
+for the study of visual and social practices.
+So this AI generated clip
+is nearly too perfect to be true.
+It was also even more realistic when I actually made it.
+Maybe you realized or you've seen the reflection of me
+capturing again, reproducing the digital video,
+capturing it with my iPhone
+because it was kind of the easiest way
+to convert the file, let's say, like that.
+So speaking about perfect to be true,
+if we are speaking about true,
+we often refer to photography.
+And so I will start with a short introduction
+about digital photography,
+following Mia Feynman's book that was accompanying
+an exhibition in the Metropolitan Museum of Modern Art
+in New York in 2012, which was called Faking It.
+And it was co-financed by Photoshop.
+And then I will go back in time to kind of a Photoshop
+Arola Lettres to reflect on what we should do today
+with photography and its opportunities for manipulation.
+Here you can see one of an image
+that was shown in this exhibition
+and is also part of the catalogue.
+Looking at digital photography,
+we can say that over the past,
+or we tend to say that over the past 20 years,
+photography has undergone a dramatic transformation.
+Mechanical cameras and silver-based film
+have been replaced by electronic image sensors
+and microchips.
+Instead of shuffling through piles of glossy prints,
+we start at the glowing screens of laptops, tablets,
+and mobile phones.
+Negative and larger and chemical dark rooms
+have given way to personal computers
+and image processing software.
+Digital cameras and applications such as Photoshop
+have changed the way we create, look at,
+and think about photography.
+Among the most profound cultural effects
+of these new technologies has been a heightened awareness
+of the malleability of the photographic image
+and the corresponding loss of faith in photography
+as an accurate trustworthy means
+of representing the visual world.
+As viewers, we have become increasingly sally,
+even habitually skeptical about photography's claims to truth.
+Our creeping suspicions about the credibility of photographers
+has been fueled by periodic revelations
+of digital fakery in news images
+and by controversies raging around
+magazines' image of fashion models
+who have been retouched to impossible degrees
+of skeleton perfection.
+And these are really the most conspicuous manifestation
+of pervasive practice.
+Today, digital manipulation of photographic image
+is a bit curious, not only in newspapers and magazines,
+but also in fine art, commercial context,
+in police work and medical imaging,
+and increasingly in the snapshots of vacations,
+weddings, new babies, and graduations
+that we email to friends and family
+and upload to social networking websites.
+Digital technology has made the process
+of altering photographs faster, easier, harder to detect
+and more accessible to many more people,
+both amateurs and professionals
+than ever before in the medium's history.
+And yet it would be a mistake to assume
+that this impulse began with the rise
+of digital photography in the late 20th century.
+While the technology may be new,
+the desire and determination to modify camera images
+are as old as photography itself.
+Nearly every kind of manipulation
+we now associate with Photoshop
+was also part of photography's predigital repertoire
+from slimming waistlines, moving away wrinkles
+to adding people or removing them from pictures,
+changing backgrounds, and fabricating events
+that never actually took place.
+So from Talbot's day onward,
+as the art and craft of photography
+have grown increasingly sophisticated,
+photographers have devised a stuttering array of techniques
+by which to alter their images from multiple exposures
+and photo montages to combinating printing,
+airbrush retouching, and auto darkroom magic.
+Taken together, the pictures created by these means
+constitute a secret history of photography
+as a medium of fabricated truth and artful lies.
+So I think we can learn a lot from this earlier pictorial
+turn to look at and discuss about the iconic turn,
+the digital turn, or deep fakes,
+which are strongly related to photographic aesthetics.
+So let's have a look at the major change
+that was stressed by Walter Benjamin
+concerning photographic reproducibility.
+So talking about Walter Benjamin,
+I actually wanted to insert here a photography
+of Walter Benjamin, but unfortunately,
+I could not find any image with the correct image credit
+among the digitally available photographs.
+So I thought about taking the few things I have at home
+about him to give you a kind of idea
+if you're not familiar with Walter Benjamin.
+So I actually decided to take this kind of book I have
+and this is edited volume just about one article.
+He wrote, and I'll just give you a short
+one-sides to the book.
+So you see here, these are different versions
+of this photographic work.
+These are different versions of this very important article.
+He wrote about photography
+and the technical reproducibility of photography
+and some of my notes are in there too.
+So just talking about issues with digital photography,
+it's maybe important that you know
+that you can't just take everything you find
+on the internet and copy it,
+especially with photographers.
+This is a central and very controversial
+and complicated issue.
+It's not just about who owns the photo and who took it,
+but also who is shown on it and how it can be used.
+So be careful.
+So about this essay that Walter Benjamin wrote,
+it's at the beginning of the 20th century,
+it became easy to copy reproductions on a big scale.
+So to see things, scenes, persons, objects, and so on
+that are not just really there where your daily life is,
+you don't have to travel anymore to be on site
+or to go to the place of origin or to a museum
+to see a specific geographic location,
+but the imagery productions started to travel
+or were delivered to you in New Moslem again.
+So this was a big change.
+And while Walter Benjamin's essay is cited primarily
+in connection with works of art and the loss of aura,
+he had also something else in mind,
+namely rather a kind of democratic possibility
+that the medium of photography and its potential brings with it.
+Much more that it is maybe extremely important
+to understand these media and their mechanisms
+and this succeeds not through studying,
+but by experimentation and awake amusement,
+but more on that later.
+So the reproducibility of images
+does offer a large number of actors to participate
+in image-based discourses.
+With the advent of photography
+and its technical reproducibility,
+many more images entered the mass media.
+Even if sometimes we do not want to admit it,
+our perception and our knowledge of the world
+is, as we know, thanks to Niklas Luhmann,
+to a large extent co-constituted by the mass media,
+to which today, although one no longer speaks of mass media,
+also the internet and the digital information retrieval devices
+and platforms should be put into relation with it,
+because nobody or always, if you were people, tell you,
+yeah, I read newspapers, but I mean,
+what we consume on digital platforms
+are often kind of in relation to what we've been known
+as newspapers, as we also read a lot of digital newspaper
+articles.
+But let's stick to this time and let us have a closer look.
+Then, in which for the first time,
+many photographic images could be duplicated
+and distributed in multiple reproducibilities.
+Not long before Adolf Hitler came to power,
+illustrated newspapers were the central leading medium
+in the field of mass media.
+The new possibility of reproducing photographs directly
+and or mass was decided for this.
+The halftime process made press production cheaper.
+One could produce more and the magazines could be sold
+more cheap.
+With eye-catching photos and headlines,
+these new entertainment media attracted attention.
+They enjoyed immense success and were very popular.
+Because of their thematic potpourri of news, politics,
+business mixed with advertising and spectacular reports,
+fitness, leisure tips, they were nevertheless rejected
+as trash.
+And even then, fake news was the order of the day
+in the media that had been during the Weimar Republic
+and Hitler's rise to power.
+Thanks to the new possibilities of reproduction,
+photographic manipulation experienced a heyday at that time.
+Falsified and retouched photographs are known
+from Stalinistic propaganda and have been reappraised,
+for example, by David King.
+So many photographs were also manipulated
+in the course of Nazi and fascist propaganda.
+Here you see, for example,
+a huge photographic montage for exhibition.
+Now one could think that this is the evil
+and that photography is reproduced almost
+and then only makes the falsification of truth possible.
+But this fails to recognize that in this technique,
+also a great creative potential can be found.
+And this brings us back to Walter Benjamin,
+Benjamin and to a photographic artist of his time.
+So I want to introduce you to John Hartfield.
+The image on the right side is of his.
+The other one maybe you are familiar with.
+I show you these two examples
+because they're both acting in the public domain
+of let's say mass media discourse.
+So John Hartfield actually produced his photo montage
+or reproduced his photo montage in the REZ,
+the Arbiter Illustrierten Zeitschrift.
+Until it was like destroyed by the Nazis,
+they produced this very successful illustrated magazine
+that was kind of each issue had at least one
+of John Hartfield's like really artistic
+and strong photo montages.
+So unlike kind of the normal fake news,
+these interventions do not convey false messages
+and do not serve to a propagandistically influence,
+to influence propagandistically.
+But in fact, they want to question
+and enhance the new technical possibilities
+and the mechanisms of photo journalism.
+So Hartfield's fake photos are not so much
+comparable to false reports such as those
+that were spread in 2017's US election campaign
+between Donald Trump and Hillary Clinton,
+but rather with interventions such as those of Jan Böhmermann.
+This is the other example, maybe you're familiar with it.
+He undermines subversively television shows
+like the Spiegeltefel with the Varoufaki fake.
+So he disseminated his fake videos on the internet
+and in his own TV show,
+which such fakes the play between authenticity
+and staging is central.
+So the media success of the Varoufaki fake demonstrated
+how even experts like Bündter Jauch
+in his Spiegeltefel format fell into this clever media trap.
+So the video was thought to be real
+and the politician was confronted with it
+and in front of a running camera
+and the experimental innovation
+and then publicly faux pas shocked at that time.
+And Hartfield's photo montages are also about comparable
+suggestions and by no means about misinformation,
+but they fight the unreflective handling
+of mass media content.
+So Hartfield published his fake photos during the national,
+or until the Nazis took over in one of the most widely
+circulated magazines that are by the illustrious Zaitum
+from 1930 until 1938.
+And in doing so, he thematically takes on the bourgeoisie,
+the empire, the capitalism, Hitler, but also the SPD.
+So in this way, he fueled media reflection
+and resistant and creative approach to the media.
+The appropriation of themes and practices from everyday life
+or popular culture enables also a critical
+examinations of them.
+So Hartfield does not only use the medium
+to disseminate his ideas, but also deals with the way
+it is used.
+So this specific mediality of illustrated magazines,
+novel at the time, also informs the content
+and aesthetic of the photo montages.
+So Hartfield uses real productions as an extension
+of the scope of technical possibilities.
+In this way, he sets an impulse for the reader
+to reflect on his or her dealing with the new media.
+His photo montages establish relationships between
+the familiar world of mass media imagery
+and as yet unknown optical phenomenon making
+kind of the invisible visible analog to surrealism
+and to also unconscious conscience.
+They question the Nazi practices by combining
+the seemingly inappropriate things that are
+alienated in a way not seen before.
+By bringing the irrational and the unreal
+into a photo aesthetic reality,
+he uses photographic manipulation for reflection.
+The beginnings of the illustrated press show
+that the image originals, whether drawings or photographs,
+were and are always processed for printing and reproduction.
+So photographs then do not form on an unedited
+or direct approaches to the actual event,
+but always functioned as a transformation
+and a pictorial illustration.
+But due to the indexical character attributed to it,
+photography is often received as a seemingly more
+genuine and direct medium than text.
+This is because the editing processes take place
+in the hidden and are often not conscious
+to the not specialized audience.
+And this is precisely why it is so important,
+whether analog or digital, to test and explore
+the manipulations and fakes so that
+certain understanding about it can spread in society
+and enable more semi experts.
+So through the IZ photomontages,
+the many possibilities of image manipulation
+in the mass media are shown.
+So that thanks to Hartfield's fake photos,
+readers become semi experts of the photographic reproduction.
+So this is why I wanted to show you two examples.
+This one is the first one,
+where we can actually follow the different steps
+that were taken for this photomontage.
+So we have this image on the left.
+We don't know how much was staged or manipulated for it.
+This is also all from Eckhard Ziebmann's publication.
+And he's done this study about this very popular
+or well-known photomontage from John Hartfield.
+So he takes Hitler out of his context here
+and combines him with somebody else.
+At first it was Tissen's face for the thing
+that was reproduced and spread as a illustrated magazines.
+You can't tell who's the big man behind Adolf Hitler.
+So this was the main page of this magazine
+with the title,
+The Hitler's Crosses,
+the small man with the big head.
+And then it's written,
+Motto, millions are behind me.
+So through this artistic extensions
+of the aesthetic practices,
+he kind of is activating the audience
+and helping them to gain knowledge about these practices.
+So the audience is placed in a double role.
+On the one hand, it follows the constructed spectacle,
+but on the other hand,
+this is always broken so that the audience
+also knows about the artificiality.
+So it's precisely in such montage
+that Walter Benjamin sees huge potential.
+In this context, Benjamin refers often
+to the potentiality of the entertaining communication forms
+of attractions, fantasies and magic tricks.
+And I cite here a short statement.
+So he says,
+the masses do not want to be taught.
+It can absorb knowledge only with the little shock
+that nails what it has experienced inside.
+Their education is a consequence of
+catastrophes that hit them in fair grounds,
+fairs in darkened tents,
+where anatomy dries into their limbs
+or in the circus ring,
+where with the first lion,
+they see it's associated with the image of the team
+who sticks his fist in his throat.
+And he summarizes,
+boredom dumps down curiosity or courtsweile and lightens.
+So in his opinion,
+the audience should be stimulated
+to think through a lot of amazement.
+So they should not be instructed,
+but rather made more savvy.
+And what is Convado showed
+is not observed by the audience
+as an object of instruction here,
+but makes them think by themselves
+through these clever traps.
+So Hartfield's photo montages are in a sense,
+photographic fake news,
+Aula Lettres, which turned consumers
+into reflected semi-specialists.
+With such intuitions,
+it stimulates both the questioning of contemporary media
+as well as the techniques of image-making.
+And in times of political power struggles,
+in Hartfield's work,
+the seizure of power of the Nazis,
+these are all the more significant.
+Such interventions in the mass media
+reveal that their imagery can always be manipulated.
+And the manipulative practices
+that normally not want to be recognized
+as such are here now illustrated by Hartfield.
+So through visual illusions,
+he builds a 10-slimbo between the seemingly real
+and the yet artificially produced.
+So Hartfield does not instruct the consumers
+with photo montages,
+but makes them smarter
+and opens up a resistant consumption of images.
+And this mode of appropriation is gaining an importance
+in the context of increasingly image-based mass media
+or after the iconic term.
+So it's becoming increasingly relevant.
+So here again, this is another example I wanted to show you.
+The one on the left, you've already seen,
+this is from an exhibition.
+And on the right, you see another title page
+of the Arbiter Illustrierte Zeitung.
+And this is one, like for the montage,
+that I kind of tackled down all the different steps.
+And it was very interesting that,
+so this is the title page, right?
+If you open the magazine and go through it,
+you will find this page.
+So it's about a documentation of an event that happened.
+And somehow I thought that some of these people
+are familiar with the ones in the title page.
+Then you just browse through the magazine
+and that's how it looks on the back page of it.
+And so by starting this magazine for a long time,
+I found out that he actually took some of this content
+group here and some others from this photography.
+But he did not just put them together,
+but also put some individuals into it.
+So he took an old lady and kind of a young,
+strong, well-dressed man to get this kind
+of antifascistische Aktionseinheit,
+to really cover democratically all kinds of people.
+That would be important to fight together
+and stick together for this Aktionseinheit.
+So these are my drafts that you can kind of follow
+what I'm talking about.
+And then he also had to switch it.
+I mean, so with the reproduction process,
+this is kind of what it takes.
+And this is a Werkfotografie from the Academie der Künste,
+where they sometimes have drafts and documented steps
+of how he managed to do these very illusionistic
+photo montages, but for most of it, it's just lost.
+Like the documentation, not only because I think
+they were like, they had to shut down everything
+because of the Nazis, but also when we're talking
+about mass media production nowadays,
+nobody like really saves all the different pre-work
+that is necessary for the final version, right?
+And this is what you've just seen, the title page.
+So, a bit with analog or digital fakes.
+On the one hand, central attractions are offered to viewers
+by means of interruptions, alienations and declarations.
+On the other hand, the thing that they really are doing
+artificially made is also demonstrated.
+So the perfect fulfillment of the illusionistic
+and exhibitionism is made impossible.
+So this leads to a very paradoxical situation
+that both modes of reception make each other impossible.
+Neither an absolute devotion to the illusion
+nor a total rejection of the illusion is possible.
+I mean, you have the information about these two images.
+The first one is from John Hartfield
+and the other one is kind of, I don't know
+if it was really distributed as a poster,
+but it's actually also from a short promotion video
+for the perfume that was produced by Lady Gaga.
+So on the one hand, the viewers are naive observers
+of the first order who allow themselves to be amazed
+by the effects and on the other hand,
+they are observers of the second order
+who are always aware of the technical production
+of the effect and enjoys precisely this knowledge.
+Crucially, both positions hinder each other's
+complete fulfillment since both complete identifications
+with the virtual spectacular reality
+and the total distancing is impossible.
+But this is really something that I think you see
+on these examples, which is not true, of course,
+when you have like a kind of enhanced sliver
+dimming manipulation or these kinds of digital and analog
+retouching of just making it look better.
+So this is a complete different way
+of how these images work because these one really like
+puts the technique and the consumption
+as a two discussion, right?
+And not just follow the means they have and hide
+in like most of the reproduced images.
+So here with these kind of example,
+you kind of marvel and kind of make the first step
+out of a simple minded consummation.
+So astonishment creates the distance
+from which reality can become the object of observation.
+And on the other hand, humans can become observers.
+So kind of a new self awareness in relation to the world
+is now to be observed and questioned arise
+as soon as something strange breaks into the self evidence
+of the familiar and this captivates the attations
+and stimulates curiosity.
+So by this, the astonishment is like a second intellectual
+birth.
+So the changes in the print medium due to photographic
+reproducibility of the processes can be compared
+with the influence of digital media, for example,
+in the field of film.
+In film, new technologies spring about resumption
+of practices that were widespread at the beginning
+of the cinema when it emerged as an attraction
+in the context of affairs.
+Just as photographic reproduction did not form a radical break
+with the graphic illustration processes that preceded it,
+digital media and film do not trigger a dropping
+of all practices.
+The production of special effects,
+even with digital materials that takes a lot of work
+and requires the collaboration of professionals who,
+for example, assembled scenes, create the digital image
+programs on the computer with the real scenes by hand
+or mouse click into the film action.
+So the technical reproduction did not interrupt
+the manual production and design of images.
+It rather made possible an additional level of application.
+So digital retouching and manipulation do not constitute
+a rupture either, but a continuation of these previously
+manual and analog image practices.
+So deep fake technology, maybe also the one I showed you
+before as my AI avatar, which has been on the steady
+development for nearly a decade, makes it possible
+to create talking digital puppets.
+The AI software is sometimes used to spoof public figures,
+such as in a video that circulated on social media
+last year that falsely shown the Ukrainian president,
+Onymir Zelensky announcing a surrender.
+But the software can also create characters out of a thin
+air that go beyond conventional editing software
+and expensive special effects of Hollywood,
+blurring the line between fact and fiction
+to an extraordinary degree.
+So I think it's even more important or still as important
+as it was in times of Walter Benjamin
+to really engage with the media and have fun by knowing more
+about the practices and the medium.
+So thanks a lot for your attention.

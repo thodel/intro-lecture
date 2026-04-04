@@ -1,0 +1,398 @@
+Hi, my name is Elena Chesneva.
+I am here to give you a short, very short introduction to digital editions,
+this is a specific field of digital humanities.
+In the little class today, I'm going to first of all give you some information about myself,
+then talk about what digital editions are, what are the basics of editing, what do we
+mean when we talk of editions.
+Then I will cover the text-including initiative, which is a de facto standard that gets applied
+in digital scholarly editing.
+I will cover the basics of XML because typically TI is represented in XML in the current landscape.
+And at the end, I'll give you a quick teaster of text as graph, which is one of the current
+experimental approaches to representing text in the edition context.
+So a little bit about me, I work as a researcher at the Institute for History and Theory of
+Art and Architecture at the Academy of Architecture in Montgrizio, which is part of the Universitat
+de la Sveta Italiana, the Italian-speaking Switzerland University.
+I'm an architect by my first training and I did a doctorate in History of Art and Architecture,
+working on 19th century theory of art, specifically on Gottre Semper, who was a German and Swiss
+architect and theorist of art.
+Since 2017, I have been working on a digital edition of the manuscripts of Semper, which
+was my introduction to scholarly and digital editing and my introduction to digital humanities
+more broadly.
+And most of what I have to tell you today, I have learned in the course of my work on this edition.
+However, the field of digital editing is extremely diverse with many different types of documents
+edited with many approaches.
+And because of this, what I have to tell you is, of course, specifically painted by my
+particular experience.
+So if you become interested in digital editions after this class, I encourage you to look
+around and read about different ideas and approaches in this field and to generally explore
+and to become a little bit critical about the things that I am telling you about here.
+So when we say digital edition, what are we actually talking about?
+Like everything else, editions were not digital before computers became widespread.
+So if you look up edition or critical edition in a library catalog, you would find a book
+that looks something like this.
+This book would typically be thick, often running to multiple volumes, and in the margins
+and in the footnotes, you would see many cryptic looking notes.
+In order to understand these notes, you would need to refer to a section typically at the
+front of the book or a volume or a subsection that explains various abbreviations.
+And these abbreviations most often refer to what is called textual variants.
+So differences between different versions of the text found in different copies.
+And this instrument is needed in particular by the users of the edition.
+So in this case, it is an edition of the Gospel of John.
+So here our users are historians, theologians and Bible scholars, and they need this instrument
+because many historical texts exist in different copies.
+So the example I'm showing you here of the Gospel of John, the part of the Christian Bible,
+and there are many different copies of this text existing in different manuscripts.
+So here you see two examples of these manuscripts, one located at the British Library in London
+and another one at the Vatican Library in Rome.
+There are many other copies located all over the world, and sometimes manuscripts also became
+fragmented in the course of time.
+So some pages of one manuscript may be located in St. Petersburg, while other pages may be found
+in, say, Paris.
+And if a scholar were to travel around to consult all the different copies, they would need to
+spend a lot of time traveling.
+And it would be very difficult for them to keep track of all the different variations
+and versions of the manuscript.
+So in addition, does that for them effectively?
+So it serves as a tool that can save the scholar a lot of time and also to support their work
+with a particular set of manuscripts or historical documents.
+Aside from textual variants, notes in an edition can record a variety of information,
+depending on the aims of the editor and the decisions that they make in the editing process.
+An editor might choose to disambiguate abbreviations present in the text itself, for example.
+They also may choose to index places and persons that are mentioned in the text.
+They may choose to comment on the content of the text, for example, on references to imagery
+found there.
+Or the editor may also choose to enrich the text with additional information.
+They might choose to abridge or emit particular elements of the text, depending on the purpose
+of the edition.
+So when we talk about editing, we need to keep in mind following things.
+Editing exists in a variety of fields and it is an extremely broad activity.
+So while the example I have shown you just now involves historical manuscripts, editing
+may also entail working with print material or with contemporary materials.
+So for example, medical records may also be edited or there may be some
+things like sheet music being edited.
+And there are scholars in the field of editing that advocate for a very broad
+understanding of the editing process and what it entails.
+So they would say that editing is basically modeling or the process of modeling the text
+in general.
+The second point we need to keep in mind is that editions, whether paper or digital,
+represent text.
+They do not just record it.
+So the process of editing is always a process of creating something new.
+And that new version of the text does not correspond to anything that exists in any
+version of the original.
+So this can be in terms of content, but also in terms of reader experience and so on.
+And because of this process of recreation, editing entails creating a theory about the
+text that is being edited.
+That means deciding how exactly we choose to interpret the text, which elements of the
+information that it contains we want to prioritize, and how in our opinion these elements relate
+to the surrounding world, to other texts and so on.
+So this means that it is possible to create very different editions of the same original
+texts depending on the aims of the editor, or especially in the digital environment.
+It is also possible to accommodate multiple theorizations of the text, depending on the
+aims of the editorial team.
+This means also that texts of editions tend to have a very strong degree of fluidity.
+So they offer multiple possibilities for reading the original corpus through the lens of the
+edition.
+So the reader in this situation is effectively recreating the text in the process of reading
+and may well bring some aims of the room that would again reform the edition as a representation
+of the original text.
+So what are some of these aims?
+The aims of editions are very diverse again, but here I can give you some examples.
+One of the most common aims of editions is textual criticism.
+So this is what we have seen in the example of the Gospel of John.
+Textual criticism is concerned with identification of textual variants and with establishment of
+one authoritative version of the text.
+So somebody decides, or typically there is a kind of consensus that comes to be over time,
+which is the sort of version Aleph, so the original, the sort of authoritative version,
+and all of the other versions are treated as variations of that version.
+So there is a kind of, there is a degree of prioritization in, especially in editing,
+when it's being undertaken in the print form.
+Another aim of editing might be to establish authorial intentions.
+So what, let's say if we have a corpus of manuscripts all written by one person on the
+same subject, we may look at the variants to establish what the author actually wanted to say.
+So we might see, okay, did he or she cross out certain things?
+Did he or she ask certain things?
+How did their ideas evolve as the text evolved?
+We may also look at variants of a text in order to understand the history of its transmission.
+So in other words, how did the text and the ideas inside it travel over time?
+So where was it copied?
+Where was it perhaps reprinted?
+If we're talking about the printed text and how was it disseminated?
+We might also, and these two aims often end up being brought together,
+we might also look at its reception.
+So in what form was the text read by people in a particular time period?
+Where some passages were used in other texts?
+Where are there textual references to parts of the text in other texts and so on?
+We could also edit the text in order to learn something about its language.
+So this is referred to as theological analysis.
+And this looks at particular linguistic characteristics of texts or text corpora.
+And finally, we can edit a text or a set of texts in order to make sources,
+specifically primary sources, more accessible to users.
+So this is relevant, for example, when we speak of sources that are extremely fragile in the original,
+or sources that are very difficult to read.
+So we make it easier for historians to work with sources by editing them.
+Primary sources could also be edited in order to create data to support further research.
+So for example, historical network research.
+When editions were purely printed, they used to be divided into a number of subtypes.
+So in printed editions, typically you would speak of single manuscript editions.
+So these are editions that focus on a single source of so-called diplomatic editions.
+So these are editions that try to reproduce the source page in as much detail as possible
+and as closely to the original as possible.
+There were parallel text editions.
+So the editions that would show multiple versions of the source page
+were multiple versions of text side by side.
+So different versions of the text are referred to as witnesses in the editing context.
+And there were critical editions that would collate different versions of a text
+into a single authoritative edition.
+So they would take a base manuscript, so the manuscript that they consider to be the kind of version A,
+the reference version, and note variations from that base version of the text.
+The advent of the digital has to some extent exploded these categories.
+But the paradigms behind them are very much alive and well.
+And they've all flown into the digital environment in different forms.
+But they're often combined.
+So you will see digital editions, for example, that offer you the possibility of looking at
+just one source or at looking at multiple sources in parallel.
+You will see in different digital editions different takes on being diplomatic,
+so being very close to the source, but they're now achieved with different digital tools.
+The only category that has probably been changed radically by the advent of the digital
+is the idea of the critical edition.
+Because within the digital context, we do not have to,
+essentially, we do not have to work with the base manuscript because we're not constrained by the
+page with notes.
+So essentially, we can present readers with much more fluid versions of edited texts,
+which do not privilege a particular copy or a particular version.
+So we can leave the reader to decide which version would be in the center of their reading.
+And this very substantially changes the position of the editor or kind of the
+what traditionally used to be considered the authority of the editor.
+Why does this happen?
+So digital media allows to represent a lot more information than the printed page.
+So in the printed context, the two-dimensional space of the page was a major constraint.
+So in a digital world, we do not have that.
+So it's possible to just represent a lot more information and it's possible to do it very
+differently.
+So for example, a digital edition in contrast to the print edition can contain all available
+versions of the text.
+So it's basically extendable.
+There is no, there isn't a sort of pure volume limit that used to exist in print editions.
+The digital environment also allows for multiple possibilities for comparison and collations.
+And we can also support the reader there.
+So we can provide them with different tools that, for example, would enable them to compare
+two pages of different manuscripts with each other.
+There are more possibilities in the digital media to incorporate scholarly commentary.
+So we're no longer stuck with just footnotes and with this kind of task to try and make the
+footnote or the margin note as abbreviated as possible.
+But we can use hyperlinks.
+We can use interactive elements.
+We can use mouseover.
+We can profit substantially from linked data and the kind of work that's gone into establishing
+reference data sets.
+So there is a lot that can happen there in the category of scholarly commentary.
+Digital editions also permit work in progress.
+So in print editions at some point one had to say, okay, we have finished working on this
+particular set of manuscripts now and we've checked it as much as we can.
+It's as accurate as we can make it and it can go to print.
+But after it's gone to print, obviously you cannot go back and make corrections to that edition.
+In the digital world, it's different.
+So you can publish provisional versions.
+You can also work collaboratively.
+You can make the data available for reusing for the development and so on.
+So it's a much more fluid process.
+And finally, as I already mentioned, the digital media challenges the notion of a fixed
+authoritative text and it extends this idea of the text as a dynamic artifact.
+That's at the moment that's predominant in ways in which text is thought about.
+So nowadays we tend to think of a text as something that is created together with the reader,
+where different readers can find different ways of going about the text that effectively
+reconstruct the text according to whatever is the purpose of their reading.
+And that's very much in sync with the sorts of possibilities that digital editing provides
+this with as opposed to the sorts of constraints that editors used to have to deal with when they
+worked in purely print-based editions.
+Another aspect of the digital medium is that it radically, pretty radically actually changes
+the tools that are available to the editors.
+So one example of this that's being used increasingly widely is 100 text recognition
+or HDR.
+So here I'm showing you an example that uses transcripts from our edition of Semper Manuscript.
+And this is a tool that allows people to speed up their work very substantially.
+So this is something that we engage with because our edition sets out to edit quite a large
+amount of manuscripts and we have had very positive experiences with this.
+But there are also many other tools out there that make the work of editing in the digital
+format much faster and that change it in different ways.
+So here I've put up for you a list of digital editions to explore.
+These are all very, very different editions with very different aims also that have come
+to exist through different processes.
+And I encourage you to go and look around and to also read the edition statements of
+different editions.
+To try and understand what is what's going on in this world, what sorts of challenges and
+what sorts of aims different edition teams work with.
+So currently most although not all digital editions are created with at least some reference
+to the guidelines of the text-including initiative.
+So as part of this class I will give you a quick introduction into these.
+The text-including initiative or the TI is the de facto standard for digital scholarly editing
+and its origins go all the way back to the 1980s although the guidelines themselves have
+been published by the TI consortium since 1994.
+And these guidelines determine how scholarly text is to be included.
+So the guidelines are found on the website of the TI at the top on the guidelines.
+And as soon as you open the contents page you can get an idea of what it is that the TI does.
+So if we look more closely into the body of the text you see there is a chapter that says
+okay TI header so all TI documents contain a so-called header that encodes some information
+about the original source or there are elements available in OTI documents.
+So for example you see there is a chapter on glyphs and writing modes and characters
+but there is also a chapter on verse there is a chapter on performance text on transcriptions
+of speech on dictionaries on names and dates on critical apparatus on linking and so on.
+So this is already giving you some sense of the sort of diversity and size of the TI guidelines.
+And this is really accurate because by now the TI guidelines really provide many different ways
+of including different things for a very diverse set of source materials and also for very diverse set of aims.
+So each sub chapter of the TI guidelines provides information on how a specific textual phenomenon
+may be included in TI. So for example this is a section explaining how words may be included
+that are considered foreign to the main text. And so already here you see that the TI offers multiple
+possibilities of including the foreign word croissant in this case and these possibilities are
+subtly different from each other. So the word may be tagged with an element or an annotation
+foreign so that specifically describes it as a foreign word. It may be tagged with an element
+mentioned so this describes it as a word that's referred to but not directly used as a foreign
+text that's referred to but not directly used in the text or it may be tagged with an element term
+in case where the text provides for example a definition of the word croissant.
+And the distinctions between these three are determined by the sense and the content
+in which the word is used. And while the examples here are fairly clear cut
+and it is very easy for us to see why croissant was marked by different elements in the three
+different cases this is not always the case. So the decision which of these elements to use to
+mark a foreign word would come down to the included or to the editor and this decision therefore forms
+an assertion about the text rather than some kind of simple act of recording.
+And this slide so this example already shows us an aspect of the TI that's both a strength and
+the weakness. So the TI standard is very large and the version that's on the one hand allows
+for the possibility of including the same phenomena in many different ways and that
+means that we can represent subtle differences between different textual phenomena.
+On the other hand the decisions or the process of making the decision about which
+choice you make is often implicit its value is highly contextual and the diversity of the
+standards so the fact that there are many different ways of including very similar phenomena this
+presents really big challenges in processing it. Within TI or sort of around TI there is a
+lot of development it has a very active community and there are many people working on the various
+challenges that it presents so in on the subject of the challenge of processing there is an
+interesting tool that's being developed at the moment called TI publisher and which is very
+actively growing and that's particularly suitable for creating small to medium-sized edition projects.
+Another challenge within TI is bringing TI together with linked data and here one of the
+projects that work on this particular challenge is the leaf writer. So leaf writer is actually not
+specific to TI it just works with XML more broadly but it is possible to use it to incorporate
+linked data into TI-based transcriptions. So you've probably noticed so far that much of what I
+have shown you on the subject of TI has to do with XML the examples in XML leaf writer mentions XML
+transcripts in TI publisher both work with XML so the natural question is does the TI standard
+have to be implemented in XML and the answer is actually no so there is nothing on the semantic
+level there is nothing about TI that makes it specific to XML it simply came to be that way
+that most people use TI in XML so it is the most common and in some ways it's also the most convenient
+for working with TI. So for those of you who are not familiar with XML I will do a little
+explanation and those of you who are familiar with it can skip or go and get a coffee or some such
+so a bit of transcription in TI XML looks like this so here I've just taken a
+a short section of our transcriptions from the Semper Edition project and XML stands for
+Extensible Markup Language so that means that already here we see in black
+elements we see in black text so that is the text of the manuscript and in gray we see so-called
+markup so those those things represent some kind of statements about that text.
+And so the elements of markup in this case I've highlighted for you three elements
+and each element has a start and an end tag so here for example you see a p element so that
+refers to a paragraph and the start tag for p element is here and an end tag is here there is
+a del element that refers to a deletion of some sort and here we see start and end tag in green
+and there is a high element which denotes that that text is highlighted in some way
+and here we see the start and the end tag for the high element in blue.
+XML can also include so-called empty elements also referred to as milestones and in these
+particular elements the start and the end tags are in the same place and they're combined into one
+tag. These tags can mark a specific place within the text where something relevant happens
+around the text but when the text is actually enclosed by the element so in this case we
+text is actually enclosed by the element so in this example I've highlighted for you a purple
+line beginning so these lb elements which are empty elements because the line beginning does not
+contain any text but the element marks the place in the text where each line starts.
+Elements in XML can also have attributes so in this case both the del and the high elements have
+an attribute to rent and here you see we have the del element and the space then rent so the
+name of the attribute equals to something in quotation marks and in this case the value of the
+element rent determines the manner in which the text has been deleted or highlighted.
+So in this case rent durst, we use a German abbreviation our project so that means that the
+text has been crossed through or high rent unterstrichen so that means that the text has been
+underlined. XML has some fundamental limitations so the biggest of these limitations is the fact
+that it is strictly hierarchical so that means that elements have to be always completely nested
+within other elements you cannot have elements overlapping so if we take this phrase as an example
+today's talk is very interesting we have here two overlapping markup phenomena part of the phrase
+is underlined and another part of the phrase overlapping was it is crossed out so this is
+something that happens really very often in real world sources in real world manuscripts and if we
+wanted to include it in a way that would sort of represent it directly we'd want to do this so we'd
+want to put a high element around the words today's talk is very and then a del element around the
+words very interesting. However in XML this is simply not possible so it is not allowed to have
+elements that overlap with each other the file would simply not process properly or it's not
+considered valid within the world of XML so in practice if you want to encode this phrase in one
+file what you end up doing is something like this so you say okay today's talk is very as a
+highlight element and within that element you put a del element for the for the word very and then
+you put a separate del element outside of that for the word interesting which is an approximation
+because we see in the original very clearly that very interesting has actually been crossed out together
+or what you can do is you can say okay we have one del element for very interesting and we split
+up the high element so we say today's talk is underlined within a separate high element and then
+very within the second high element but that is also an approximation because we see in the source
+that today's talk is very has been underlined all in one piece. What it is also possible to do is to
+use what is referred to as standoff markup so standoff markup is where you save the text part of
+XML with maybe some markup in one file and other parts of the markup is in another file so for
+example in this case for the sake of argument we might want to save the two parts of markup
+in two different files so we would have a file that contains the text today's talk is very
+interesting with an index and we would have another file that contains the markup high so highlight
+with rents underlined and it specifies that this tag applies to positions from one to 20 in the text
+file and we can have another file that contains the markup del in del crossed out and we say that
+it was specified there that that tag relates to positions from 16 to 32 in the original text
+file so this is referred to as standoff markup and this is quite commonly used in applications or
+in editions that use TI XML it however detracts from some of the advantages of TI in XML which is
+its human readability and relative ease of working with it so the files get less readable by people
+they get more complex it also means that it's harder to undertake changes to the transcript
+and the markup because obviously if say I would make a change to today's talk is very interesting I
+would say today's and yesterday's talks were very interesting that would change the index so I would
+then have to go and change the markup files as well. Another aspect of the TI which is very
+particular to it is the fact that TI of different editions can look really very very different
+so here I give you two examples the top example is from the highlight edition and the bottom example
+is from Fontana edition and these in these two editions the editing teams have made decisions
+to privilege very different things or to put different things in the center of the transcription
+and the editions also have slightly different aims so you see here that the two XMLs look
+extremely different the top example contains text in terms of paragraphs the bottom example
+describes in a lot of detail the very specific position of text elements on the page
+so these are very different approaches to how the the original source is modeled and because
+TI XML can come out looking so different the reuse of this data or the processing of this data
+presents a very particular and complex challenge. The specifics or the differences between
+the different TI XML files can also tell and inform scholar a lot about the types of decisions that
+were made within the editing process so for this reason most editions make their XML available
+on their web page alongside the rendering of the transcription.
+So to finish off with I would like to tell you a little bit about a particular experimental
+approach to editing text which is based on the idea of representing text as a graph
+consisting of so-called tokens where each token decodes some part of the text.
+So to start with we need to say a little bit about graph data so graph data is simply data
+stored in the form of nodes and edges and nodes denote some kind of entities and edges denote
+relations between these entities so here you see an example of a very simple graph showing three
+Twitter users and who follows whom between these between them. The strengths and the kind of
+attractiveness of graph data is exactly in its ability to process relations so as a rule graph
+databases can process large numbers of relations without presenting technical problems.
+The idea of text as a graph is to represent text in similar terms as a series of nodes
+that are connected to each other with relations so here you see an example of a manuscript page
+from the ZEMPA edition included as a graph and yellow nodes in this example represent
+lines of text blue nodes represent paragraphs and pink orange and green nodes represent words
+or word parts with different properties. One of the advantages of this is extensibility it's not
+a problem for example to create a parallel chain that would break words or word parts up into letters
+or syllables it is also possible to keep adding layers of information for example about the layout
+of the document or about its syntactic structure or relating to frameworks within which the
+edition operates so for example it would be quite easy to add linked data to such a text
+representation or to make parts of it compliant with existing standards and ontologies such as
+studio CRM and so on. It is also very easy in this context to connect pieces of text with other
+nodes representing other entities or to connect pieces of text with each other.
+And this idea of text as a graph was already proposed in 2004 in a well-known paper
+by Spurbert McQueen and Hüttberg who suggested that representing text data in graph form can
+point to the way of resolving the overlap problem so the overlap problem is what I've
+showed you earlier it's the fact that XML does not allow overlapping phenomena to be represented
+directly. And here basically Spurbert McQueen and Hüttberg in this illustration show how we can
+think of a text with overlapping phenomena as a graph of different elements. Since then various
+arguments have been put forward for representing text in graph form so one of the arguments is that
+graphs have great potential in documenting and representing text variants which is
+a lot easier to read and potentially also easier to process than a traditional critical apparatus.
+And there's been various projects some of which are ongoing by Andreas Kukutcera and his team at
+the Academy of Sciences in Mainz which also has explored various potential advantages of representing
+texts as graphs both on the conceptual and on the practical level. Text as graph is a very
+interesting development because it opens up many possibilities for integrating data that is produced
+by digital editions with other frameworks methods and approaches. So text as graph for example makes
+it possible to combine text data with historical network research or with investigations in linguistics.
+It also simplifies integration of textual data with linked open data and at the moment text as
+graph is subject of fairly active research and its productive implementations exist but they
+represent steps in the development of a new idea. And tools and infrastructures with text as graph at
+the center still fairly experimental although there are a lot of ideas out there and it remains to be
+seen how or in what form this paradigm will go on to be adopted by the research community.
+But it's a very exciting development and if you're interested I really encourage you to go and look
+at the literature that I've mentioned here. With that I would like to conclude this very
+short introduction to digital editions and I thank you very much for your attention and for
+making it through to the end and in case of any questions or if you would like to know more please
+contact me anytime. Bye bye.

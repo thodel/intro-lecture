@@ -1,0 +1,14 @@
+Hello and welcome to this lecture in the series Introductions to Digital Humanities.
+Today I will talk about natural language processing.
+Let me first say a few words about myself.
+My name is Riko Sennig.
+I'm at the University of Zurich and my main area of research is natural language processing.
+During my PhD I worked mainly on machine translation, but I did that on historical text.
+That's also one link of mine to digital humanities.
+I worked on making the algorithms for machine translation of data preparation more robust
+for historical text, which were also noisy due to the digitization process.
+I spent 90 years at the University of Edinburgh, a bit more virtually, continuing working on
+machine translation.
+I have this illustration here for my work there showing that I focused on working on
+language representations, for example, some technical representations, but also virtual
+representations.

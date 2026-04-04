@@ -328,8 +328,18 @@ function selectMode(mode, el) {
 }
 
 // ── Quiz start ────────────────────────────────────────────────────────────
+// Fisher-Yates — unbiased shuffle
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 function startQuiz() {
-  const pool = getFilteredQ().sort(()=>Math.random()-0.5);
+  const pool = shuffle(getFilteredQ());
   QUIZ_Q = pool.slice(0, Math.min(pool.length, 20));
   currentIdx = 0; score = 0;
   show('question');
@@ -390,10 +400,10 @@ function loadQuestion() {
   // Answers
   const container = document.getElementById('answers');
   container.innerHTML = '';
-  ['A','B','C','D'].forEach((letter, i) => {
+  shuffle(['A','B','C','D']).forEach((letter, i) => {
     const btn = document.createElement('button');
     btn.className = 'ans-btn';
-    btn.dataset.letter = letter;
+    btn.dataset.letter = letter;           // original letter — used for correct-check
     btn.innerHTML = `<span class="shape">${SHAPES[i]}</span>${q.options[letter]}`;
     if (isMulti) {
       btn.onclick = () => toggleMulti(letter, btn);

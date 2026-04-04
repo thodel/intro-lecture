@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>DH Intro — Exam Quiz</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  :root {
+    --bg: #1a1035; --card: rgba(255,255,255,0.07); --border: rgba(255,255,255,0.12);
+    --red: #e21b3c; --blue: #1368ce; --yellow: #d89e00; --green: #26890c;
+    --purple: #7c3aed; --gold: #f5a623;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+         background: linear-gradient(160deg,#1a1035 0%,#0f172a 100%);
+         min-height: 100vh; color: white; padding: 0 0 48px; }
+
+  /* ── Header ── */
+  .header { background: rgba(0,0,0,0.35); padding: 16px; text-align: center;
+            border-bottom: 1px solid var(--border); }
+  .header h1 { font-size: 22px; font-weight: 900; }
+  .header p  { font-size: 13px; opacity: 0.7; margin-top: 3px; }
+
+  .container { max-width: 720px; margin: 0 auto; padding: 14px; }
+
+  /* ── Screens ── */
+  .screen { display: none; }
+  .screen.active { display: block; }
+
+  /* ── Start ── */
+  #start .mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 16px 0; }
+  .mode-card {
+    background: var(--card); border: 2px solid var(--border); border-radius: 14px;
+    padding: 16px; cursor: pointer; transition: all 0.15s; text-align: center;
+  }
+  .mode-card:hover, .mode-card.selected { border-color: var(--gold); background: rgba(245,166,35,0.1); }
+  .mode-card .icon { font-size: 28px; margin-bottom: 6px; }
+  .mode-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+  .mode-card p  { font-size: 12px; opacity: 0.65; }
+
+  .topic-filter { margin: 12px 0; }
+  .topic-filter label { font-size: 13px; font-weight: 700; display: block; margin-bottom: 6px; opacity: 0.8; }
+  .topic-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    padding: 5px 12px; border-radius: 20px; border: 1px solid var(--border);
+    background: transparent; color: white; font-size: 12px; cursor: pointer;
+    transition: all 0.15s; font-weight: 600;
+  }
+  .chip.active { background: var(--purple); border-color: var(--purple); }
+
+  .btn-start {
+    width: 100%; padding: 16px; border: none; border-radius: 14px;
+    background: white; color: #1a1035; font-size: 18px; font-weight: 800;
+    cursor: pointer; margin-top: 14px; transition: transform 0.1s;
+    box-shadow: 0 4px 0 rgba(0,0,0,0.3);
+  }
+  .btn-start:hover { transform: translateY(-2px); }
+  .btn-start:active { transform: translateY(1px); }
+  .btn-start:disabled { opacity: 0.4; cursor: default; transform: none; }
+
+  /* ── Question ── */
+  #question { display: none; flex-direction: column; gap: 10px; }
+  #question.active { display: flex; }
+
+  .q-header { display: flex; justify-content: space-between; align-items: center; }
+  .q-counter { font-size: 13px; font-weight: 700; opacity: 0.7; }
+  .score-badge { background: rgba(255,255,255,0.12); border-radius: 20px;
+                 padding: 4px 14px; font-size: 13px; font-weight: 700; }
+
+  .timer-wrap { position: relative; width: 64px; height: 64px; margin: 0 auto; }
+  .timer-svg  { transform: rotate(-90deg); }
+  .timer-track { fill: none; stroke: rgba(255,255,255,0.15); stroke-width: 5; }
+  .timer-bar   { fill: none; stroke: white; stroke-width: 5; stroke-linecap: round;
+                 stroke-dasharray: 175.9; stroke-dashoffset: 0;
+                 transition: stroke-dashoffset 1s linear, stroke 0.3s; }
+  .timer-num   { position: absolute; inset: 0; display: flex; align-items: center;
+                 justify-content: center; font-size: 22px; font-weight: 900; }
+
+  .q-meta  { font-size: 11px; opacity: 0.5; text-align: center; text-transform: uppercase;
+             letter-spacing: 0.06em; }
+  .q-type-badge {
+    display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 10px;
+    font-weight: 700; margin-left: 6px; vertical-align: middle;
+  }
+  .type-single { background: #1368ce44; color: #60a5fa; }
+  .type-multi  { background: #7c3aed44; color: #c084fc; }
+
+  .q-text {
+    background: white; color: #1a1035; border-radius: 14px;
+    padding: 18px 20px; font-size: clamp(15px,3.5vw,19px); font-weight: 700;
+    line-height: 1.35; min-height: 80px;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+  }
+
+  .answers { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .ans-btn {
+    border: none; border-radius: 12px; padding: 14px 10px;
+    font-size: clamp(13px,3vw,15px); font-weight: 700; color: white;
+    cursor: pointer; min-height: 68px; display: flex; align-items: center; gap: 10px;
+    transition: transform 0.1s, filter 0.1s; box-shadow: 0 3px 0 rgba(0,0,0,0.25);
+    line-height: 1.2; text-align: left;
+  }
+  .ans-btn:nth-child(1) { background: var(--red); }
+  .ans-btn:nth-child(2) { background: var(--blue); }
+  .ans-btn:nth-child(3) { background: var(--yellow); }
+  .ans-btn:nth-child(4) { background: var(--green); }
+  .ans-btn .shape { width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+                    background: rgba(255,255,255,0.2); display: flex; align-items: center;
+                    justify-content: center; font-size: 14px; }
+  .ans-btn:hover   { transform: translateY(-2px); }
+  .ans-btn:active  { transform: translateY(1px); }
+  .ans-btn:disabled { cursor: default; transform: none; }
+  .ans-btn.selected { outline: 3px solid white; }
+  .ans-btn.correct  { filter: brightness(1.2); animation: pop 0.3s; }
+  .ans-btn.wrong    { filter: brightness(0.35); }
+  .ans-btn.dim      { filter: brightness(0.35); }
+  @keyframes pop { 0%{transform:scale(1)} 50%{transform:scale(1.04)} 100%{transform:scale(1)} }
+
+  /* Multi-select confirm */
+  .multi-confirm {
+    background: rgba(124,58,237,0.2); border: 1px solid #7c3aed; border-radius: 12px;
+    padding: 10px 14px; font-size: 13px; display: flex; justify-content: space-between;
+    align-items: center;
+  }
+  .confirm-btn {
+    background: #7c3aed; border: none; border-radius: 8px; color: white;
+    padding: 7px 18px; font-size: 13px; font-weight: 700; cursor: pointer;
+  }
+  .confirm-btn:disabled { opacity: 0.4; cursor: default; }
+
+  .feedback {
+    background: rgba(255,255,255,0.1); border-radius: 12px; padding: 12px 16px;
+    font-size: 14px; font-weight: 600; visibility: hidden;
+    min-height: 52px; display: flex; align-items: center; gap: 8px;
+  }
+
+  /* ── Result ── */
+  #result .trophy  { font-size: 72px; text-align: center; margin: 16px 0 8px; }
+  #result h2       { font-size: 26px; font-weight: 900; text-align: center; margin-bottom: 6px; }
+  #result .big-score { font-size: 52px; font-weight: 900; text-align: center; }
+  #result .sub     { font-size: 15px; opacity: 0.7; text-align: center; margin-bottom: 20px; }
+  .result-list     { margin-bottom: 20px; }
+  .ri {
+    display: flex; gap: 10px; align-items: flex-start;
+    background: var(--card); border-radius: 10px; padding: 10px 12px; margin-bottom: 6px;
+    font-size: 13px;
+  }
+  .ri-icon { font-size: 18px; flex-shrink: 0; }
+  .ri-body { flex: 1; }
+  .ri-q    { font-weight: 700; margin-bottom: 2px; }
+  .ri-ans  { font-size: 12px; color: #4ade80; }
+  .ri-ans.wrong-ans { color: #f87171; }
+
+  /* Progress bar */
+  .progress-bar { height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; }
+  .progress-fill { height: 100%; background: var(--gold); border-radius: 2px; transition: width 0.3s; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📚 DH Intro — Exam Quiz</h1>
+  <p id="hdrSub">76 questions · 16 lectures · FS 2026</p>
+</div>
+
+<div class="container">
+
+<!-- ── START ── -->
+<div id="start" class="screen active">
+  <div style="margin:16px 0 10px;font-size:14px;font-weight:700;opacity:0.8">Mode</div>
+  <div class="mode-grid">
+    <div class="mode-card selected" data-mode="single" onclick="selectMode('single',this)">
+      <div class="icon">🎯</div>
+      <h3>Single Answer</h3>
+      <p>One correct answer per question</p>
+    </div>
+    <div class="mode-card" data-mode="multi" onclick="selectMode('multi',this)">
+      <div class="icon">☑️</div>
+      <h3>Multi Answer</h3>
+      <p>One or more correct answers</p>
+    </div>
+    <div class="mode-card" data-mode="both" onclick="selectMode('both',this)" style="grid-column:span 2">
+      <div class="icon">🔀</div>
+      <h3>Mixed (Both Types)</h3>
+      <p>Random mix of single and multi-answer questions</p>
+    </div>
+  </div>
+
+  <div class="topic-filter">
+    <label>Filter by lecture (optional — leave empty for all)</label>
+    <div class="topic-chips" id="topicChips"></div>
+  </div>
+
+  <div style="font-size:12px;opacity:0.5;margin:8px 0 4px">
+    Questions available: <span id="qCount">76</span> · Timer: 30s per question
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="availBar" style="width:100%"></div></div>
+
+  <button class="btn-start" id="startBtn" onclick="startQuiz()">▶ Start Quiz</button>
+</div>
+
+<!-- ── QUESTION ── -->
+<div id="question" class="screen">
+  <div class="q-header">
+    <span class="q-counter" id="qCounter">Q 1 / 10</span>
+    <span class="score-badge">⭐ <span id="scoreTop">0</span></span>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="qProgress" style="width:0%"></div></div>
+
+  <div class="timer-wrap">
+    <svg class="timer-svg" width="64" height="64" viewBox="0 0 64 64">
+      <circle class="timer-track" cx="32" cy="32" r="28"/>
+      <circle class="timer-bar"   cx="32" cy="32" r="28" id="timerCircle"/>
+    </svg>
+    <div class="timer-num" id="timerNum">30</div>
+  </div>
+
+  <div class="q-meta" id="qMeta"></div>
+  <div class="q-text" id="qText"></div>
+  <div class="answers" id="answers"></div>
+  <div class="multi-confirm" id="multiConfirm" style="display:none">
+    <span id="multiHint">Select all correct answers, then confirm</span>
+    <button class="confirm-btn" id="confirmBtn" onclick="confirmMulti()" disabled>Confirm ✓</button>
+  </div>
+  <div class="feedback" id="feedback"></div>
+</div>
+
+<!-- ── RESULT ── -->
+<div id="result" class="screen">
+  <div class="trophy" id="trophy">🏆</div>
+  <h2 id="rTitle"></h2>
+  <div class="big-score" id="rScore"></div>
+  <div class="sub" id="rSub"></div>
+  <div class="result-list" id="rList"></div>
+  <button class="btn-start" onclick="goStart()">🔄 Play again</button>
+</div>
+
+</div><!-- /container -->
+
+<script>
+// ── Load questions ────────────────────────────────────────────────────────
+let ALL_Q = [];
+let QUIZ_Q = [];
+let currentIdx = 0;
+let score = 0;
+let selectedMode = 'single';
+let selectedTopics = new Set();
+let timerInterval = null;
+let timeLeft = 30;
+const CIRC = 2 * Math.PI * 28; // 175.9
+
+const SHAPES = ['▲','◆','●','■'];
+
+fetch('questions.json').then(r=>r.json()).then(data => {
+  ALL_Q = data;
+  buildTopicChips();
+  updateCount();
+});
+
+// ── Topic chips ───────────────────────────────────────────────────────────
+function buildTopicChips() {
+  const topics = {};
+  ALL_Q.forEach(q => {
+    if (!topics[q.lecture]) topics[q.lecture] = {label: `${q.lecture}. ${q.topic}`, count: 0};
+    topics[q.lecture].count++;
+  });
+  const wrap = document.getElementById('topicChips');
+  wrap.innerHTML = '';
+  Object.entries(topics).sort((a,b)=>parseInt(a[0])-parseInt(b[0])).forEach(([lec,info]) => {
+    const btn = document.createElement('button');
+    btn.className = 'chip';
+    btn.textContent = info.label;
+    btn.onclick = () => {
+      const l = parseInt(lec);
+      if (selectedTopics.has(l)) selectedTopics.delete(l);
+      else selectedTopics.add(l);
+      btn.classList.toggle('active');
+      updateCount();
+    };
+    wrap.appendChild(btn);
+  });
+}
+
+function getFilteredQ() {
+  let pool = ALL_Q;
+  if (selectedMode !== 'both') pool = pool.filter(q=>q.type===selectedMode);
+  if (selectedTopics.size > 0) pool = pool.filter(q=>selectedTopics.has(q.lecture));
+  return pool;
+}
+
+function updateCount() {
+  const n = getFilteredQ().length;
+  document.getElementById('qCount').textContent = n;
+  document.getElementById('availBar').style.width = (n/ALL_Q.length*100)+'%';
+  document.getElementById('startBtn').disabled = n === 0;
+}
+
+function selectMode(mode, el) {
+  selectedMode = mode;
+  document.querySelectorAll('.mode-card').forEach(c=>c.classList.remove('selected'));
+  el.classList.add('selected');
+  updateCount();
+}
+
+// ── Quiz start ────────────────────────────────────────────────────────────
+function startQuiz() {
+  const pool = getFilteredQ().sort(()=>Math.random()-0.5);
+  QUIZ_Q = pool.slice(0, Math.min(pool.length, 20));
+  currentIdx = 0; score = 0;
+  show('question');
+  loadQuestion();
+}
+
+function show(id) {
+  document.querySelectorAll('.screen').forEach(s=>{s.classList.remove('active');s.style.display='';});
+  const el = document.getElementById(id);
+  el.classList.add('active');
+  if (id === 'question') el.style.display = 'flex';
+}
+
+// ── Load question ─────────────────────────────────────────────────────────
+let multiSelected = new Set();
+
+function loadQuestion() {
+  multiSelected = new Set();
+  clearInterval(timerInterval);
+  timeLeft = 30;
+
+  const q = QUIZ_Q[currentIdx];
+  const isMulti = q.type === 'multi';
+
+  // Header
+  document.getElementById('qCounter').textContent = `Q ${currentIdx+1} / ${QUIZ_Q.length}`;
+  document.getElementById('scoreTop').textContent  = score;
+  document.getElementById('qProgress').style.width = (currentIdx/QUIZ_Q.length*100)+'%';
+  document.getElementById('qMeta').innerHTML =
+    `Course ${q.lecture} · ${q.lecturer}
+     <span class="q-type-badge ${isMulti?'type-multi':'type-single'}">
+       ${isMulti ? 'Multi-select' : 'Single answer'}
+     </span>`;
+  document.getElementById('qText').textContent = q.question;
+  document.getElementById('feedback').style.visibility = 'hidden';
+  document.getElementById('feedback').textContent = '';
+
+  // Multi confirm bar
+  const mc = document.getElementById('multiConfirm');
+  mc.style.display = isMulti ? 'flex' : 'none';
+  document.getElementById('confirmBtn').disabled = true;
+
+  // Timer
+  const circle = document.getElementById('timerCircle');
+  circle.style.strokeDashoffset = 0;
+  circle.style.stroke = 'white';
+  document.getElementById('timerNum').textContent = 30;
+
+  timerInterval = setInterval(()=>{
+    timeLeft--;
+    document.getElementById('timerNum').textContent = timeLeft;
+    circle.style.strokeDashoffset = CIRC*(1-timeLeft/30);
+    if (timeLeft <= 8) circle.style.stroke = '#f87171';
+    if (timeLeft <= 0) { clearInterval(timerInterval); revealAnswer(-1); }
+  }, 1000);
+
+  // Answers
+  const container = document.getElementById('answers');
+  container.innerHTML = '';
+  ['A','B','C','D'].forEach((letter, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'ans-btn';
+    btn.dataset.letter = letter;
+    btn.innerHTML = `<span class="shape">${SHAPES[i]}</span>${q.options[letter]}`;
+    if (isMulti) {
+      btn.onclick = () => toggleMulti(letter, btn);
+    } else {
+      btn.onclick = () => revealAnswer(letter);
+    }
+    container.appendChild(btn);
+  });
+}
+
+function toggleMulti(letter, btn) {
+  if (multiSelected.has(letter)) {
+    multiSelected.delete(letter);
+    btn.classList.remove('selected');
+  } else {
+    multiSelected.add(letter);
+    btn.classList.add('selected');
+  }
+  document.getElementById('confirmBtn').disabled = multiSelected.size === 0;
+  document.getElementById('multiHint').textContent =
+    multiSelected.size ? `Selected: ${[...multiSelected].join(', ')} — confirm?` : 'Select all correct answers, then confirm';
+}
+
+function confirmMulti() {
+  revealAnswer([...multiSelected]);
+}
+
+// ── Reveal ────────────────────────────────────────────────────────────────
+function revealAnswer(chosen) {
+  clearInterval(timerInterval);
+  const q    = QUIZ_Q[currentIdx];
+  const correct = q.correct; // array
+  const btns = document.querySelectorAll('.ans-btn');
+  btns.forEach(b => b.disabled = true);
+  document.getElementById('confirmBtn').disabled = true;
+
+  let isCorrect = false;
+  if (chosen === -1) {
+    isCorrect = false; // timeout
+  } else if (Array.isArray(chosen)) {
+    // Multi: exact match
+    isCorrect = chosen.sort().join(',') === [...correct].sort().join(',');
+  } else {
+    isCorrect = correct.includes(chosen);
+  }
+
+  if (isCorrect) score++;
+
+  // Color buttons
+  btns.forEach(b => {
+    const letter = b.dataset.letter;
+    if (correct.includes(letter)) b.classList.add('correct');
+    else if ((Array.isArray(chosen) && chosen.includes(letter)) || chosen === letter) b.classList.add('wrong');
+    else b.classList.add('dim');
+  });
+
+  const fb = document.getElementById('feedback');
+  if (chosen === -1) fb.innerHTML = `⏰ Time's up! Correct: ${correct.join(' & ')}. ${q.explanation}`;
+  else if (isCorrect) fb.innerHTML = `✅ Correct! ${q.explanation}`;
+  else fb.innerHTML = `❌ Correct answer: <strong>${correct.join(' & ')}</strong>. ${q.explanation}`;
+  fb.style.visibility = 'visible';
+
+  document.getElementById('scoreTop').textContent = score;
+
+  setTimeout(()=>{
+    currentIdx++;
+    if (currentIdx < QUIZ_Q.length) loadQuestion();
+    else showResult();
+  }, 2500);
+}
+
+// ── Result ────────────────────────────────────────────────────────────────
+function showResult() {
+  show('result');
+  const pct = score/QUIZ_Q.length;
+  const trophy = pct===1?'🏆':pct>=0.75?'🥇':pct>=0.5?'🥈':'💪';
+  const title  = pct===1?'Perfect!':pct>=0.75?'Well done!':pct>=0.5?'Good effort!':'Keep practising!';
+  document.getElementById('trophy').textContent = trophy;
+  document.getElementById('rTitle').textContent = title;
+  document.getElementById('rScore').textContent = `${score} / ${QUIZ_Q.length}`;
+  document.getElementById('rSub').textContent   = `${Math.round(pct*100)}% correct`;
+
+  // List
+  const list = document.getElementById('rList');
+  list.innerHTML = '';
+  QUIZ_Q.forEach((q,i) => {
+    const div = document.createElement('div');
+    div.className = 'ri';
+    div.innerHTML = `
+      <span class="ri-icon">${i<score?'✅':'❌'}</span>
+      <div class="ri-body">
+        <div class="ri-q">Q${i+1}: ${q.question.substring(0,70)}${q.question.length>70?'…':''}</div>
+        <div class="ri-ans ${i>=score?'wrong-ans':''}">Correct: ${q.correct.join(', ')}</div>
+      </div>`;
+    list.appendChild(div);
+  });
+}
+
+function goStart() { show('start'); }
+</script>
+</body>
+</html>

@@ -131,7 +131,12 @@
   .feedback {
     background: rgba(255,255,255,0.1); border-radius: 12px; padding: 12px 16px;
     font-size: 14px; font-weight: 600; visibility: hidden;
-    min-height: 52px; display: flex; align-items: center; gap: 8px;
+    min-height: 52px; display: block; gap: 8px;
+  }
+  .citation {
+    margin-top: 8px; font-size: 12px; font-weight: 500;
+    color: rgba(255,255,255,0.55); font-style: italic;
+    border-top: 1px solid rgba(255,255,255,0.12); padding-top: 6px;
   }
 
   /* ── Result ── */
@@ -425,9 +430,19 @@ function revealAnswer(chosen) {
   });
 
   const fb = document.getElementById('feedback');
-  if (chosen === -1) fb.innerHTML = `⏰ Time's up! Correct: ${correct.join(' & ')}. ${q.explanation}`;
-  else if (isCorrect) fb.innerHTML = `✅ Correct! ${q.explanation}`;
-  else fb.innerHTML = `❌ Correct answer: <strong>${correct.join(' & ')}</strong>. ${q.explanation}`;
+  const SLUG = {1:'fischer',2:'prietl',3:'mahlow',4:'chestnova',5:'lauer',
+    6:'rosenthaler',7:'piotrowski',8:'bubenhofer',9:'fornaro',10:'roller',
+    11:'sennrich',12:'savic',13:'munnich',14:'hodel',15:'wildi',
+    16:'chiquet',17:'rochat'};
+  const slug = SLUG[q.lecture] || '';
+  const bioLink = slug
+    ? `<a href="../${String(q.lecture).padStart(2,'0')}-${slug}.html" target="_blank" style="color:#93c5fd;text-decoration:underline">${q.lecturer}</a>`
+    : q.lecturer;
+  const citation = `<div class="citation">📖 ${bioLink} · Lecture ${q.lecture}: ${q.topic}</div>`;
+
+  if (chosen === -1) fb.innerHTML = `⏰ Time's up! Correct: ${correct.join(' & ')}. ${q.explanation}${citation}`;
+  else if (isCorrect) fb.innerHTML = `✅ Correct! ${q.explanation}${citation}`;
+  else fb.innerHTML = `❌ Correct answer: <strong>${correct.join(' & ')}</strong>. ${q.explanation}${citation}`;
   fb.style.visibility = 'visible';
 
   document.getElementById('scoreTop').textContent = score;

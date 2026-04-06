@@ -1114,12 +1114,12 @@
     "lecturer": "Tobias Hodel",
     "topic": "Early Modern History",
     "type": "single",
-    "question": "What is a key difference in the creation process between the Königsfeld Ebi and the Bernese Tower Books corpora as described in the lecture?",
+    "question": "What is a key difference in the creation process between the Königsfeld Edition and the Bernese Tower Books corpora as described in the lecture?",
     "options": {
-      "A": "The Königsfeld corpus was transcribed entirely by machine, while the Tower Books were transcribed by hand.",
-      "B": "The Königsfeld corpus was created by experts over four years, while the Tower Books project utilizes a student-led approach in courses.",
-      "C": "The Tower Books corpus is much smaller, with only 1,000 pages compared to Königsfeld's 300,000.",
-      "D": "The Königsfeld corpus contains interrogation protocols, while the Tower Books are a scholarly edition of charters."
+      "A": "The Königsfelden corpus was transcribed entirely by machine, while the Tower Books were transcribed by hand.",
+      "B": "The Königsfelden corpus was created by experts over four years, while the Tower Books project utilizes a student-led approach in courses.",
+      "C": "The Tower Books corpus is much smaller, with only 1,000 pages compared to Königsfelden's 300,000.",
+      "D": "The Königsfelden corpus contains interrogation protocols, while the Tower Books are a scholarly edition of charters."
     },
     "correct": [
       "B"
